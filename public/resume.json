@@ -1,0 +1,42 @@
+{
+  "name": "Christopher Ruckman",
+  "tagline": "Transforming adversity into code, verse, and advocacy",
+  "contact": {
+    "location": "Rayland, OH",
+    "email": "cruckman900@gmail.com",
+    "phone": "(740) 827-2743",
+    "website": "https://cruckman.com",
+    "github": "https://github.com/cruckman900"
+  },
+  "skills": [
+    "React", "Next.js", "Node.js", "ASP.NET", "Photoshop", "Blender",
+    "Legal Research", "Poetic Writing", "Strategic Problem Solving"
+  ],
+  "education": [
+    "BS – Computer Science, Wheeling Jesuit University",
+    "AAS – Programming & Systems, WV Northern Community College"
+  ],
+  "summary": "Resilient, resourceful, and reflective—my work bridges technical precision with poetic depth...",
+  "achievements": [
+    "Published three books including Failure at Fifty",
+    "Exposed fraudulent lawsuit in Ohio",
+    "Completed Udemy courses in .NET Core, React, Blender, Photoshop, Unreal, Unity"
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Walmart, Google, Wayfair",
+      "dates": "Sept 2020 – Feb 2022",
+      "details": [
+        "Developed Android apps using Java/Kotlin and Chromecast SDK",
+        "Built MVVM-based e-commerce features",
+        "Created unit tests and conducted code reviews"
+      ]
+    }
+  ],
+  "projects": [
+    "ChatterboxSM – Real-time platform (React, Node.js, MySQL)",
+    "Prey and Predator – Unreal Engine 5 open-world game",
+    "Marvel Comic Collection – Android app with Room DB and Retrofit"
+  ]
+}
