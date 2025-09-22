@@ -14,6 +14,7 @@ export interface ExperienceItem {
 }
 
 export interface Resume {
+    icon: string;
     name: string;
     tagline: string;
     contact: Contact;
