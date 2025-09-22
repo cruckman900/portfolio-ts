@@ -1,0 +1,18 @@
+@import 'base.scss';
+
+.header {
+  h1 {
+    color: $accent;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .tagline {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $accent;
+    text-decoration: none;
+  }
+}
