@@ -5,6 +5,7 @@ import Header from '../components/Header';
 // import Section from '../components/Section';
 // import Experience from '../components/Experience';
 // import Projects from '../components/Projects';
+import '../styles/main.scss';
 
 export default function Home() {
     const [resume, setResume] = useState<Resume | null>(null);

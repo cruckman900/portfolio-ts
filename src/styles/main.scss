@@ -1,0 +1,26 @@
+$bg: #121212;
+$text: #e0e0e0;
+$accent: #39FF14;
+
+body {
+  background-color: $bg;
+  color: $text;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  h1 {
+    color: $accent;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .tagline {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $accent;
+    text-decoration: none;
+  }
+}
