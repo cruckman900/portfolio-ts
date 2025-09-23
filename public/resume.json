@@ -1,4 +1,5 @@
 {
+  "icon": "fa-solid fa-dragon",
   "name": "Christopher Ruckman",
   "tagline": "Transforming adversity into code, verse, and advocacy",
   "contact": {
@@ -9,8 +10,8 @@
     "github": "https://github.com/cruckman900"
   },
   "skills": [
-    "React", "Next.js", "Node.js", "ASP.NET", "Photoshop", "Blender",
-    "Legal Research", "Poetic Writing", "Strategic Problem Solving"
+    {"section": "Web & App Development", "content": "React, Next.js, Node.js, ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful/Web API, Android (Java/Kotlin), iOS (Swift)"},
+    {"section": "abc", "content": "def"}
   ],
   "education": [
     "BS – Computer Science, Wheeling Jesuit University",

@@ -6,6 +6,10 @@ export interface Contact {
     github: string;
 }
 
+export interface Skill {
+    section: string;
+    content: string;
+}
 export interface ExperienceItem {
     title: string;
     company: string;
@@ -18,7 +22,7 @@ export interface Resume {
     name: string;
     tagline: string;
     contact: Contact;
-    skills: string[];
+    skills: Skill[];
     education: string[];
     summary: string;
     achievements: string[];

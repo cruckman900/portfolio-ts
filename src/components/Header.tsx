@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({ icon, name, tagline, contact }) => (
-    <header>
+    <header className="header">
         <h1><span className="no-print"><i className={icon}></i></span>{name}</h1>
         <p>{tagline}</p>
         <ul>

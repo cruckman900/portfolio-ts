@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { Resume } from '../types/resume';
 import Header from '../components/Header';
-// import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Sidebar';
 // import Section from '../components/Section';
 // import Experience from '../components/Experience';
 // import Projects from '../components/Projects';
@@ -19,6 +19,9 @@ export default function Home() {
     if (!resume) return <div>Loading...</div>;
 
     return (
-        <Header icon={resume.icon} name={resume.name} tagline={resume.tagline} contact={resume.contact} />
+        <div className="left-container">
+            <Header icon={resume.icon} name={resume.name} tagline={resume.tagline} contact={resume.contact} />
+            <Sidebar skills={resume.skills} education={resume.education} />
+        </div>
     )
 }

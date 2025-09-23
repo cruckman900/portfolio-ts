@@ -1,8 +1,13 @@
-@import 'base.scss';
+@use 'base';
 
 .header {
+    width: 30%;
+    background-color: base.$sidebar-bg;
+    padding: 0 1em;
+    color: base.$text;
+
   h1 {
-    color: $accent;
+    color: base.$accent;
     font-family: 'Oswald', sans-serif;
   }
 
@@ -12,7 +17,7 @@
   }
 
   a {
-    color: $accent;
+    color: base.$accent;
     text-decoration: none;
   }
 }
