@@ -20,7 +20,7 @@ const Sidebar: React.FC<Props> = ({ skills, education }) => (
             )
         )}
 
-        <h2>Education</h2>
+        <h2 className='pb-before'>Education</h2>
         <ul>{education.map((edu, i) => <li key={i}>{edu}</li>)}</ul>
     </aside>
 );

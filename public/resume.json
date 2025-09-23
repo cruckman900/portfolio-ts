@@ -11,7 +11,12 @@
   },
   "skills": [
     {"section": "Web & App Development", "content": "React, Next.js, Node.js, ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful/Web API, Android (Java/Kotlin), iOS (Swift)"},
-    {"section": "abc", "content": "def"}
+    {"section": "Game Development", "content": "Unity (C#), Unreal Engine (C++, Blueprints)"},
+    {"section": "Database", "content": "MS SQL, MySql, MongoDB"},
+    {"section": "Creative Design", "content": "Photoshop, Illustrator, Blender, Figma, GIMP, Krita"},
+    {"section": "Technical Problem Solving", "content": "Debugging, cross-domain synthesis, strategic planning, Agile/Scrum"},
+    {"section": "Legal Research & Advocacy", "content": "Fraud investigation, documentation strategy, state-level alerts"},
+    {"section": "Publishing & Writing", "content": "Poetic and philosophical writing, book cover creation, thematic series development"}
   ],
   "education": [
     "BS – Computer Science, Wheeling Jesuit University",

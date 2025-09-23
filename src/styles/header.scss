@@ -3,43 +3,46 @@
 .header {
     background-color: base.$sidebar-bg;
     color: base.$text;
+    margin: 0;
     padding: 2rem 2rem 0 2rem;
 
-  h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    color: base.$accent;
-  }
-
-  .tagline {
-    font-style: italic;
-    margin-bottom: 1rem;
-  }
-
-  a {
-    color: base.$accent;
-    text-decoration: none;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-
-    li {
-        margin-bottom: 0.5rem;
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2rem;
+        color: base.$accent;
     }
-  }
+
+    .tagline {
+        font-style: italic;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: base.$accent;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
 
     @media print {
         background-color: white;
-        color: black;
+        color: base.$print-text;
+        margin: 0;
+        padding: 0 1rem;
 
         h1 {
-            color: black;
+            color: base.$print-text;
         }
 
         a {
-            color: black;
+            color: base.$print-text;
         }
 
         .no-print {
