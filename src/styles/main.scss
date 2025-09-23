@@ -6,6 +6,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+
+    @media print {
+        background-color: white;
+        color: black;
+    }
 }
 
 i {
@@ -25,7 +30,7 @@ i {
 }
 
 .sidebar-container {
-    min-width: 20rem;
+    min-width: 18rem;
     width: 30%;
 }
 

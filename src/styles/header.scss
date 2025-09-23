@@ -2,8 +2,8 @@
 
 .header {
     background-color: base.$sidebar-bg;
-    padding: 2rem 2rem 0 2rem;
     color: base.$text;
+    padding: 2rem 2rem 0 2rem;
 
   h1 {
     font-family: 'Oswald', sans-serif;
@@ -29,4 +29,21 @@
         margin-bottom: 0.5rem;
     }
   }
+
+    @media print {
+        background-color: white;
+        color: black;
+
+        h1 {
+            color: black;
+        }
+
+        a {
+            color: black;
+        }
+
+        .no-print {
+            display: none;
+        }
+    }
 }
