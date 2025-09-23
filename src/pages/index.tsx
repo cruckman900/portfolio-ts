@@ -6,6 +6,7 @@ import Section from '../components/Section';
 import Achievements from '@/components/Achievements';
 import Experience from '../components/Experience';
 // import Projects from '../components/Projects';
+import Layout from '@/components/Layout';
 import '../styles/main.scss';
 
 export default function Home() {
@@ -23,8 +24,9 @@ export default function Home() {
         <div className='container'>
             <div className="sidebar-container">
                 <aside>
-                    <Header icon={resume.icon} name={resume.name} tagline={resume.tagline} contact={resume.contact} />
-                    <Sidebar skills={resume.skills} education={resume.education} />
+                    <Sidebar skills={resume.skills} education={resume.education}>
+                        <Header icon={resume.icon} name={resume.name} tagline={resume.tagline} contact={resume.contact} />
+                    </Sidebar>
                 </aside>
             </div>
             <div className="content-container">
@@ -42,4 +44,9 @@ export default function Home() {
             </div>
         </div>
     )
-}
+};
+
+// Define a custom layout for this page
+Home.getLayout = function getLayout(page: React.ReactElement) {
+    return <Layout>{page}</Layout>
+};

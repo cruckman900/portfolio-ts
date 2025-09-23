@@ -1,12 +1,20 @@
 import { AppProps } from 'next/app';
-import Layout from '../components/Layout';
+import { Fragment } from 'react';
+import type { Page } from '../types/page';
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
-    // Check if the page has a custom layout
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const getLayout = (Component as any).getLayout || ((page: React.ReactNode) => <Layout>{page}</Layout>)
+type Props = AppProps & {
+    Component: Page;
+};
 
-    return getLayout(<Component {...pageProps} />);
+const MyApp = ({ Component, pageProps }: Props) => {
+    const getLayout = Component.getLayout ?? (page => page);
+    const Layout = Component.layout ?? Fragment;
+
+    return (
+        <Layout>
+            {getLayout(<Component {...pageProps} />)}
+        </Layout>
+    )
 }
 
 export default MyApp;

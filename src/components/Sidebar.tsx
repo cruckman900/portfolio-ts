@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Section from './Section';
 import { Skill, Education } from '@/types/resume';
 
@@ -7,10 +7,13 @@ import '../styles/sidebar.scss';
 interface Props {
     skills: Skill[];
     education: Education[];
+    children: ReactNode;
 };
 
-const Sidebar: React.FC<Props> = ({ skills, education }) => (
+const Sidebar: React.FC<Props> = ({ skills, education, children }) => (
     <div className="sidebar">
+        {children}
+
         <Section class_from_parent="" title="Core Competencies" icon="fas fa-key">
             <>
             {skills.map((skill, i) => 

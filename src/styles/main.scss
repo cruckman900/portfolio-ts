@@ -1,7 +1,7 @@
 @use 'base';
 
 body {
-    background-color: base.$bg;
+    background-color: base.$light-bg;
     color: base.$text;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -34,14 +34,9 @@ i {
 }
 
 .sidebar-container {
-    background-color: base.$sidebar-bg;
     min-height: 100vh;
     min-width: 18rem;
     width: 30%;
-
-    aside {
-        background-color: base.$sidebar-bg;
-    }
 
     @media screen and (max-width: 500px) {
         width: 100%
@@ -52,6 +47,7 @@ i {
     max-width: 70%;
 
     main {
+        background-color: base.$dark-bg;
         padding: 2rem;
         padding-top: 2.5rem;
 
@@ -76,12 +72,15 @@ i {
     }
 
     @media screen and (max-width: 500px) {
-        width: 100%;
-        padding: 0 2rem;
+        main {
+            background-color: base.$light-bg;
+            width: 100%;
+            padding: 0 2rem;
 
-        Section {
-            padding: 0;
-            width: calc(100vw - 4rem);
+            Section {
+                padding: 0;
+                width: calc(100vw - 4rem);
+            }
         }
     }
 }

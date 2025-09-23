@@ -50,13 +50,62 @@
   ],
   "experience": [
     {
-      "title": "Software Engineer",
+      "title": "Android Developer",
       "company": "Walmart, Google, Wayfair (Contracts via Enhance IT)",
       "dates": "Sept 2020 – Feb 2022",
       "details": [
         "Developed Android apps using Java/Kotlin and Chromecast SDK",
         "Built MVVM-based e-commerce features",
         "Created unit tests and conducted code reviews"
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "company": "Murray Energy Corporation",
+      "dates": "Apr 2018 – Feb 2020 & Nov 2016 – Aug 2017",
+      "details": [
+        "Designed ERP systems and asset tracking modules using ASP.NET MVC/Web Forms",
+        "Built Web API 2 modules and automated SQL migrations",
+        "Created testing software and configuration screens for CIMS"
+      ]
+    },
+    {
+      "title": "Full-Stack Developer",
+      "company": "Challenger Learning Center",
+      "dates": "Jan 2018 – May 2019 & Nov 2013 – Jan 2017",
+      "details": [
+        "Built real-time communications apps using ASP.NET Core, SignalR, and Razor",
+        "Created interactive maps and administrative backends",
+        "Developed Flash/ActionScript interfaces and RESTful APIs"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Mortgage Connect LP",
+      "dates": "Nov 2017 – Jan 2018",
+      "details": [
+        "Enhanced banking modules and resolved client-reported defects",
+        "Built ad-hoc SQL queries and scrubbed erroneous data"
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": "Center for Educational Technologies",
+      "dates": "Sept 2008 – Sept 2013",
+      "details": [
+        "Led development of animated simulations and distance learning platforms",
+        "Built WCF services and administered Joomla sites for NASA groups"
+      ]
+    },
+    {
+      "title": "Developer",
+      "company": "Prosite Business Solutions",
+      "dates": "Jan 2005 – Feb 2010",
+      "details": [
+        "Migrated Classic ASP to ASP.NET Web Forms",
+        "Built scheduling, accounting, and inventory modules",
+        "Built custom browser for web scraping",
+        "Supported OhioValleyOnline CMS with PayPal integration"
       ]
     }
   ],

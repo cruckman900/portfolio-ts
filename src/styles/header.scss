@@ -1,10 +1,9 @@
 @use 'base';
 
 .header {
-    background-color: base.$sidebar-bg;
     color: base.$text;
     margin: 0;
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem 0;
 
     h1 {
         font-family: 'Oswald', sans-serif;
@@ -31,11 +30,15 @@
         }
     }
 
+    @media screen and (max-width: 500px) {
+        padding: 0;
+    }
+
     @media print {
         background-color: white;
         color: base.$print-text;
         margin: 0;
-        padding: 0 1rem;
+        padding: 0;
 
         h1 {
             color: base.$print-accent;
