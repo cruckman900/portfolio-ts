@@ -30,6 +30,8 @@ i {
 }
 
 .sidebar-container {
+    height: 100vh;
+    background-color: base.$sidebar-bg;
     min-width: 18rem;
     width: 30%;
 }

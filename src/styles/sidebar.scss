@@ -1,15 +1,9 @@
 @use 'base';
 
 .sidebar {
-    height: 100vh;
-    background-color: base.$sidebar-bg;
     color: base.$text;
     margin: 0;
     padding: 0 2rem;
-
-    h2 {
-        margin: .25rem 0;
-    }
 
     &-content {
         padding-bottom: 0.5rem;
@@ -21,21 +15,11 @@
     }
 
     @media print {
-        background-color: white;
         color: base.$print-text;
         padding: 0 1rem;
 
         h2 {
             font-size: 1.25rem;
-            color: base.$print-text;
-        }
-
-        &-content {
-            color: base.$print-text;
-
-            h3 {
-                color: base.$print-text;
-            }
         }
 
         .pb-before {

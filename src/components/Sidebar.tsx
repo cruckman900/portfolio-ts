@@ -14,7 +14,7 @@ const Sidebar: React.FC<Props> = ({ skills, education }) => (
         {skills.map((skill, i) => 
             (
                 <div className='sidebar-content' key={i}>
-                    <h3><strong>{skill.section}</strong></h3>
+                    <h3>{skill.section}</h3>
                     <div>{skill.content}</div>
                 </div>
             )
