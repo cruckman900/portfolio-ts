@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Section from '../components/Section';
 import Achievements from '@/components/Achievements';
-// import Experience from '../components/Experience';
+import Experience from '../components/Experience';
 // import Projects from '../components/Projects';
 import '../styles/main.scss';
 
@@ -34,6 +34,9 @@ export default function Home() {
                     </Section>
                     <Section class_from_parent="" title="Selected Achievements" icon="fas fa-star">
                         <Achievements achievements={resume.achievements} />
+                    </Section>
+                    <Section class_from_parent="pb-before" title="Professional Experience" icon="fas fa-briefcase">
+                        <Experience experience={resume.experience} />
                     </Section>
                 </main>
             </div>

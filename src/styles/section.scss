@@ -9,9 +9,16 @@ section {
 
     @media print {
         color: base.$print-text;
+        page-break-inside: avoid;
 
         h2 {
             font-size: 1.25rem;
         }
+    }
+}
+
+@media print {
+    .pb-before {
+        page-break-before: always;
     }
 }
