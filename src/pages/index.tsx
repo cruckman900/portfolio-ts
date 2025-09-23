@@ -8,6 +8,7 @@ import Experience from '../components/Experience';
 // import Projects from '../components/Projects';
 import Layout from '@/components/Layout';
 import '../styles/main.scss';
+import ProjectList from '@/components/ProjectList';
 
 export default function Home() {
     const [resume, setResume] = useState<Resume | null>(null);
@@ -39,6 +40,9 @@ export default function Home() {
                     </Section>
                     <Section class_from_parent="pb-before" title="Professional Experience" icon="fas fa-briefcase">
                         <Experience experience={resume.experience} />
+                    </Section>
+                    <Section class_from_parent="" title="Personal Projects" icon="fas fa-code">
+                        <ProjectList projectsList={resume.projects} />
                     </Section>
                 </main>
             </div>

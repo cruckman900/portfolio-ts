@@ -29,6 +29,23 @@ export interface ExperienceItem {
     details: string[];
 }
 
+export interface Repo {
+    label: string;
+    url: string;
+}
+export interface ProjectItem {
+    name: string;
+    description: string;
+    url: string;
+    tech: string;
+    repos: Repo[];
+}
+
+export interface ProjectsList {
+    genre: string;
+    projects: ProjectItem[];
+}
+
 export interface Resume {
     icon: string;
     name: string;
@@ -39,5 +56,5 @@ export interface Resume {
     summary: string;
     achievements: Achievement[];
     experience: ExperienceItem[];
-    projects: string[];
+    projects: ProjectsList[];
 }

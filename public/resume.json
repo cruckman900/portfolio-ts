@@ -110,8 +110,76 @@
     }
   ],
   "projects": [
-    "ChatterboxSM – Real-time platform (React, Node.js, MySQL)",
-    "Prey and Predator – Unreal Engine 5 open-world game",
-    "Marvel Comic Collection – Android app with Room DB and Retrofit"
+    {
+      "genre": "Course Projects",
+      "projects": [
+        {
+          "name": "BOOKIT",
+          "description": "Rental property listings with booking feature and admin pages",
+          "url": "",
+          "tech": "Next.JS, TypeScript, Bootstrap, mongoose, MongoDB, Redux, bcrypt, crypto, next-auth, nodemailer, node-geocoder, MapQuest, react-datepicker, Moment.js",
+          "repos": [
+            {"label": "SOURCE CODE", "url": "https://github.com/cruckman900/BookIT"}
+          ]
+        },
+        {
+          "name": "ContactsManager",
+          "description": "Contacts manager app",
+          "url": "",
+          "tech": "ASP.NET Core, MVC, EntityFrameworkCore, Dependency Injection, Web API, XUnit, Moq, Serilog",
+          "repos": [
+            {"label": "SOURCE CODE", "url": "https://github.com/cruckman900/BookIT"}
+          ]
+        }
+      ]
+    },
+    {
+      "genre": "Personal Projects",
+      "projects": [
+        {
+          "name": "cruckman2.0",
+          "description": "New version of my personal portfolio website",
+          "url": "https://cruckman.com",
+          "tech": "ReactJS, SASS, three.js, react-three/drei, react-three/fiber, WaveSurfer",
+          "repos": [
+            {"label": "SOURCE CODE", "url": "https://github.com/cruckman900/cruckman2.0"}
+          ]
+        },
+        {
+          "name": "portfolio-ts",
+          "description": "This stunning resume",
+          "url": "",
+          "tech": "Next.js, TypeScript, SASS",
+          "repos": [
+            {"label": "SOURCE CODE", "url": "https://github.com/cruckman900/cruckman2.0"}
+          ]
+        },
+        {
+          "name": "ChatterboxSM",
+          "description": "React and Node Chat application",
+          "url": "",
+          "tech": "ReactJS, module.css, Node.js, MySQL, express, axios",
+          "repos": [
+            {"label": "FRONT END", "url": "https://github.com/cruckman900/chatterboxsm.com"},
+            {"label": "API", "url": "https://github.com/cruckman900/chatterboxsm-api"},
+            {"label": "MAILER", "url": "https://github.com/cruckman900/chatterboxsm-mailer"}
+          ]
+        }
+      ]
+    },
+    {
+      "genre": "Collaboration Projects",
+      "projects": [
+        {
+          "name": "InterTrade Solutions",
+          "description": "An E-commerce website I was working on with an online group",
+          "url": "",
+          "tech": "Next.JS, TypeScript, TailwindCSS, Node.JS, prisma, MySQL",
+          "repos": [
+            {"label": "SOURCE CODE", "url": "https://github.com/cruckman900/BookIT"}
+          ]
+        }
+      ]
+    }
   ]
 }

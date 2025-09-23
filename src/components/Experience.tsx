@@ -1,9 +1,9 @@
-import { ExperienceItem } from '@/types/resume';
 import React from 'react';
+import { ExperienceItem } from '@/types/resume';
 
 interface Props {
     experience: ExperienceItem[];
-}
+};
 
 const Achievements: React.FC<Props> = ({ experience }) => (
     <>
@@ -21,6 +21,6 @@ const Achievements: React.FC<Props> = ({ experience }) => (
         )
     )}
     </>
-)
+);
 
 export default Achievements;
