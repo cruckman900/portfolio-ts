@@ -10,23 +10,43 @@
     "github": "https://github.com/cruckman900"
   },
   "skills": [
-    {"section": "Web & App Development", "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful / Web API, React, Next.js, Node.js, Android (Java/Kotlin), iOS (Swift)"},
+    {"section": "Web & App Development", "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful / Web API, React, Next.js, Node.js"},
     {"section": "Game Development", "content": "Unity (C#), Unreal Engine (C++, Blueprints)"},
     {"section": "Database", "content": "Microsoft SQL, MySql, MongoDB"},
-    {"section": "Creative Design", "content": "Photoshop, Illustrator, Blender, Figma, GIMP, Krita"},
+    {"section": "Creative Design", "content": "Photoshop, Blender"},
     {"section": "Technical Problem Solving", "content": "Debugging, cross-domain synthesis, strategic planning, Agile/Scrum"},
     {"section": "Legal Research & Advocacy", "content": "Fraud investigation, documentation strategy, state-level alerts"},
     {"section": "Publishing & Writing", "content": "Poetic and philosophical writing, book cover creation, thematic series development"}
   ],
   "education": [
-    {"school": "Wheeling Jesuit University", "url": "https://wheeling.edu", "degree": "BS – Computer Science", "dates": "2005 - 2008"},
-    {"school": "WV Northern Community College", "url": "https://www.wvncc.edu", "degree": "AAS – Computer Programming & System Development", "dates": "2003 - 2005"}
+    {"school": "Wheeling Jesuit University", "url": "https://wheeling.edu", "degree": "BS – Computer Science", "dates": "2005 – 2008"},
+    {"school": "WV Northern Community College", "url": "https://www.wvncc.edu", "degree": "AAS – Computer Programming & System Development", "dates": "2003 – 2005"}
   ],
-  "summary": "Resilient, resourceful, and reflective—my work bridges technical precision with poetic depth...",
+  "summary": "Resilient, resourceful, and reflective—my work bridges technical precision with poetic depth. I transform adversity into insight, whether through code, advocacy, or verse. With over 20 years of experience in full-stack development, creative publishing, and legal research, I build systems and stories that warn, uplift, and endure—all forged during a period of personal constraint and creative urgency.",
   "achievements": [
-    "Published three books including Failure at Fifty",
-    "Exposed fraudulent lawsuit in Ohio",
-    "Completed Udemy courses in .NET Core, React, Blender, Photoshop, Unreal, Unity"
+    {
+        "category": "Published Author", 
+        "items": [
+            "Released three books exploring themes of struggle, warning, and transformation",
+            "Designed covers and poetic blurbs with a raw, biohazard-inspired aesthetics",
+            "Built a cohesive series while navigating life on Social Security Disability"
+        ]
+    },
+    {
+        "category": "Legal Advocate", 
+        "items": [
+            "Exposed fraudulent lawsuit in Ohio through independent research and documentation.",
+            "Drafted formal documentation and coordinated outreach to state authorities",
+            "Demonstrated clarity and grit in navigating complex legal terrain"
+        ]
+    },
+    {
+        "category": "Self-Taught Technologist", 
+        "items": [
+            "Completed Udemy courses in ASP.NET, .NET Core, React, Next.js, Node.js, Blender, Photoshop, Unreal, and Unity",
+            "Applied skills to personal projects, including ChatterboxSM, Prey and Predator, and Operation Montserrat"
+        ]
+    }
   ],
   "experience": [
     {

@@ -1,0 +1,17 @@
+@use 'base';
+
+section {
+    @media screen and (max-width: 500px) {
+        h2 {
+            width: 100%;
+        }
+    }
+
+    @media print {
+        color: base.$print-text;
+
+        h2 {
+            font-size: 1.25rem;
+        }
+    }
+}

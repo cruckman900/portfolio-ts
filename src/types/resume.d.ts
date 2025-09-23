@@ -14,8 +14,13 @@ export interface Skill {
 export interface Education {
     school: string;
     url: string;
-    degree: string,
+    degree: string;
     dates: string;
+}
+
+export interface Achievement {
+    category: string;
+    items: string[];
 }
 export interface ExperienceItem {
     title: string;
@@ -32,7 +37,7 @@ export interface Resume {
     skills: Skill[];
     education: Education[];
     summary: string;
-    achievements: string[];
+    achievements: Achievement[];
     experience: ExperienceItem[];
     projects: string[];
 }

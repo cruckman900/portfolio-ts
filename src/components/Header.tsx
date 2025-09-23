@@ -17,8 +17,8 @@ const Header: React.FC<Props> = ({ icon, name, tagline, contact }) => (
             <li><i className="fas fa-map-marker-alt"></i>{contact.location}</li>
             <li><i className="fas fa-envelope"></i><a href={`mailto:${contact.email}`}>{contact.email}</a></li>
             <li><i className="fas fa-phone"></i><a href={`tel:+1${contact.phone.replace(/[\s()-]/g, "")}`}>{contact.phone}</a></li>
-            <li><i className="fas fa-globe"></i><a href={contact.website}>{contact.website.substring(8)}</a></li>
-            <li><i className="fab fa-github"></i><a href={contact.github}>{contact.github.substring(8)}</a></li>
+            <li><i className="fas fa-globe"></i><a href={contact.website} target='_blank'>{contact.website.substring(8)}</a></li>
+            <li><i className="fab fa-github"></i><a href={contact.github} target='_blank'>{contact.github.substring(8)}</a></li>
         </ul>
     </header>
 );

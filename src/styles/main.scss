@@ -9,7 +9,7 @@ body {
 
     @media print {
         background-color: white;
-        color: black;
+        color: base.$print-text;
     }
 }
 
@@ -22,6 +22,10 @@ i {
     display: flex;
     flex-direction: row;
     max-height: 100vh;
+
+    @media screen and (max-width: 500px) {
+        display: block;
+    }
 }
 
 .sidebar-container, .content-container {
@@ -30,13 +34,54 @@ i {
 }
 
 .sidebar-container {
-    height: 100vh;
     background-color: base.$sidebar-bg;
+    min-height: 100vh;
     min-width: 18rem;
     width: 30%;
+
+    aside {
+        background-color: base.$sidebar-bg;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 100%
+    }
 }
 
 .content-container {
-    width: 70%;
-    padding: 2rem;
+    max-width: 70%;
+
+    main {
+        padding: 2rem;
+        padding-top: 2.5rem;
+
+        Section {
+            h2 {
+                color: base.$accent;
+
+                @media print {
+                    color: base.$print-text;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        @media print {
+            padding: 0.5rem;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        padding: 0 2rem;
+
+        Section {
+            padding: 0;
+            width: calc(100vw - 4rem);
+        }
+    }
 }
