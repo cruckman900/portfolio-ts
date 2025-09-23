@@ -10,17 +10,17 @@
     "github": "https://github.com/cruckman900"
   },
   "skills": [
-    {"section": "Web & App Development", "content": "React, Next.js, Node.js, ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful/Web API, Android (Java/Kotlin), iOS (Swift)"},
+    {"section": "Web & App Development", "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful / Web API, React, Next.js, Node.js, Android (Java/Kotlin), iOS (Swift)"},
     {"section": "Game Development", "content": "Unity (C#), Unreal Engine (C++, Blueprints)"},
-    {"section": "Database", "content": "MS SQL, MySql, MongoDB"},
+    {"section": "Database", "content": "Microsoft SQL, MySql, MongoDB"},
     {"section": "Creative Design", "content": "Photoshop, Illustrator, Blender, Figma, GIMP, Krita"},
     {"section": "Technical Problem Solving", "content": "Debugging, cross-domain synthesis, strategic planning, Agile/Scrum"},
     {"section": "Legal Research & Advocacy", "content": "Fraud investigation, documentation strategy, state-level alerts"},
     {"section": "Publishing & Writing", "content": "Poetic and philosophical writing, book cover creation, thematic series development"}
   ],
   "education": [
-    "BS – Computer Science, Wheeling Jesuit University",
-    "AAS – Programming & Systems, WV Northern Community College"
+    {"school": "Wheeling Jesuit University", "url": "https://wheeling.edu", "degree": "BS – Computer Science", "dates": "2005 - 2008"},
+    {"school": "WV Northern Community College", "url": "https://www.wvncc.edu", "degree": "AAS – Computer Programming & System Development", "dates": "2003 - 2005"}
   ],
   "summary": "Resilient, resourceful, and reflective—my work bridges technical precision with poetic depth...",
   "achievements": [

@@ -6,7 +6,7 @@ import '../styles/sidebar.scss';
 interface Props {
     skills: Skill[];
     education: string[];
-}
+};
 
 const Sidebar: React.FC<Props> = ({ skills, education }) => (
     <aside className="sidebar">

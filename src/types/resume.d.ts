@@ -10,6 +10,13 @@ export interface Skill {
     section: string;
     content: string;
 }
+
+export interface Education {
+    school: string;
+    url: string;
+    degree: string,
+    dates: string;
+}
 export interface ExperienceItem {
     title: string;
     company: string;
