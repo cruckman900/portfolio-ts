@@ -11,6 +11,15 @@
         h3 {
             font-size: 1rem;
             margin: 0;
+
+            a {
+                color: base.$accent;
+                text-decoration: none;
+
+                @media print {
+                    color: base.$print-text;
+                }
+            }
         }
     }
 

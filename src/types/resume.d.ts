@@ -30,7 +30,7 @@ export interface Resume {
     tagline: string;
     contact: Contact;
     skills: Skill[];
-    education: string[];
+    education: Education[];
     summary: string;
     achievements: string[];
     experience: ExperienceItem[];

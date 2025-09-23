@@ -1,11 +1,11 @@
 import React from 'react';
-import { Skill } from '@/types/resume';
+import { Skill, Education } from '@/types/resume';
 
 import '../styles/sidebar.scss';
 
 interface Props {
     skills: Skill[];
-    education: string[];
+    education: Education[];
 };
 
 const Sidebar: React.FC<Props> = ({ skills, education }) => (
@@ -21,7 +21,15 @@ const Sidebar: React.FC<Props> = ({ skills, education }) => (
         )}
 
         <h2 className='pb-before'>Education</h2>
-        <ul>{education.map((edu, i) => <li key={i}>{edu}</li>)}</ul>
+        {education.map((edu, i) => 
+            (
+                <div className='sidebar-content' key={i}>
+                    <h3><a href={edu.url}>{edu.school}</a></h3>
+                    <div>{edu.degree}</div>
+                    <div><i>{edu.dates}</i></div>
+                </div>
+            )
+        )}
     </aside>
 );
 
