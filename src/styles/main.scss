@@ -60,7 +60,7 @@ i {
                 color: base.$accent;
 
                 @media print {
-                    color: base.$print-text;
+                    color: base.$print-accent;
                 }
             }
         }

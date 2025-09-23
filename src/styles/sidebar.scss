@@ -7,6 +7,12 @@
 
     Section {
         padding: 0;
+
+        @media print {
+            h2 {
+                color: base.$print-accent;
+            }
+        }
     }
 
     &-content {
