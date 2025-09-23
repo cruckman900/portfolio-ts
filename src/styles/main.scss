@@ -8,8 +8,27 @@ body {
     padding: 0;
 }
 
-.left-container {
+i {
+    min-width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.sidebar-container, .content-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+}
+
+.sidebar-container {
+    min-width: 20rem;
+    width: 30%;
+}
+
+.content-container {
+    width: 70%;
 }

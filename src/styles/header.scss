@@ -1,14 +1,14 @@
 @use 'base';
 
 .header {
-    width: 30%;
     background-color: base.$sidebar-bg;
-    padding: 0 1em;
+    padding: 2rem 2rem 0 2rem;
     color: base.$text;
 
   h1 {
-    color: base.$accent;
     font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: base.$accent;
   }
 
   .tagline {
@@ -19,5 +19,14 @@
   a {
     color: base.$accent;
     text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+        margin-bottom: 0.5rem;
+    }
   }
 }
