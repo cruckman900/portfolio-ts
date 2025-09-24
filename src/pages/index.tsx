@@ -13,6 +13,11 @@ import ProjectList from '@/components/ProjectList';
 export default function Home() {
     const [resume, setResume] = useState<Resume | null>(null);
 
+    const projectsLink = [
+        "/projects",
+        "fas fa-plus"
+    ]
+
     useEffect(() => {
         fetch('/resume.json')
             .then(res => res.json())
@@ -41,7 +46,7 @@ export default function Home() {
                     <Section class_from_parent="pb-before" title="Professional Experience" icon="fas fa-briefcase">
                         <Experience experience={resume.experience} />
                     </Section>
-                    <Section class_from_parent="" title="Personal Projects" icon="fas fa-code">
+                    <Section class_from_parent="" title="Personal Projects" icon="fas fa-code" link={projectsLink}>
                         <ProjectList projectsList={resume.projects} />
                     </Section>
                 </main>

@@ -1,6 +1,24 @@
 @use 'base';
 
 section {
+    h2 {
+        a {
+            margin-left: 1rem;
+
+            i {
+                border: solid 1px base.$accent;
+                border-radius: 0.25rem;
+                background-color: base.$accent;
+                color: base.$dark-bg;
+            }
+
+            &:hover {
+                i {
+                    border: solid 1px white;
+                }
+            }
+        }
+    }
     @media screen and (max-width: 500px) {
         h2 {
             width: 100%;
@@ -13,6 +31,10 @@ section {
 
         h2 {
             font-size: 1.25rem;
+
+            a {
+                display: none;
+            }
         }
     }
 }

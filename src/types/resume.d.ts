@@ -58,3 +58,8 @@ export interface Resume {
     experience: ExperienceItem[];
     projects: ProjectsList[];
 }
+
+export interface NavBarLink {
+    url: string;
+    label: string;
+}

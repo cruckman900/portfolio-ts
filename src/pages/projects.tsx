@@ -1,13 +1,16 @@
 import Layout from "@/components/Layout";
-import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import "../styles/projects.scss";
 
 export default function Projects() {
+    const navbarlinks = [
+        {url: "/", label: "Back to Resume"}
+    ]
+
     return (
         <>
-        <nav>
-            <Link href="/">Back to Resume</Link>
-        </nav>
-        <div>Hello world!</div>
+        <Navbar className="navbar" navbarlinks={navbarlinks} />
+        <div className="projects">Hello world!</div>
         </>
     );
 }

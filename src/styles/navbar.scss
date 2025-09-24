@@ -1,0 +1,51 @@
+@use 'base';
+
+.navbar {
+    display: flex;
+    float: row;
+    background-color: base.$accent;
+    height: 4rem;
+    padding: 0;
+    margin: 0;
+
+    @media screen and (max-width: 500px) {
+        height: 3rem;
+    }
+
+    .brand {
+        margin: auto;
+        margin-bottom: 0.5rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+        color: base.$dark-bg;
+
+        i {
+            margin-right: 1rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 1.25rem;
+        }
+    }
+
+    .link {
+        // padding: 1.5rem 0 .5rem 2rem;
+        margin: auto;
+        margin-bottom: 0.5rem;
+        margin-right: 2rem;
+        
+        &-text {
+            font-size: 1.5rem;
+            color: base.$dark-bg;;
+            text-decoration: none;
+
+            &:hover {
+                color: base.$print-text;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
