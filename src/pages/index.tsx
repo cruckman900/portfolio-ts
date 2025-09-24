@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Link from "next/link";
 import "../styles/index.scss";
 
 export default function Projects() {
@@ -7,9 +8,9 @@ export default function Projects() {
             <section>
                 <h1 className="glitch-text">Failure at Fifty</h1>
                 <p className="subtext">A legacy forged from warning, resilience, and code.</p>
-                <a href="/resume" className="cta-button">View Resume</a>
+                <Link href="/resume" className="cta-button">View Resume</Link>
                 &nbsp; | &nbsp; 
-                <a href="/books" className="cta-button alt">Explore Books</a>
+                <Link href="/books" className="cta-button alt">Explore Books</Link>
             </section>
             <section className="about">
                 <h2>Who I Am</h2>
@@ -34,17 +35,17 @@ export default function Projects() {
                 <div className="project-card">
                 <h3>Failure at Fifty</h3>
                 <p>A poetic warning system disguised as a book.</p>
-                <a href="/books/failure-at-fifty">Read More →</a>
+                <Link href="/books/failure-at-fifty">Read More →</Link>
                 </div>
                 <div className="project-card">
                 <h3>Legal Advocacy Platform</h3>
                 <p>Exposing fraudulent lawsuits through documentation and alerts.</p>
-                <a href="/advocacy">Explore →</a>
+                <Link href="/advocacy">Explore →</Link>
                 </div>
                 <div className="project-card">
                 <h3>Modular Resume Site</h3>
                 <p>Built with Next.js, TypeScript, and SASS. Fully responsive.</p>
-                <a href="/resume">View →</a>
+                <Link href="/resume">View →</Link>
                 </div>
             </div>
             </section>
