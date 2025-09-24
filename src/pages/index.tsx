@@ -6,7 +6,7 @@ export default function Projects() {
     return (
         <div className="index">
             <section>
-                <h1 className="glitch-text">Failure at Fifty</h1>
+                <h1>Failure at Fifty</h1>
                 <p className="subtext">A legacy forged from warning, resilience, and code.</p>
                 <Link href="/resume" className="cta-button">View Resume</Link>
                 &nbsp; | &nbsp; 

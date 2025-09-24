@@ -24,6 +24,7 @@ const PageTransition: React.FC<Props> = ({ children }) => {
 
       return () => clearTimeout(timeout);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.pathname]);
 
 

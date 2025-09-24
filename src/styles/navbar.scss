@@ -41,11 +41,11 @@
         
         &-text {
             font-size: 1.5rem;
-            color: var(--text);
+            color: var(--alt-text);
             text-decoration: none;
 
             &:hover {
-                color: var(--accent);
+                color: var(--accent-dark);
             }
 
             &-active {
@@ -84,9 +84,9 @@
         display: none;
     }
 }
-[data-theme='dark'] .navbar {
-    background-color: var(--accent-dark);
-}
+// [data-theme='dark'] .navbar {
+//     background-color: var(--accent-dark);
+// }
 
 @media screen and (max-width: 500px) {
     .mobile-menu {

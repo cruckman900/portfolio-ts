@@ -2,6 +2,7 @@ $light-theme: (
     bg: #ffffff,
     bg-secondary: #f0f0f0,
     text: #111111,
+    alt-text: #222222,
     accent: #39ff14,
     accent-dark: #009900
 );
@@ -10,15 +11,18 @@ $dark-theme: (
     bg: #121212,
     bg-secondary: #1e1e1e,
     text: #e0e0e0,
+    alt-text: #f5f5f5,
     accent: #39ff14,
-    accent-dark: #009900
+    accent-dark: #143300
 );
 
 $hazard-theme: (
     bg: #0f0f0f,
     bg-secondary: #1a1a1a,
-    text: #f5f5f5,
-    accent: #ffd700
+    text: #e0e0e0,
+    alt-text: #fffbcc,
+    accent: #ffd700,
+    accent-dark: #332200
 );
 
 body {
@@ -30,9 +34,10 @@ body {
 a {
     color: var(--accent);
     transition: color 0.4s ease;
-}
-[data-theme='light'], [data-theme='dark'] a {
-    color: var(--accent-dark);
+
+    &-:hover {
+        color: var(--accent-dark);
+    }
 }
 
 h1 {
