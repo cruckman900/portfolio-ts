@@ -3,7 +3,7 @@
 .navbar {
     display: flex;
     float: row;
-    background-color: base.$accent;
+    background-color: var(--accent);
     font-family: 'Open Sans', sans-serif;
     height: 4rem;
     padding: 0;
@@ -11,6 +11,10 @@
 
     @media screen and (max-width: 500px) {
         height: 3rem;
+
+        .switcher {
+            display: none;
+        }
     }
 
     .brand {
@@ -18,7 +22,7 @@
         margin-bottom: 0.5rem;
         margin-left: 2rem;
         font-size: 2rem;
-        color: base.$dark-bg;
+        color: var(--text);
 
         i {
             margin-right: 1rem;
@@ -37,11 +41,11 @@
         
         &-text {
             font-size: 1.5rem;
-            color: base.$dark-bg;;
+            color: var(--text);
             text-decoration: none;
 
             &:hover {
-                color: base.$print-text;
+                color: var(--accent);
             }
 
             &-active {
@@ -79,6 +83,9 @@
     @media print {
         display: none;
     }
+}
+[data-theme='dark'] .navbar {
+    background-color: var(--accent-dark);
 }
 
 @media screen and (max-width: 500px) {

@@ -1,8 +1,7 @@
 @use 'base';
 
 .sidebar {
-    background-color: base.$light-bg;
-    color: base.$text;
+    // color: base.$text;
     margin: 0;
     padding: 0 2rem;
 
@@ -24,7 +23,8 @@
             margin: 0;
 
             a {
-                color: base.$accent;
+                // color: base.$accent;
+                color: var(--accent);
                 text-decoration: none;
 
                 @media print {

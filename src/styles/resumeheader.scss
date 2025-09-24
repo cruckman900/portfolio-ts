@@ -1,14 +1,15 @@
 @use 'base';
 
 .resume-header {
-    color: base.$text;
+    // color: base.$text;
+    color: var(--text);
     margin: 0;
     padding: 2rem 0;
 
     h1 {
         font-family: 'Oswald', sans-serif;
         font-size: 2rem;
-        color: base.$accent;
+        color: var(--accent);
     }
 
     .tagline {
@@ -17,7 +18,7 @@
     }
 
     a {
-        color: base.$accent;
+        color: var(--accent);
         text-decoration: none;
     }
 

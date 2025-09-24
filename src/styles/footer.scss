@@ -1,7 +1,9 @@
 @use "base";
 
 .footer {
-    background-color: base.$light-bg;
+    // background-color: base.$light-bg;
+    background-color: var(--bg-secondary);
+    color: var(--text);
 
     @media print {
         display: none;

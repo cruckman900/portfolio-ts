@@ -3,9 +3,14 @@ import "../styles/footer.scss";
 
 const Footer: React.FC = () => {
     return (
-        <div className='footer'>
-            <span>&copy;{new Date().getFullYear()} Christopher Ruckman</span>
-        </div>
+        <footer className='footer'>
+            <p>&copy;{new Date().getFullYear()} Christopher Ruckman</p>
+            <div className="social-links">
+                <a href="https://github.com/cruckman">GitHub</a>
+                &nbsp; | &nbsp;
+                <a href="/contact">Contact</a>
+            </div>
+       </footer>
     )
 };
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Head from 'next/head';
 import type { Resume } from '../types/resume';
 import ResumeHeader from '../components/ResumeHeader';
 import Sidebar from '../components/Sidebar';
@@ -22,6 +23,10 @@ export default function Home() {
     if (!resume) return <div>Loading...</div>;
 
     return (
+        <>
+        <Head>
+            <meta name="robots" content="noindex" />
+        </Head>
         <div className='flex-container'>
             <div className="sidebar-container">
                 <aside>
@@ -47,6 +52,7 @@ export default function Home() {
                 </main>
             </div>
         </div>
+        </>
     )
 };
 

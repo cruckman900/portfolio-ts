@@ -21,7 +21,7 @@ const ThemeSwitcher = () => {
     };
 
     return (
-        <select value={theme} onChange={handleChange}>
+        <select className='switcher' value={theme} onChange={handleChange}>
             <option value="light">Light</option>
             <option value="dark">Dark</option>
             <option value="hazard">Hazard</option>

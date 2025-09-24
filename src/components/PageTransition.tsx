@@ -2,28 +2,34 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import styles from './PageTransition.module.scss';
 
-const PageTransition = ({ children }: { children: React.ReactNode }) => {
+interface Props {
+    children: React.ReactNode;
+}
+
+const PageTransition: React.FC<Props> = ({ children }) => {
     const router = useRouter();
-    const [loading, setLoading] = useState(false);
+    const [displayChildren, setDisplayChildren] = useState(children);
+    const [TransitionStage, setTransitionStage] = useState('fadeIn');
+    const [currentPath, setCurrentPath] = useState(router.pathname);
 
-    useEffect(() => {
-        const handleStart = () => setLoading(true);
-        const handleComplete = () => setLoading(false);
+  useEffect(() => {
+    if (router.pathname !== currentPath) {
+      setTransitionStage('fadeOut');
 
-        router.events.on('routeChangeStart', handleStart);
-        router.events.on('routeChangeComplete', handleComplete);
-        router.events.on('routeChangeError', handleComplete);
+      const timeout = setTimeout(() => {
+        setDisplayChildren(children);
+        setCurrentPath(router.pathname);
+        setTransitionStage('fadeIn');
+      }, 300);
 
-        return () => {
-            router.events.off('routeChangeStart', handleStart);
-            router.events.off('routeChangeComplete', handleComplete);
-            router.events.off('routeChangeError', handleComplete);
-        };
-     }, [router]);
+      return () => clearTimeout(timeout);
+    }
+  }, [router.pathname]);
+
 
     return (
-        <div className={`${styles.wrapper} ${loading ? styles.fadeOut : styles.fadeIn}`}>
-            {children}
+        <div className={`${styles.wrapper} ${styles[TransitionStage]}`}>
+            {displayChildren}
         </div>
     );
 };

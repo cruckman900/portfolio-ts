@@ -5,7 +5,7 @@ export default function Document() {
         <Html>
             <Head>
                 <meta name="description" content="Multidisciplinary engineer, author, and legal advocate" />
-                <meta property="og:title" content="Christopher Ruckman - Resume" />
+                <meta property="og:title" content="LinearDescent - Portfolio" />
                 <meta property="og:type" content="WebPage" />
                 <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
                 <script
@@ -14,7 +14,7 @@ export default function Document() {
                             __html: JSON.stringify({
                                 "@context": "https://schema.org",
                                 "@type": "WebPage",
-                                "name": "Christopher Ruckman Resume",
+                                "name": "LinearDescent - Portfolio",
                                 "description": "Multidisciplinary engineer, author, and legal advocate"
                             })
                         }}

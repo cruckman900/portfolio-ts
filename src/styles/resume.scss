@@ -21,7 +21,7 @@ i {
 }
 
 .sidebar-container {
-    background-color: base.$light-bg;
+    // background-color: base.$light-bg;
     min-height: 100vh;
     min-width: 18rem;
     width: 30%;
@@ -35,13 +35,14 @@ i {
     max-width: 70%;
 
     main {
-        background-color: base.$dark-bg;
+        background-color: var(--bg-secondary);
         padding: 2rem;
         padding-top: 2.5rem;
 
         Section {
             h2 {
-                color: base.$accent;
+                // color: base.$accent;
+                color: var(--accent);
 
                 @media print {
                     color: base.$print-accent;
@@ -61,7 +62,7 @@ i {
 
     @media screen and (max-width: 500px) {
         main {
-            background-color: base.$light-bg;
+            // background-color: base.$light-bg;
             width: 100%;
             padding: 0 2rem;
 
