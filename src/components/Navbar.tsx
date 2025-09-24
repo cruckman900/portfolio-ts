@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { NavBarLink } from '@/types/resume';
 import Link from 'next/link';
+import ThemeSwitcher from './ThemeSwitcher';
 import "../styles/navbar.scss";
 
 interface Props {
@@ -42,6 +43,7 @@ const Navbar: React.FC<Props> = ({ className, navbarlinks }) => {
                 </div>
                 )
             )}
+            <ThemeSwitcher />
         </nav>
         {toggleHamburger && <div className='mobile-menu'>
             {navbarlinks.map((nav, i) => (

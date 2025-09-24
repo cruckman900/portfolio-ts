@@ -1,0 +1,19 @@
+@use 'theme' as *;
+
+:root {
+    @each $key, $value in $light-theme {
+        --#{$key}: #{$value};
+    }
+}
+
+[data-theme='dark'] {
+    @each $key, $value in $dark-theme {
+        --#{$key}: #{$value};
+    }
+}
+
+[data-theme='hazard'] {
+    @each $key, $value in $hazard-theme {
+        --#{$key}: #{$value};
+    }
+}

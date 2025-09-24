@@ -1,20 +1,20 @@
 import { AppProps } from 'next/app';
-import { Fragment } from 'react';
 import type { Page } from '../types/page';
+import PageTransition from '@/components/PageTransition';
+import '../styles/main.scss';
 
-type Props = AppProps & {
+type AppPropsWithLayout = AppProps & {
     Component: Page;
 };
 
-const MyApp = ({ Component, pageProps }: Props) => {
-    const getLayout = Component.getLayout ?? (page => page);
-    const Layout = Component.layout ?? Fragment;
+const App = ({ Component, pageProps }: AppPropsWithLayout) => {
+    const getLayout = Component.getLayout ?? ((page) => page);
 
-    return (
-        <Layout>
-            {getLayout(<Component {...pageProps} />)}
-        </Layout>
+    return getLayout(
+        <PageTransition>
+            <Component {...pageProps} />
+        </PageTransition>
     )
 }
 
-export default MyApp;
+export default App;
