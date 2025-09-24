@@ -1,6 +1,7 @@
 @use 'base';
 
 .sidebar {
+    background-color: base.$light-bg;
     color: base.$text;
     margin: 0;
     padding: 0 2rem;
