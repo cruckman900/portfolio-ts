@@ -1,24 +1,11 @@
 @use 'base';
 
-body {
-    background-color: base.$light-bg;
-    color: base.$text;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-
-    @media print {
-        background-color: white;
-        color: base.$print-text;
-    }
-}
-
 i {
     min-width: 1rem;
     margin-right: 0.5rem;
 }
 
-.container {
+.flex-container {
     display: flex;
     flex-direction: row;
     max-height: 100vh;
@@ -47,7 +34,7 @@ i {
     max-width: 70%;
 
     main {
-        background-color: base.$dark-bg;
+        background-color: base.$light-bg;
         padding: 2rem;
         padding-top: 2.5rem;
 

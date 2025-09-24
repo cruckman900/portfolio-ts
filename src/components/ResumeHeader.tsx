@@ -1,6 +1,6 @@
 import React from "react";
 import { Contact } from "@/types/resume";
-import '../styles/header.scss';
+import '../styles/resumeheader.scss';
 
 interface Props {
     icon: string;
@@ -10,7 +10,7 @@ interface Props {
 };
 
 const Header: React.FC<Props> = ({ icon, name, tagline, contact }) => (
-    <header className="header">
+    <header className="resume-header">
         <h1><span className="no-print"><i className={icon}></i></span>{name}</h1>
         <p className="tagline">{tagline}</p>
         <ul>

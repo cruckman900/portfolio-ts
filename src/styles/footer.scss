@@ -1,0 +1,9 @@
+@use "base";
+
+.footer {
+    background-color: base.$light-bg;
+
+    @media print {
+        display: none;
+    }
+}
