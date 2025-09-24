@@ -14,7 +14,7 @@ export default function Projects() {
             <section className="about">
                 <h2>Who I Am</h2>
                 <p>
-                    I&apos;m Christopher Ruckman—a full-stack engineer, legal researcher, and published author. I build modular systems that warn, uplift, and endure. Whether it&apos;s React components, courtroom documentation, or poetic series, every artifact I create is designed to survive scrutiny and inspire transformation.
+                    I&apos;m a full-stack engineer, legal researcher, and published author. I build modular systems that warn, uplift, and endure. Whether it&apos;s React components, courtroom documentation, or poetic series, every artifact I create is designed to survive scrutiny and inspire transformation.
                 </p>
             </section>
             <section className="skills">
