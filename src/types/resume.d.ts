@@ -62,4 +62,5 @@ export interface Resume {
 export interface NavBarLink {
     url: string;
     label: string;
+    icon: string;
 }

@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout";
-import Navbar from "@/components/Navbar";
 import "../styles/projects.scss";
 
 export default function Projects() {

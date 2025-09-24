@@ -10,9 +10,9 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }) => {
     const links = [
-        {url: "/", label: "home"},
-        {url: "/resume", label: "resume"},
-        {url: "/projects", label: "projects"}
+        {url: "/", label: "home", icon: "fas fa-house"},
+        {url: "/resume", label: "resume", icon: "fas fa-file"},
+        {url: "/projects", label: "projects", icon: "fas fa-code"}
     ];
 
     return (

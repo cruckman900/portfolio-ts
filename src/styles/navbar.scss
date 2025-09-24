@@ -48,14 +48,62 @@
                 font-size: 1.5rem;
                 color: base.$red-accent;
             }
+        }
 
-            @media screen and (max-width: 500px) {
-                font-size: 1rem;
-            }
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    @media screen and (max-width: 500px) {
+        .hamburger {
+            display: inline;
+            position: absolute;
+            right: 1rem;
+        }
+
+        .mobile-menu {
+            position: absolute;
+            top: 0;
+            z-index: 10;
+            height: 100vh;
+            width: 100%;
+            background-color: base.$dark-bg;
         }
     }
 
     @media print {
         display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mobile-menu {
+        // position: absolute;
+        // top: 0;
+        z-index: 10;
+        height: calc(100vh - 9rem);
+        width: 100%;
+        background-color: base.$dark-bg;
+
+        .link {
+            padding: 2rem 0;
+            text-align: center;
+        
+            &-text {
+                font-size: 1.5rem;
+                color: base.$text;
+                text-decoration: none;
+
+                &-active {
+                    font-size: 1.5rem;
+                    color: base.$red-accent;
+                }
+            }
+        }
     }
 }
