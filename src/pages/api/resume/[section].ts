@@ -1,8 +1,9 @@
 // /pages/api/resume/[section].ts
+import type { NextApiRequest, NextApiResponse } from "next";
 import dbConnect from "@/lib/dbConnect";
 import ResumeEntry from "@/models/ResumeEntry";
 
-export default async function handler(req, res) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     await dbConnect();
     const { section } = req.query;
 
