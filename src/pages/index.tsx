@@ -1,52 +1,43 @@
 import Layout from "@/components/Layout";
-import Link from "next/link";
 import "../styles/index.scss";
 
 export default function Projects() {
     return (
         <div className="index">
-            <section>
-                <h1>Failure at Fifty</h1>
-                <p className="subtext">A legacy forged from warning, resilience, and code.</p>
-                <Link href="/resume" className="cta-button">View Resume</Link>
-                &nbsp; | &nbsp; 
-                <Link href="/books" className="cta-button alt">Explore Books</Link>
+            <section className="homepage-intro">
+            <h1 className="glitch-title">LinearDescent</h1>
+            <p className="bio-blurb">
+                From the edge of Rayland, Ohio, I build warning systems in human form—writing, coding, composing, and designing to keep others from falling. My work spans biohazard-themed books, glitch-infused web platforms, guitar compositions, and digital artwork that pulses with survival and signal.
+            </p>
             </section>
-            <section className="about">
-                <h2>Who I Am</h2>
+
+            <section className="homepage-modules">
+            <div className="module books">
+                <h2>📚 Books</h2>
                 <p>
-                    I&apos;m a full-stack engineer, legal researcher, and published author. I build modular systems that warn, uplift, and endure. Whether it&apos;s React components, courtroom documentation, or poetic series, every artifact I create is designed to survive scrutiny and inspire transformation.
+                Raw, unflinching memoirs and poetic manifestos. My writing explores schizophrenia, addiction, and resilience—turning personal wreckage into public signal. <span className="tagline">Failure at Fifty</span> is just the beginning.
                 </p>
-            </section>
-            <section className="skills">
-                <h2>Multidisciplinary Stack</h2>
-                <div className="grid">
-                    <div className="skill-card">React / Next.js</div>
-                    <div className="skill-card">ASP.NET Core</div>
-                    <div className="skill-card">Legal Advocacy</div>
-                    <div className="skill-card">Poetic Publishing</div>
-                    <div className="skill-card">Blender / Photoshop</div>
-                    <div className="skill-card">SQL / Web API</div>
-                </div>
-            </section>
-            <section className="featured">
-            <h2>Featured Projects</h2>
-            <div className="project-list">
-                <div className="project-card">
-                <h3>Failure at Fifty</h3>
-                <p>A poetic warning system disguised as a book.</p>
-                <Link href="/books/failure-at-fifty">Read More →</Link>
-                </div>
-                <div className="project-card">
-                <h3>Legal Advocacy Platform</h3>
-                <p>Exposing fraudulent lawsuits through documentation and alerts.</p>
-                <Link href="/advocacy">Explore →</Link>
-                </div>
-                <div className="project-card">
-                <h3>Modular Resume Site</h3>
-                <p>Built with Next.js, TypeScript, and SASS. Fully responsive.</p>
-                <Link href="/resume">View →</Link>
-                </div>
+            </div>
+
+            <div className="module music">
+                <h2>🎸 Guitar Music</h2>
+                <p>
+                Original compositions and ambient sketches. My guitar work blends distortion, melancholy, and clarity—like a siren in fog. Coming soon: audio samples, tablature, and live recordings.
+                </p>
+            </div>
+
+            <div className="module artwork">
+                <h2>🎨 Artwork</h2>
+                <p>
+                Digital pieces, cover designs, and hazard-coded visuals. I use Blender, Photoshop, and glitch overlays to create expressive warnings and thematic illustrations.
+                </p>
+            </div>
+
+            <div className="module code">
+                <h2>💻 Code & Platforms</h2>
+                <p>
+                Full-stack engineering meets poetic architecture. I build modular, scalable systems with React, Next.js, Node, and .NET—designed to feel alive, responsive, and expressive.
+                </p>
             </div>
             </section>
         </div>

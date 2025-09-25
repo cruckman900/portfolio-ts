@@ -3,18 +3,16 @@ import { useForm, UseFormReturn } from 'react-hook-form';
 import { useMutation } from '@apollo/client/react';
 import { UPDATE_ENTRY } from '@/graphql/mutations';
 import { ResumeEntry, ResumeEntryInput } from '@/types/graphql';
-import "../../styles/forms/EditResumeForm.scss";
-import '../../styles/ui/ResponsibilitiesInput.scss';
+import "../../..//styles/forms/EditResumeForm.scss";
+import '../../../styles/ui/ResponsibilitiesInput.scss';
 
 import ExperienceForm from './EsperienceForm';
-import EdictopmForm from './EducationForm';
 import SkillsForm from './SkillsForm';
 import ProjectsForm from './ProjectsForm';
 
 function renderSectionForm(section: string, form: UseFormReturn<ResumeEntryInput>) {
     switch (section) {
         case 'Experience': return <ExperienceForm form={form} />;
-        case 'Education': return <EdictopmForm form={form} />;
         case 'Skills': return <SkillsForm form={form} />;
         case 'Projects': return <ProjectsForm form={form} />;
 

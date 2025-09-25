@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                 </div>
             </div>
             <div className="print">
-                <button className="print-button" onClick={window.print}>Print Page</button>
+                <button className="print-button" onClick={() => window.print()}>Print Page</button>
             </div>
        </footer>
     )

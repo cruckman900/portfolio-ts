@@ -1,4 +1,56 @@
-.index {
+.homepage-intro {
+    padding: 4rem 2rem;
+    text-align: center;
+
+    .glitch-title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        animation: flicker 2s infinite;
+    }
+
+    .bio-blurb {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 1rem auto;
+        line-height: 1.6;
+        color: var(--text);
+    }
+}
+
+.homepage-modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     padding: 2rem;
-    // background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+
+    .module {
+        background-color: var(--accent);
+        border-left: 4px solid var(--accent-dark);
+        padding: 1.5rem;
+        border-radius: 6px;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+            border-color: var(--bg-secondary);
+        }
+
+        h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .tagline {
+            font-weight: bold;
+        }
+    }
+}
+
+/* Flicker animation */
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
 }

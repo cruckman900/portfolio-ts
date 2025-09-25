@@ -30,7 +30,6 @@ export default function EntrySidebar() {
                 className="select"
             >
                 <option value="Experience">Experience</option>
-                <option value="Education">Education</option>
                 <option value="Skills">Skills</option>
                 <option value="Projects">Projects</option>
             </select>
@@ -54,7 +53,7 @@ export default function EntrySidebar() {
                     <ul className="list">
                         {data?.resume.map((entry) => (
                             <li key={entry.id} className="item">
-                                <div className="item-titel">{entry.title}</div>
+                                <div className="item-title">{entry.title}</div>
                                 <div className="item-subtitle">{entry.subtitle}</div>
                                 <Link href={`/admin/edit/${entry.id}`}>
                                     <button className="edit-button">
