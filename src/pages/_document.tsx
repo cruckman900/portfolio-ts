@@ -25,6 +25,7 @@ export default function Document() {
                     crossOrigin='anonymous'
                     referrerPolicy='no-referrer'
                 />
+                <link rel="preload" href="/styles/main.scss" as="style" />
             </Head>
             <body>
                 <Main />
