@@ -9,6 +9,10 @@ export interface ResumeEntryInput {
     order?: number;
 }
 
+export interface ResumeEntry extends ResumeEntryInput {
+    id: string;
+}
+
 export interface ResumeArgs {
     section: string;
 }
