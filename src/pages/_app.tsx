@@ -4,9 +4,9 @@ import { ApolloProvider } from '@apollo/client/react';
 import client from '@/lib/apolloClient';
 import type { Page } from '../types/page';
 import PageTransition from '@/components/PageTransition';
-import Layout from '@/components/Layout';
-import '../styles/main.scss';
-import '../styles/globals.scss';
+// import '../styles/main.scss';
+// import '../styles/globals.scss';
+import '@/styles/bundle.scss';
 
 type AppPropsWithLayout = AppProps & {
     Component: Page;
