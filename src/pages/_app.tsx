@@ -20,15 +20,17 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
 
     const getLayout = Component.getLayout ?? ((page) => page);
 
-    return isHydrated ? (
+    return (
         getLayout(
-            <PageTransition>
-                <ApolloProvider client={client}>
-                    <Component {...pageProps} />
-                </ApolloProvider>
-            </PageTransition>
+            <ApolloProvider client={client}>
+                {isHydrated ? (
+                    <PageTransition>
+                        <Component {...pageProps} />
+                    </PageTransition>
+                ) : null}
+            </ApolloProvider>
         )
-    ) : null;
+    );
 }
 
 export default App;
