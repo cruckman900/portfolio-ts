@@ -9,7 +9,8 @@ export default function EducationForm({ form }: Props) {
     const { register } = form;
 
     return (
-        <div className="experience-form">
+        <div className="education-form">
+            <h3 className="section-label">Education</h3>
             <input {...register('title')} placeholder="Degree" className="input" />
             <input {...register('subtitle')} placeholder="Institution" className="input" />
             <input {...register('startDate')} placeholder="Start Year" className="input" />

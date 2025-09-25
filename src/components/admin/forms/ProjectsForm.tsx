@@ -10,6 +10,7 @@ export default function ProjectsForm({ form }: Props) {
 
     return (
         <div className="projects-form">
+            <h3 className="section-label">Projects</h3>
             <input {...register('title')} placeholder="Project Name" className="input" />
             <textarea {...register('description')} placeholder="Project Description" className="textarea" />
             <input {...register('tags')} placeholder="Technologies (comma-separated)" className="input" />

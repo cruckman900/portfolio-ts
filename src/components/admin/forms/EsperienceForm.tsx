@@ -11,6 +11,7 @@ export default function ExperienceForm({ form }: Props) {
 
     return (
         <div className="experience-form">
+            <h3 className="section-label">Experience</h3>
             <input {...register('title')} placeholder="Job Title" className="input" />
             <input {...register('subtitle')} placeholder="Company" className="input" />
             <ResponsibilitiesInput

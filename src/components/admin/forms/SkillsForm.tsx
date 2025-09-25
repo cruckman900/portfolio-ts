@@ -10,6 +10,7 @@ export default function SkillsForm({ form }: Props) {
 
     return (
         <div className="skills-form">
+            <h3 className="section-label">Skills</h3>
             <input {...register('title')} placeholder="Skill Category" className="input" />
             <input {...register('tags')} placeholder="Skills (comma-separated)" className="input" />
         </div>
