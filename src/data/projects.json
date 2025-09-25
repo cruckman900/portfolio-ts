@@ -32,7 +32,7 @@
     "status": "in-progress",
     "impact": "high",
     "animations": ["glitch", "fade"],
-    "repo": "https://github.com/cruckman/portfolio-ts",
+    "repo": "https://github.com/cruckman900/portfolio-ts",
     "cover": "/images/projects/portfolio-hazard.jpg"
   }
 ]

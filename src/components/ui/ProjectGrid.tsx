@@ -1,7 +1,7 @@
 // components/ProjectGrid.tsx
-import styles from './Projects.module.scss';
 import ProjectCard from './ProjectCard';
 import type { Project } from '../../types/project';
+import styles from '../../styles/ui/Projects.module.scss';
 
 interface ProjectGridProps {
     projects: Project[];

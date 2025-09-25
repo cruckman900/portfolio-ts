@@ -1,9 +1,9 @@
-import styles from '../../styles/ui/Projects.module.scss';
 import ImpactBadge from '../ImpactBadge';
 import LegacyLevelBadge from '../LegacyLevelBadge';
 import PreviewPanel from './PreviewPanel';
 import Image from 'next/image';
 import type { Project } from '@/types/project';
+import styles from '../../styles/ui/Projects.module.scss';
 
 interface ProjectCardProps {
     project: Project;
@@ -37,7 +37,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             )}
 
             {cover && (
-                <Image src={cover} alt={`${title} cover`} className={styles.cover} />
+                <Image src={cover} alt={`${title} cover`} width="100" height="100" className={styles.cover} />
             )}
         </div>
     )

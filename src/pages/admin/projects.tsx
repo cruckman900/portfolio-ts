@@ -1,4 +1,5 @@
 // pages/admin/projects.tsx
+import Layout from '@/components/Layout';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
@@ -12,7 +13,14 @@ export default function ProjectsPage() {
       <Head>
         <title>Project Editor | Admin</title>
       </Head>
-      <ProjectEditor />
+      <>
+        <ProjectEditor />
+      </>
     </>
   );
 }
+
+// Define a custom layout for this page
+ProjectsPage.getLayout = function getLayout(page: React.ReactElement) {
+    return <Layout>{page}</Layout>
+};

@@ -1,5 +1,5 @@
 // components/PreviewPanel
-import styles from './ProjectEditor.module.scss';
+import styles from '../ProjectEditor.module.scss';
 
 interface PreviewPanelProps {
     animation: string;

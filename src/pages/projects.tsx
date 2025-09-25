@@ -2,9 +2,14 @@
 import { useEffect, useState } from 'react';
 import ProjectGrid from '../components/ui/ProjectGrid';
 import type { Project } from '../types/project';
+import Layout from '@/components/Layout';
 
 export default function ProjectsPage() {
     const [projects, setProjects] = useState<Project[]>([]);
+
+    useEffect(() => {
+        console.log("projects", projects);
+    }, [projects]);
 
     useEffect(() => {
         fetch('/api/projects')
@@ -26,3 +31,8 @@ export default function ProjectsPage() {
         </main>
     );
 }
+
+// Define a custom layout for this page
+ProjectsPage.getLayout = function getLayout(page: React.ReactElement) {
+    return <Layout>{page}</Layout>
+};

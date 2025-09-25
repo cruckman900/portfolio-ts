@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import "../styles/index.scss";
 
-export default function Projects() {
+export default function Index() {
     return (
         <div className="index">
             <section className="homepage-intro">
@@ -45,6 +45,6 @@ export default function Projects() {
 }
 
 // Define a custom layout for this page
-Projects.getLayout = function getLayout(page: React.ReactElement) {
+Index.getLayout = function getLayout(page: React.ReactElement) {
     return <Layout>{page}</Layout>
 };
