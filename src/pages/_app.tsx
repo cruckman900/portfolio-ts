@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { AppProps } from 'next/app';
 import { ApolloProvider } from '@apollo/client/react';
 import client from '@/lib/apolloClient';
@@ -11,15 +12,23 @@ type AppPropsWithLayout = AppProps & {
 };
 
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
+    const [isHydrated, setIsHydrated] = useState(false);
+
+    useEffect(() => {
+        setIsHydrated(true);
+    }, []);
+
     const getLayout = Component.getLayout ?? ((page) => page);
 
-    return getLayout(
-        <PageTransition>
-            <ApolloProvider client={client}>
-                <Component {...pageProps} />
-            </ApolloProvider>
-        </PageTransition>
-    )
+    return isHydrated ? (
+        getLayout(
+            <PageTransition>
+                <ApolloProvider client={client}>
+                    <Component {...pageProps} />
+                </ApolloProvider>
+            </PageTransition>
+        )
+    ) : null;
 }
 
 export default App;
