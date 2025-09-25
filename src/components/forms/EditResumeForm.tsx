@@ -36,13 +36,39 @@ export default function EditResumeForm({ entryId }: EditResumeFormProps) {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="edit-resume-form">
-            <input {...register('title')} placeholder="Title" className="input" />
-            <input {...register('subtitle')} placeholder="Subtitle" className="input" />
-            <textarea {...register('description')} placeholder="Description" className="textarea" />
-            <input {...register('startDate')} placeholder="Start Date" className="input" />
-            <input {...register('endDate')} placeholder="End Date" className="input" />
-            <input {...register('tags')} placeholder="Tags (comma-separated)" className="input" />
-            <input type="number" {...register('order')} placeholder="Order" className="input" />
+            {entry?.section === 'Experience' && (
+            <>
+                <input {...register('title')} placeholder="Job Title" className="input" />
+                <input {...register('subtitle')} placeholder="Company" className="input" />
+                <textarea {...register('description')} placeholder="Responsibilities" className="textarea" />
+                <input {...register('startDate')} placeholder="Start Date" className="input" />
+                <input {...register('endDate')} placeholder="End Date" className="input" />
+            </>
+            )}
+
+            {entry?.section === 'Education' && (
+            <>
+                <input {...register('title')} placeholder="Degree" className="input" />
+                <input {...register('subtitle')} placeholder="Institution" className="input" />
+                <input {...register('startDate')} placeholder="Start Year" className="input" />
+                <input {...register('endDate')} placeholder="End Year" className="input" />
+            </>
+            )}
+
+            {entry?.section === 'Skills' && (
+            <>
+                <input {...register('title')} placeholder="Skill Category" className="input" />
+                <input {...register('tags')} placeholder="Skills (comma-separated)" className="input" />
+            </>
+            )}
+
+            {entry?.section === 'Projects' && (
+            <>
+                <input {...register('title')} placeholder="Project Name" className="input" />
+                <textarea {...register('description')} placeholder="Project Description" className="textarea" />
+                <input {...register('tags')} placeholder="Technologies (comma-separated)" className="input" />
+            </>
+            )}
 
             <button type="submit" disabled={loading} className="btn">
                 {loading ? 'Saving...' : 'Save Changes'}
