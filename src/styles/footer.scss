@@ -1,9 +1,38 @@
 @use "base";
 
 .footer {
-    // background-color: base.$light-bg;
+    display: flex;
     background-color: var(--bg-secondary);
     color: var(--text);
+
+    .main {
+        width: 90vw;
+
+        p, div {
+            position: relative;
+            left: 4rem;
+        }
+    }
+
+    .print {
+        position: relative;
+        left: 4rem;
+        height: 100%;
+
+        &-button {
+            background-color: var(--accent);
+            color: var(--accent-dark);
+            font-weight: bold;
+            border: none;
+            border-radius: 0.75rem;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
+    }
 
     @media print {
         display: none;

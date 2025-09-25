@@ -36,6 +36,7 @@ export default function EditResumeForm({ entryId }: EditResumeFormProps) {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="edit-resume-form">
+            <h2 className="form-section-label">Editing: {entry?.section}</h2>
             {entry?.section === 'Experience' && (
             <>
                 <input {...register('title')} placeholder="Job Title" className="input" />
