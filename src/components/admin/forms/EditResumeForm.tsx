@@ -1,72 +1,144 @@
-import { useState, useEffect } from 'react';
-import { useForm, UseFormReturn } from 'react-hook-form';
-import { useMutation } from '@apollo/client/react';
-import { UPDATE_ENTRY } from '@/graphql/mutations';
-import { ResumeEntry, ResumeEntryInput } from '@/types/graphql';
-import "../../..//styles/forms/EditResumeForm.scss";
-import '../../../styles/ui/ResponsibilitiesInput.scss';
+// components/EditResumeForm.tsx
+import styles from './ProjectEditor.module.scss';
+import { useState } from 'react';
 
-import ExperienceForm from './EsperienceForm';
-import SkillsForm from './SkillsForm';
-import ProjectsForm from './ProjectsForm';
+type ResumeData = {
+  name: string;
+  title: string;
+  summary: string;
+  skills: string[];
+  experience: {
+    company: string;
+    role: string;
+    responsibilities: string[];
+  }[];
+};
 
-function renderSectionForm(section: string, form: UseFormReturn<ResumeEntryInput>) {
-    switch (section) {
-        case 'Experience': return <ExperienceForm form={form} />;
-        case 'Skills': return <SkillsForm form={form} />;
-        case 'Projects': return <ProjectsForm form={form} />;
+export default function EditResumeForm() {
+  const [resume, setResume] = useState<ResumeData>({
+    name: '',
+    title: '',
+    summary: '',
+    skills: [],
+    experience: [],
+  });
 
-        default: return <p>Unknown section type</p>;
+  const [hasError, setHasError] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    field: keyof ResumeData
+  ) => {
+    setResume(prev => ({ ...prev, [field]: e.target.value }));
+    setIsSaved(false);
+    setHasError(false);
+  };
+
+  const handleSave = () => {
+    if (!resume.name || !resume.title) {
+      setHasError(true);
+      return;
     }
-}
+    // Simulate save logic
+    setIsSaved(true);
+  };
 
-interface EditResumeFormProps {
-    entryId: string;
-}
+  return (
+    <form>
+      <fieldset className={`${styles.fieldset} ${resume.name ? styles.active : ''}`}>
+        <label htmlFor="name">Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          value={resume.name}
+          onChange={e => handleChange(e, 'name')}
+        />
+      </fieldset>
 
-export default function EditResumeForm({ entryId }: EditResumeFormProps) {
-    const [entry, setEntry] = useState<ResumeEntry | null>(null);
+      <fieldset className={`${styles.fieldset} ${resume.title ? styles.active : ''}`}>
+        <label htmlFor="title">Title</label>
+        <input
+          id="title"
+          name="title"
+          type="text"
+          value={resume.title}
+          onChange={e => handleChange(e, 'title')}
+        />
+      </fieldset>
 
-    const form = useForm<ResumeEntryInput>();
-    const {
-        register,
-        handleSubmit,
-        reset,
-    } = useForm<ResumeEntryInput>();
+      <fieldset className={`${styles.fieldset} ${resume.summary ? styles.active : ''}`}>
+        <label htmlFor="summary">Summary</label>
+        <textarea
+          id="summary"
+          name="summary"
+          value={resume.summary}
+          onChange={e => handleChange(e, 'summary')}
+        />
+      </fieldset>
 
-    const [updateEntry, { loading, error }] = useMutation(UPDATE_ENTRY);
+      {/* Skills */}
+      <fieldset className={`${styles.fieldset} ${resume.skills.length ? styles.active : ''}`}>
+        <label htmlFor="skills">Skills (comma-separated)</label>
+        <input
+          id="skills"
+          name="skills"
+          type="text"
+          value={resume.skills.join(', ')}
+          onChange={e =>
+            setResume(prev => ({
+              ...prev,
+              skills: e.target.value.split(',').map(s => s.trim()),
+            }))
+          }
+        />
+      </fieldset>
 
-    useEffect(() => {
-        fetch(`/api/resume/${entryId}`)
-            .then((res) => res.json())
-            .then((data) => {
-                setEntry(data);
-                reset(data); // reinitialize form with fetched data
-            });
-    }, [entryId, reset]);
+      {/* Experience */}
+      {resume.experience.map((exp, index) => (
+        <fieldset key={index} className={styles.fieldset}>
+          <label>Company</label>
+          <input
+            type="text"
+            value={exp.company}
+            onChange={e => {
+              const updated = [...resume.experience];
+              updated[index].company = e.target.value;
+              setResume(prev => ({ ...prev, experience: updated }));
+            }}
+          />
+          <label>Role</label>
+          <input
+            type="text"
+            value={exp.role}
+            onChange={e => {
+              const updated = [...resume.experience];
+              updated[index].role = e.target.value;
+              setResume(prev => ({ ...prev, experience: updated }));
+            }}
+          />
+          <label>Responsibilities (comma-separated)</label>
+          <input
+            type="text"
+            value={exp.responsibilities.join(', ')}
+            onChange={e => {
+              const updated = [...resume.experience];
+              updated[index].responsibilities = e.target.value.split(',').map(r => r.trim());
+              setResume(prev => ({ ...prev, experience: updated }));
+            }}
+          />
+        </fieldset>
+      ))}
 
-    const onSubmit = async (data: ResumeEntryInput) => {
-        const transformed = {
-            ...data,
-            tags: data.tags?.map(tag => tag.trim()).filter(Boolean),
-        };
-        await updateEntry({ variables: { id: entryId, input: transformed } });
-        alert('updated!');
-    };
+      <button type="button" onClick={handleSave}>
+        Save Resume
+      </button>
 
-    // if (!entry) return <p>Loading entry...</p>;
-
-    return (
-        <form onSubmit={handleSubmit(onSubmit)} className="edit-resume-form">
-            <h2 className="form-section-label">Editing: {entry?.section}</h2>
-            {entry && renderSectionForm(entry.section, form)}
-            <input type="number" {...register('order')} placeholder="Order" className="input" />
-
-            <button type="submit" disabled={loading} className="btn">
-                {loading ? 'Saving...' : 'Save Changes'}
-            </button>
-
-            {error && <p className="error">Error: {error.message}</p>}
-        </form>
-    )
+      {hasError && (
+        <div className={styles.errorFeedback}>System breach detected: missing required fields</div>
+      )}
+      {isSaved && <div className={styles.saveFeedback}>Data stabilized</div>}
+    </form>
+  );
 }
