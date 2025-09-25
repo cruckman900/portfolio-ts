@@ -2,7 +2,7 @@ export interface ResumeEntryInput {
     section: string;
     title: string;
     subtitle?: string;
-    description: string[];
+    description: string;
     startDate?: string;
     endDate?: string;
     tags?: string[];

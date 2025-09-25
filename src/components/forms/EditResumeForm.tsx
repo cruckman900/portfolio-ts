@@ -3,7 +3,9 @@ import { useForm } from 'react-hook-form';
 import { useMutation } from '@apollo/client/react';
 import { UPDATE_ENTRY } from '@/graphql/mutations';
 import { ResumeEntry, ResumeEntryInput } from '@/types/graphql';
+import ResponsibilitiesInput from '../ui/ResponsibilitiesInput';
 import "../../styles/forms/EditResumeForm.scss";
+import '../../styles/ui/ResponsibilitiesInput.scss';
 
 interface EditResumeFormProps {
     entryId: string;
@@ -11,7 +13,15 @@ interface EditResumeFormProps {
 
 export default function EditResumeForm({ entryId }: EditResumeFormProps) {
     const [entry, setEntry] = useState<ResumeEntry | null>(null);
-    const { register, handleSubmit, reset } = useForm<ResumeEntryInput>();
+
+    const {
+        register,
+        handleSubmit,
+        reset,
+        watch,
+        setValue,
+    } = useForm<ResumeEntryInput>();
+
     const [updateEntry, { loading, error }] = useMutation(UPDATE_ENTRY);
 
     useEffect(() => {
@@ -41,7 +51,10 @@ export default function EditResumeForm({ entryId }: EditResumeFormProps) {
             <>
                 <input {...register('title')} placeholder="Job Title" className="input" />
                 <input {...register('subtitle')} placeholder="Company" className="input" />
-                <textarea {...register('description')} placeholder="Responsibilities" className="textarea" />
+                <ResponsibilitiesInput
+                    value={watch('description') || ''}
+                    onChange={(val) => setValue('description', val)}
+                />
                 <input {...register('startDate')} placeholder="Start Date" className="input" />
                 <input {...register('endDate')} placeholder="End Date" className="input" />
             </>
