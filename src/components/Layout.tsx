@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState, useEffect } from 'react';
 import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -9,6 +9,16 @@ type Props = {
 };
 
 const Layout: React.FC<Props> = ({ children }) => {
+    const [isHydrated, setIsHydrated] = useState(false);
+
+    useEffect(() => {
+        setIsHydrated(true);
+    }, []);
+
+    if (!isHydrated) {
+        return null; // Or a branded loading screen *****
+    }
+
     const links = [
         {url: "/", label: "home", icon: "fas fa-house"},
         {url: "/resume", label: "resume", icon: "fas fa-file"},
@@ -18,7 +28,7 @@ const Layout: React.FC<Props> = ({ children }) => {
     return (
         <>
         <Head>
-            <title>Christopher Ruckman - Resume</title>
+            <title>LinearDescent</title>
         </Head>
 
         <div className='container'>
