@@ -1,4 +1,5 @@
 import EntrySidebar from "@/components/admin/EntrySidebar";
+import '../../styles/components/AdminDashboard.scss';
 
 export default function AdminDashboard() {
     return (

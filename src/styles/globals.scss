@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #000; // optional base background
+  color: #fff; // optional base text color
+}
+
+/* Optional: box-sizing reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Optional: remove default list and heading spacing */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}

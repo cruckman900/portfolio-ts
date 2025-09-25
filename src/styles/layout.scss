@@ -3,11 +3,17 @@
     box-sizing: border-box;
 }
 
+#__next, .app-root {
+    height: 100%;
+    width: 100%;
+}
+
 html, body {
     font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
     height: 100%;
+    width: 100%;
 
     @media print {
         background-color: white;

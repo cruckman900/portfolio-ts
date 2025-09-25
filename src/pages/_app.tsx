@@ -4,6 +4,7 @@ import client from '@/lib/apolloClient';
 import type { Page } from '../types/page';
 import PageTransition from '@/components/PageTransition';
 import '../styles/main.scss';
+import '../styles/globals.scss';
 
 type AppPropsWithLayout = AppProps & {
     Component: Page;
