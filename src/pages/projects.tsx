@@ -24,7 +24,7 @@ export default function ProjectsPage() {
 
     return (
         <main>
-            <h1 style={{ color: '#ff3c00', fontFamily: 'Share Tech Mono', padding: '2rem' }}>
+            <h1 style={{ color: '#ff3c00', padding: '2rem' }}>
                 ☣️ Legacy Projects
             </h1>
             <ProjectGrid projects={projects} />
