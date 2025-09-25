@@ -24,11 +24,11 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
     return (
         getLayout(
             <ApolloProvider client={client}>
-                <Layout>
+                {isHydrated ? (
                     <PageTransition>
                         <Component {...pageProps} />
                     </PageTransition>
-                </Layout>
+                ) : null}
             </ApolloProvider>
         )
     );
