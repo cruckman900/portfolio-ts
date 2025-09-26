@@ -30,7 +30,7 @@ export default function Contact() {
     return (
         <div className='contact-page'>
             <h1 className='title'>Contact Me</h1>
-            <form className='form' onSubmit={handleSubmit}>
+            <form method="POST" action="/api/contact" className='form' onSubmit={handleSubmit}>
                 <div className='form-fields'>
                     <input
                         type="text"
