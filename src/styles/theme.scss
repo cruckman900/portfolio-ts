@@ -1,28 +1,108 @@
+// 🧩 Suggested Usage
+// - Accent: Use $theme-brown-accent for buttons, links, and icons.
+// - Surface: Apply $theme-brown-surface to cards and panels.
+// - Text: $theme-brown-text works beautifully for headings and body copy.
+// - Muted: Use $theme-brown-muted for secondary labels or breadcrumbs.
+// - Border: $theme-brown-border keeps things clean and structured.
+
 $light-theme: (
+    icon: ☀️,
     bg: #ffffff,
-    bg-secondary: #f8f8f8,
-    text: #111111,
-    alt-text: #222222,
-    accent: #ff3c3c,
-    accent-dark: #811616
+    surface: #f4f4f4,
+    accent: #0077cc,
+    text: #1a1a1a,
+    muted: #888888,
+    border: #dddddd
 );
 
 $dark-theme: (
+    icon: 🌑,
     bg: #121212,
-    bg-secondary: #1e1e1e,
+    surface: #1e1e1e,
+    accent: #00cc88,
     text: #e0e0e0,
-    alt-text: #f5f5f5,
-    accent: #28dd14,
-    accent-dark: #143300
+    muted: #999999,
+    border: #2a2a2a
 );
 
 $hazard-theme: (
+    icon: ⚠️,
     bg: #1a1a1a,
-    bg-secondary: #0f0f0f,
-    text: #e0e0e0,
-    alt-text: #fffbcc,
-    accent: #eea700,
-    accent-dark: #332200
+    surface: #2a1f00,
+    accent: #ffcc00,
+    text: #f5f5f5,
+    muted: #d4c28a,
+    border: #4a3a00
+);
+
+$brownstone-theme: (
+    icon: 🟤,
+    bg: #fdfaf6,
+    surface: #f2ede7,
+    accent: #8b5e3c,
+    text: #3e2c1c,
+    muted: #a89c91,
+    border: #d6cfc7
+);
+
+$midnight-theme: (
+    icon: 🌌,
+    bg: #0b1c2c,
+    surface: #132a3d,
+    accent: #3a6ea5,
+    text: #e0e6ed,
+    muted: #7a8ca3,
+    border: #1f2f44
+);
+
+$slate-theme: (
+    icon: 🪨,
+    bg: #f8f9fa,
+    surface: #e2e6ea,
+    accent: #5c6770,
+    text: #2e343b,
+    muted: #8a939b,
+    border: #cdd3d9
+);
+
+$purple-theme: (
+    icon: 🔮,
+    bg: #1e1126,
+    surface: #2c1a3a,
+    accent: #a678d6,
+    text: #f0eafc,
+    muted: #bca6d0,
+    border: #3f2b4f
+);
+
+$pink-theme: (
+  icon: 🌸,
+  bg: #fff5f9,
+  surface: #fce4ec,
+  accent: #e91e63,
+  text: #3a2a33,
+  muted: #b88ca2,
+  border: #f3c1d7
+);
+
+$green-theme: (
+  icon: 🌿,
+  bg: #f4fff7,
+  surface: #e0f2e9,
+  accent: #4caf50,
+  text: #1e2f23,
+  muted: #8aa89b,
+  border: #cde3d5
+);
+
+$red-theme: (
+  icon: 🔴,
+  bg: #fff4f4,
+  surface: #fbeaea,
+  accent: #c62828,
+  text: #2c1a1a,
+  muted: #a88a8a,
+  border: #e0c0c0
 );
 
 body {

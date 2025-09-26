@@ -17,3 +17,45 @@
         --#{$key}: #{$value};
     }
 }
+
+[data-theme='brownstone'] {
+    @each $key, $value in $brownstone-theme {
+        --#{$key}: #{$value};
+    }
+}
+
+[data-theme='midnight'] {
+    @each $key, $value in $midnight-theme {
+        --#{$key}: #{$value};
+    }
+}
+
+[data-theme='slate'] {
+    @each $key, $value in $slate-theme {
+        --#{$key}: #{$value};
+    }
+}
+
+[data-theme='purple'] {
+    @each $key, $value in $purple-theme {
+        --#{$key}: #{$value};
+    }
+}
+
+[data-theme='pink'] {
+    @each $key, $value in $pink-theme {
+        --#{$key}: #{$value};
+    }
+}
+
+[data-theme='green'] {
+    @each $key, $value in $green-theme {
+        --#{$key}: #{$value};
+    }
+}
+
+[data-theme='red'] {
+    @each $key, $value in $red-theme {
+        --#{$key}: #{$value};
+    }
+}
