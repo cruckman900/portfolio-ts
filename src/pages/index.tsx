@@ -1,4 +1,4 @@
-import Layout from "@/components/Layout";
+import Layout from "@/components/layout/Layout";
 import "@/styles/page/index.scss";
 
 export default function Index() {

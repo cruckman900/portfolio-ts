@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import type { Resume } from '../types/resume';
-import ResumeHeader from '../components/ResumeHeader';
-import Sidebar from '../components/Sidebar';
-import Section from '../components/Section';
-import Achievements from '@/components/Achievements';
-import Experience from '../components/Experience';
+import type { Resume } from '@/types/resume';
+import ResumeHeader from '@/components/Page/Resume/ResumeHeader';
+import Sidebar from '@/components/Page/Resume/Sidebar';
+import Section from '@/components/ui/Section';
+import Achievements from '@/components/Page/Resume/Achievements';
+import Experience from '@/components/Page/Resume/Experience';
 // import Projects from '../components/Projects';
-import Layout from '@/components/Layout';
-import ProjectList from '@/components/ProjectList';
-import '../styles/resume.scss';
+import Layout from '@/components/layout/Layout';
+import ProjectList from '@/components/Page/Resume/ProjectList';
+import '@/styles/page/resume.scss';
 
 export default function Home() {
     const [resume, setResume] = useState<Resume | null>(null);

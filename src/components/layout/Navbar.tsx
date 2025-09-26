@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { NavBarLink } from '@/types/resume';
 import Link from 'next/link';
-import ThemeSwitcher from './ThemeSwitcher';
+import ThemeSwitcher from '@/components/ui/ThemeSwitcher';
 import "@/styles/layout/navbar.scss";
 
 interface Props {

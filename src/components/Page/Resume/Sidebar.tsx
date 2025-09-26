@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
-import Section from './Section';
+import Section from '../../ui/Section';
 import { Skill, Education } from '@/types/resume';
 
-import '../styles/sidebar.scss';
+import '@/styles/layout/sidebar.scss';
 
 interface Props {
     skills: Skill[];

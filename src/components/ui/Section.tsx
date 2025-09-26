@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import '../styles/section.scss';
+import '@/styles/ui/section.scss';
 
 interface Props {
     class_from_parent: string;
