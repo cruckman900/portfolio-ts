@@ -3,9 +3,12 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import Layout from "@/components/layout/Layout";
 import { ContactPayload } from '@/types/contact';
 import TwoPanelLayout from '@/components/layout/TwoPanelLayout';
+import toast from 'react-hot-toast';
 import '@/styles/page/contact.scss';
 
 export default function Contact() {
+    const bypassCaptcha = process.env.NEXT_PUBLIC_BYPASS_CAPTCHA === 'true';
+
     const [formData, setFormData] = useState<ContactPayload>({
         name: '',
         email: '',
@@ -18,16 +21,28 @@ export default function Contact() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        e.stopPropagation();
 
-        console.log('Sending POST to /api/contact:', formData);
+        console.log("formData", formData);
+
         const res = await fetch('/api/contact', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData),
+            body: JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                message: formData.message,
+                captchaToken: formData.captchaToken || '', // optional if bypassing 
+            }),
         });
 
         const data = await res.json();
-        alert(data.message);
+
+        if (res.ok) {
+            toast.success(data.message || 'Message sent!', { icon: '☣️' });
+        } else {
+            toast.error(data.message || 'Something went wrong.', { icon: '💀' });
+        }
     }
     return (
         <TwoPanelLayout
@@ -81,8 +96,13 @@ export default function Contact() {
 
                                 <button
                                     className='form-submit'
-                                    disabled={!isValidEmail(formData.email) || !formData.captchaToken}
-                                    type="submit">
+                                    disabled={
+                                        !isValidEmail(formData.email) ||
+                                        (!formData.captchaToken && !bypassCaptcha)
+                                    }
+                                    type="button"
+                                    onClick={handleSubmit}
+                                >
                                     Send
                                 </button>
                             </div>

@@ -4,6 +4,7 @@ import { ApolloProvider } from '@apollo/client/react';
 import client from '@/lib/apolloClient';
 import type { Page } from '../types/page';
 import PageTransition from '@/components/ui/PageTransition/PageTransition';
+import { Toaster } from 'react-hot-toast';
 import '@/styles/bundle.scss';
 
 type AppPropsWithLayout = AppProps & {
@@ -24,6 +25,16 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
             <ApolloProvider client={client}>
                 {isHydrated ? (
                     <PageTransition>
+                        <Toaster
+                            position='top-right'
+                            toastOptions={{
+                                style: {
+                                    background: 'var{--surface)',
+                                    color: 'var(--text)',
+                                    border: 'solid 1px var{--border)'
+                                }
+                            }}
+                        />
                         <Component {...pageProps} />
                     </PageTransition>
                 ) : null}
