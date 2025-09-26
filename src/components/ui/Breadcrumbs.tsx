@@ -4,12 +4,23 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function Breadcrumbs() {
-  const { pathname } = useRouter();
+  const { pathname, query } = useRouter();
   const segments = pathname.split('/').filter(Boolean);
 
   const crumbs = segments.map((segment, index) => {
-    const href = '/' + segments.slice(0, index + 1).join('/');
-    const label = decodeURIComponent(segment).replace(/-/g, ' ');
+    const isDynamic = segment.startsWith('[') && segment.endsWith(']');
+    const paramName = segment.replace(/\[|\]/g, '');
+    const label = isDynamic
+      ? decodeURIComponent(query[paramName]?.toString() || paramName)
+      : segment.replace(/-/g, ' ');
+
+    const href = '/' + segments.slice(0, index + 1).map(s => {
+      if (s.startsWith('[') && s.endsWith(']')) {
+        const key = s.replace(/\[|\]/g, '');
+        return query[key] || key;
+      }
+      return s;
+    }).join('/');
 
     return (
       <li key={href}>
@@ -21,7 +32,6 @@ export default function Breadcrumbs() {
       </li>
     );
   });
-
   return (
     <nav aria-label="Breadcrumb" style={{ backgroundColor: 'var(--surface)', color: 'var(--text)', margin: 0, padding: 0 }}>
       <ul style={{ display: 'flex', gap: '0.5rem', listStyle: 'none', padding: '0.5rem', paddingLeft: '1rem', margin: 0 }}>
