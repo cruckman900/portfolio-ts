@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { NavBarLink } from '@/types/resume';
 import Link from 'next/link';
 import ThemeSwitcher from './ThemeSwitcher';
-import "../styles/navbar.scss";
+import "@/styles/layout/navbar.scss";
 
 interface Props {
     className: string;
