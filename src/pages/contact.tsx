@@ -18,6 +18,7 @@ export default function Contact() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
+        console.log('Sending POST to /api/contact:', formData);
         const res = await fetch('/api/contact', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -30,7 +31,7 @@ export default function Contact() {
     return (
         <div className='contact-page'>
             <h1 className='title'>Contact Me</h1>
-            <form method="POST" action="/api/contact" className='form' onSubmit={handleSubmit}>
+            <form className='form' onSubmit={handleSubmit}>
                 <div className='form-fields'>
                     <input
                         type="text"
