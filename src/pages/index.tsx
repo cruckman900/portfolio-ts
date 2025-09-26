@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import "../styles/index.scss";
+import "@/styles/page/index.scss";
 
 export default function Index() {
     return (

@@ -1,4 +1,59 @@
-@use 'base';
+@use '@/styles/base.scss';
+
+.resume-header {
+    // color: base.$text;
+    color: var(--text);
+    margin: 0;
+    padding: 2rem 0;
+
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2rem;
+        color: var(--accent);
+    }
+
+    .tagline {
+        font-style: italic;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: var(--accent);
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 0;
+    }
+
+    @media print {
+        background-color: white;
+        color: base.$print-text;
+        margin: 0;
+        padding: 0;
+
+        h1 {
+            color: base.$print-accent;
+        }
+
+        a {
+            color: base.$print-text;
+        }
+
+        .no-print {
+            display: none;
+        }
+    }
+}
 
 i {
     min-width: 1rem;

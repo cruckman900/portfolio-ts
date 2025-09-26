@@ -4,15 +4,14 @@
 @use './theme.scss';
 
 // Layout
-@use './layout.scss';
+@use './layout/layout.scss';
 @use './layout/footer.scss';
 @use './layout/navbar.scss';
-@use './sidebar.scss';
+@use './layout/sidebar.scss';
 
 // UI
 @use './ui/section.scss';
 
 // Page
-@use './index.scss';
-@use './resume.scss';
-@use './resumeheader.scss';
+@use './page/index.scss';
+@use './page/resume.scss';

@@ -1,6 +1,6 @@
 import React from "react";
 import { Contact } from "@/types/resume";
-import '../styles/resumeheader.scss';
+import '@/styles/page/resume.scss';
 
 interface Props {
     icon: string;
