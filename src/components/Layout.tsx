@@ -22,7 +22,7 @@ const Layout: React.FC<Props> = ({ children }) => {
     const links = [
         {url: "/", label: "home", icon: "fas fa-house"},
         {url: "/resume", label: "resume", icon: "fas fa-file"},
-        {url: "/projects", label: "projects", icon: "fas fa-code"}
+        // {url: "/projects", label: "projects", icon: "fas fa-code"}
     ];
 
     return (
