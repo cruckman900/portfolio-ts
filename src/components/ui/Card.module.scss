@@ -1,0 +1,19 @@
+/* Card.module.scss */
+.card {
+    background: var(--muted);
+    color: var(--text);
+    border: var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+    border-color: #0070f3;
+    box-shadow: 0 0 0 2px #0070f3;
+}
