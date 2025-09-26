@@ -58,6 +58,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     },
   });
 
+  console.log("smtp host", env.SMTP_HOST)
+  console.log("smtp port", env.SMTP_PORT)
+  console.log("user", env.SMTP_USER)
+  console.log("pass", env.SMTP_PASS)
+
   try {
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
