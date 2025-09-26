@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import '@/styles/main.scss'
 
 export default function Document() {
     return (
@@ -25,7 +26,6 @@ export default function Document() {
                     crossOrigin='anonymous'
                     referrerPolicy='no-referrer'
                 />
-                <link rel="preload" href="/styles/main.scss" as="style" />
             </Head>
             <body>
                 <Main />
