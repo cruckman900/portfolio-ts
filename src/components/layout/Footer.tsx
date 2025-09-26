@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import "@/styles/layout/footer.scss";
 
 const Footer: React.FC = () => {
@@ -6,9 +7,9 @@ const Footer: React.FC = () => {
         <footer className='footer'>
             <div className="main">
                 <div className="social-links">
-                    <a href="https://github.com/cruckman">GitHub</a>
+                    <Link href="https://github.com/cruckman">GitHub</Link>
                     &nbsp; | &nbsp;
-                    <a href="/contact">Contact</a>
+                    <Link href="/contact">Contact</Link>
                 </div>
                 <p>&copy;{new Date().getFullYear()} Christopher Ruckman</p>
             </div>
