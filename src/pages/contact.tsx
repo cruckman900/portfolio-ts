@@ -12,6 +12,9 @@ export default function Contact() {
         captchaToken: ''
     });
 
+    const isValidEmail = (email: string) =>
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
@@ -61,7 +64,12 @@ export default function Contact() {
                         onChange={token => setFormData({ ...formData, captchaToken: token || '' })}
                     />
 
-                    <button className='form-submit' type="submit">Send</button>
+                    <button 
+                        className='form-submit' 
+                        disabled={!isValidEmail(formData.email) || !formData.captchaToken}
+                        type="submit">
+                            Send
+                        </button>
                 </div>
             </form>
         </div>
