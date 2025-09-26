@@ -16,7 +16,7 @@ interface CaptchaResponse {
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   console.log('Request method:', req.method);
   if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Method not allowed' });
+    return res.status(405).json({ message: `Method not allowed: ${req.method}` });
   }
 
   const { name, email, message, captchaToken }: ContactPayload = req.body;
