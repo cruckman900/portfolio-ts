@@ -5,7 +5,7 @@ import { ContactPayload } from '@/types/contact';
 import TwoPanelLayout from '@/components/layout/TwoPanelLayout';
 import toast from 'react-hot-toast';
 import contactReasons from '@/data/contact.json';
-import '@/styles/page/contact.scss';
+import styles from './contact.module.scss';
 
 export default function Contact() {
     const bypassCaptcha = process.env.NEXT_PUBLIC_BYPASS_CAPTCHA === 'true';
@@ -48,7 +48,7 @@ export default function Contact() {
     return (
         <TwoPanelLayout
             left={
-                <div style={{ background: 'var(--surface)', color: 'var(--text)', padding: '1rem', margin: '0', height: '100%' }}>
+                <div>
                     <h1>{contactReasons.heading}</h1>
                     {contactReasons.reasons.map((reason, i) => (
                         <p key={i} style={{ fontSize: "1.2rem" }}>{reason}</p>
@@ -57,10 +57,10 @@ export default function Contact() {
            }
             right={
                 <div style={{ padding: '2rem' }}>
-                    <div className='contact-page'>
-                        <h1 className='title'>Contact Me</h1>
-                        <form className='form' onSubmit={handleSubmit}>
-                            <div className='form-fields'>
+                    <div className={styles.contactPage}>
+                        <h1>Contact Me</h1>
+                        <form className={styles.form} onSubmit={handleSubmit}>
+                            <div className={styles.fields}>
                                 <input
                                     type="text"
                                     name="name"
@@ -88,13 +88,13 @@ export default function Contact() {
                                 />
 
                                 <ReCAPTCHA
-                                    className='form-captcha'
+                                    className={styles.captcha}
                                     sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
                                     onChange={token => setFormData({ ...formData, captchaToken: token || '' })}
                                 />
 
                                 <button
-                                    className='form-submit'
+                                    className={styles.submit}
                                     disabled={
                                         !isValidEmail(formData.email) ||
                                         (!formData.captchaToken && !bypassCaptcha)

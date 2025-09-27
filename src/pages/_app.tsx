@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from 'react';
 import { AppProps } from 'next/app';
 import { ApolloProvider } from '@apollo/client/react';
@@ -12,6 +14,15 @@ type AppPropsWithLayout = AppProps & {
 };
 
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
+    useEffect(() => {
+        const setHeight = () => {
+            document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+        };
+        setHeight();
+        window.addEventListener('resize', setHeight);
+        return () => window.removeEventListener('resize', setHeight);
+    }, []);
+
     const [isHydrated, setIsHydrated] = useState(false);
 
     useEffect(() => {

@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     gap: 2rm;
 
@@ -10,7 +10,7 @@
         flex-direction: column;
         background-color: var(--surface);
         min-width: 300px;
-        min-height: 100vh;
+        min-height: calc(var(--vh, 1vh) * 100);
         width: 30%;
         padding: 2rem;
         flex-shrink: 0;
@@ -23,7 +23,7 @@
     main {
         flex: 1;
         padding: 2rem;
-        min-height: 100vh;
+        min-height: calc(var(--vh, 1vh) * 100);
 
         @media print {
             padding: 0.5rem;

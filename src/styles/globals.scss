@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+/*
+    any use of 100vh should use
+    
+    height: calc(var(--vh, 1vh) * 100);
+*/
+
 html, body, #__next {
     font-family: 'Open Sans', sans-serif;
     padding: 0;

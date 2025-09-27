@@ -1,63 +1,33 @@
-'use client'
-
 import React, { useState } from 'react';
-import { useRouter } from 'next/router';
-import { NavBarLink } from '@/types/resume';
 import SubNav from './SubNav';
-import Link from 'next/link';
-import "@/styles/layout/navbar.scss";
+import NavLinks from '@/components/ui/NavLinks';
 
-interface Props {
-    className: string;
-    navbarlinks: NavBarLink[];
-}
-
-const Navbar: React.FC<Props> = ({ className, navbarlinks }) => {
-    const router = useRouter();
-
+export default function Navbar({ className }: { className?: string }) {
     const [toggleHamburger, setToggleHamburger] = useState(false);
+    const handleToggle = () => setToggleHamburger(prev => !prev);
 
-    const handleToggle = () => {
-        setTimeout(() => {
-            setToggleHamburger(!toggleHamburger);
-        }, 100);
-    };
-    
     return (
         <>
-        <nav className={className}>
-            <div className="brand">
-                <i className="fas fa-biohazard"></i>
-                <span>LinearDescent</span>
-                <span className="hamburger" onClick={handleToggle}>
-                    {toggleHamburger ? <i className="fas fa-x"></i> :
-                    <i className="fas fa-bars"></i>}
-                </span>
-            </div>
-            {navbarlinks.map((nav, i) => (
-                <div className="link" key={i}>
-                    {router.asPath == nav.url ?
-                        <span className="link-text-active">{nav.label}</span> :
-                        <Link className='link-text' href={nav.url}>{nav.label}</Link>
-                    }
+            <nav className={className}>
+                <div className="brand">
+                    <i className="fas fa-biohazard"></i>
+                    <span>LinearDescent</span>
                 </div>
-                )
-            )}
-        </nav>
-        <SubNav />
-        {toggleHamburger && <div className='mobile-menu'>
-            {navbarlinks.map((nav, i) => (
-                <div className="link" key={i}>
-                    {router.asPath == nav.url ?
-                        <span className="link-text-active"><i className={nav.icon}></i>{nav.label}</span> :
-                        <Link className='link-text' href={nav.url} onClick={handleToggle}><i className={nav.icon}></i>{nav.label}</Link>
-                    }
-                </div>
-                )
-            )}
-        </div>}
-        </>
-    )
-};
 
-export default Navbar;
+                <div className="hamburger" onClick={handleToggle}>
+                    {toggleHamburger ? <i className="fas fa-x"></i> : <i className="fas fa-bars"></i>}
+                </div>
+
+                <NavLinks />
+            </nav>
+
+            <SubNav />
+
+            {toggleHamburger && (
+                <div className="mobile-menu">
+                    <NavLinks onClick={handleToggle} />
+                </div>
+            )}
+        </>
+    );
+}
