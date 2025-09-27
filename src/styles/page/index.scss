@@ -6,6 +6,10 @@
         font-size: 3rem;
         text-transform: uppercase;
         animation: flicker 2s infinite;
+
+        @media screen and (max-size: 600px) {
+            font-size: 1.75rem;
+        }
     }
 
     .bio-blurb {

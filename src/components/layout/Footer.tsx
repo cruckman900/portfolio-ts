@@ -13,9 +13,6 @@ const Footer: React.FC = () => {
                 </div>
                 <p>&copy;{new Date().getFullYear()} Christopher Ruckman</p>
             </div>
-            <div className="print">
-                <button className="print-button" onClick={() => window.print()}>Print Page</button>
-            </div>
        </footer>
     )
 };

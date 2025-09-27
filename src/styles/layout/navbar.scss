@@ -25,7 +25,7 @@
             margin-right: 1rem;
         }
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 600px) {
             font-size: 1.25rem;
         }
     }
@@ -51,7 +51,7 @@
             }
         }
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 600px) {
             display: none;
         }
     }
@@ -60,7 +60,7 @@
         display: none;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
         .hamburger {
             display: inline;
             position: absolute;

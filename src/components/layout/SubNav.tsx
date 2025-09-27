@@ -24,6 +24,9 @@ export default function SubNav() {
     return (
         <div className={styles.container}>
             <Breadcrumbs />
+            <div className={styles.print}>
+                <button className="print-button" onClick={() => window.print()}>Print Page</button>
+            </div>
             <ThemeSwitcher value={theme} onChange={handleThemeChange} />
         </div>
     );

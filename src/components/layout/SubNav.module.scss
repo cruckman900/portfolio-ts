@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,5 +12,21 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
+    }
+}
+
+.print {
+    button {
+        background-color: var(--muted);
+        color: var(--text);
+        font-weight: bold;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 500px) {
+        display: none;
     }
 }

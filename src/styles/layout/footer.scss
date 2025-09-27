@@ -1,7 +1,6 @@
 @use "@/styles/base.scss";
 
 .footer {
-    display: flex;
     background-color: var(--surface);
     color: var(--text);
 
@@ -12,26 +11,6 @@
             position: relative;
             top: 0.5rem;
             left: 4rem;
-        }
-    }
-
-    .print {
-        position: relative;
-        left: 4rem;
-        height: 100%;
-
-        &-button {
-            background-color: var(--accent);
-            color: var(--muted);
-            font-weight: bold;
-            border: none;
-            border-radius: 0.75rem;
-            height: 100%;
-            cursor: pointer;
-        }
-
-        @media screen and (max-width: 500px) {
-            display: none;
         }
     }
 
