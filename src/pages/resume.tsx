@@ -4,14 +4,14 @@ import Layout from "@/components/layout/Layout";
 import Section from '@/components/ui/Section';
 import resumeData from '@/data/resume.json';
 import styles from './resume.module.scss';
-import '@/styles/page/resume.scss';
+
 export default function ResumePage() {
     const leftPanel = (
         <>
             <Section>
-                <div className="resume-header">
+                <div className={styles.resumeHeader}>
                     <h1>{resumeData.name}</h1>
-                    <p className="tagline">{resumeData.tagline}</p>
+                    <p className={styles.tagline}>{resumeData.tagline}</p>
                     <ul>
                         <li><i className="fas fa-map-marker-alt"></i>{resumeData.contact.location}</li>
                         <li><i className="fas fa-envelope"></i><a href={`mailto:${resumeData.contact.email}`}>{resumeData.contact.email}</a></li>
@@ -22,41 +22,41 @@ export default function ResumePage() {
                 </div>
             </Section>
             <Section title="Core Competencies" icon="fas fa-key">
-                <>
+                <div className={styles.section}>
                     {resumeData.skills.map((skill, i) =>
                     (
-                        <div className='sidebar-content' key={i}>
+                        <div key={i} className={styles.loopContainer}>
                             <h3>{skill.section}</h3>
                             <div>{skill.content}</div>
                         </div>
                     )
                     )}
-                </>
+                </div>
             </Section>
 
             <Section className={styles.pagebreakBefore} title="Education" icon="fas fa-graduation-cap">
-                <>
+                <div className={styles.section}>
                     {resumeData.education.map((edu, i) =>
                     (
-                        <div className='sidebar-content' key={i}>
+                        <div key={i} className={styles.loopContainer}>
                             <div><i>{edu.dates}</i></div>
                             <div>{edu.degree}</div>
                             <h3><a href={edu.url} target='_blank'>{edu.school}</a></h3>
                         </div>
                     )
                     )}
-                </>
+                </div>
             </Section>
         </>
     );
 
     const rightPanel = (
-        <main>
+        <>
             <Section title="Professional Summary" icon="fas fa-user">
                 <p>{resumeData.summary}</p>
             </Section>
             <Section title="Selected Achievements" icon="fas fa-star">
-                <>
+                <div className={styles.section}>
                     {resumeData.achievements.map((ach, i) =>
                     (
                         <div key={i}>
@@ -69,10 +69,10 @@ export default function ResumePage() {
                         </div>
                     )
                     )}
-                </>
+                </div>
             </Section>
             <Section className={styles.pagebreakBefore} title="Professional Experience" icon="fas fa-briefcase">
-                <>
+                <div className={styles.section}>
                     {resumeData.experience.map((exp, i) =>
                     (
                         <article className={styles.noBreakInside} key={i}>
@@ -86,10 +86,10 @@ export default function ResumePage() {
                         </article>
                     )
                     )}
-                </>
+                </div>
             </Section>
             <Section title="Personal Projects" icon="fas fa-code">
-                <>
+                <div className={styles.section}>
                     {resumeData.projects.map((list, i) =>
                     (
                         <article className={styles.noBreakInside} key={i}>
@@ -108,9 +108,9 @@ export default function ResumePage() {
                         </article>
                     )
                     )}
-                </>
+                </div>
             </Section>
-        </main>
+        </>
     );
 
     return (

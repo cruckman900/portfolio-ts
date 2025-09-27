@@ -132,7 +132,11 @@ a {
     }
 }
 
-h1 {
+i {
+    min-width: 2rem;
+}
+
+h1, h2 {
     color: var(--accent);
     transition: color 0.4s ease;
 }

@@ -1,3 +1,35 @@
+.resumeHeader {
+    h1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.tagline {
+    font-style: italic;
+}
+
+.section {
+    h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+}
+
+.loopContainer {
+    margin-bottom: 1rem;
+}
+
 .pagebreakBefore {
     page-break-before: always;
 }
