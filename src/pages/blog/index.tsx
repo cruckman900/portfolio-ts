@@ -1,8 +1,10 @@
 // pages/blog/index.tsx
 import { useEffect, useState } from 'react';
-import Link from "next/link";
 import { BlogPost } from '@/types/blog';
+import Layout from '@/components/layout/Layout';
 import toast from 'react-hot-toast';
+
+import { motion } from 'framer-motion';
 
 export default function BlogIndex() {
     const [posts, setPosts] = useState<BlogPost[]>([])
@@ -28,10 +30,21 @@ export default function BlogIndex() {
                     <article key={post.id}>
                         <h2>{post.title}</h2>
                         <p>{post.excerpt}</p>
-                        <Link href={`/blog/${post.slug}`}>Read more</Link>
+                        <motion.a
+                            href={`/blog/${post.slug}`}
+                                whileHover={{ y: -2, scale: 1.02 }}
+                                className="read-more"
+                        >
+                            Read more →
+                        </motion.a>
                     </article>
                 ))
             )}
         </section>
     );
 }
+
+// Define a custom layout for this page
+BlogIndex.getLayout = function getLayout(page: React.ReactElement) {
+    return <Layout>{page}</Layout>
+};
