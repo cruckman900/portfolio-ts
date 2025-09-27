@@ -72,7 +72,6 @@
             z-index: 10;
             height: 100vh;
             width: 100%;
-            background-color: base.$dark-bg;
         }
     }
 
@@ -83,12 +82,10 @@
 
 @media screen and (max-width: 600px) {
     .mobile-menu {
-        // position: absolute;
-        // top: 0;
-        // z-index: 10;
         height: calc(100vh - 9rem);
         width: 100%;
-        background-color: base.$dark-bg;
+        background-color: var(--surface);
+        border-top: solid 1px var(--accent);
 
         .link {
             padding: 1rem 3rem;
@@ -99,12 +96,11 @@
         
             &-text {
                 font-size: 1.5rem;
-                color: base.$text;
                 text-decoration: none;
 
                 &-active {
                     font-size: 1.5rem;
-                    color: base.$red-accent;
+                    color: var(--text);
                 }
             }
         }
