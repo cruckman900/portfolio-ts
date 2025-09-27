@@ -6,5 +6,24 @@ const nextConfig: NextConfig = {
     optimizeCss: true
   }
 };
+module.exports = {
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
+    resolveAlias: {
+      underscore: 'lodash',
+    },
+    resolveExtensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
+  },
+}; module.exports = {
+  webpack(config: { output: { publicPath: string; }; }) {
+    config.output.publicPath = '/';
+    return config;
+  },
+};
 
 export default nextConfig;
