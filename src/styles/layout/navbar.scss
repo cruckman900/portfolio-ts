@@ -1,6 +1,7 @@
 @use '@/styles/base.scss';
 
 .navbar {
+    position: relative;
     display: flex;
     float: row;
     background-color: var(--surface);
@@ -31,8 +32,6 @@
     }
 
     .link {
-        // padding: 1.5rem 0 .5rem 2rem;
-        // margin: auto;
         margin-top: 1.5rem;
         margin-right: 2rem;
         
@@ -82,11 +81,11 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .mobile-menu {
         // position: absolute;
         // top: 0;
-        z-index: 10;
+        // z-index: 10;
         height: calc(100vh - 9rem);
         width: 100%;
         background-color: base.$dark-bg;

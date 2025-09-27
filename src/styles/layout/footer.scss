@@ -4,16 +4,6 @@
     background-color: var(--surface);
     color: var(--text);
 
-    .main {
-        width: 90vw;
-
-        p, div {
-            position: relative;
-            top: 0.5rem;
-            left: 4rem;
-        }
-    }
-
     @media print {
         display: none;
     }
