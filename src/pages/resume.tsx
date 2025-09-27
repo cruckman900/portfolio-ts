@@ -14,7 +14,7 @@ export default function ResumePage() {
             skills={resumeData.skills}
             education={resumeData.education}
         >
-            <ResumeHeader icon={resumeData.icon} name={resumeData.name} tagline={resumeData.tagline} contact={resumeData.contact} />
+            <ResumeHeader name={resumeData.name} tagline={resumeData.tagline} contact={resumeData.contact} />
         </Sidebar>
     );
 

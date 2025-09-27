@@ -4,7 +4,6 @@
 // - Text: $theme-brown-text works beautifully for headings and body copy.
 // - Muted: Use $theme-brown-muted for secondary labels or breadcrumbs.
 // - Border: $theme-brown-border keeps things clean and structured.
-
 $light-theme: (
     icon: ☀️,
     bg: #ffffff,
@@ -103,6 +102,19 @@ $red-theme: (
   text: #2c1a1a,
   muted: #a88a8a,
   border: #e0c0c0
+);
+
+$themes: (
+  light: $light-theme,
+  dark: $dark-theme,
+  hazard: $hazard-theme,
+  brownstone: $brownstone-theme,
+  midnight: $midnight-theme,
+  slate: $slate-theme,
+  purple: $purple-theme,
+  pink: $pink-theme,
+  green: $green-theme,
+  red: $red-theme
 );
 
 body {

@@ -1,61 +1,17 @@
-@use 'theme' as *;
+@use './theme' as *;
 
 :root {
-    @each $key, $value in $light-theme {
+    @each $key, $value in map-get($themes, light) {
         --#{$key}: #{$value};
     }
 }
 
-[data-theme='dark'] {
-    @each $key, $value in $dark-theme {
-        --#{$key}: #{$value};
-    }
-}
-
-[data-theme='hazard'] {
-    @each $key, $value in $hazard-theme {
-        --#{$key}: #{$value};
-    }
-}
-
-[data-theme='brownstone'] {
-    @each $key, $value in $brownstone-theme {
-        --#{$key}: #{$value};
-    }
-}
-
-[data-theme='midnight'] {
-    @each $key, $value in $midnight-theme {
-        --#{$key}: #{$value};
-    }
-}
-
-[data-theme='slate'] {
-    @each $key, $value in $slate-theme {
-        --#{$key}: #{$value};
-    }
-}
-
-[data-theme='purple'] {
-    @each $key, $value in $purple-theme {
-        --#{$key}: #{$value};
-    }
-}
-
-[data-theme='pink'] {
-    @each $key, $value in $pink-theme {
-        --#{$key}: #{$value};
-    }
-}
-
-[data-theme='green'] {
-    @each $key, $value in $green-theme {
-        --#{$key}: #{$value};
-    }
-}
-
-[data-theme='red'] {
-    @each $key, $value in $red-theme {
-        --#{$key}: #{$value};
+@each $theme-name, $theme-map in $themes {
+    @if $theme-name != light {
+        [data-theme='#{$theme-name}'] {
+            @each $key, $value in $theme-map {
+                --#{$key}: #{$value};
+            }
+        }
     }
 }

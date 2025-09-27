@@ -27,7 +27,7 @@ const Navbar: React.FC<Props> = ({ className, navbarlinks }) => {
         <>
         <nav className={className}>
             <div className="brand">
-                <i className="fas fa-dragon"></i>
+                <i className="fas fa-biohazard"></i>
                 <span>LinearDescent</span>
                 <span className="hamburger" onClick={handleToggle}>
                     {toggleHamburger ? <i className="fas fa-x"></i> :

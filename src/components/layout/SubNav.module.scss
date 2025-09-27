@@ -1,6 +1,15 @@
 .container {
     display: flex;
-    flex-direction: row;
-    background-color: var(--surface);
+    justify-content: space-between;
+    align-items: center;
     width: 100vw;
+    padding: 0.5rem 2rem; // 2rem left and right
+    background-color: var(--surface);
+    z-index: 5;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
 }

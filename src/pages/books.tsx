@@ -5,7 +5,7 @@ import Card from '@/components/ui/Card';
 import Image from 'next/image';
 import booksData from '@/data/books.json';
 import Layout from '@/components/layout/Layout';
-import styles from '@/styles/page/books.module.scss';
+import styles from './books.module.scss';
 
 interface Book {
     title: string;

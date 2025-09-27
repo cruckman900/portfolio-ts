@@ -48,12 +48,31 @@ export default function Contact() {
         <TwoPanelLayout
             left={
                 <div style={{ background: 'var(--surface)', color: 'var(--text)', padding: '1rem', margin: '0', height: '100%' }}>
-                    <h2>Navigation</h2>
-                    <ul>
-                        <li>Home</li>
-                        <li>Resume</li>
-                        <li>Contact</li>
-                    </ul>
+                    <h1>💬 Why Reach Out?</h1>
+                    <p>
+                        Whether you&apos;re launching a new project or refining an existing one, I bring a unique blend of 
+                        technical precision and creative insight to the table. I specialize in building secure, scalable 
+                        websites with expressive UI/UX, and I&apos;m available for commission-based work across a range of services:
+                    </p>
+                    <p>
+                        Custom website development (React, Next.js, ASP.NET, Node.js)
+                    </p>
+                    <p>
+                        Responsive design & branding
+                    </p>
+                    <p>
+                        Deployment automation & hosting setup
+                    </p>
+                    <p>
+                        Form integration, validation, and secure email workflows
+                    </p>
+                    <p>
+                        Creative writing, editing, and digital publishing
+                    </p>
+                    <p>
+                        If you need a developer who can think like a designer, write like an author, and troubleshoot like an 
+                        engineer—I&apos;d love to hear from you. Let&apos;s build something that works beautifully and tells your story with clarity.
+                    </p>
                 </div>
             }
             right={

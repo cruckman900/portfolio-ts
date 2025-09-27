@@ -1,39 +1,65 @@
-import { useEffect, useState } from 'react';
+// ThemeSwitcher.tsx
+import { useState } from 'react';
+import { themeOptions } from '@/data/themeOptions';
+import { motion, AnimatePresence } from 'framer-motion';
+import styles from './ThemeSwitcher.module.scss';
 
-const ThemeSwitcher = () => {
-    const [theme, setTheme] = useState('brownstone');
-
-    // Load theme from localStorage
-    useEffect(() => {
-        const saved = localStorage.getItem('theme');
-        if (saved) {
-            setTheme(saved);
-            document.documentElement.setAttribute('data-theme', saved);
-        }
-    }, []);
-
-    // Update theme and persist
-    const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const selected = e.target.value;
-        setTheme(selected);
-        document.documentElement.setAttribute('data-theme', selected);
-        localStorage.setItem('theme', selected);
-    };
+export default function ThemeSwitcher({
+    value,
+    onChange,
+}: {
+    value: string;
+    onChange: (val: string) => void;
+}) {
+    const [open, setOpen] = useState(false);
+    const current = themeOptions.find(opt => opt.value === value);
 
     return (
-        <select style={{ position: "absolute", right: "2rem", padding: "0.25rem"}} value={theme} onChange={handleChange}>
-            <option value="light">☀️Light</option>
-            <option value="dark">🌑Dark</option>
-            <option value="hazard">⚠️Hazard</option>
-            <option value="brownstone">🟤Brownstone</option>
-            <option value="midnight">🌌Midnight Blue</option>
-            <option value="slate">🪨Slate</option>
-            <option value="purple">🔮Purple Ember</option>
-            <option value="pink">🌸Pink Bloom</option>
-            <option value="green">🌿Verdant Green</option>
-            <option value="red">🔴Crimson Core</option>
-        </select>
-    );
-};
+        <div className={styles.wrapper}>
+            <button
+                className={styles.trigger}
+                onClick={() => setOpen(prev => !prev)}
+                aria-haspopup="listbox"
+                aria-expanded={open}
+            >
+                <span className={styles.icon}>{current?.icon}</span>
+                <span className={styles.name}>{current?.name}</span>
+                <motion.span
+                    className={styles.arrow}
+                    animate={{ rotate: open ? 180 : 0 }}
+                    transition={{ duration: 0.2 }}
+                >
+                    ▾
+                </motion.span>
+            </button>
 
-export default ThemeSwitcher;
+            <AnimatePresence>
+                {open && (
+                    <motion.ul
+                        className={styles.dropdown}
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        role="listbox"
+                    >
+                        {themeOptions.map(opt => (
+                            <motion.li
+                                key={opt.value}
+                                className={styles.item}
+                                onClick={() => {
+                                    onChange(opt.value);
+                                    setOpen(false);
+                                }}
+                                whileHover={{ scale: 1.02 }}
+                            >
+                                <span className={styles.icon}>{opt.icon}</span>
+                                <span className={styles.name}>{opt.name}</span>
+                            </motion.li>
+                        ))}
+                    </motion.ul>
+                )}
+            </AnimatePresence>
+        </div>
+    );
+}

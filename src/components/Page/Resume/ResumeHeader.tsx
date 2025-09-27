@@ -3,15 +3,14 @@ import { Contact } from "@/types/resume";
 import '@/styles/page/resume.scss';
 
 interface Props {
-    icon: string;
     name: string;
     tagline: string;
     contact: Contact;
 };
 
-const Header: React.FC<Props> = ({ icon, name, tagline, contact }) => (
+const Header: React.FC<Props> = ({ name, tagline, contact }) => (
     <header className="resume-header">
-        <h1><span className="no-print"><i className={icon}></i></span>{name}</h1>
+        <h1><span className="no-print"></span>{name}</h1>
         <p className="tagline">{tagline}</p>
         <ul>
             <li><i className="fas fa-map-marker-alt"></i>{contact.location}</li>
