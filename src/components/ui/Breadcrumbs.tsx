@@ -34,7 +34,7 @@ export default function Breadcrumbs() {
   });
   return (
     <nav aria-label="Breadcrumb" style={{ backgroundColor: 'var(--surface)', color: 'var(--text)', margin: 0, padding: 0 }}>
-      <ul style={{ display: 'flex', gap: '0.5rem', listStyle: 'none', padding: '0.5rem', paddingLeft: '1rem', margin: 0 }}>
+      <ul style={{ display: 'flex', gap: '0.5rem', listStyle: 'none', padding: '0.5rem', paddingLeft: '2rem', margin: 0 }}>
         <li>
           <Link href="/">Home</Link>
         </li>

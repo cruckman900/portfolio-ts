@@ -21,8 +21,8 @@ const Layout: React.FC<Props> = ({ children }) => {
 
     const links = [
         {url: "/", label: "home", icon: "fas fa-house"},
+        {url: "/books", label: "books", icon: "fas fa-book-open"},
         {url: "/resume", label: "resume", icon: "fas fa-file"},
-        // {url: "/projects", label: "projects", icon: "fas fa-code"}
     ];
 
     return (

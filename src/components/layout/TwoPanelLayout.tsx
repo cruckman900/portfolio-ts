@@ -8,6 +8,7 @@ interface TwoPanelLayoutProps {
     gap?: string; // optional spacing between panels
     minWidth?: string; // optional minimum width for left panel
     width?: string; // optional maximum width for left panel
+    backgroundColor?: string;
 }
 
 const TwoPanelLayout: React.FC<TwoPanelLayoutProps> = ({
@@ -15,7 +16,8 @@ const TwoPanelLayout: React.FC<TwoPanelLayoutProps> = ({
     right,
     gap = '2rem',
     minWidth = '300px',
-    width = '30%'
+    width = '30%',
+    backgroundColor = 'var(--surface)'
 }) => {
     return (
         <div
@@ -27,7 +29,7 @@ const TwoPanelLayout: React.FC<TwoPanelLayoutProps> = ({
                 gap,
             }}
         >
-            <aside style={{ minWidth, width, flexShrink: 0, height: '100%' }}>
+            <aside style={{ backgroundColor, minWidth, width, flexShrink: 0, height: '100%' }}>
                 <Breadcrumbs />
                 {left}
             </aside>

@@ -5,6 +5,7 @@ import Card from '@/components/ui/Card';
 import Image from 'next/image';
 import booksData from '@/data/books.json';
 import Layout from '@/components/layout/Layout';
+import styles from '@/styles/page/books.module.scss';
 
 interface Book {
     title: string;
@@ -22,9 +23,10 @@ export default function BooksPage() {
     const [view, setView] = useState<'series' | 'book'>('series');
 
     const leftPanel = (
-        <div className="book-grid">
+        <div className={styles.bookGrid}>
             {booksData.map((book) => (
                 <Card
+                    className={styles.card}
                     key={book.asin}
                     onClick={() => {
                         setSelectedBook(book);
@@ -34,36 +36,39 @@ export default function BooksPage() {
                 >
                     <h3>{book.title}</h3>
                     <p>{book.series}</p>
-                    <Image
-                        src={book.coverFront}
-                        alt="Front Cover"
-                        layout="responsive"
-                        width={300}
-                        height={450}
-                    />
-                    <Image
-                        src={book.coverBack}
-                        alt="Back Cover"
-                        layout="responsive"
-                        width={300}
-                        height={450}
-                    />
-                    <a
-                        href={book.siteStripeLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ color: 'var(--text' }}
-                    >
-                        Buy on Amazon
-                    </a>
+                    <div className={styles.bookCovers}>
+                        <Image
+                            src={book.coverFront}
+                            alt="Front Cover"
+                            width={100}
+                            height={150}
+                            style={{ objectFit: 'contain' }}
+                        />
+                        <Image
+                            src={book.coverBack}
+                            alt="Back Cover"
+                            width={100}
+                            height={150}
+                            style={{ objectFit: 'contain' }}
+                        />
+                    </div>
+                    <div className={styles.buyNow}>
+                        <a
+                            href={book.siteStripeLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Buy on Amazon
+                        </a>
+                    </div>
                 </Card>
             ))}
         </div>
     );
 
     const rightPanel = (
-        <div className="description-panel">
-            <div className="breadcrumb-toggle">
+        <div className={styles.descriptionPanel}>
+            <div className={styles.breadcrumbToggle}>
                 <button onClick={() => setView('series')} className={view === 'series' ? 'active' : ''}>
                     Series Description
                 </button>
@@ -75,7 +80,7 @@ export default function BooksPage() {
                     Book Description
                 </button>
             </div>
-            <div className='description-content'>
+            <div className={styles.descriptionContent}>
                 {view === 'series' &&
                     (selectedBook?.seriesDescription || booksData[0].seriesDescription).map((para, idx) => (
                         <p key={idx}>{para}</p>
