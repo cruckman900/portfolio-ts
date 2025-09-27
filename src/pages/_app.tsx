@@ -5,7 +5,7 @@ import { AppProps } from 'next/app';
 import { ApolloProvider } from '@apollo/client/react';
 import client from '@/lib/apolloClient';
 import type { Page } from '../types/page';
-import PageTransition from '@/components/ui/PageTransition/PageTransition';
+import PageTransition from '@/components/ui/PageTransition';
 import { Toaster } from 'react-hot-toast';
 import '@/styles/bundle.scss';
 

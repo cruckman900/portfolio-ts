@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SubNav from './SubNav';
+import Hamburger from '../ui/Hamburger';
 import NavLinks from '@/components/ui/NavLinks';
 
 export default function Navbar({ className }: { className?: string }) {
@@ -15,7 +16,7 @@ export default function Navbar({ className }: { className?: string }) {
                 </div>
 
                 <div className="hamburger" onClick={handleToggle}>
-                    {toggleHamburger ? <i className="fas fa-x"></i> : <i className="fas fa-bars"></i>}
+                    <Hamburger isOpen={toggleHamburger} onClick={handleToggle} />
                 </div>
 
                 <NavLinks />

@@ -1,0 +1,17 @@
+.hamburger {
+    all: unset;
+    color: var(--accent); // ✅ controls stroke and fill via currentColor
+    cursor: pointer;
+
+    svg {
+        display: block;
+    }
+
+    rect {
+        transform-origin: center;
+    }
+
+    &:hover {
+        color: var(--muted); // optional hover effect
+    }
+}
