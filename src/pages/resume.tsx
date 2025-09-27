@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import TwoPanelLayout from '@/components/layout/TwoPanelLayout';
 import Layout from "@/components/layout/Layout";
-import Sidebar from '@/components/Page/Resume/Sidebar';
 import ResumeHeader from '@/components/Page/Resume/ResumeHeader';
 import Section from '@/components/ui/Section';
 import Achievements from '@/components/Page/Resume/Achievements';
@@ -10,26 +9,26 @@ import ProjectList from '@/components/Page/Resume/ProjectList';
 import resumeData from '@/data/resume.json';
 export default function ResumePage() {
     const leftPanel = (
-        <Sidebar
-            skills={resumeData.skills}
-            education={resumeData.education}
-        >
-            <ResumeHeader name={resumeData.name} tagline={resumeData.tagline} contact={resumeData.contact} />
-        </Sidebar>
+        <ResumeHeader name={resumeData.name} tagline={resumeData.tagline} contact={resumeData.contact} />
+        // <Sidebar
+        //     skills={resumeData.skills}
+        //     education={resumeData.education}
+        // >
+        // </Sidebar>
     );
 
     const rightPanel = (
         <main>
-            <Section class_from_parent="" title="Professional Summary" icon="fas fa-user">
+            <Section title="Professional Summary" icon="fas fa-user">
                 <p>{resumeData.summary}</p>
             </Section>
-            <Section class_from_parent="" title="Selected Achievements" icon="fas fa-star">
+            <Section title="Selected Achievements" icon="fas fa-star">
                 <Achievements achievements={resumeData.achievements} />
             </Section>
-            <Section class_from_parent="pb-before" title="Professional Experience" icon="fas fa-briefcase">
+            <Section title="Professional Experience" icon="fas fa-briefcase">
                 <Experience experience={resumeData.experience} />
             </Section>
-            <Section class_from_parent="" title="Personal Projects" icon="fas fa-code">
+            <Section title="Personal Projects" icon="fas fa-code">
                 <ProjectList projectsList={resumeData.projects} />
             </Section>
         </main>

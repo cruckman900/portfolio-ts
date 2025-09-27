@@ -14,11 +14,19 @@
         width: 30%;
         padding: 2rem;
         flex-shrink: 0;
+
+        @media print {
+            padding: 0.5rem;
+        }
     }
 
     main {
         flex: 1;
         padding: 2rem;
+
+        @media print {
+            padding: 0.5rem;
+        }
     }
     
     @media (max-width: 600px) {

@@ -1,13 +1,9 @@
 @use '@/styles/base.scss';
 
 .resume-header {
-    // color: base.$text;
     color: var(--text);
-    margin: 0;
-    padding: 2rem 0;
 
     h1 {
-        font-family: 'Oswald', sans-serif;
         font-size: 2rem;
         color: var(--accent);
     }
@@ -31,10 +27,6 @@
         }
     }
 
-    @media screen and (max-width: 500px) {
-        padding: 0;
-    }
-
     @media print {
         background-color: white;
         color: base.$print-text;
@@ -42,6 +34,7 @@
         padding: 0;
 
         h1 {
+            font-size: 1.4rem;
             color: base.$print-accent;
         }
 

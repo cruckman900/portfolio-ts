@@ -1,16 +1,15 @@
 import React, { ReactElement } from 'react';
-import '@/styles/ui/section.scss';
 
 interface Props {
-    class_from_parent: string;
+    className?: string;
     title: string;
-    icon: string;
+    icon?: string;
     link?: string[];
     children: ReactElement;
 }
 
-const Section: React.FC<Props> = ({ class_from_parent, title, icon, children}) => (
-    <section className={`section ${class_from_parent}`}>
+const Section: React.FC<Props> = ({ className, title, icon, children}) => (
+    <section className={className}>
         <h2><i className={icon}></i>{title}</h2>
         {children}
     </section>

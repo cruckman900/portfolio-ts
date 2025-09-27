@@ -41,7 +41,7 @@
 }
 
 .buyNow {
-    padding: 1rem 0;
+    padding: 1rem;
     background-color: var(--bg);
     border: solid 4px var(--border);
     text-align: center;
@@ -49,6 +49,7 @@
 
 .breadcrumbToggle {
     button {
+        margin: 0 0.25rem;
         padding: 0.25rem;
         background-color: var(--accent);
         color: var(--muted);
@@ -59,6 +60,6 @@
 .descriptionContent {
     p {
         color: var(--text);
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }

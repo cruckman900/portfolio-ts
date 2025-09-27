@@ -14,7 +14,7 @@ const Sidebar: React.FC<Props> = ({ skills, education, children }) => (
     <div className="sidebar">
         {children}
 
-        <Section class_from_parent="" title="Core Competencies" icon="fas fa-key">
+        <Section title="Core Competencies" icon="fas fa-key">
             <>
             {skills.map((skill, i) => 
                 (
@@ -27,7 +27,7 @@ const Sidebar: React.FC<Props> = ({ skills, education, children }) => (
             </>
         </Section>
 
-        <Section class_from_parent="pb-before" title="Education" icon="fas fa-graduation-cap">
+        <Section title="Education" icon="fas fa-graduation-cap">
             <>
             {education.map((edu, i) => 
                 (
