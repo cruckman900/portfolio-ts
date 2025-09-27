@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 
 interface Props {
     className?: string;
-    title: string;
+    title?: string;
     icon?: string;
     link?: string[];
     children: ReactElement;

@@ -8,17 +8,19 @@ import '@/styles/page/resume.scss';
 export default function ResumePage() {
     const leftPanel = (
         <>
-            <header className="resume-header">
-                <h1>{resumeData.name}</h1>
-                <p className="tagline">{resumeData.tagline}</p>
-                <ul>
-                    <li><i className="fas fa-map-marker-alt"></i>{resumeData.contact.location}</li>
-                    <li><i className="fas fa-envelope"></i><a href={`mailto:${resumeData.contact.email}`}>{resumeData.contact.email}</a></li>
-                    <li><i className="fas fa-phone"></i><a href={`tel:+1${resumeData.contact.phone.replace(/[\s()-]/g, "")}`}>{resumeData.contact.phone}</a></li>
-                    <li><i className="fas fa-globe"></i><a href={resumeData.contact.website} target='_blank'>{resumeData.contact.website.substring(8)}</a></li>
-                    <li><i className="fab fa-github"></i><a href={resumeData.contact.github} target='_blank'>{resumeData.contact.github.substring(8)}</a></li>
-                </ul>
-            </header>
+            <Section>
+                <div className="resume-header">
+                    <h1>{resumeData.name}</h1>
+                    <p className="tagline">{resumeData.tagline}</p>
+                    <ul>
+                        <li><i className="fas fa-map-marker-alt"></i>{resumeData.contact.location}</li>
+                        <li><i className="fas fa-envelope"></i><a href={`mailto:${resumeData.contact.email}`}>{resumeData.contact.email}</a></li>
+                        <li><i className="fas fa-phone"></i><a href={`tel:+1${resumeData.contact.phone.replace(/[\s()-]/g, "")}`}>{resumeData.contact.phone}</a></li>
+                        <li><i className="fas fa-globe"></i><a href={resumeData.contact.website} target='_blank'>{resumeData.contact.website.substring(8)}</a></li>
+                        <li><i className="fab fa-github"></i><a href={resumeData.contact.github} target='_blank'>{resumeData.contact.github.substring(8)}</a></li>
+                    </ul>
+                </div>
+            </Section>
             <Section title="Core Competencies" icon="fas fa-key">
                 <>
                     {resumeData.skills.map((skill, i) =>
