@@ -21,7 +21,7 @@ const ThemeSwitcher = () => {
     };
 
     return (
-        <select className='switcher' value={theme} onChange={handleChange}>
+        <select style={{ position: "absolute", right: "2rem", padding: "0.25rem"}} value={theme} onChange={handleChange}>
             <option value="light">☀️Light</option>
             <option value="dark">🌑Dark</option>
             <option value="hazard">⚠️Hazard</option>

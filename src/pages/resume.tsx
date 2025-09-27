@@ -1,62 +1,51 @@
-import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import type { Resume } from '@/types/resume';
-import ResumeHeader from '@/components/Page/Resume/ResumeHeader';
+import TwoPanelLayout from '@/components/layout/TwoPanelLayout';
+import Layout from "@/components/layout/Layout";
 import Sidebar from '@/components/Page/Resume/Sidebar';
+import ResumeHeader from '@/components/Page/Resume/ResumeHeader';
 import Section from '@/components/ui/Section';
 import Achievements from '@/components/Page/Resume/Achievements';
 import Experience from '@/components/Page/Resume/Experience';
-// import Projects from '../components/Projects';
-import Layout from '@/components/layout/Layout';
 import ProjectList from '@/components/Page/Resume/ProjectList';
-import '@/styles/page/resume.scss';
+import resumeData from '@/data/resume.json';
+export default function ResumePage() {
+    const leftPanel = (
+        <Sidebar
+            skills={resumeData.skills}
+            education={resumeData.education}
+        >
+            <ResumeHeader icon={resumeData.icon} name={resumeData.name} tagline={resumeData.tagline} contact={resumeData.contact} />
+        </Sidebar>
+    );
 
-export default function Home() {
-    const [resume, setResume] = useState<Resume | null>(null);
-
-    useEffect(() => {
-        fetch('/resume.json')
-            .then(res => res.json())
-            .then(data => setResume(data));
-    }, []);
-
-    if (!resume) return <div>Loading...</div>;
+    const rightPanel = (
+        <main>
+            <Section class_from_parent="" title="Professional Summary" icon="fas fa-user">
+                <p>{resumeData.summary}</p>
+            </Section>
+            <Section class_from_parent="" title="Selected Achievements" icon="fas fa-star">
+                <Achievements achievements={resumeData.achievements} />
+            </Section>
+            <Section class_from_parent="pb-before" title="Professional Experience" icon="fas fa-briefcase">
+                <Experience experience={resumeData.experience} />
+            </Section>
+            <Section class_from_parent="" title="Personal Projects" icon="fas fa-code">
+                <ProjectList projectsList={resumeData.projects} />
+            </Section>
+        </main>
+    );
 
     return (
         <>
-        <Head>
-            <meta name="robots" content="noindex" />
-        </Head>
-        <div className='flex-container'>
-            <div className="sidebar-container">
-                <aside>
-                    <Sidebar skills={resume.skills} education={resume.education}>
-                        <ResumeHeader icon={resume.icon} name={resume.name} tagline={resume.tagline} contact={resume.contact} />
-                    </Sidebar>
-                </aside>
-            </div>
-            <div className="content-container">
-                <main>
-                    <Section class_from_parent="" title="Professional Summary" icon="fas fa-user">
-                        <p>{resume.summary}</p>
-                    </Section>
-                    <Section class_from_parent="" title="Selected Achievements" icon="fas fa-star">
-                        <Achievements achievements={resume.achievements} />
-                    </Section>
-                    <Section class_from_parent="pb-before" title="Professional Experience" icon="fas fa-briefcase">
-                        <Experience experience={resume.experience} />
-                    </Section>
-                    <Section class_from_parent="" title="Personal Projects" icon="fas fa-code">
-                        <ProjectList projectsList={resume.projects} />
-                    </Section>
-                </main>
-            </div>
-        </div>
+            <Head>
+                <meta name="robots" content="noindex" />
+            </Head>
+            <TwoPanelLayout left={leftPanel} right={rightPanel} />
         </>
     )
-};
+}
 
 // Define a custom layout for this page
-Home.getLayout = function getLayout(page: React.ReactElement) {
+ResumePage.getLayout = function getLayout(page: React.ReactElement) {
     return <Layout>{page}</Layout>
 };

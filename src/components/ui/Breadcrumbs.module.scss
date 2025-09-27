@@ -1,0 +1,19 @@
+.nav {
+    margin: 0;
+    padding: 0;
+    background-color: var(--surface);
+    color: var(--text);
+
+    ul {
+        display: flex;
+        gap: 0.5rem;
+        list-style: none;
+        padding: 0.5rem;
+        padding-left: 2rem;
+        margin: 0;
+    }
+
+    @media print {
+        display: none;
+    }
+}

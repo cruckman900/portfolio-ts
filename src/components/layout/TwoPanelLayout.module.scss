@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: 100%;
+    gap: 2rm;
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--surface);
+        min-width: 300px;
+        min-height: 100vh;
+        width: 30%;
+        flex-shrink: 0;
+    }
+
+    main {
+        flex: 1;
+    }
+}

@@ -1,39 +1,20 @@
 // components/TwoPanelLayout.tsx
 import React from 'react';
-import Breadcrumbs from '../ui/Breadcrumbs';
+import styles from './TwoPanelLayout.module.scss';
 
 interface TwoPanelLayoutProps {
+    className?: string;
     left: React.ReactNode;
     right: React.ReactNode;
-    gap?: string; // optional spacing between panels
-    minWidth?: string; // optional minimum width for left panel
-    width?: string; // optional maximum width for left panel
-    backgroundColor?: string;
 }
 
-const TwoPanelLayout: React.FC<TwoPanelLayoutProps> = ({
-    left,
-    right,
-    gap = '2rem',
-    minWidth = '300px',
-    width = '30%',
-    backgroundColor = 'var(--surface)'
-}) => {
+const TwoPanelLayout: React.FC<TwoPanelLayoutProps> = ({ className, left, right }) => {
     return (
-        <div
-            style={{
-                display: 'flex',
-                flexDirection: 'row',
-                height: '100vh',
-                width: '100%',
-                gap,
-            }}
-        >
-            <aside style={{ backgroundColor, minWidth, width, flexShrink: 0, height: '100%' }}>
-                <Breadcrumbs />
+        <div className={`${styles.container} ${className}`}>
+            <aside>
                 {left}
             </aside>
-            <main style={{ flex: 1 }}>{right}</main>
+            <main>{right}</main>
         </div>
     );
 };

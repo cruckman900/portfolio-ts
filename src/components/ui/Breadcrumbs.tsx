@@ -2,10 +2,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import styles from './Breadcrumbs.module.scss';
 
 export default function Breadcrumbs() {
-  const { pathname, query } = useRouter();
-  const segments = pathname.split('/').filter(Boolean);
+  const { route, query } = useRouter();
+  const segments = route.split('/').filter(Boolean);
 
   const crumbs = segments.map((segment, index) => {
     const isDynamic = segment.startsWith('[') && segment.endsWith(']');
@@ -23,7 +24,7 @@ export default function Breadcrumbs() {
     }).join('/');
 
     return (
-      <li key={href}>
+      <li key={index}>
         {index < segments.length - 1 ? (
           <Link href={href}>{label}</Link>
         ) : (
@@ -33,16 +34,16 @@ export default function Breadcrumbs() {
     );
   });
   return (
-    <nav aria-label="Breadcrumb" style={{ backgroundColor: 'var(--surface)', color: 'var(--text)', margin: 0, padding: 0 }}>
-      <ul style={{ display: 'flex', gap: '0.5rem', listStyle: 'none', padding: '0.5rem', paddingLeft: '2rem', margin: 0 }}>
+    <nav aria-label="Breadcrumb" className={styles.nav}>
+      <ul role="list">
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/">home</Link>
         </li>
         {segments.length > 0 && <span>/</span>}
         {crumbs.map((crumb, i) => (
           <React.Fragment key={i}>
+            {i > 0 && <span>/</span>}
             {crumb}
-            {i < segments.length - 1 && <span>/</span>}
           </React.Fragment>
         ))}
       </ul>

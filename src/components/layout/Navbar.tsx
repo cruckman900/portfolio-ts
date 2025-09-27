@@ -3,8 +3,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { NavBarLink } from '@/types/resume';
+import SubNav from './SubNav';
 import Link from 'next/link';
-import ThemeSwitcher from '@/components/ui/ThemeSwitcher';
 import "@/styles/layout/navbar.scss";
 
 interface Props {
@@ -43,8 +43,8 @@ const Navbar: React.FC<Props> = ({ className, navbarlinks }) => {
                 </div>
                 )
             )}
-            <ThemeSwitcher />
         </nav>
+        <SubNav />
         {toggleHamburger && <div className='mobile-menu'>
             {navbarlinks.map((nav, i) => (
                 <div className="link" key={i}>
