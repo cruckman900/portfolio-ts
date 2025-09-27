@@ -34,7 +34,6 @@
         padding: 0;
 
         h1 {
-            font-size: 1.4rem;
             color: base.$print-accent;
         }
 
@@ -51,73 +50,4 @@
 i {
     min-width: 1rem;
     margin-right: 0.5rem;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    max-height: 100vh;
-
-    @media screen and (max-width: 500px) {
-        display: block;
-    }
-}
-
-.sidebar-container, .content-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar-container {
-    // background-color: base.$light-bg;
-    min-height: 100vh;
-    min-width: 18rem;
-    width: 30%;
-
-    @media screen and (max-width: 500px) {
-        width: 100%
-    }
-}
-
-.content-container {
-    max-width: 70%;
-
-    main {
-        background-color: var(--bg-secondary);
-        padding: 2rem;
-        padding-top: 2.5rem;
-
-        Section {
-            h2 {
-                // color: base.$accent;
-                color: var(--accent);
-
-                @media print {
-                    color: base.$print-accent;
-                }
-            }
-        }
-
-        h3 {
-            font-size: 1rem;
-            margin: 0;
-        }
-
-        @media print {
-            padding: 0.5rem;
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        main {
-            // background-color: base.$light-bg;
-            width: 100%;
-            padding: 0 2rem;
-
-            Section {
-                padding: 0;
-                width: calc(100vw - 4rem);
-            }
-        }
-    }
 }
