@@ -23,7 +23,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <>
             <Head>
                 <title>LinearDescent | Poetic Survival Through Code, Art & Memoir</title>
-                <meta name="description" content="Poetic survival platform from Rayland, Ohio—memoirs, glitch art, ambient guitar, and expressive full-stack engineering." />
+                <meta key="layout description" name="description" content="Poetic survival platform from Rayland, Ohio—memoirs, glitch art, ambient guitar, and expressive full-stack engineering." />
                 <link rel="canonical" href="https://lineardescent.netlify.app" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
