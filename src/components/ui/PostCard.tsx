@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import styles from './PostCard.module.scss';
 
 interface Props {
     title: string;
@@ -9,19 +10,29 @@ interface Props {
 }
 
 export default function PostCard({ title, excerpt, category, publishedAt, slug }: Props) {
-    const categoryIcons: Record<string, string> = {
-        personal: '🧠',
-        tech: '💻',
-        music: '🎵',
-        legal: '⚖️',
-    };
+    function getCategoryEmoji(category: string) {
+        switch (category) {
+            case 'personal':
+                return '🧠';
+            case 'legal':
+                return '⚖️';
+            case 'tech':
+                return '💻';
+            case 'music':
+                return '🎵';
+            case 'design':
+                return '🎨';
+            default:
+                return '🗂️';
+        }
+    }
 
     return (
-        <div className='post-card'>
-            <span className='badge'>
-                {categoryIcons[category] || '🗂️'} {category}
+        <div className='postCard'>
+            <span className={`badge badge-${category}`}>
+                {getCategoryEmoji(category)} {category}
             </span>
-            <p>{title}</p>
+            <h1>{title}</h1>
             <p>{excerpt}</p>
             <span className="date">{new Date(publishedAt).toLocaleDateString()}</span>
             <Link href={`/blog/${slug}`} className="read-more">

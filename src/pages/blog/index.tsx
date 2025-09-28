@@ -27,7 +27,7 @@ export default function BlogIndex() {
     return (
         <section>
             <h1>Blog</h1>
-
+            <h2>Under heavy construction</h2>
             {posts.length === 0 ? (
                 <p>No blog posts yet. Stay tuned!</p>
             ) : (

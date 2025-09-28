@@ -46,18 +46,7 @@ export default function BlogPostPage() {
 
     return (
         <article>
-            {/* <div>{JSON.stringify(post.content)}</div> */}
             <ReadOnlyPost content={JSON.stringify(post.content)} />
-            {/* <h1>{post.title}</h1>
-            <span className="badge">
-                {categoryIcons[post.category] || '🗂️'} {post.category}
-            </span>
-            <span className="date">
-                {new Date(post.published_at).toLocaleDateString()}
-            </span>
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {post.content_json}
-            </ReactMarkdown> */}
         </article>
     )
 }
