@@ -5,10 +5,25 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <meta name="description" content="Multidisciplinary engineer, author, and legal advocate" />
-                <meta property="og:title" content="LinearDescent - Portfolio" />
-                <meta property="og:type" content="WebPage" />
-                <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+                <meta key="layout description" name="description" content="Poetic survival platform from Rayland, Ohio—memoirs, glitch art, ambient guitar, and expressive full-stack engineering." />
+                <link rel="canonical" href="https://lineardescent.netlify.app" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+                {/* Favicon */}
+                <link rel="icon" type="image/png" href="/favicon.png" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="LinearDescent | Poetic Survival Through Code, Art & Memoir" />
+                <meta property="og:description" content="Memoirs, glitch art, ambient guitar, and expressive full-stack engineering from Rayland, Ohio." />
+                <meta property="og:url" content="https://lineardescent.netlify.app" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://lineardescent.netlify.app/og-image.png" />
+
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="LinearDescent | Poetic Survival Through Code, Art & Memoir" />
+                <meta name="twitter:description" content="Memoirs, glitch art, ambient guitar, and expressive full-stack engineering from Rayland, Ohio." />
+                <meta name="twitter:image" content="https://lineardescent.netlify.app/og-image.png" />
                 <script
                     type="application/ld+json"
                         dangerouslySetInnerHTML={{
