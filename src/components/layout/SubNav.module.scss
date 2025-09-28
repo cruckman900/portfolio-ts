@@ -13,12 +13,16 @@
         align-items: flex-start;
         gap: 1rem;
     }
+
+    @media print {
+        display: none;
+    }
 }
 
 .print {
     button {
-        background-color: var(--muted);
-        color: var(--text);
+        background-color: var(--accent);
+        color: var(--surface);
         font-weight: bold;
         border: none;
         border-radius: 0.25rem;

@@ -1,8 +1,9 @@
 .navbar {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // justify-content: space-between;
+    gap: 2rem;
+    align-items:last baseline;
     background-color: var(--surface);
     font-family: 'Open Sans', sans-serif;
     height: 4rem;
@@ -15,7 +16,7 @@
     }
 
     .link {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         
         a {
             text-decoration: none;
@@ -25,16 +26,10 @@
             display: none;
         }
     }
-}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    height: 4rem;
-    width: 100vw;
-    background-color: var(--surface);
+    @media print {
+        display: none;
+    }
 }
 
 .brand {
@@ -60,6 +55,8 @@
 
 .mobile-menu {
     position: fixed;
+    // justify-content: space-between;
+    align-items: flex-end;
     top: 4rem;
     left: 0;
     width: 100%;
@@ -92,5 +89,9 @@
 
     @media screen and (max-width: 600px) {
         display: block;
+    }
+
+    @media print {
+        display: none;
     }
 }

@@ -46,8 +46,9 @@ export default function BlogPostPage() {
 
     return (
         <article>
-            <ReadOnlyPost content={post.content_json} />
-            <h1>{post.title}</h1>
+            {/* <div>{JSON.stringify(post.content)}</div> */}
+            <ReadOnlyPost content={JSON.stringify(post.content)} />
+            {/* <h1>{post.title}</h1>
             <span className="badge">
                 {categoryIcons[post.category] || '🗂️'} {post.category}
             </span>
@@ -56,7 +57,7 @@ export default function BlogPostPage() {
             </span>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {post.content_json}
-            </ReactMarkdown>
+            </ReactMarkdown> */}
         </article>
     )
 }

@@ -10,6 +10,11 @@ export default function BlogIndex() {
     const [posts, setPosts] = useState<BlogPost[]>([])
 
     useEffect(() => {
+        fetch('/api/seed-post');
+    }, []);
+
+
+    useEffect(() => {
         fetch('/api/get-posts')
             .then(res => res.json())
             .then(setPosts);
@@ -32,8 +37,8 @@ export default function BlogIndex() {
                         <p>{post.excerpt}</p>
                         <motion.a
                             href={`/blog/${post.slug}`}
-                                whileHover={{ y: -2, scale: 1.02 }}
-                                className="read-more"
+                            whileHover={{ y: -2, scale: 1.02 }}
+                            className="read-more"
                         >
                             Read more →
                         </motion.a>

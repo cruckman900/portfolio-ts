@@ -1,5 +1,6 @@
 // types/blog.d.ts
 import { z } from 'zod';
+import { JSONContent } from '@tiptap/react';
 
 export const BlogPostSchema = z.object({
   id: z.number(),
@@ -7,7 +8,7 @@ export const BlogPostSchema = z.object({
   title: z.string(),
   category: z.string(),
   excerpt: z.string().optional(),
-  content_json: z.string(),
+  content: z.string(),
   author: z.string().optional(),
   tags: z.string().optional(),
   published_at: z.string(),
@@ -23,7 +24,7 @@ export type BlogPostRow = {
   title: string;
   category: string;
   excerpt?: string;
-  content_json: string;
+  content: string;
   author?: string;
   tags?: string;
   published_at: string;
