@@ -69,15 +69,15 @@ const Layout: React.FC<Props> = ({ children }) => {
             </Head>
             <div className='container'>
                 <header className='header'><Navbar className="navbar" /></header>
-                <section data-theme={theme}>
+                <section data-theme={theme} className={styles.content}>
                     <div className={styles.heroImage}>
                         <div className='leftSpacer'></div>
                         <div className='heroText'>
                             <p>{heroText}</p>
                         </div>
                     </div>
+                    <main className='content'>{children}</main>
                 </section>
-                <main className='content'>{children}</main>
                 <footer className='footer'><Footer /></footer>
             </div>
         </>
