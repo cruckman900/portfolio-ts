@@ -1,15 +1,15 @@
 'use client'
 
-import { useState, useEffect } from 'react';
-import { AppProps } from 'next/app';
-import { ApolloProvider } from '@apollo/client/react';
-import { ThemeProvider } from '@/context/ThemeContext';
-import client from '@/lib/apolloClient';
-import type { Page } from '../types/page';
-import PageTransition from '@/components/ui/PageTransition';
-import { Toaster } from 'react-hot-toast';
-import '@/styles/bundle.scss';
-import Layout from '@/components/layout/Layout';
+import { useState, useEffect } from 'react'
+import { AppProps } from 'next/app'
+import { ApolloProvider } from '@apollo/client/react'
+import { ThemeProvider } from '@/context/ThemeContext'
+import client from '@/lib/apolloClient'
+import type { Page } from '../types/page'
+import PageTransition from '@/components/ui/PageTransition'
+import { Toaster } from 'react-hot-toast'
+import '@/styles/bundle.scss'
+import Layout from '@/components/layout/Layout'
 
 type AppPropsWithLayout = AppProps & {
     Component: Page;
@@ -18,18 +18,18 @@ type AppPropsWithLayout = AppProps & {
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
     useEffect(() => {
         const setHeight = () => {
-            document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
-        };
-        setHeight();
-        window.addEventListener('resize', setHeight);
-        return () => window.removeEventListener('resize', setHeight);
-    }, []);
+            document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`)
+        }
+        setHeight()
+        window.addEventListener('resize', setHeight)
+        return () => window.removeEventListener('resize', setHeight)
+    }, [])
 
-    const [isHydrated, setIsHydrated] = useState(false);
+    const [isHydrated, setIsHydrated] = useState(false)
 
     useEffect(() => {
-        setIsHydrated(true);
-    }, []);
+        setIsHydrated(true)
+    }, [])
 
     // const getLayout = Component.getLayout ?? ((page) => page);
 
@@ -60,4 +60,4 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
     // );
 }
 
-export default App;
+export default App

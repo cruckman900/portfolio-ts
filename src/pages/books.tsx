@@ -1,11 +1,11 @@
 // pages/books.tsx
-import { useState } from 'react';
-import TwoPanelLayout from '@/components/layout/TwoPanelLayout';
-import Card from '@/components/ui/Card';
-import Image from 'next/image';
-import booksData from '@/data/books.json';
-import Layout from '@/components/layout/Layout';
-import styles from './books.module.scss';
+import { useState } from 'react'
+import TwoPanelLayout from '@/components/layout/TwoPanelLayout'
+import Card from '@/components/ui/Card'
+import Image from 'next/image'
+import booksData from '@/data/books.json'
+import Layout from '@/components/layout/Layout'
+import styles from './books.module.scss'
 
 interface Book {
     title: string;
@@ -19,8 +19,8 @@ interface Book {
 }
 
 export default function BooksPage() {
-    const [selectedBook, setSelectedBook] = useState<Book | null>(null);
-    const [view, setView] = useState<'series' | 'book'>('series');
+    const [selectedBook, setSelectedBook] = useState<Book | null>(null)
+    const [view, setView] = useState<'series' | 'book'>('series')
 
     const leftPanel = (
         <div className={styles.bookGrid}>
@@ -29,8 +29,8 @@ export default function BooksPage() {
                     className={styles.card}
                     key={book.asin}
                     onClick={() => {
-                        setSelectedBook(book);
-                        setView('book');
+                        setSelectedBook(book)
+                        setView('book')
                     }}
                     isSelected={selectedBook?.asin === book.asin}
                 >
@@ -64,7 +64,7 @@ export default function BooksPage() {
                 </Card>
             ))}
         </div>
-    );
+    )
 
     const rightPanel = (
         <div className={styles.descriptionPanel}>
@@ -92,7 +92,7 @@ export default function BooksPage() {
                     ))}
             </div>
         </div>
-    );
+    )
 
     return <TwoPanelLayout left={leftPanel} right={rightPanel} />
 }
@@ -100,4 +100,4 @@ export default function BooksPage() {
 // Define a custom layout for this page
 BooksPage.getLayout = function getLayout(page: React.ReactElement) {
     return <Layout>{page}</Layout>
-};
+}

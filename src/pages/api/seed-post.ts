@@ -1,8 +1,8 @@
 // pages/api/seed-post.ts
-import { NextApiRequest, NextApiResponse } from 'next';
-import { neon } from '@netlify/neon';
+import { NextApiRequest, NextApiResponse } from 'next'
+import { neon } from '@netlify/neon'
 
-const sql = neon();
+const sql = neon()
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
@@ -44,11 +44,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           ],
         }}
       )
-    `;
+    `
 
-    res.status(200).json({ message: '✅ Post seeded successfully' });
+    res.status(200).json({ message: '✅ Post seeded successfully' })
   } catch (err) {
-    console.error('❌ Seeding failed:', err);
-    res.status(500).json({ error: 'Seeding failed', details: err });
+    res.status(500).json({ error: 'Seeding failed', details: err })
   }
 }

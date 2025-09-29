@@ -1,6 +1,5 @@
 // types/blog.d.ts
-import { z } from 'zod';
-import { JSONContent } from '@tiptap/react';
+import { z } from 'zod'
 
 export const BlogPostSchema = z.object({
   id: z.number(),
@@ -14,7 +13,7 @@ export const BlogPostSchema = z.object({
   published_at: z.string(),
   updated_at: z.string().optional(),
   archived: z.boolean(),
-});
+})
 
 export type BlogPost = z.infer<typeof BlogPostSchema>;
 

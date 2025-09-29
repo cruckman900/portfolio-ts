@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import TwoPanelLayout from '@/components/layout/TwoPanelLayout';
-import Layout from "@/components/layout/Layout";
-import Section from '@/components/ui/Section';
-import resumeData from '@/data/resume.json';
-import styles from './resume.module.scss';
+import Head from 'next/head'
+import TwoPanelLayout from '@/components/layout/TwoPanelLayout'
+import Layout from "@/components/layout/Layout"
+import Section from '@/components/ui/Section'
+import resumeData from '@/data/resume.json'
+import styles from './resume.module.scss'
 
 export default function ResumePage() {
     const leftPanel = (
@@ -48,7 +48,7 @@ export default function ResumePage() {
                 </div>
             </Section>
         </>
-    );
+    )
 
     const rightPanel = (
         <>
@@ -111,7 +111,7 @@ export default function ResumePage() {
                 </div>
             </Section>
         </>
-    );
+    )
 
     return (
         <>
@@ -126,4 +126,4 @@ export default function ResumePage() {
 // Define a custom layout for this page
 ResumePage.getLayout = function getLayout(page: React.ReactElement) {
     return <Layout>{page}</Layout>
-};
+}

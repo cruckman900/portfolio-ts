@@ -1,13 +1,13 @@
 // PageTransition.tsx
-import { AnimatePresence, motion } from 'framer-motion';
-import { useRouter } from 'next/router';
+import { AnimatePresence, motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 
 interface Props {
   children: React.ReactNode;
 }
 
 const PageTransition: React.FC<Props> = ({ children }) => {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <AnimatePresence mode="wait">
@@ -21,7 +21,7 @@ const PageTransition: React.FC<Props> = ({ children }) => {
         {children}
       </motion.div>
     </AnimatePresence>
-  );
-};
+  )
+}
 
-export default PageTransition;
+export default PageTransition

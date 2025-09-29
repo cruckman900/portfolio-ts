@@ -1,12 +1,12 @@
 import {
   LexicalComposer,
   InitialConfigType,
-} from '@lexical/react/LexicalComposer';
-import { RichTextPlugin } from '@lexical/react/LexicalRichTextPlugin';
-import { ContentEditable } from '@lexical/react/LexicalContentEditable';
-import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin';
-import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin';
-import { EditorState } from 'lexical';
+} from '@lexical/react/LexicalComposer'
+import { RichTextPlugin } from '@lexical/react/LexicalRichTextPlugin'
+import { ContentEditable } from '@lexical/react/LexicalContentEditable'
+import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin'
+import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin'
+import { EditorState } from 'lexical'
 
 interface LexicalEditorProps {
   onChange?: (json: string) => void;
@@ -18,12 +18,12 @@ export default function LexicalEditor({ onChange }: LexicalEditorProps) {
     theme: {},
     onError: (error: Error) => console.error(error),
     nodes: [],
-  };
+  }
 
   const handleChange = (editorState: EditorState) => {
-    const json = JSON.stringify(editorState.toJSON());
-    onChange?.(json);
-  };
+    const json = JSON.stringify(editorState.toJSON())
+    onChange?.(json)
+  }
 
   return (
     <LexicalComposer initialConfig={config}>
@@ -35,5 +35,5 @@ export default function LexicalEditor({ onChange }: LexicalEditorProps) {
       <OnChangePlugin onChange={handleChange} />
       <HistoryPlugin />
     </LexicalComposer>
-  );
+  )
 }

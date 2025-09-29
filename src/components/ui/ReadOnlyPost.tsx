@@ -1,7 +1,7 @@
 // components/ReadOnlyPost.tsx
-import convertLexicalToTiptap from '@/utils/convertLexicalToTipTap';
-import { useEditor, EditorContent, JSONContent } from '@tiptap/react';
-import StarterKit from '@tiptap/starter-kit';
+import convertLexicalToTiptap from '@/utils/convertLexicalToTipTap'
+import { useEditor, EditorContent } from '@tiptap/react'
+import StarterKit from '@tiptap/starter-kit'
 
 export default function ReadOnlyPost({ content }: { content: string }) {
     // console.log("stuff and things", convertLexicalToTiptap(JSON.parse(content)));
@@ -10,9 +10,9 @@ export default function ReadOnlyPost({ content }: { content: string }) {
         content: convertLexicalToTiptap(JSON.parse(content)),
         editable: false,
         immediatelyRender: false,
-    });
+    })
 
-    if (!editor) return null;
+    if (!editor) return null
 
-    return <EditorContent editor={editor} />;
+    return <EditorContent editor={editor} />
 }

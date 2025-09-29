@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styles from './PostCard.module.scss';
+import Link from 'next/link'
+// import styles from './PostCard.module.scss'
 
 interface Props {
     title: string;
@@ -13,17 +13,17 @@ export default function PostCard({ title, excerpt, category, publishedAt, slug }
     function getCategoryEmoji(category: string) {
         switch (category) {
             case 'personal':
-                return '🧠';
+                return '🧠'
             case 'legal':
-                return '⚖️';
+                return '⚖️'
             case 'tech':
-                return '💻';
+                return '💻'
             case 'music':
-                return '🎵';
+                return '🎵'
             case 'design':
-                return '🎨';
+                return '🎨'
             default:
-                return '🗂️';
+                return '🗂️'
         }
     }
 

@@ -1,14 +1,14 @@
 // components/ToolbarPlugin.tsx
-import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext';
+import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { $getSelection, $isRangeSelection, FORMAT_TEXT_COMMAND } from 'lexical';
+import { $getSelection, $isRangeSelection, FORMAT_TEXT_COMMAND } from 'lexical'
 
 export default function ToolbarPlugin() {
-    const [editor] = useLexicalComposerContext();
+    const [editor] = useLexicalComposerContext()
 
     const format = (type: 'bold' | 'italic' | 'underline') => {
-        editor.dispatchCommand(FORMAT_TEXT_COMMAND, type);
-    };
+        editor.dispatchCommand(FORMAT_TEXT_COMMAND, type)
+    }
 
     return (
         <div className='toolbar'>

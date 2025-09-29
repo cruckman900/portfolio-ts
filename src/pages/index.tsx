@@ -1,6 +1,6 @@
 // import { useState, useEffect } from 'react';
-import Layout from "@/components/layout/Layout";
-import styles from "./index.module.scss";
+import Layout from "@/components/layout/Layout"
+import styles from "./index.module.scss"
 
 export default function Index() {
     return (
@@ -41,10 +41,10 @@ export default function Index() {
                 </div>
             </section>
         </div>
-    );
+    )
 }
 
 // Define a custom layout for this page
 Index.getLayout = function getLayout(page: React.ReactElement) {
     return <Layout>{page}</Layout>
-};
+}

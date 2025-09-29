@@ -1,4 +1,4 @@
-import type { JSONContent } from "@tiptap/react";
+import type { JSONContent } from "@tiptap/react"
 
 function convertLexicalToTiptap(lexicalJson: LexicalRoot): JSONContent {
     const tiptapContent: JSONContent[] = lexicalJson.children.map((node) => {
@@ -10,7 +10,7 @@ function convertLexicalToTiptap(lexicalJson: LexicalRoot): JSONContent {
                     type: 'text',
                     text: child.text,
                 })),
-            };
+            }
         }
 
         if (node.type === 'paragraph') {
@@ -20,16 +20,16 @@ function convertLexicalToTiptap(lexicalJson: LexicalRoot): JSONContent {
                     type: 'text',
                     text: child.text,
                 })),
-            };
+            }
         }
 
-        return null;
-    }).filter(Boolean) as JSONContent[];
+        return null
+    }).filter(Boolean) as JSONContent[]
 
     return {
         type: 'doc',
         content: tiptapContent,
-    };
+    }
 }
 
-export default convertLexicalToTiptap;
+export default convertLexicalToTiptap

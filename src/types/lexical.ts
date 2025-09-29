@@ -9,6 +9,7 @@ type LexicalBlockNode = {
     children: LexicalTextNode[];
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 type LexicalRoot = {
     type: 'root';
     children: LexicalBlockNode[];

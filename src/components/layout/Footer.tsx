@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
 const Footer: React.FC = () => {
     return (
@@ -10,10 +10,10 @@ const Footer: React.FC = () => {
                     &nbsp; | &nbsp;
                     <Link href="/contact">Contact</Link>
                 </div>
-                <p>&copy;{new Date().getFullYear()} Christopher Ruckman</p>
+                <p>&copy; {new Date().getFullYear()} LinearDescent&mdash;What Rights?</p>
             </div>
        </footer>
     )
-};
+}
 
-export default Footer;
+export default Footer

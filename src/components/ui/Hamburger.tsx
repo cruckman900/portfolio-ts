@@ -1,6 +1,6 @@
-'use client';
+'use client'
 
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 type Props = {
     isOpen: boolean;
@@ -16,7 +16,7 @@ export default function Hamburger({ isOpen, onClick }: Props) {
             aria-label="Toggle menu"
             tabIndex={0}
             onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') onClick();
+                if (e.key === 'Enter' || e.key === ' ') onClick()
             }}
         >
             <motion.svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="var(--accent)">
@@ -48,5 +48,5 @@ export default function Hamburger({ isOpen, onClick }: Props) {
                     transition={{ duration: 0.3 }}
                 />
             </motion.svg>
-        </div>);
+        </div>)
 }

@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 
 interface Props {
     className?: string;
@@ -13,6 +13,6 @@ const Section: React.FC<Props> = ({ className, title, icon, children}) => (
         <h2><i className={icon}></i>{title}</h2>
         {children}
     </section>
-);
+)
 
-export default Section;
+export default Section
