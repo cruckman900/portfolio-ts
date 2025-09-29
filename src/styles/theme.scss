@@ -17,6 +17,7 @@ $light-theme: (
 $dark-theme: (
     icon: 🌑,
     bg: #121212,
+    hero: url("/images/dark_hero.png"),
     surface: #1e1e1e,
     accent: #00cc88,
     text: #e0e0e0,
@@ -27,6 +28,7 @@ $dark-theme: (
 $hazard-theme: (
     icon: ⚠️,
     bg: #1a1a1a,
+    hero: url("/images/hazard_hero.png"),
     surface: #2a1f00,
     accent: #ffcc00,
     text: #f5f5f5,
@@ -37,6 +39,7 @@ $hazard-theme: (
 $brownstone-theme: (
     icon: 🟤,
     bg: #fdfaf6,
+    hero: url("/images/brownstone_hero.png"),
     surface: #f2ede7,
     accent: #8b5e3c,
     text: #3e2c1c,
@@ -47,6 +50,7 @@ $brownstone-theme: (
 $midnight-theme: (
     icon: 🌌,
     bg: #0b1c2c,
+    hero: url("/images/midnight_hero.png"),
     surface: #132a3d,
     accent: #3a6ea5,
     text: #e0e6ed,
@@ -75,46 +79,56 @@ $purple-theme: (
 );
 
 $pink-theme: (
-  icon: 🌸,
-  bg: #fff5f9,
-  surface: #fce4ec,
-  accent: #e91e63,
-  text: #3a2a33,
-  muted: #b88ca2,
-  border: #f3c1d7
+    icon: 🌸,
+    bg: #fff5f9,
+    hero: url("/images/pink_hero.png"),
+    surface: #fce4ec,
+    accent: #e91e63,
+    text: #3a2a33,
+    muted: #b88ca2,
+    border: #f3c1d7
 );
 
 $green-theme: (
-  icon: 🌿,
-  bg: #f4fff7,
-  surface: #e0f2e9,
-  accent: #4caf50,
-  text: #1e2f23,
-  muted: #8aa89b,
-  border: #cde3d5
+    icon: 🌿,
+    bg: #f4fff7,
+    hero: url("/images/green_hero.png"),
+    surface: #e0f2e9,
+    accent: #4caf50,
+    text: #1e2f23,
+    muted: #8aa89b,
+    border: #cde3d5
 );
 
 $red-theme: (
-  icon: 🔴,
-  bg: #fff4f4,
-  surface: #fbeaea,
-  accent: #c62828,
-  text: #2c1a1a,
-  muted: #a88a8a,
-  border: #e0c0c0
+    icon: 🔴,
+    bg: #fff4f4,
+    hero: url("/images/red_hero.png"),
+    surface: #fbeaea,
+    accent: #c62828,
+    text: #2c1a1a,
+    muted: #a88a8a,
+    border: #e0c0c0
 );
 
+.heroImage {
+    background-image: var(--hero-image);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
 $themes: (
-  light: $light-theme,
-  dark: $dark-theme,
-  hazard: $hazard-theme,
-  brownstone: $brownstone-theme,
-  midnight: $midnight-theme,
-  slate: $slate-theme,
-  purple: $purple-theme,
-  pink: $pink-theme,
-  green: $green-theme,
-  red: $red-theme
+    light: $light-theme,
+    dark: $dark-theme,
+    hazard: $hazard-theme,
+    brownstone: $brownstone-theme,
+    midnight: $midnight-theme,
+    slate: $slate-theme,
+    purple: $purple-theme,
+    pink: $pink-theme,
+    green: $green-theme,
+    red: $red-theme
 );
 
 body {
@@ -136,7 +150,8 @@ i {
     min-width: 2rem;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: var(--accent);
     transition: color 0.4s ease;
 }

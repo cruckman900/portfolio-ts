@@ -24,6 +24,14 @@ export default function Document() {
                     <meta name="twitter:title" content="LinearDescent | Poetic Survival Through Code, Art & Memoir" />
                     <meta name="twitter:description" content="Memoirs, glitch art, ambient guitar, and expressive full-stack engineering from Rayland, Ohio." />
                     <meta name="twitter:image" content="https://lineardescent.netlify.app/og-image.png" />
+
+                    {/* Preload Hero Images */}
+                    <link rel="preload" as="image" href="/images/hero_midnight.png" />
+                    <link rel="preload" as="image" href="/images/hero_red.png" />
+                    <link rel="preload" as="image" href="/images/hero_green.png" />
+                    <link rel="preload" as="image" href="/images/hero_pink.png" />
+                    <link rel="preload" as="image" href="/images/hero_brownstone.png" />
+                    <link rel="preload" as="image" href="/images/hero_dark.png" />
                 </Head>
                 <script
                     type="application/ld+json"

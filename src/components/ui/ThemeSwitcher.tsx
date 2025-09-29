@@ -1,24 +1,22 @@
 // ThemeSwitcher.tsx
 import { useState } from 'react';
+import { useTheme } from '@/context/ThemeContext';
 import { themeOptions } from '@/data/themeOptions';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './ThemeSwitcher.module.scss';
 
-export default function ThemeSwitcher({
-    value,
-    onChange,
-}: {
-    value: string;
-    onChange: (val: string) => void;
-}) {
+export default function ThemeSwitcher() {
+    const { theme, setTheme} = useTheme();
     const [open, setOpen] = useState(false);
-    const current = themeOptions.find(opt => opt.value === value);
+    const current = themeOptions.find(opt => opt.value === theme);
 
     return (
         <div className={styles.wrapper}>
             <button
                 className={styles.trigger}
-                onClick={() => setOpen(prev => !prev)}
+                onClick={() => {
+                    setOpen(prev => !prev);
+                }}
                 aria-haspopup="listbox"
                 aria-expanded={open}
             >
@@ -48,7 +46,8 @@ export default function ThemeSwitcher({
                                 key={opt.value}
                                 className={styles.item}
                                 onClick={() => {
-                                    onChange(opt.value);
+                                    setTheme(opt.value);
+                                    console.log('opt.value', opt.value);
                                     setOpen(false);
                                 }}
                                 whileHover={{ scale: 1.02 }}

@@ -1,3 +1,4 @@
+// import { useState, useEffect } from 'react';
 import Layout from "@/components/layout/Layout";
 import styles from "./index.module.scss";
 
@@ -5,7 +6,6 @@ export default function Index() {
     return (
         <div className={styles.index}>
             <section className={styles.homepageIntro}>
-                <h1 className={styles.glitchTitle}>LinearDescent</h1>
                 <p className={styles.blurb}>
                     From the edge of Rayland, Ohio, I build warning systems in human form—writing, coding, composing, and designing to keep others from falling. My work spans biohazard-themed books, glitch-infused web platforms, guitar compositions, and digital artwork that pulses with survival and signal.
                 </p>

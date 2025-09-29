@@ -1,0 +1,61 @@
+.heroImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    background-image: unquote(var(--hero, none)), url('/og-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: var(--muted) !important;
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+    aspect-ratio: 3 / 2;
+
+    //Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+    //Use string.unquote instead.
+    p {
+        font-size: 2rem !important;
+        font-weight: 500;
+
+        @media (max-width: 600px) {
+            position: relative;
+            top: 4.5rem;
+            font-size: 1.5rem !important;
+        }
+    }
+
+    @media (max-width: 600px) {
+        max-height: 150px;
+        background-position: center;
+    }
+}
+
+.heroImage::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2); // or use var(--bg) with opacity
+}
+
+.leftSpacer {
+    flex: 1;
+}
+
+.themeText {
+    flex: 1;
+    text-align: right;
+}
+
+.heroText {
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    color: var(--text);
+    font-family: 'Poetsen One', sans-serif;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto;
+}
