@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                 </div>
                 <p>&copy; {new Date().getFullYear()} LinearDescent&mdash;What Rights?</p>
             </div>
-       </footer>
+        </footer>
     )
 }
 

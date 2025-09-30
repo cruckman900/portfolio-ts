@@ -1,59 +1,59 @@
-import React, { ReactNode, useState, useEffect } from 'react';
-import { useTheme } from '@/context/ThemeContext';
-import Head from 'next/head';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import styles from './Layout.module.scss';
-import "@/styles/layout/layout.scss";
+import React, { ReactNode, useState, useEffect } from 'react'
+import { useTheme } from '@/context/ThemeContext'
+import Head from 'next/head'
+import Navbar from './Navbar'
+import Footer from './Footer'
+import styles from './Layout.module.scss'
+import "@/styles/layout/layout.scss"
 
 type Props = {
     children: ReactNode;
 };
 
 const Layout: React.FC<Props> = ({ children }) => {
-    const { theme } = useTheme();
-    const [heroText, setHeroText] = useState('');
+    const { theme } = useTheme()
+    const [heroText, setHeroText] = useState('')
 
-    const [isHydrated, setIsHydrated] = useState(false);
+    const [isHydrated, setIsHydrated] = useState(false)
 
     function getHeroText(theme: string): string {
         switch (theme) {
             case 'light':
-                return 'Illuminate the path. Code with clarity.';
+                return 'Illuminate the path. Code with clarity.'
             case 'dark':
-                return 'In shadows we forge resilience.';
+                return 'In shadows we forge resilience.'
             case 'hazard':
-                return 'Warning is not weakness-it\'s wisdom wrapped in urgency.';
+                return 'Warning is not weakness-it\'s wisdom wrapped in urgency.'
             case 'brownstone':
-                return 'Let the thoughts that betray you feel the sting of swift justice.';
+                return 'Let the thoughts that betray you feel the sting of swift justice.'
             case 'midnight':
                 return 'Even in silence, the stars whisper resilience.'
             case 'red':
-                return 'Warning is a gift. Speak boldly.';
+                return 'Warning is a gift. Speak boldly.'
             case 'slate':
-                return 'Stone still speaks. Build with grit.';
+                return 'Stone still speaks. Build with grit.'
             case 'purple':
-                return 'Embers glow with memory and fire.';
+                return 'Embers glow with memory and fire.'
             case 'pink':
-                return 'Softness is strength. Kindness is rebellion.';
+                return 'Softness is strength. Kindness is rebellion.'
             case 'green':
                 return 'Growth begins underground-quiet, patient, unstobbable.'
             default:
-                return 'Transform adversity into code, verse, and advocacy.';
+                return 'Transform adversity into code, verse, and advocacy.'
         }
     }
 
     useEffect(() => {
         const txt = getHeroText(theme)
-        setHeroText(txt);
-    }, [theme]);
+        setHeroText(txt)
+    }, [theme])
 
     useEffect(() => {
-        setIsHydrated(true);
-    }, []);
+        setIsHydrated(true)
+    }, [])
 
     if (!isHydrated) {
-        return null; // Or a branded loading screen *****
+        return null // Or a branded loading screen *****
     }
 
     return (
@@ -78,10 +78,11 @@ const Layout: React.FC<Props> = ({ children }) => {
                     </div>
                     <main className='content'>{children}</main>
                 </section>
-                <footer className='footer'><Footer /></footer>
+                {/* <footer className='footer'><Footer /></footer> */}
+                <div className='footer'><Footer /></div>
             </div>
         </>
     )
 }
 
-export default Layout;
+export default Layout

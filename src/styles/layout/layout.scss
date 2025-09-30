@@ -1,14 +1,17 @@
 @use "@/styles/base.scss";
+
 * {
     box-sizing: border-box;
 }
 
-#__next, .app-root {
+#__next,
+.app-root {
     height: 100%;
     width: 100%;
 }
 
-html, body {
+html,
+body {
     @media print {
         background-color: white;
         color: base.$print-text;
@@ -25,25 +28,27 @@ html, body {
 }
 
 @media screen {
+
     /* Grid Layout */
     .container {
         display: grid;
-        grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+        grid-template-rows: auto 1fr auto;
+        /* Header, Content, Footer */
         height: calc(var(--vh, 1vh) * 100);
     }
-    
+
     /* Sticky Header */
     .header {
         position: sticky;
         top: 0;
         z-index: 10;
     }
-    
+
     /* Main Content */
-    .content {
-        overflow-y: auto;
-    }
-    
+    // .content {
+    //     overflow-y: auto;
+    // }
+
     /* Footer */
     .footer {
         padding: .25rem;

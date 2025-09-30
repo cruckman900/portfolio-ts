@@ -39,17 +39,17 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
             <ApolloProvider client={client}>
                 {isHydrated ? (
                     <PageTransition>
-                        <Toaster
-                            position='top-right'
-                            toastOptions={{
-                                style: {
-                                    background: 'var{--surface)',
-                                    color: 'var(--text)',
-                                    border: 'solid 1px var{--border)'
-                                }
-                            }}
-                        />
                         <Layout>
+                            <Toaster
+                                position='top-right'
+                                toastOptions={{
+                                    style: {
+                                        background: 'var{--surface)',
+                                        color: 'var(--text)',
+                                        border: 'solid 1px var{--border)'
+                                    }
+                                }}
+                            />
                             <Component {...pageProps} />
                         </Layout>
                     </PageTransition>
