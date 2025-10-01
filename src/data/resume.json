@@ -1,7 +1,7 @@
 {
   "icon": "fa-solid fa-dragon",
   "name": "Christopher Ruckman",
-  "tagline": "Transforming adversity into code, verse, and advocacy",
+  "tagline": "Engineering resilience through code, strategy, and creative insight",
   "contact": {
     "location": "Rayland, OH",
     "email": "cruckman900@gmail.com",
@@ -10,53 +10,84 @@
     "github": "https://github.com/cruckman900"
   },
   "skills": [
-    {"section": "Web & App Development", "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful / Web API, React, Next.js, Node.js"},
-    {"section": "Game Development", "content": "Unity (C#), Unreal Engine (C++, Blueprints)"},
-    {"section": "Database", "content": "Microsoft SQL, MySql, MongoDB"},
-    {"section": "Creative Design", "content": "Photoshop, Blender"},
-    {"section": "Technical Problem Solving", "content": "Debugging, cross-domain synthesis, strategic planning, Agile/Scrum"},
-    {"section": "Legal Research & Advocacy", "content": "Fraud investigation, documentation strategy, state-level alerts"},
-    {"section": "Publishing & Writing", "content": "Poetic and philosophical writing, book cover creation, thematic series development"}
+    {
+      "section": "Web & App Development",
+      "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful APIs, React, Next.js, Node.js"
+    },
+    {
+      "section": "Game Development",
+      "content": "Unity (C#), Unreal Engine (C++, Blueprints)"
+    },
+    {
+      "section": "Database",
+      "content": "Microsoft SQL Server, MySQL, MongoDB"
+    },
+    {
+      "section": "Creative Design",
+      "content": "Adobe Photoshop, Blender"
+    },
+    {
+      "section": "Technical Strategy",
+      "content": "Debugging, cross-functional synthesis, Agile/Scrum, CI/CD integration"
+    },
+    {
+      "section": "Legal Research & Advocacy",
+      "content": "Investigative documentation, fraud analysis, regulatory outreach"
+    },
+    {
+      "section": "Publishing & Writing",
+      "content": "Narrative development, cover design, thematic series production"
+    }
   ],
   "education": [
-    {"school": "Wheeling Jesuit University", "url": "https://wheeling.edu", "degree": "BS – Computer Science", "dates": "2005 – 2008"},
-    {"school": "WV Northern Community College", "url": "https://www.wvncc.edu", "degree": "AAS – Computer Programming & System Development", "dates": "2003 – 2005"}
+    {
+      "school": "Wheeling Jesuit University",
+      "url": "https://wheeling.edu",
+      "degree": "BS – Computer Science",
+      "dates": "2005 – 2008"
+    },
+    {
+      "school": "WV Northern Community College",
+      "url": "https://www.wvncc.edu",
+      "degree": "AAS – Computer Programming & System Development",
+      "dates": "2003 – 2005"
+    }
   ],
-  "summary": "Resilient, resourceful, and reflective—my work bridges technical precision with poetic depth. I transform adversity into insight, whether through code, advocacy, or verse. With over 20 years of experience in full-stack development, creative publishing, and legal research, I build systems and stories that warn, uplift, and endure—all forged during a period of personal constraint and creative urgency.",
+  "summary": "Multidisciplinary developer and strategist blending technical depth with creative clarity. I specialize in building scalable systems, expressive interfaces, and resilient workflows—often under high-stakes constraints. With 20+ years of experience across software engineering, legal advocacy, and independent publishing, I deliver solutions that inform, empower, and endure.",
   "achievements": [
     {
-        "category": "Published Author", 
-        "items": [
-            "Released three books exploring themes of struggle, warning, and transformation",
-            "Designed covers and poetic blurbs with a raw, biohazard-inspired aesthetics",
-            "Built a cohesive series while navigating life on Social Security Disability"
-        ]
+      "category": "Published Author",
+      "items": [
+        "Authored three books exploring transformation through adversity",
+        "Designed covers and poetic blurbs with thematic cohesion",
+        "Built and marketed a series while navigating disability constraints"
+      ]
     },
     {
-        "category": "Legal Advocate", 
-        "items": [
-            "Exposed fraudulent lawsuit in Ohio through independent research and documentation.",
-            "Drafted formal documentation and coordinated outreach to state authorities",
-            "Demonstrated clarity and grit in navigating complex legal terrain"
-        ]
+      "category": "Legal Advocate",
+      "items": [
+        "Uncovered fraudulent litigation through independent research",
+        "Drafted formal documentation and coordinated with state agencies",
+        "Demonstrated precision and persistence in legal navigation"
+      ]
     },
     {
-        "category": "Self-Taught Technologist", 
-        "items": [
-            "Completed Udemy courses in ASP.NET, .NET Core, React, Next.js, Node.js, Blender, Photoshop, Unreal, Unity, and Android",
-            "Applied skills to personal projects, including ChatterboxSM, Prey and Predator, and Operation Montserrat"
-        ]
+      "category": "Self-Taught Technologist",
+      "items": [
+        "Completed advanced coursework in ASP.NET, React, Node.js, Blender, Unity, and Android",
+        "Applied skills to real-world projects including ChatterboxSM and Operation Montserrat"
+      ]
     }
   ],
   "experience": [
     {
       "title": "Android Developer",
-      "company": "Walmart, Google, Wayfair (Contracts via Enhance IT)",
+      "company": "Walmart, Google, Wayfair (via Enhance IT)",
       "dates": "Sept 2020 – Feb 2022",
       "details": [
-        "Developed Android apps using Java/Kotlin and Chromecast SDK",
-        "Built MVVM-based e-commerce features",
-        "Created unit tests and conducted code reviews"
+        "Built Android apps using Java/Kotlin and Chromecast SDK",
+        "Implemented MVVM architecture for scalable e-commerce features",
+        "Led unit testing and peer code reviews"
       ]
     },
     {
@@ -64,9 +95,9 @@
       "company": "Murray Energy Corporation",
       "dates": "Apr 2018 – Feb 2020 & Nov 2016 – Aug 2017",
       "details": [
-        "Designed ERP systems and asset tracking modules using ASP.NET MVC/Web Forms",
-        "Built Web API 2 modules and automated SQL migrations",
-        "Created testing software and configuration screens for CIMS"
+        "Developed ERP modules and asset tracking systems in ASP.NET MVC/Web Forms",
+        "Built Web API 2 endpoints and automated SQL migrations",
+        "Created internal testing tools and configuration interfaces"
       ]
     },
     {
@@ -74,9 +105,9 @@
       "company": "Challenger Learning Center",
       "dates": "Jan 2018 – May 2019 & Nov 2013 – Jan 2017",
       "details": [
-        "Built real-time communications apps using ASP.NET Core, SignalR, and Razor",
-        "Created interactive maps and administrative backends",
-        "Developed Flash/ActionScript interfaces and RESTful APIs"
+        "Engineered real-time communication tools using ASP.NET Core and SignalR",
+        "Built interactive maps and admin dashboards",
+        "Developed RESTful APIs and Flash-based interfaces"
       ]
     },
     {
@@ -84,8 +115,8 @@
       "company": "Mortgage Connect LP",
       "dates": "Nov 2017 – Jan 2018",
       "details": [
-        "Enhanced banking modules and resolved client-reported defects",
-        "Built ad-hoc SQL queries and scrubbed erroneous data"
+        "Enhanced banking modules and resolved client-reported issues",
+        "Built ad-hoc SQL queries and performed data cleansing"
       ]
     },
     {
@@ -94,7 +125,7 @@
       "dates": "Sept 2008 – Sept 2013",
       "details": [
         "Led development of animated simulations and distance learning platforms",
-        "Built WCF services and administered Joomla sites for NASA groups"
+        "Built WCF services and managed Joomla sites for NASA affiliates"
       ]
     },
     {
@@ -102,10 +133,9 @@
       "company": "Prosite Business Solutions",
       "dates": "Jan 2005 – Feb 2010",
       "details": [
-        "Migrated Classic ASP to ASP.NET Web Forms",
+        "Migrated legacy ASP systems to ASP.NET Web Forms",
         "Built scheduling, accounting, and inventory modules",
-        "Built custom browser for web scraping",
-        "Supported OhioValleyOnline CMS with PayPal integration"
+        "Developed custom browser for web scraping and CMS integrations"
       ]
     }
   ],
@@ -115,20 +145,26 @@
       "projects": [
         {
           "name": "BOOKIT",
-          "description": "Rental property listings with booking feature and admin pages",
+          "description": "Rental property platform with booking engine and admin dashboard",
           "url": "",
-          "tech": "Next.JS, TypeScript, Bootstrap, mongoose, MongoDB, Redux, bcrypt, crypto, next-auth, nodemailer, node-geocoder, MapQuest, react-datepicker, Moment.js",
+          "tech": "Next.js, TypeScript, Bootstrap, MongoDB, Redux, bcrypt, crypto, next-auth, nodemailer, node-geocoder, MapQuest, react-datepicker, Moment.js",
           "repos": [
-            {"label": "SOURCE CODE", "url": "https://github.com/cruckman900/BookIT"}
+            {
+              "label": "SOURCE CODE",
+              "url": "https://github.com/cruckman900/BookIT"
+            }
           ]
         },
         {
           "name": "ContactsManager",
-          "description": "Contacts manager app",
+          "description": "Contact management system with API and test coverage",
           "url": "",
           "tech": "ASP.NET Core, MVC, EntityFrameworkCore, Dependency Injection, Web API, XUnit, Moq, Serilog",
           "repos": [
-            {"label": "SOURCE CODE", "url": "https://github.com/cruckman900/BookIT"}
+            {
+              "label": "SOURCE CODE",
+              "url": "https://github.com/cruckman900/BookIT"
+            }
           ]
         }
       ]
@@ -138,31 +174,50 @@
       "projects": [
         {
           "name": "cruckman2.0",
-          "description": "New version of my personal portfolio website",
+          "description": "Personal portfolio site with 3D visuals and audio integration",
           "url": "https://cruckman.com",
           "tech": "ReactJS, SASS, three.js, react-three/drei, react-three/fiber, WaveSurfer",
           "repos": [
-            {"label": "SOURCE CODE", "url": "https://github.com/cruckman900/cruckman2.0"}
+            {
+              "label": "SOURCE CODE",
+              "url": "https://github.com/cruckman900/cruckman2.0"
+            }
           ]
         },
         {
           "name": "portfolio-ts",
-          "description": "This stunning resume",
-          "url": "",
+          "description": "The new LinearDescent portfolio site—more than a résumé, it's a creative showcase and technical playground",
+          "url": "https://lineardescent.netlify.app",
           "tech": "Next.js, TypeScript, SASS",
           "repos": [
-            {"label": "SOURCE CODE", "url": "https://github.com/cruckman900/cruckman2.0"}
+            {
+              "label": "SOURCE CODE",
+              "url": "https://github.com/cruckman900/portfolio-ts"
+            }
           ]
         },
         {
-          "name": "ChatterboxSM",
-          "description": "React and Node Chat application",
+          "name": "ThemeSwitcher",
+          "description": "Modular theme-switching component designed for public use—coming soon as a standalone package",
           "url": "",
-          "tech": "ReactJS, module.css, Node.js, MySQL, express, axios",
+          "tech": "ReactJS, TypeScript, CSS Modules",
           "repos": [
-            {"label": "FRONT END", "url": "https://github.com/cruckman900/chatterboxsm.com"},
-            {"label": "API", "url": "https://github.com/cruckman900/chatterboxsm-api"},
-            {"label": "MAILER", "url": "https://github.com/cruckman900/chatterboxsm-mailer"}
+            {
+              "label": "SOURCE CODE",
+              "url": "https://github.com/cruckman900/react-theme-switcher-context"
+            }
+          ]
+        },
+        {
+          "name": "fanTABulous",
+          "description": "A tab-parsing and music metadata platform—backend nearly complete, frontend in progress. Soon, musicians everywhere will have a backstage pass to crank out lively jams",
+          "url": "",
+          "tech": "FastAPI, Python, SQLModel, Cloudinary, React (planned)",
+          "repos": [
+            {
+              "label": "BACKEND",
+              "url": "https://github.com/cruckman900/fanTABulous-backend | https://github.com/cruckman900/fanTABulous"
+            }
           ]
         }
       ]
@@ -172,11 +227,14 @@
       "projects": [
         {
           "name": "InterTrade Solutions",
-          "description": "An E-commerce website I was working on with an online group",
+          "description": "Collaborative e-commerce platform with admin and product modules",
           "url": "",
-          "tech": "Next.JS, TypeScript, TailwindCSS, Node.JS, prisma, MySQL",
+          "tech": "Next.js, TypeScript, TailwindCSS, Node.js, Prisma, MySQL",
           "repos": [
-            {"label": "SOURCE CODE", "url": "https://github.com/cruckman900/BookIT"}
+            {
+              "label": "SOURCE CODE",
+              "url": "https://github.com/cruckman900/BookIT"
+            }
           ]
         }
       ]
