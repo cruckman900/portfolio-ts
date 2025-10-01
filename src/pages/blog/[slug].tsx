@@ -1,48 +1,50 @@
 // pages/blog/[slug].tsx
-import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
-import { BlogPost } from '@/types/blog';
-import Layout from '@/components/layout/Layout';
-import { toast } from 'react-hot-toast';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import ReadOnlyPost from '@/components/ui/ReadOnlyPost';
+import { useRouter } from 'next/router'
+import { useState, useEffect } from 'react'
+import { BlogPost } from '@/types/blog'
+import Layout from '@/components/layout/Layout'
+import { toast } from 'react-hot-toast'
+// import ReactMarkdown from 'react-markdown'
+// import remarkGfm from 'remark-gfm'
+import ReadOnlyPost from '@/components/ui/ReadOnlyPost'
 
 export default function BlogPostPage() {
-    const { query } = useRouter();
-    const [post, setPost] = useState<BlogPost | null>(null);
+    const { query } = useRouter()
+    const [post, setPost] = useState<BlogPost | null>(null)
 
-    const [error, setError] = useState<string | null>(null);
+    const [error, setError] = useState<string | null>(null)
 
-    const categoryIcons: Record<string, string> = {
-        tech: '💻',
-        design: '🎨',
-        legal: '⚖️',
-        music: '🎵',
-        personal: '🧠',
-        general: '🗂️',
-    };
+    // TODO: need these icons!
+
+    // const categoryIcons: Record<string, string> = {
+    //     tech: '💻',
+    //     design: '🎨',
+    //     legal: '⚖️',
+    //     music: '🎵',
+    //     personal: '🧠',
+    //     general: '🗂️',
+    // }
 
     useEffect(() => {
         if (error) {
-            console.error('Blog post fetch error', error);
-            toast.error('⚠️ Post not found', { icon: '📄', duration: 4000 });
+            // console.error('Blog post fetch error', error)
+            toast.error('⚠️ Post not found', { icon: '📄', duration: 4000 })
         }
-    }, [error]);
+    }, [error])
 
     useEffect(() => {
         if (query.slug) {
             fetch(`/api/get-post?slug=${query.slug}`)
                 .then(res => {
                     if (!res.ok) throw new Error('Post not found')
-                    return res.json();
+                    return res.json()
                 })
                 .then((data: BlogPost) => setPost(data))
-                .catch(err => setError(err.message));
+                .catch(err => setError(err.message))
         }
-    }, [query.slug]);
+    }, [query.slug])
 
-    if (!post) return <p>Loading...</p>;
+    if (!post) return <p>Loading...</p>
 
     return (
         <article>
@@ -54,4 +56,4 @@ export default function BlogPostPage() {
 // Define a custom layout for this page
 BlogPostPage.getLayout = function getLayout(page: React.ReactElement) {
     return <Layout>{page}</Layout>
-};
+}

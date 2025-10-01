@@ -6,4 +6,4 @@ export const env = {
     SMTP_USER: process.env.SMTP_USER!,
     SMTP_PASS: process.env.SMTP_PASS!,
     CONTACT_RECEIVER_EMAIL: process.env.CONTACT_RECEIVER_EMAIL!,
-};
+}

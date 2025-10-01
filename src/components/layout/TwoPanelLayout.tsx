@@ -1,11 +1,11 @@
 // components/TwoPanelLayout.tsx
-import React from 'react';
-import styles from './TwoPanelLayout.module.scss';
+import React from 'react'
+import styles from './TwoPanelLayout.module.scss'
 
 interface TwoPanelLayoutProps {
-    className?: string;
-    left: React.ReactNode;
-    right: React.ReactNode;
+    className?: string
+    left: React.ReactNode
+    right: React.ReactNode
 }
 
 const TwoPanelLayout: React.FC<TwoPanelLayoutProps> = ({ className, left, right }) => {

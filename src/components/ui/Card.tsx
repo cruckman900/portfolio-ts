@@ -1,12 +1,12 @@
 // components//Card.tsx
-import React from 'react';
+import React from 'react'
 import styles from './Card.module.scss'
 
 interface CardProps {
-    className?: string;
-    children: React.ReactNode;
-    onClick?: () => void;
-    isSelected?: boolean;
+    className?: string
+    children: React.ReactNode
+    onClick?: () => void
+    isSelected?: boolean
 }
 
 export default function Card({ className, children, onClick, isSelected }: CardProps) {

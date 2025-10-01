@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { NextApiRequest, NextApiResponse } from 'next'
 import type { ContactPayload } from '../../types/contact'
 import { env } from '@/lib/env'
@@ -14,6 +15,8 @@ interface CaptchaResponse {
   hostname?: string;
   'error-codes'?: string[];
 }
+
+// TODO: alternative to no-unused-vars for errors
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
@@ -66,7 +69,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         },
       })
     } catch (error) {
-      console.error('Transporter setup failed:', error)
+      // console.error('Transporter setup failed:', error)
       return res.status(500).json({ message: 'Email configuration error.' })
     }
 
@@ -84,11 +87,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       return res.status(200).json({ message: 'Message sent successfully!' })
     } catch (error) {
-      console.error('Email send error:', error)
+      // console.error('Email send error:', error)
       return res.status(500).json({ message: 'Failed to send email.' })
     }
   } catch (error) {
-    console.log('API error:', error)
+    // console.error('API error:', error)
     return res.status(500).json({ message: 'Internal server error.' })
   }
 }

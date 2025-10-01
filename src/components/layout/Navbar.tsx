@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import SubNav from './SubNav';
-import Hamburger from '../ui/Hamburger';
-import NavLinks from '@/components/ui/NavLinks';
+import React, { useState } from 'react'
+import SubNav from './SubNav'
+import Hamburger from '../ui/Hamburger'
+import NavLinks from '@/components/ui/NavLinks'
 
 export default function Navbar({ className }: { className?: string }) {
-    const [toggleHamburger, setToggleHamburger] = useState(false);
-    const handleToggle = () => setToggleHamburger(prev => !prev);
+    const [toggleHamburger, setToggleHamburger] = useState(false)
+    const handleToggle = () => setToggleHamburger(prev => !prev)
 
     return (
         <>
@@ -30,5 +30,5 @@ export default function Navbar({ className }: { className?: string }) {
                 </div>
             )}
         </>
-    );
+    )
 }

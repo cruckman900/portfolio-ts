@@ -20,15 +20,19 @@
     },
     {
       "section": "Database",
-      "content": "Microsoft SQL Server, MySQL, MongoDB"
+      "content": "Microsoft SQL Server, MySQL, MongoDB, SQLModel"
     },
     {
       "section": "Creative Design",
-      "content": "Adobe Photoshop, Blender"
+      "content": "Adobe Photoshop, Blender, thematic branding, cover design"
     },
     {
       "section": "Technical Strategy",
-      "content": "Debugging, cross-functional synthesis, Agile/Scrum, CI/CD integration"
+      "content": "CI/CD pipelines, test coverage analysis, shell environment tuning (Windows, WSL, Git Bash), debugging across IDEs"
+    },
+    {
+      "section": "Backend Engineering",
+      "content": "FastAPI, Python, modular route architecture, environment variable security, tab parsing and metadata extraction"
     },
     {
       "section": "Legal Research & Advocacy",
@@ -36,7 +40,7 @@
     },
     {
       "section": "Publishing & Writing",
-      "content": "Narrative development, cover design, thematic series production"
+      "content": "Poetic changelogs, expressive markdown, thematic series development, narrative clarity"
     }
   ],
   "education": [

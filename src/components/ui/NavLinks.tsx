@@ -1,10 +1,10 @@
 // components/NavLinks.tsx
-import Link from 'next/link';
-import navlinks from '@/data/links.json';
-import { useRouter } from 'next/router';
+import Link from 'next/link'
+import navlinks from '@/data/links.json'
+import { useRouter } from 'next/router'
 
 export default function NavLinks({ onClick }: { onClick?: () => void; }) {
-    const router = useRouter();
+    const router = useRouter()
 
     return (
         <>

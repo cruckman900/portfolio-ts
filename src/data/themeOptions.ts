@@ -10,4 +10,4 @@ export const themeOptions = [
     { value: 'pink', icon: '🌸', name: 'Pink Bloom' },
     { value: 'green', icon: '🌿', name: 'Verdant Green' },
     { value: 'red', icon: '🔴', name: 'Crimson Core' },
-];
+]

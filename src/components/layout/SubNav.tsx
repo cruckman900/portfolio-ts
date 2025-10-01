@@ -1,8 +1,8 @@
 // import React, { useState, useEffect } from 'react';
 // import { useTheme } from '@/context/ThemeContext';
-import ThemeSwitcher from '../ui/ThemeSwitcher';
-import Breadcrumbs from '../ui/Breadcrumbs';
-import styles from './SubNav.module.scss';
+import ThemeSwitcher from '../ui/ThemeSwitcher'
+import Breadcrumbs from '../ui/Breadcrumbs'
+import styles from './SubNav.module.scss'
 
 export default function SubNav() {
     return (
@@ -13,5 +13,5 @@ export default function SubNav() {
             </div>
             <ThemeSwitcher />
         </div>
-    );
+    )
 }

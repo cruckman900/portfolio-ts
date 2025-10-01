@@ -1,24 +1,24 @@
 // pages/blog/admin.tsx
-import { useState, useEffect } from 'react';
-import LexicalEditor from '@/components/ui/LexicalEditor';
-import { toast } from 'react-hot-toast';
+import { useState, useEffect } from 'react'
+import LexicalEditor from '@/components/ui/LexicalEditor'
+import { toast } from 'react-hot-toast'
 
 export default function AdminPage() {
-  const [authorized, setAuthorized] = useState(false);
-  const [contentJson, setContentJson] = useState('');
+  const [authorized, setAuthorized] = useState(false)
+  const [contentJson, setContentJson] = useState('')
 
   useEffect(() => {
     fetch('/api/verify').then(res => {
-      if (res.ok) setAuthorized(true);
-      else toast.error('Access denied');
-    });
-  }, []);
+      if (res.ok) setAuthorized(true)
+      else toast.error('Access denied')
+    })
+  }, [])
 
   useEffect(() => {
-    if (contentJson.length > 0) console.log('contentJson', contentJson);
-  }, [contentJson]);
+    if (contentJson.length > 0) console.log('contentJson', contentJson)
+  }, [contentJson])
 
-  if (!authorized) return <p>Checking access...</p>;
+  if (!authorized) return <p>Checking access...</p>
 
   return (
     <div>
@@ -29,5 +29,5 @@ export default function AdminPage() {
       </button>
       <pre>{contentJson}</pre>
     </div>
-  );
+  )
 }

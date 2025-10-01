@@ -9,7 +9,7 @@ import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin'
 import { EditorState } from 'lexical'
 
 interface LexicalEditorProps {
-  onChange?: (json: string) => void;
+  onChange?: (json: string) => void
 }
 
 export default function LexicalEditor({ onChange }: LexicalEditorProps) {
