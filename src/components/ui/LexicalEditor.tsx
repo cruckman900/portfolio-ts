@@ -16,7 +16,7 @@ export default function LexicalEditor({ onChange }: LexicalEditorProps) {
   const config: InitialConfigType = {
     namespace: 'BlogEditor',
     theme: {},
-    onError: (error: Error) => console.error(error),
+    onError: (error: Error) => { return error },
     nodes: [],
   }
 

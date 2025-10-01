@@ -16,7 +16,7 @@ const TwoPanelLayout: React.FC<TwoPanelLayoutProps> = ({ className, left, right 
             </aside>
             <main>{right}</main>
         </div>
-    );
-};
+    )
+}
 
-export default TwoPanelLayout;
+export default TwoPanelLayout

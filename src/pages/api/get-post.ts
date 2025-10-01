@@ -1,7 +1,6 @@
 // pages/api/get-post.ts
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { neon } from '@netlify/neon'
-
 const sql = neon()
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -21,6 +20,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     } catch (err) {
         // TODO: alternative to console.error logging
         // console.error('Database error:', err)
-        res.status(500).json({ error: 'Database error' })
+        res.status(500).json({ error: `Database error: ${err}` })
     }
 }

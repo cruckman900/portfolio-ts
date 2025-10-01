@@ -7,6 +7,8 @@ export default function AdminPage() {
   const [authorized, setAuthorized] = useState(false)
   const [contentJson, setContentJson] = useState('')
 
+  // TODO: the entire page
+
   useEffect(() => {
     fetch('/api/verify').then(res => {
       if (res.ok) setAuthorized(true)
@@ -24,9 +26,9 @@ export default function AdminPage() {
     <div>
       <h1>Blog Admin</h1>
       <LexicalEditor onChange={setContentJson} />
-      <button onClick={() => console.log('Submit JSON:', contentJson)}>
+      {/* <button onClick={() => console.log('Submit JSON:', contentJson)}>
         Submit Post
-      </button>
+      </button> */}
       <pre>{contentJson}</pre>
     </div>
   )
