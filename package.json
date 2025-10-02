@@ -16,6 +16,7 @@
     "@lexical/markdown": "^0.36.1",
     "@lexical/react": "^0.36.1",
     "@netlify/neon": "^0.1.0",
+    "@next/third-parties": "^15.5.4",
     "@tiptap/extension-emoji": "^3.6.1",
     "@tiptap/react": "^3.6.1",
     "@tiptap/starter-kit": "^3.6.1",

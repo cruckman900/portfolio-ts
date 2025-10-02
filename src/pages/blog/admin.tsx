@@ -16,9 +16,9 @@ export default function AdminPage() {
     })
   }, [])
 
-  useEffect(() => {
-    if (contentJson.length > 0) console.log('contentJson', contentJson)
-  }, [contentJson])
+  // useEffect(() => {
+  //   if (contentJson.length > 0) console.log('contentJson', contentJson)
+  // }, [contentJson])
 
   if (!authorized) return <p>Checking access...</p>
 
