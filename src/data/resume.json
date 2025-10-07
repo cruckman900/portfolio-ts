@@ -12,7 +12,7 @@
   "skills": [
     {
       "section": "Web & App Development",
-      "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful APIs, React, Next.js, Node.js, Blazor (Server & WASM)"
+      "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms, Razor Pages, Blazor (Server & WASM)), RESTful APIs, React, Next.js, Node.js, Python"
     },
     {
       "section": "Frameworks & Libraries",
@@ -221,14 +221,14 @@
           ]
         },
         {
-          "name": "fanTABulous",
+          "name": "NEXTRiff",
           "description": "A tab-parsing and music metadata platform—backend nearly complete, frontend in progress. Soon, musicians everywhere will have a backstage pass to crank out lively jams",
-          "url": "",
+          "url": "https://nextriff.netlify.app",
           "tech": "FastAPI, Python, SQLModel, Cloudinary, React (planned)",
           "repos": [
             {
               "label": "BACKEND",
-              "url": "https://github.com/cruckman900/fanTABulous-backend"
+              "url": "https://github.com/cruckman900/next.riffdaddy"
             }
           ]
         },
@@ -256,7 +256,6 @@
             }
           ]
         }
-
       ]
     },
     {
