@@ -1,9 +1,11 @@
-import { NextConfig } from 'next'
 import { Configuration } from 'webpack'
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  images: {
+    domains: ['your-image-domains.com'], // optional
+  },
   webpack(config: Configuration) {
     config.output = {
       ...config.output,
