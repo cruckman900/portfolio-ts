@@ -62,12 +62,14 @@ const Layout: React.FC<Props> = ({ children }) => {
             <Head>
                 <title>LinearDescent | Poetic Survival Through Code, Art & Memoir</title>
                 <link rel="preload" as="image" href="/images/light_hero.png" />
+                <link rel="preload" as="image" href="/images/slate_hero.png" />
                 <link rel="preload" as="image" href="/images/midnight_hero.png" />
                 <link rel="preload" as="image" href="/images/red_hero.png" />
                 <link rel="preload" as="image" href="/images/green_hero.png" />
                 <link rel="preload" as="image" href="/images/pink_hero.png" />
                 <link rel="preload" as="image" href="/images/brownstone_hero.png" />
                 <link rel="preload" as="image" href="/images/dark_hero.png" />
+                <link rel="preload" as="image" href="/images/purple_hero.png" />
             </Head>
             <div className='container'>
                 <header className='header'><Navbar className="navbar" /></header>
