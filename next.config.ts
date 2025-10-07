@@ -1,28 +1,21 @@
-import type { NextConfig } from 'next'
+import { NextConfig } from 'next'
+import { Configuration } from 'webpack'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    optimizeCss: true
-  }
-}
-module.exports = {
-  turbopack: {
-    rules: {
-      '*.svg': {
-        loaders: ['@svgr/webpack'],
-        as: '*.js',
-      },
-    },
-    resolveAlias: {
-      underscore: 'lodash',
-    },
-    resolveExtensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
-    extends: ['next/core-web-vitals'],
-  },
-}; module.exports = {
-  webpack(config: { output: { publicPath: string; }; }) {
-    config.output.publicPath = '/'
+  reactStrictMode: true,
+  swcMinify: true,
+  webpack(config: Configuration) {
+    config.output = {
+      ...config.output,
+      publicPath: '/',
+    }
+
+    config.module?.rules?.push({
+      test: /\.svg$/,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    })
+
     return config
   },
 }
