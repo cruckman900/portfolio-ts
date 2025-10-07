@@ -1,14 +1,15 @@
 @use './theme' as *;
+@use "sass:map";
 
 :root {
-    @each $key, $value in map-get($themes, light) {
+    @each $key, $value in map.get($themes, light) {
         --#{$key}: #{$value};
     }
 }
 
 @each $theme-name, $theme-map in $themes {
-    @if $theme-name != light {
-        [data-theme='#{$theme-name}'] {
+    @if $theme-name !=light {
+        [data-theme='#{"" + $theme-name}'] {
             @each $key, $value in $theme-map {
                 --#{$key}: #{$value};
             }

@@ -1,16 +1,19 @@
+@use "sass:string";
+
 .heroImage {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-right: 1rem;
-    background-image: unquote(var(--hero, none)), url('/og-image.png');
+    background-image: string.unquote(var(--hero, none)), url('/og-image.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
     background-color: var(--muted) !important;
     height: auto;
     width: 100%;
+    max-height: 200px;
     max-height: 200px;
     aspect-ratio: 3 / 2;
 
