@@ -224,7 +224,7 @@
           "name": "NEXTRiff",
           "description": "A tab-parsing and music metadata platform—backend nearly complete, frontend in progress. Soon, musicians everywhere will have a backstage pass to crank out lively jams",
           "url": "https://nextriff.netlify.app",
-          "tech": "FastAPI, Python, SQLModel, Cloudinary, React (planned)",
+          "tech": "FastAPI, Python, SQLModel, Cloudinary, React",
           "repos": [
             {
               "label": "BACKEND",
@@ -241,18 +241,6 @@
             {
               "label": "SOURCE CODE",
               "url": "https://github.com/cruckman900/BusinessAsUsual"
-            }
-          ]
-        },
-        {
-          "name": "NEXTRiff",
-          "description": "Riff-ready tab parsing platform for expressive musicians. Backend powered by FastAPI and SQLModel, with frontend built for dynamic tab preview and musical metadata extraction.",
-          "url": "https://nextriff.netlify.app",
-          "tech": "FastAPI, Python, SQLModel, Cloudinary, React",
-          "repos": [
-            {
-              "label": "BACKEND",
-              "url": "https://github.com/cruckman900/fanTABulous-backend"
             }
           ]
         }
