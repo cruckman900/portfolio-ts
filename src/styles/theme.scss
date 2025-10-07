@@ -7,6 +7,7 @@
 $light-theme: (
     icon: ☀️,
     bg: #ffffff,
+    hero: url("/images/light_hero.png"),
     surface: #f4f4f4,
     accent: #0077cc,
     text: #1a1a1a,
@@ -61,6 +62,7 @@ $midnight-theme: (
 $slate-theme: (
     icon: 🪨,
     bg: #f8f9fa,
+    hero: url("images/slate_hero.png"),
     surface: #e2e6ea,
     accent: #5c6770,
     text: #2e343b,
@@ -71,6 +73,7 @@ $slate-theme: (
 $purple-theme: (
     icon: 🔮,
     bg: #1e1126,
+    hero: url("/images/purple_hero.png"),
     surface: #2c1a3a,
     accent: #a678d6,
     text: #f0eafc,

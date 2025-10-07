@@ -61,12 +61,13 @@ const Layout: React.FC<Props> = ({ children }) => {
         <>
             <Head>
                 <title>LinearDescent | Poetic Survival Through Code, Art & Memoir</title>
-                <link rel="preload" as="image" href="/images/hero_midnight.png" />
-                <link rel="preload" as="image" href="/images/hero_red.png" />
-                <link rel="preload" as="image" href="/images/hero_green.png" />
-                <link rel="preload" as="image" href="/images/hero_pink.png" />
-                <link rel="preload" as="image" href="/images/hero_brownstone.png" />
-                <link rel="preload" as="image" href="/images/hero_dark.png" />
+                <link rel="preload" as="image" href="/images/light_hero.png" />
+                <link rel="preload" as="image" href="/images/midnight_hero.png" />
+                <link rel="preload" as="image" href="/images/red_hero.png" />
+                <link rel="preload" as="image" href="/images/green_hero.png" />
+                <link rel="preload" as="image" href="/images/pink_hero.png" />
+                <link rel="preload" as="image" href="/images/brownstone_hero.png" />
+                <link rel="preload" as="image" href="/images/dark_hero.png" />
             </Head>
             <div className='container'>
                 <header className='header'><Navbar className="navbar" /></header>
@@ -79,7 +80,6 @@ const Layout: React.FC<Props> = ({ children }) => {
                     </div>
                     <main className='content'>{children}</main>
                 </section>
-                {/* <footer className='footer'><Footer /></footer> */}
                 <div className='footer'><Footer /></div>
             </div>
             <GoogleAnalytics gaId="GTM-WV9C9HMF" />

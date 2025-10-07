@@ -12,7 +12,15 @@
   "skills": [
     {
       "section": "Web & App Development",
-      "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful APIs, React, Next.js, Node.js"
+      "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms), RESTful APIs, React, Next.js, Node.js, Blazor (Server & WASM)"
+    },
+    {
+      "section": "Frameworks & Libraries",
+      "content": "Entity Framework Core, Serilog, Moq, XUnit, SQLModel, TailwindCSS, Bootstrap, SignalR, react-three/fiber, WaveSurfer"
+    },
+    {
+      "section": "Cloud & Infrastructure",
+      "content": "AWS EC2/RDS provisioning, Docker orchestration, GitHub Actions, CI/CD pipelines, .env integration, hybrid onboarding workflows"
     },
     {
       "section": "Game Development",
@@ -28,7 +36,7 @@
     },
     {
       "section": "Technical Strategy",
-      "content": "CI/CD pipelines, test coverage analysis, shell environment tuning (Windows, WSL, Git Bash), debugging across IDEs"
+      "content": "Smart Commit tagging, changelog automation, contributor badge injection, shell environment tuning (Windows, WSL, Git Bash)"
     },
     {
       "section": "Backend Engineering",
@@ -57,7 +65,7 @@
       "dates": "2003 – 2005"
     }
   ],
-  "summary": "Multidisciplinary developer and strategist blending technical depth with creative clarity. I specialize in building scalable systems, expressive interfaces, and resilient workflows—often under high-stakes constraints. With 20+ years of experience across software engineering, legal advocacy, and independent publishing, I deliver solutions that inform, empower, and endure.",
+  "summary": "Multidisciplinary developer and strategist blending technical depth with creative clarity. I specialize in building scalable systems, expressive interfaces, and resilient workflows—often under high-stakes constraints. With 20+ years of experience across software engineering, legal advocacy, and independent publishing, I deliver solutions that inform, empower, and endure. Recent work includes AWS infrastructure orchestration, multi-tenant backend provisioning, and poetic onboarding workflows for Business As Usual and NEXTRiff.",
   "achievements": [
     {
       "category": "Published Author",
@@ -220,10 +228,35 @@
           "repos": [
             {
               "label": "BACKEND",
-              "url": "https://github.com/cruckman900/fanTABulous-backend | https://github.com/cruckman900/fanTABulous"
+              "url": "https://github.com/cruckman900/fanTABulous-backend"
+            }
+          ]
+        },
+        {
+          "name": "Business As Usual",
+          "description": "Multi-tenant ASP.NET Core business suite with contributor-proof onboarding, Smart Commit synergy, and CI/CD orchestration. Features include AWS EC2/RDS provisioning, changelog automation, badge injection, and modular admin dashboards.",
+          "url": "",
+          "tech": "ASP.NET Core, MVC, Entity Framework Core, SQL Server, Docker, GitHub Actions, AWS EC2/RDS, Serilog, Smart Commits, Jira API",
+          "repos": [
+            {
+              "label": "SOURCE CODE",
+              "url": "https://github.com/cruckman900/BusinessAsUsual"
+            }
+          ]
+        },
+        {
+          "name": "NEXTRiff",
+          "description": "Riff-ready tab parsing platform for expressive musicians. Backend powered by FastAPI and SQLModel, with frontend built for dynamic tab preview and musical metadata extraction.",
+          "url": "https://nextriff.netlify.app",
+          "tech": "FastAPI, Python, SQLModel, Cloudinary, React",
+          "repos": [
+            {
+              "label": "BACKEND",
+              "url": "https://github.com/cruckman900/fanTABulous-backend"
             }
           ]
         }
+
       ]
     },
     {
