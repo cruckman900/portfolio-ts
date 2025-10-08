@@ -1,4 +1,3 @@
-import { GoogleAnalytics } from '@next/third-parties/google'
 import { Html, Head, Main, NextScript } from 'next/document'
 import '@/styles/main.scss'
 
