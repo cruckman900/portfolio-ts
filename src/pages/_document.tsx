@@ -7,6 +7,22 @@ export default function Document() {
         <Html>
             <Head>
                 <Head>
+                    <script
+                        async
+                        src="https://www.googletagmanager.com/gtag/js?id=G-NSB7KBRR03"
+                    />
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-NSB7KBRR03', {
+                                page_path: window.location.pathname,
+                            });
+                            `,
+                        }}
+                    />
                     <meta charSet="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="description" content="Poetic survival platform from Rayland, Ohio—memoirs, glitch art, ambient guitar, and expressive full-stack engineering." />
@@ -58,7 +74,6 @@ export default function Document() {
             <body>
                 <Main />
                 <NextScript />
-                <GoogleAnalytics gaId="G-NSB7KBRR03" />
             </body>
         </Html>
     )
