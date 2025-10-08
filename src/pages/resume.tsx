@@ -99,11 +99,11 @@ export default function ResumePage() {
                                 <div key={j}>
                                     <i>{project.name}</i>
                                     <ul>
-                                        {project.url && <li>{project.url}</li>}
+                                        {project.url && <li><a href={project.url} target="_blank">{project.url.substring(8)}</a></li>}
                                         <li>{project.description}</li>
                                         <li><strong>Tech: </strong>{project.tech}</li>
                                         {project.repos.map((repo) => (
-                                            <li key={repo.label}><strong>{repo.label}</strong> {repo.url}</li>
+                                            <li key={repo.label}><strong>{repo.label}</strong> <a href={repo.url} target="_blank">{repo.url.substring(8)}</a></li>
                                         ))}
                                     </ul>
                                 </div>
