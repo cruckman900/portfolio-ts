@@ -1,12 +1,19 @@
 [
     {
+        "id": "failure-at-fifty",
         "title": "Failure at Fifty",
+        "subtitle": "How Alcohol and Mental Illness Nearly Destroyed Every Aspect of My Life",
+        "author": "LinearDescent",
+        "genre": "Memoir",
         "series": "What a Life",
         "order": 1,
         "asin": "1806236915",
         "siteStripeLink": "https://amzn.to/46H2JWo",
+        "coverImage3D": "/images/failure-at-fifty-3d.png",
         "coverFront": "/images/faf-front.jpg",
         "coverBack": "/images/faf-back.jpg",
+        "seriesTag": "Milestone Memoir",
+        "shortDescription": "A raw, introspective account of addiction, mental illness, and the unraveling of a life once thought stable. This memoir explores the depths of despair and the slow climb toward clarity.",
         "description": [
             "What happens when alcohol and mental illness collide at the most pivotal moments of life?",
             "In Failure at Fifty, Linear Descent delivers a raw, unflinching memoir about surviving addiction, schizophrenia, and the crushing weight of personal failure. From the innocence of childhood to the chaos of high school bullying, from chasing dreams in college to falling into the grip of alcohol and mental health struggles, this is a story of how everything can unravel—and how one can still find the strength to stand again.",
@@ -31,13 +38,20 @@
         ]
     },
     {
+        "id": "ways-to-lie",
         "title": "Fifty-One Ways to Lie",
+        "subtitle": "How I Got Involved With An International Crime Syndicate",
+        "author": "LinearDescent",
+        "genre": "Crime Memoir",
         "series": "What a Life",
         "order": 2,
         "asin": "1806238187",
         "siteStripeLink": "https://amzn.to/4pEnWZX",
+        "coverImage3D": "/images/fiftyone-ways-to-lie-3d.png",
         "coverFront": "/images/fowtl-front.jpg",
         "coverBack": "/images/fowtl-back.jpg",
+        "seriesTag": "Darkest Chapter",
+        "shortDescription": "A chilling dive into secrecy, manipulation, and the underworld of international crime. This book reveals how one man became entangled in a syndicate that nearly consumed him.",
         "description": [
             "Fifty-One Ways to Lie: How I Got Involved With an International Crime Syndicate is a shocking true account of deception, desperation, and survival in a world where lies become currency.",
             "Author Linear Descent takes readers inside a hidden underworld that preys on the vulnerable and the desperate. What begins as a simple search for employment spirals into entanglement with an international crime syndicate, where fake résumés, coerced contracts, and fraudulent interviews are all part of the game. Promises of wealth and prestige quickly give way to manipulation, exploitation, and the crushing realization of being a pawn in a global web of deceit.",
@@ -56,13 +70,20 @@
         ]
     },
     {
+        "id": "better-life-beyond-fifty",
         "title": "Better Life Beyond Fifty",
+        "subtitle": "How I Choose to Live My Life Moving Forward",
+        "author": "LinearDescent",
+        "genre": "Redemption Memoir",
         "series": "What a Life",
         "order": 3,
         "asin": "1806238217",
         "siteStripeLink": "https://amzn.to/42QT4LI",
+        "coverImage3D": "/images/better-life-beyond-fifty-3d.png",
         "coverFront": "/images/blbf-front.jpg",
         "coverBack": "/images/blbf-back.jpg",
+        "seriesTag": "Turning Point",
+        "shortDescription": "A hopeful reflection on healing, legacy, and the power of choosing a better path. This book marks the turning point from pain to purpose, and the journey toward a life worth living.",
         "description": [
             "Better Life Beyond Fifty is a raw, reflective, and inspiring memoir about resilience, growth, and reclaiming purpose after a life marked by struggles with addiction, mental illness, and personal loss.",
             "In this powerful third installment of his life story, author Linear Descent shifts from the darker tones of his first two books to a more hopeful, uplifting narrative. With honesty and grit, he shares his journey of battling schizophrenia, overcoming alcoholism, navigating fractured family ties, and rediscovering the healing power of music, faith, and love.",

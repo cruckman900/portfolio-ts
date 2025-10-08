@@ -1,100 +1,82 @@
 // pages/books.tsx
 import { useState } from 'react'
-import TwoPanelLayout from '@/components/layout/TwoPanelLayout'
-import Card from '@/components/ui/Card'
 import Image from 'next/image'
 import booksData from '@/data/books.json'
+import { Book } from '@/types/book'
 import Layout from '@/components/layout/Layout'
+import { motion } from 'framer-motion'
 import styles from './books.module.scss'
-
-interface Book {
-    title: string;
-    series: string;
-    order: number;
-    asin: string;
-    coverFront: string;
-    coverBack: string;
-    description: string[];
-    seriesDescription: string[];
-}
 
 export default function BooksPage() {
     const [selectedBook, setSelectedBook] = useState<Book | null>(null)
-    const [view, setView] = useState<'series' | 'book'>('series')
 
-    const leftPanel = (
-        <div className={styles.bookGrid}>
-            {booksData.map((book) => (
-                <Card
-                    className={styles.card}
-                    key={book.asin}
-                    onClick={() => {
-                        setSelectedBook(book)
-                        setView('book')
-                    }}
-                    isSelected={selectedBook?.asin === book.asin}
-                >
-                    <h3>{book.title}</h3>
-                    <p>{book.series}</p>
-                    <div className={styles.bookCovers}>
+    return (
+        <div className={styles.booksPage}>
+            <h1 className={styles.seriesTitle}>What a Life Series</h1>
+            <p className={styles.seriesTagline}>
+                A journey through failure, secrecy, and redemption&mdash;told in three acts.
+            </p>
+
+            <div className={styles.carousel}>
+                {booksData.map((book: Book) => (
+                    <motion.div
+                        key={book.id}
+                        className={styles.bookCard}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: .95 }}
+                        onClick={() => setSelectedBook(book)}
+                    >
                         <Image
-                            src={book.coverFront}
+                            src={book.coverImage3D}
+                            alt={book.title}
+                            width={160}
+                            height={240}
+                            className={styles.coverImage}
+                        />
+                        <h3>{book.title}</h3>
+                        <p>{book.shortDescription}</p>
+                    </motion.div>
+                ))}
+            </div>
+
+            {selectedBook && (
+                <motion.div
+                    className={styles.bookDetail}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    <div className={styles.detailImages}>
+                        <Image
+                            src={selectedBook.coverFront}
                             alt="Front Cover"
-                            width={100}
-                            height={150}
-                            style={{ objectFit: 'contain' }}
+                            width={300}
+                            height={450}
                         />
                         <Image
-                            src={book.coverBack}
+                            src={selectedBook.coverBack}
                             alt="Back Cover"
-                            width={100}
-                            height={150}
-                            style={{ objectFit: 'contain' }}
+                            width={300}
+                            height={450}
                         />
                     </div>
-                    <div className={styles.buyNow}>
-                        <a
-                            href={book.siteStripeLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Buy on Amazon
+                    <div className={styles.detailText}>
+                        <h2>{selectedBook.title}</h2>
+                        <h4>{selectedBook.subtitle}</h4>
+                        <p><strong>Author:</strong> {selectedBook.author}</p>
+                        <p><strong>Genre:</strong> {selectedBook.genre}</p>
+                        <p><strong>Series:</strong> {selectedBook.seriesTag}</p>
+                        {selectedBook.description.map((para, idx) => (
+                            <p key={idx}>{para}</p>
+                        ))}
+                        <a href={selectedBook.siteStripeLink} target="_blank" rel="noopener noreferrer">
+                            📖 Buy on Amazon
                         </a>
                     </div>
-                </Card>
-            ))}
+                </motion.div>
+            )}
         </div>
     )
-
-    const rightPanel = (
-        <div className={styles.descriptionPanel}>
-            <div className={styles.breadcrumbToggle}>
-                <button onClick={() => setView('series')} className={view === 'series' ? 'active' : ''}>
-                    Series Description
-                </button>
-                <button
-                    onClick={() => setView('book')}
-                    className={view === 'book' ? 'active' : ''}
-                    disabled={!selectedBook}
-                >
-                    Book Description
-                </button>
-            </div>
-            <div className={styles.descriptionContent}>
-                {view === 'series' &&
-                    (selectedBook?.seriesDescription || booksData[0].seriesDescription).map((para, idx) => (
-                        <p key={idx}>{para}</p>
-                    ))}
-
-                {view === 'book' && selectedBook &&
-                    selectedBook.description.map((para, idx) => (
-                        <p key={idx}>{para}</p>
-                    ))}
-            </div>
-        </div>
-    )
-
-    return <TwoPanelLayout left={leftPanel} right={rightPanel} />
 }
 
 // Define a custom layout for this page
