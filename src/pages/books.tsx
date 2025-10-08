@@ -69,7 +69,7 @@ export default function BooksPage() {
                         {selectedBook.description.map((para, idx) => (
                             <p key={idx}>{para}</p>
                         ))}
-                        <a href={selectedBook.siteStripeLink} target="_blank" rel="noopener noreferrer">
+                        <a className={styles.link} href={selectedBook.siteStripeLink} target="_blank" rel="noopener noreferrer">
                             📖 Buy on Amazon
                         </a>
                     </div>

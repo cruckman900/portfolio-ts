@@ -1,6 +1,22 @@
 [
-    {"url": "/", "label": "home", "icon": "fas fa-house"},
-    {"url": "/books", "label": "books", "icon": "fas fa-book-open"},
-    {"url": "/blog", "label": "blogs", "icon": "fas fa-blog"},
-    {"url": "/resume", "label": "resume", "icon": "fas fa-file"}
+    {
+        "url": "/",
+        "label": "home",
+        "icon": "fas fa-house"
+    },
+    {
+        "url": "/books",
+        "label": "books",
+        "icon": "fas fa-book-open"
+    },
+    {
+        "url": "/blog",
+        "label": "blogs",
+        "icon": "fas fa-blog"
+    },
+    {
+        "url": "/resume",
+        "label": "resume",
+        "icon": "fas fa-file"
+    }
 ]

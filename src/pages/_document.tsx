@@ -26,12 +26,15 @@ export default function Document() {
                     <meta name="twitter:image" content="https://lineardescent.netlify.app/og-image.png" />
 
                     {/* Preload Hero Images */}
-                    <link rel="preload" as="image" href="/images/hero_midnight.png" />
-                    <link rel="preload" as="image" href="/images/hero_red.png" />
-                    <link rel="preload" as="image" href="/images/hero_green.png" />
-                    <link rel="preload" as="image" href="/images/hero_pink.png" />
-                    <link rel="preload" as="image" href="/images/hero_brownstone.png" />
-                    <link rel="preload" as="image" href="/images/hero_dark.png" />
+                    <link rel="preload" as="image" href="/images/light_hero.png" />
+                    <link rel="preload" as="image" href="/images/slate_hero.png" />
+                    <link rel="preload" as="image" href="/images/midnight_hero.png" />
+                    <link rel="preload" as="image" href="/images/red_hero.png" />
+                    <link rel="preload" as="image" href="/images/green_hero.png" />
+                    <link rel="preload" as="image" href="/images/pink_hero.png" />
+                    <link rel="preload" as="image" href="/images/brownstone_hero.png" />
+                    <link rel="preload" as="image" href="/images/dark_hero.png" />
+                    <link rel="preload" as="image" href="/images/purple_hero.png" />
                 </Head>
                 <script
                     type="application/ld+json"
