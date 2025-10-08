@@ -19,6 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         author: 'Christopher Ruckman',
         tags: 'portfolio, origin, creative process',
         published_at: now,
+        updated_at: now,
         archived: false,
         content: `
 # The Story of This Site
@@ -48,6 +49,7 @@ And it’s only just beginning.
         author: 'Christopher Ruckman',
         tags: 'books, memoirs, glitch art, publishing',
         published_at: now,
+        updated_at: now,
         archived: false,
         content: `
 # Books & Memoirs: A Legacy in Print
@@ -79,6 +81,7 @@ Each book is available in print and digital formats, with contributor CTAs and t
         author: 'Christopher Ruckman',
         tags: 'next.js, portfolio, netlify, markdown, print optimization',
         published_at: now,
+        updated_at: now,
         archived: false,
         content: `
 # portfolio-ts: A Creative Showcase & Technical Playground
@@ -112,6 +115,7 @@ Hosted on Netlify, tracked with GA4, and styled with legacy-minded branding.
         author: 'Christopher Ruckman',
         tags: 'typescript, parser, guitar, regex, music',
         published_at: now,
+        updated_at: now,
         archived: false,
         content: `
 # NEXTRiff Tab Parser: From Guitar to Grid
@@ -143,6 +147,7 @@ It’s not just code—it’s a bridge between music and markup.
         author: 'Christopher Ruckman',
         tags: 'asp.net core, multi-tenant, admin, docker, ci/cd, sql server',
         published_at: now,
+        updated_at: now,
         archived: false,
         content: `
 # Business As Usual: Scalable Admin, Visual Legacy
@@ -185,6 +190,7 @@ Every module is expressive, auditable, and legacy-minded.
           ${post.author},
           ${post.tags},
           ${post.published_at},
+          ${post.updated_at ?? null},
           ${post.archived},
           ${JSON.stringify(post.marketing ?? {})}
         )
