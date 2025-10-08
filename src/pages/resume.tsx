@@ -99,8 +99,12 @@ export default function ResumePage() {
                                 <div key={j}>
                                     <i>{project.name}</i>
                                     <ul>
+                                        <li>{project.url}</li>
                                         <li>{project.description}</li>
                                         <li><strong>Tech: </strong>{project.tech}</li>
+                                        {project.repos.map((repo) => (
+                                            <li key={repo.label}><strong>{repo.label}</strong> {repo.url}</li>
+                                        ))}
                                     </ul>
                                 </div>
                             )
