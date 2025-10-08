@@ -12,6 +12,8 @@
 
 html,
 body {
+    overflow-x: hidden;
+
     @media print {
         background-color: white;
         color: base.$print-text;
@@ -55,7 +57,33 @@ body {
         text-align: center;
     }
 
+    /* For WebKit browsers (Chrome, Safari, Edge) */
     ::-webkit-scrollbar {
-        width: 0;
+        width: 3px;
+        height: 3px;
+        background-color: var(--surface);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--accent);
+        border-radius: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: var(--surface);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--accent); // stays the same
+    }
+
+    ::-webkit-scrollbar-track:hover {
+        background-color: var(--mute);
+    }
+
+    /* For Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent) var(--surface);
     }
 }
