@@ -64,6 +64,9 @@ export default function BlogPostPage() {
                         published_at={post.published_at}
                         tags={post.tags}
                     />
+                    <a href={'/blog'} className={styles.link}>
+                        ← Go Back
+                    </a>
                 </article>
             </section>
         </>
