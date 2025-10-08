@@ -7,7 +7,7 @@ export default function Document() {
                 {/* Google Analytics */}
                 <script
                     async
-                    src="https://www.googletagmanager.com/gtag/js?id=G-NSB7KBRR03"
+                    src="https://www.googletagmanager.com/gtag/js?id=G-GJ8GQCZRXJ"
                 />
                 <script
                     dangerouslySetInnerHTML={{
@@ -15,7 +15,7 @@ export default function Document() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-NSB7KBRR03', {
+              gtag('config', 'G-GJ8GQCZRXJ', {
                 page_path: window.location.pathname,
               });
             `,
