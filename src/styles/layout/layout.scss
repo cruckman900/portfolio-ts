@@ -47,9 +47,10 @@ body {
     }
 
     /* Main Content */
-    // .content {
-    //     overflow-y: auto;
-    // }
+    .content {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 
     /* Footer */
     .footer {
@@ -85,5 +86,46 @@ body {
     * {
         scrollbar-width: thin;
         scrollbar-color: var(--accent) var(--surface);
+    }
+}
+
+@media print {
+
+    html,
+    body {
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .container {
+        height: auto !important;
+        display: block !important;
+    }
+
+    .content {
+        overflow: visible !important;
+        height: auto !important;
+        min-height: 100vh;
+    }
+
+    .header {
+        position: static !important;
+    }
+
+    .footer {
+        display: none !important;
+    }
+
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    * {
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+
+    @page {
+        margin: 1in;
     }
 }

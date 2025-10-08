@@ -6,7 +6,7 @@
     "location": "Rayland, OH",
     "email": "cruckman900@gmail.com",
     "phone": "(740) 827-2743",
-    "website": "https://cruckman.com",
+    "website": "https://lineardescent.netlify.app",
     "github": "https://github.com/cruckman900"
   },
   "skills": [
@@ -200,7 +200,7 @@
           "name": "portfolio-ts",
           "description": "The new LinearDescent portfolio site—more than a résumé, it's a creative showcase and technical playground",
           "url": "https://lineardescent.netlify.app",
-          "tech": "Next.js, TypeScript, SASS",
+          "tech": "Next.js, TypeScript, SASS, SCSS Modules, Markdown, Framer Motion, Font Awesome, Netlify, Google Analytics 4, Open Graph, Responsive Layouts, Print Optimization",
           "repos": [
             {
               "label": "source code",

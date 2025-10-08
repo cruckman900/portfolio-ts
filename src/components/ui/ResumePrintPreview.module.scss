@@ -1,0 +1,24 @@
+.preview {
+    // display: flex;
+    // gap: 1rem;
+    // justify-content: center;
+    // margin: 2rem 0;
+
+    button,
+    .download {
+        background-color: var(--accent);
+        color: white;
+        border: none;
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+    }
+
+    button:hover,
+    .download:hover {
+        background-color: var(--text);
+    }
+}
