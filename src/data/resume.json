@@ -162,7 +162,7 @@
           "tech": "Next.js, TypeScript, Bootstrap, MongoDB, Redux, bcrypt, crypto, next-auth, nodemailer, node-geocoder, MapQuest, react-datepicker, Moment.js",
           "repos": [
             {
-              "label": "SOURCE CODE",
+              "label": "source code",
               "url": "https://github.com/cruckman900/BookIT"
             }
           ]
@@ -174,7 +174,7 @@
           "tech": "ASP.NET Core, MVC, EntityFrameworkCore, Dependency Injection, Web API, XUnit, Moq, Serilog",
           "repos": [
             {
-              "label": "SOURCE CODE",
+              "label": "source code",
               "url": "https://github.com/cruckman900/BookIT"
             }
           ]
@@ -191,7 +191,7 @@
           "tech": "ReactJS, SASS, three.js, react-three/drei, react-three/fiber, WaveSurfer",
           "repos": [
             {
-              "label": "SOURCE CODE",
+              "label": "source code",
               "url": "https://github.com/cruckman900/cruckman2.0"
             }
           ]
@@ -203,7 +203,7 @@
           "tech": "Next.js, TypeScript, SASS",
           "repos": [
             {
-              "label": "SOURCE CODE",
+              "label": "source code",
               "url": "https://github.com/cruckman900/portfolio-ts"
             }
           ]
@@ -215,7 +215,7 @@
           "tech": "ReactJS, TypeScript, CSS Modules",
           "repos": [
             {
-              "label": "SOURCE CODE",
+              "label": "source code",
               "url": "https://github.com/cruckman900/react-theme-switcher-context"
             }
           ]
@@ -227,7 +227,7 @@
           "tech": "FastAPI, Python, SQLModel, Cloudinary, React",
           "repos": [
             {
-              "label": "BACKEND",
+              "label": "source code",
               "url": "https://github.com/cruckman900/next.riffdaddy"
             }
           ]
@@ -239,7 +239,7 @@
           "tech": "ASP.NET Core, MVC, Entity Framework Core, SQL Server, Docker, GitHub Actions, AWS EC2/RDS, Serilog, Smart Commits, Jira API",
           "repos": [
             {
-              "label": "SOURCE CODE",
+              "label": "source code",
               "url": "https://github.com/cruckman900/BusinessAsUsual"
             }
           ]
@@ -256,8 +256,8 @@
           "tech": "Next.js, TypeScript, TailwindCSS, Node.js, Prisma, MySQL",
           "repos": [
             {
-              "label": "SOURCE CODE",
-              "url": "https://github.com/cruckman900/BookIT"
+              "label": "source code",
+              "url": "https://github.com/AdamantiumCore/intertrade.solutions"
             }
           ]
         }
