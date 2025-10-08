@@ -1,18 +1,18 @@
 // pages/blog/index.tsx
 import { useEffect, useState } from 'react'
 import { BlogPost } from '@/types/blog'
+import BlogCard from '@/components/ui/BlogCard'
 import Layout from '@/components/layout/Layout'
 import toast from 'react-hot-toast'
 
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 
 export default function BlogIndex() {
     const [posts, setPosts] = useState<BlogPost[]>([])
 
-    useEffect(() => {
-        fetch('/api/seed-post')
-    }, [])
-
+    // useEffect(() => {
+    //     fetch('/api/seed-post')
+    // }, [])
 
     useEffect(() => {
         fetch('/api/get-posts')
@@ -26,23 +26,11 @@ export default function BlogIndex() {
 
     return (
         <section>
-            <h1>Blog</h1>
-            <h2>Under heavy construction</h2>
             {posts.length === 0 ? (
                 <p>No blog posts yet. Stay tuned!</p>
             ) : (
                 posts.map(post => (
-                    <article key={post.id}>
-                        <h2>{post.title}</h2>
-                        <p>{post.excerpt}</p>
-                        <motion.a
-                            href={`/blog/${post.slug}`}
-                            whileHover={{ y: -2, scale: 1.02 }}
-                            className="read-more"
-                        >
-                            Read more →
-                        </motion.a>
-                    </article>
+                    <BlogCard key={post.id} post={post} />
                 ))
             )}
         </section>

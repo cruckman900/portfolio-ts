@@ -52,9 +52,9 @@ export default function Contact() {
                         <p key={i} style={{ fontSize: "1.2rem" }}>{reason}</p>
                     ))}
                 </div>
-           }
+            }
             right={
-                <div style={{ padding: '2rem' }}>
+                <div>
                     <div className={styles.contactPage}>
                         <h1>Contact Me</h1>
                         <form className={styles.form} onSubmit={handleSubmit}>

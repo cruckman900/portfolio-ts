@@ -97,31 +97,33 @@ export default function BooksPage() {
                             📖 Buy on Amazon
                         </a>
                     </div>
-                    <div className={styles.tagGroup}>
-                        <span
-                            className={styles.tag}
-                            onClick={() => setActiveTag(selectedBook.genre.toLowerCase().replace(/\s+/g, '-'))}
-                        >
-                            #{selectedBook.genre.toLowerCase().replace(/\s+/g, '-')}
-                        </span>
-                        <span
-                            className={styles.tag}
-                            onClick={() => setActiveTag(selectedBook.seriesTag.toLowerCase().replace(/\s+/g, '-'))}
-                        >
-                            #{selectedBook.seriesTag.toLowerCase().replace(/\s+/g, '-')}
-                        </span>
-                        {selectedBook.marketing.keywords.map((kw, idx) => (
+                    <div className={styles.tagPanel}>
+                        <div className={styles.tagGroup}>
                             <span
-                                key={idx}
                                 className={styles.tag}
-                                onClick={() => setActiveTag(kw.toLowerCase().replace(/\s+/g, '-'))}
+                                onClick={() => setActiveTag(selectedBook.genre.toLowerCase().replace(/\s+/g, '-'))}
                             >
-                                #{kw.toLowerCase().replace(/\s+/g, '-')}
+                                #{selectedBook.genre.toLowerCase().replace(/\s+/g, '-')}
                             </span>
-                        ))}
-                    </div>
-                    <div>
-                        {activeTag && <TagCTA tag={activeTag} />}
+                            <span
+                                className={styles.tag}
+                                onClick={() => setActiveTag(selectedBook.seriesTag.toLowerCase().replace(/\s+/g, '-'))}
+                            >
+                                #{selectedBook.seriesTag.toLowerCase().replace(/\s+/g, '-')}
+                            </span>
+                            {selectedBook.marketing.keywords.map((kw, idx) => (
+                                <span
+                                    key={idx}
+                                    className={styles.tag}
+                                    onClick={() => setActiveTag(kw.toLowerCase().replace(/\s+/g, '-'))}
+                                >
+                                    #{kw.toLowerCase().replace(/\s+/g, '-')}
+                                </span>
+                            ))}
+                        </div>
+                        <div className={styles.tagCTAWrapper}>
+                            {activeTag && <TagCTA tag={activeTag} />}
+                        </div>
                     </div>
                 </motion.div>
             )}

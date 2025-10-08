@@ -22,16 +22,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     await sql`
-      INSERT INTO blog_posts (slug, title, content_json, excerpt, author, tags)
-      VALUES (${slug}, ${title}, ${content_json}, ${excerpt}, ${author}, ${tags})
-      ON CONFLICT (slug) DO UPDATE SET
-        title = EXCLUDED.title,
-        content_json = EXCLUDED.content_json,
-        excerpt = EXCLUDED.excerpt,
-        author = EXCLUDED.author,
-        tags = EXCLUDED.tags,
-        updated_at = CURRENT_TIMESTAMP
-    `
+    INSERT INTO blog_posts (slug, title, content_json, marketing, excerpt, author, tags)
+    VALUES (${slug}, ${title}, ${content_json}, ${req.body.marketing}, ${excerpt}, ${author}, ${tags})
+    ON CONFLICT (slug) DO UPDATE SET
+      title = EXCLUDED.title,
+      content_json = EXCLUDED.content_json,
+      marketing = EXCLUDED.marketing,
+      excerpt = EXCLUDED.excerpt,
+      author = EXCLUDED.author,
+      tags = EXCLUDED.tags,
+      updated_at = CURRENT_TIMESTAMP
+  `
     res.status(200).json({ message: 'Post saved' })
   } catch (err) {
     // console.error(err)
