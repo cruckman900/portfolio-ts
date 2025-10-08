@@ -186,7 +186,7 @@ Every module is expressive, auditable, and legacy-minded.
           ${post.tags},
           ${post.published_at},
           ${post.archived},
-          ${post.marketing}
+          ${JSON.stringify(post.marketing ?? {})}
         )
       `
     }
