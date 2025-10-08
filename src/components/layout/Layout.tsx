@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import styles from './Layout.module.scss'
-import { GoogleAnalytics } from '@next/third-parties/google'
 import "@/styles/layout/layout.scss"
 
 type Props = {
@@ -75,7 +74,6 @@ const Layout: React.FC<Props> = ({ children }) => {
                 </section>
                 <div className='footer'><Footer /></div>
             </div>
-            <GoogleAnalytics gaId="GTM-WV9C9HMF" />
         </>
     )
 }
