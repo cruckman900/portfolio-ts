@@ -35,7 +35,34 @@
             "In Fifty-One Ways to Lie, desperation takes a darker turn, pulling him into the grip of an international crime syndicate. Lies, survival, and betrayal collide in this shocking account of how quickly one decision can turn into a life-altering storm.",
             "Finally, Better Life Beyond Fifty offers the hard-won light at the end of the tunnel. With music, family, and self-discovery as anchors, the author rebuilds a future, proving resilience is possible even after decades of chaos.",
             "Honest. Heartbreaking. Inspiring. What a Life is not just a memoir series. It is proof that even in the darkest chapters, there is always another page worth turning."
-        ]
+        ],
+        "marketing": {
+            "keywords": [
+                "mental health memoir",
+                "addiction recovery",
+                "schizophrenia",
+                "alcoholism",
+                "personal transformation",
+                "trauma survival",
+                "James Frey",
+                "Nic Sheff",
+                "raw memoir",
+                "failure and resilience"
+            ],
+            "audience": [
+                "Readers of A Million Little Pieces",
+                "Mental health advocates",
+                "Addiction recovery communities",
+                "Therapists and counselors",
+                "Families affected by schizophrenia"
+            ],
+            "quote": "This is not a sanitized recovery story—it’s a candid, gripping account for anyone who has wrestled with failure.",
+            "cta": "Discover the memoir that’s helping readers confront their past and rewrite their future.",
+            "badge": "🔥 Trending in Mental Health Memoirs",
+            "metaTitle": "Failure at Fifty | Memoir of Addiction, Mental Illness, and Redemption",
+            "metaDescription": "A brutally honest memoir about surviving schizophrenia, addiction, and personal collapse. Failure at Fifty is a wake-up call for anyone close to the edge.",
+            "openGraphImage": "/images/failure-at-fifty-3d.png"
+        }
     },
     {
         "id": "ways-to-lie",
@@ -67,7 +94,34 @@
             "In Fifty-One Ways to Lie, desperation takes a darker turn, pulling him into the grip of an international crime syndicate. Lies, survival, and betrayal collide in this shocking account of how quickly one decision can turn into a life-altering storm.",
             "Finally, Better Life Beyond Fifty offers the hard-won light at the end of the tunnel. With music, family, and self-discovery as anchors, the author rebuilds a future, proving resilience is possible even after decades of chaos.",
             "Honest. Heartbreaking. Inspiring. What a Life is not just a memoir series. It is proof that even in the darkest chapters, there is always another page worth turning."
-        ]
+        ],
+        "marketing": {
+            "keywords": [
+                "true crime memoir",
+                "corporate corruption",
+                "international crime syndicate",
+                "mental health survival",
+                "schizophrenia",
+                "paranoia",
+                "fraud exposure",
+                "job scams",
+                "tech industry deception",
+                "memoir of betrayal"
+            ],
+            "audience": [
+                "Readers of true crime exposés",
+                "Tech professionals navigating shady job offers",
+                "Mental health advocates",
+                "Corporate whistleblowers",
+                "Fans of investigative memoirs"
+            ],
+            "quote": "This isn’t just a personal confession. It’s a warning.",
+            "cta": "Uncover the memoir that exposes the dark underbelly of corporate deception and the psychological toll of surviving it.",
+            "badge": "🕵️‍♂️ Exposing Corporate Crime",
+            "metaTitle": "Fifty-One Ways to Lie | Memoir of Crime, Betrayal, and Survival",
+            "metaDescription": "A gripping true story of how one man was lured into an international crime syndicate. Fifty-One Ways to Lie is a cautionary tale for anyone chasing opportunity in a world built on deception.",
+            "openGraphImage": "/images/fiftyone-ways-to-lie-3d.png"
+        }
     },
     {
         "id": "better-life-beyond-fifty",
@@ -99,6 +153,33 @@
             "In Fifty-One Ways to Lie, desperation takes a darker turn, pulling him into the grip of an international crime syndicate. Lies, survival, and betrayal collide in this shocking account of how quickly one decision can turn into a life-altering storm.",
             "Finally, Better Life Beyond Fifty offers the hard-won light at the end of the tunnel. With music, family, and self-discovery as anchors, the author rebuilds a future, proving resilience is possible even after decades of chaos.",
             "Honest. Heartbreaking. Inspiring. What a Life is not just a memoir series. It is proof that even in the darkest chapters, there is always another page worth turning."
-        ]
+        ],
+        "marketing": {
+            "keywords": [
+                "redemption memoir",
+                "mental health recovery",
+                "addiction survival",
+                "life after fifty",
+                "healing through music",
+                "family reconciliation",
+                "personal growth",
+                "self-help inspiration",
+                "resilience stories",
+                "memoir of hope"
+            ],
+            "audience": [
+                "Readers of inspirational memoirs",
+                "Mental health and addiction recovery communities",
+                "Fans of self-help and personal growth books",
+                "Therapists and life coaches",
+                "Anyone seeking hope after hardship"
+            ],
+            "quote": "It’s not about being perfect—it’s about being better than you were yesterday.",
+            "cta": "Read the memoir that proves the next chapter can still be the best one.",
+            "badge": "🌅 Uplifting and Honest",
+            "metaTitle": "Better Life Beyond Fifty | Memoir of Healing, Music, and Moving Forward",
+            "metaDescription": "A powerful memoir about reclaiming purpose after addiction and mental illness. Better Life Beyond Fifty is a story of resilience, music, and the journey toward a life worth living.",
+            "openGraphImage": "/images/better-life-beyond-fifty-3d.png"
+        }
     }
 ]

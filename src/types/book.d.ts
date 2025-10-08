@@ -1,3 +1,14 @@
+export interface Marketing {
+    keywords: string[];
+    audience: string[];
+    quote: string;
+    cta: string;
+    badge: string;
+    metaTitle: string;
+    metaDescription: string;
+    openGraphImage: string;
+}
+
 export interface Book {
     id: string;
     title: string;
@@ -15,4 +26,5 @@ export interface Book {
     shortDescription: string;
     description: string[];
     seriesDescription: string[];
+    marketing: Marketing;
 }

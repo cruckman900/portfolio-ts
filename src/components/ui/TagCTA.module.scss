@@ -1,0 +1,49 @@
+.tagCTA {
+    margin-left: 1rem;
+    padding: 0.8rem 1rem;
+    background-color: var(--surface);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+    font-size: 1rem;
+    color: var(--text);
+    flex: 1;
+    min-width: 250px;
+}
+
+.ctaButton {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent);
+    color: var(--text);
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: var(--mute);
+}
+
+.tagGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.tag {
+    background-color: #eee;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+    background-color: #ddd;
+}

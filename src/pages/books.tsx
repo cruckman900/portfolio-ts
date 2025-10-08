@@ -1,7 +1,9 @@
 // pages/books.tsx
 import { useState } from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 import booksData from '@/data/books.json'
+import TagCTA from '@/components/ui/TagCTA'
 import { Book } from '@/types/book'
 import Layout from '@/components/layout/Layout'
 import { motion } from 'framer-motion'
@@ -9,9 +11,28 @@ import styles from './books.module.scss'
 
 export default function BooksPage() {
     const [selectedBook, setSelectedBook] = useState<Book | null>(null)
+    const [activeTag, setActiveTag] = useState<string | null>(null)
 
     return (
         <div className={styles.booksPage}>
+            {booksData.map((book) => (
+                <Head key={book.id}>
+                    <meta name="keywords" content={book.marketing.keywords.join(', ')} />
+                    <meta name="description" content={book.marketing.metaDescription} />
+                    <meta property="og:image" content={book.marketing.openGraphImage} />
+                </Head>
+            ))}
+            {selectedBook && (
+                <Head>
+                    <title>{selectedBook.marketing.metaTitle}</title>
+                    <meta name="description" content={selectedBook.marketing.metaDescription} />
+                    <meta name="keywords" content={selectedBook.marketing.keywords.join(', ')} />
+                    <meta property="og:title" content={selectedBook.marketing.metaTitle} />
+                    <meta property="og:description" content={selectedBook.marketing.metaDescription} />
+                    <meta property="og:image" content={selectedBook.marketing.openGraphImage} />
+                    <meta property="og:type" content="book" />
+                </Head>
+            )}
             <h1 className={styles.seriesTitle}>What a Life Series</h1>
             <p className={styles.seriesTagline}>
                 A journey through failure, secrecy, and redemption&mdash;told in three acts.
@@ -24,7 +45,10 @@ export default function BooksPage() {
                         className={styles.bookCard}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: .95 }}
-                        onClick={() => setSelectedBook(book)}
+                        onClick={() => {
+                            setSelectedBook(book)
+                            setActiveTag(null)
+                        }}
                     >
                         <Image
                             src={book.coverImage3D}
@@ -72,6 +96,32 @@ export default function BooksPage() {
                         <a className={styles.link} href={selectedBook.siteStripeLink} target="_blank" rel="noopener noreferrer">
                             📖 Buy on Amazon
                         </a>
+                    </div>
+                    <div className={styles.tagGroup}>
+                        <span
+                            className={styles.tag}
+                            onClick={() => setActiveTag(selectedBook.genre.toLowerCase().replace(/\s+/g, '-'))}
+                        >
+                            #{selectedBook.genre.toLowerCase().replace(/\s+/g, '-')}
+                        </span>
+                        <span
+                            className={styles.tag}
+                            onClick={() => setActiveTag(selectedBook.seriesTag.toLowerCase().replace(/\s+/g, '-'))}
+                        >
+                            #{selectedBook.seriesTag.toLowerCase().replace(/\s+/g, '-')}
+                        </span>
+                        {selectedBook.marketing.keywords.map((kw, idx) => (
+                            <span
+                                key={idx}
+                                className={styles.tag}
+                                onClick={() => setActiveTag(kw.toLowerCase().replace(/\s+/g, '-'))}
+                            >
+                                #{kw.toLowerCase().replace(/\s+/g, '-')}
+                            </span>
+                        ))}
+                    </div>
+                    <div>
+                        {activeTag && <TagCTA tag={activeTag} />}
                     </div>
                 </motion.div>
             )}
