@@ -10,9 +10,9 @@ import toast from 'react-hot-toast'
 export default function BlogIndex() {
     const [posts, setPosts] = useState<BlogPost[]>([])
 
-    // useEffect(() => {
-    //     fetch('/api/seed-post')
-    // }, [])
+    useEffect(() => {
+        fetch('/api/seed-post')
+    }, [])
 
     useEffect(() => {
         fetch('/api/get-posts')
