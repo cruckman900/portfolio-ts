@@ -114,6 +114,11 @@
 }
 
 @media (max-width: 768px) {
+
+    .smallText {
+        text-align: center;
+    }
+
     .bookDetail {
         display: flex;
         flex-direction: column;

@@ -37,6 +37,9 @@ export default function BooksPage() {
             <p className={styles.seriesTagline}>
                 A journey through failure, secrecy, and redemption&mdash;told in three acts.
             </p>
+            <div className={styles.smallText}>
+                <small><i>Click a book card and view details below.</i></small>
+            </div>
 
             <div className={styles.carousel}>
                 {booksData.map((book: Book) => (
