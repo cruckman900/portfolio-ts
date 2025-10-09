@@ -42,16 +42,31 @@ export default function Document() {
                 <meta name="twitter:description" content="Memoirs, glitch art, ambient guitar, and expressive full-stack engineering from Rayland, Ohio." />
                 <meta name="twitter:image" content="https://lineardescent.netlify.app/og-image.png" />
 
-                {/* Preload Hero Images */}
+                {/* Preload Images */}
+                <link rel="preload" as="image" href="/og-image.png" />
+
                 <link rel="preload" as="image" href="/images/light_hero.png" />
-                <link rel="preload" as="image" href="/images/slate_hero.png" />
-                <link rel="preload" as="image" href="/images/midnight_hero.png" />
-                <link rel="preload" as="image" href="/images/red_hero.png" />
-                <link rel="preload" as="image" href="/images/green_hero.png" />
-                <link rel="preload" as="image" href="/images/pink_hero.png" />
-                <link rel="preload" as="image" href="/images/brownstone_hero.png" />
                 <link rel="preload" as="image" href="/images/dark_hero.png" />
+                <link rel="preload" as="image" href="/images/hazard_hero.png" />
+                <link rel="preload" as="image" href="/images/brownstone_hero.png" />
+                <link rel="preload" as="image" href="/images/midnight_hero.png" />
+                <link rel="preload" as="image" href="/images/slate_hero.png" />
                 <link rel="preload" as="image" href="/images/purple_hero.png" />
+                <link rel="preload" as="image" href="/images/pink_hero.png" />
+                <link rel="preload" as="image" href="/images/green_hero.png" />
+                <link rel="preload" as="image" href="/images/red_hero.png" />
+
+                <link rel="preload" as="image" href="/images/failure-at-fifty-3d.png" />
+                <link rel="preload" as="image" href="/images/faf-front.jpg" />
+                <link rel="preload" as="image" href="/images/faf-back.jpg" />
+
+                <link rel="preload" as="image" href="/images/fiftyone-ways-to-lie-3d.png" />
+                <link rel="preload" as="image" href="/images/fowtl-front.jpg" />
+                <link rel="preload" as="image" href="/images/fowtl-back.jpg" />
+
+                <link rel="preload" as="image" href="/images/better-life-beyond-fifty-3d.png" />
+                <link rel="preload" as="image" href="/images/blbf-front.jpg" />
+                <link rel="preload" as="image" href="/images/blbf-back.jpg" />
 
                 {/* Structured Data */}
                 <script
