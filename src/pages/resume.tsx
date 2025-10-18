@@ -25,7 +25,7 @@ export default function ResumePage() {
                 <div className={styles.section}>
                     {resumeData.skills.map((skill, i) =>
                     (
-                        <div key={i} className={styles.loopContainer}>
+                        <div key={i} className={`${styles.loopContainer} ${styles.noBreakInside}`}>
                             <h3>{skill.section}</h3>
                             <div>{skill.content}</div>
                         </div>
@@ -88,15 +88,15 @@ export default function ResumePage() {
                     )}
                 </div>
             </Section>
-            <Section title="Personal Projects" icon="fas fa-code">
+            <Section className={styles.pagebreakBefore} title="Personal Projects" icon="fas fa-code">
                 <div className={styles.section}>
                     {resumeData.projects.map((list, i) =>
                     (
-                        <article className={styles.noBreakInside} key={i}>
+                        <article key={i}>
                             <h3>{list.genre}</h3>
                             {list.projects.map((project, j) =>
                             (
-                                <div key={j}>
+                                <div key={j} className={styles.noBreakInside}>
                                     <i>{project.name}</i>
                                     <ul>
                                         {project.url && <li><a href={project.url} target="_blank">{project.url.substring(8)}</a></li>}
