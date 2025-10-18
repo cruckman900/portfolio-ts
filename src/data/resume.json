@@ -153,49 +153,8 @@
   ],
   "projects": [
     {
-      "genre": "Course Projects",
+      "genre": "Portfolio Projects",
       "projects": [
-        {
-          "name": "BOOKIT",
-          "description": "Rental property platform with booking engine and admin dashboard",
-          "url": "",
-          "tech": "Next.js, TypeScript, Bootstrap, MongoDB, Redux, bcrypt, crypto, next-auth, nodemailer, node-geocoder, MapQuest, react-datepicker, Moment.js",
-          "repos": [
-            {
-              "label": "source code",
-              "url": "https://github.com/cruckman900/BookIT"
-            }
-          ]
-        },
-        {
-          "name": "ContactsManager",
-          "description": "Contact management system with API and test coverage",
-          "url": "",
-          "tech": "ASP.NET Core, MVC, EntityFrameworkCore, Dependency Injection, Web API, XUnit, Moq, Serilog",
-          "repos": [
-            {
-              "label": "source code",
-              "url": "https://github.com/cruckman900/ContactsManager"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "genre": "Personal Projects",
-      "projects": [
-        {
-          "name": "cruckman2.0",
-          "description": "Personal portfolio site with 3D visuals and audio integration",
-          "url": "https://cruckman.com",
-          "tech": "ReactJS, SASS, three.js, react-three/drei, react-three/fiber, WaveSurfer",
-          "repos": [
-            {
-              "label": "source code",
-              "url": "https://github.com/cruckman900/cruckman2.0"
-            }
-          ]
-        },
         {
           "name": "portfolio-ts",
           "description": "The new LinearDescent portfolio site—more than a résumé, it's a creative showcase and technical playground",
@@ -209,14 +168,14 @@
           ]
         },
         {
-          "name": "ThemeSwitcher",
-          "description": "Modular theme-switching component designed for public use—coming soon as a standalone package",
+          "name": "Business As Usual",
+          "description": "Multi-tenant ASP.NET Core business suite with contributor-proof onboarding, Smart Commit synergy, and CI/CD orchestration. Features include AWS EC2/RDS provisioning, changelog automation, badge injection, and modular admin dashboards.",
           "url": "",
-          "tech": "ReactJS, TypeScript, CSS Modules",
+          "tech": "ASP.NET Core, MVC, Entity Framework Core, SQL Server, Docker, GitHub Actions, AWS EC2/RDS, Serilog, Smart Commits, Jira API",
           "repos": [
             {
               "label": "source code",
-              "url": "https://github.com/cruckman900/react-theme-switcher-context"
+              "url": "https://github.com/cruckman900/BusinessAsUsual"
             }
           ]
         },
@@ -233,14 +192,26 @@
           ]
         },
         {
-          "name": "Business As Usual",
-          "description": "Multi-tenant ASP.NET Core business suite with contributor-proof onboarding, Smart Commit synergy, and CI/CD orchestration. Features include AWS EC2/RDS provisioning, changelog automation, badge injection, and modular admin dashboards.",
-          "url": "",
-          "tech": "ASP.NET Core, MVC, Entity Framework Core, SQL Server, Docker, GitHub Actions, AWS EC2/RDS, Serilog, Smart Commits, Jira API",
+          "name": "cruckman2.0",
+          "description": "Personal portfolio site with 3D visuals and audio integration",
+          "url": "https://cruckman.com",
+          "tech": "ReactJS, SASS, three.js, react-three/drei, react-three/fiber, WaveSurfer",
           "repos": [
             {
               "label": "source code",
-              "url": "https://github.com/cruckman900/BusinessAsUsual"
+              "url": "https://github.com/cruckman900/cruckman2.0"
+            }
+          ]
+        },
+        {
+          "name": "ThemeSwitcher",
+          "description": "Modular theme-switching component designed for public use—coming soon as a standalone package",
+          "url": "",
+          "tech": "ReactJS, TypeScript, CSS Modules",
+          "repos": [
+            {
+              "label": "source code",
+              "url": "https://github.com/cruckman900/react-theme-switcher-context"
             }
           ]
         }
