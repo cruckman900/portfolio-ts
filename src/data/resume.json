@@ -192,18 +192,6 @@
           ]
         },
         {
-          "name": "cruckman2.0",
-          "description": "Personal portfolio site with 3D visuals and audio integration",
-          "url": "https://cruckman.com",
-          "tech": "ReactJS, SASS, three.js, react-three/drei, react-three/fiber, WaveSurfer",
-          "repos": [
-            {
-              "label": "source code",
-              "url": "https://github.com/cruckman900/cruckman2.0"
-            }
-          ]
-        },
-        {
           "name": "ThemeSwitcher",
           "description": "Modular theme-switching component designed for public use—coming soon as a standalone package",
           "url": "",
@@ -212,23 +200,6 @@
             {
               "label": "source code",
               "url": "https://github.com/cruckman900/react-theme-switcher-context"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "genre": "Collaboration Projects",
-      "projects": [
-        {
-          "name": "InterTrade Solutions",
-          "description": "Collaborative e-commerce platform with admin and product modules",
-          "url": "",
-          "tech": "Next.js, TypeScript, TailwindCSS, Node.js, Prisma, MySQL",
-          "repos": [
-            {
-              "label": "source code",
-              "url": "https://github.com/AdamantiumCore/intertrade.solutions"
             }
           ]
         }
