@@ -121,34 +121,6 @@
         "Built interactive maps and admin dashboards",
         "Developed RESTful APIs and Flash-based interfaces"
       ]
-    },
-    {
-      "title": "Software Engineer",
-      "company": "Mortgage Connect LP",
-      "dates": "Nov 2017 – Jan 2018",
-      "details": [
-        "Enhanced banking modules and resolved client-reported issues",
-        "Built ad-hoc SQL queries and performed data cleansing"
-      ]
-    },
-    {
-      "title": "Web Developer",
-      "company": "Center for Educational Technologies",
-      "dates": "Sept 2008 – Sept 2013",
-      "details": [
-        "Led development of animated simulations and distance learning platforms",
-        "Built WCF services and managed Joomla sites for NASA affiliates"
-      ]
-    },
-    {
-      "title": "Developer",
-      "company": "Prosite Business Solutions",
-      "dates": "Jan 2005 – Feb 2010",
-      "details": [
-        "Migrated legacy ASP systems to ASP.NET Web Forms",
-        "Built scheduling, accounting, and inventory modules",
-        "Developed custom browser for web scraping and CMS integrations"
-      ]
     }
   ],
   "projects": [
@@ -188,18 +160,6 @@
             {
               "label": "source code",
               "url": "https://github.com/cruckman900/next.riffdaddy"
-            }
-          ]
-        },
-        {
-          "name": "ThemeSwitcher",
-          "description": "Modular theme-switching component designed for public use—coming soon as a standalone package",
-          "url": "",
-          "tech": "ReactJS, TypeScript, CSS Modules",
-          "repos": [
-            {
-              "label": "source code",
-              "url": "https://github.com/cruckman900/react-theme-switcher-context"
             }
           ]
         }
