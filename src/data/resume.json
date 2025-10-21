@@ -93,6 +93,18 @@
   ],
   "experience": [
     {
+      "title": "Independent Creator & Technologist",
+      "company": "Self-Directed Projects",
+      "dates": "Mar 2022 – Present",
+      "details": [
+        "Navigated a health-related hiatus while continuing to build expressive, contributor-friendly infrastructure",
+        "Published a thematic book series exploring transformation through adversity, including cover design and poetic blurbs",
+        "Architected and deployed the LinearDescent portfolio site as a creative showcase and technical playground",
+        "Engineered Business As Usual, a multi-tenant ASP.NET Core suite with CI/CD orchestration, Smart Commit tagging, and AWS provisioning",
+        "Developed NEXTRiff, a tab-parsing and music metadata platform with modular FastAPI backend and React frontend"
+      ]
+    },
+    {
       "title": "Android Developer",
       "company": "Walmart, Google, Wayfair (via Enhance IT)",
       "dates": "Sept 2020 – Feb 2022",
