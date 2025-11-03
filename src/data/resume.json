@@ -170,8 +170,12 @@
           "tech": "FastAPI, Python, SQLModel, Cloudinary, React",
           "repos": [
             {
-              "label": "source code",
+              "label": "front-end source code",
               "url": "https://github.com/cruckman900/next.riffdaddy"
+            },
+            {
+              "label": "back-end source code",
+              "url": "https://github.com/cruckman900/baselinepy.ro"
             }
           ]
         }
