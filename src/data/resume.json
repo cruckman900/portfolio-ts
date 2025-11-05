@@ -70,24 +70,19 @@
     {
       "category": "Published Author",
       "items": [
-        "Authored three books exploring transformation through adversity",
-        "Designed covers and poetic blurbs with thematic cohesion",
-        "Built and marketed a series while navigating disability constraints"
+        "Crafted a thematic book series on resilience, with original covers, poetic blurbs, and grassroots marketing."
       ]
     },
     {
       "category": "Legal Advocate",
       "items": [
-        "Uncovered fraudulent litigation through independent research",
-        "Drafted formal documentation and coordinated with state agencies",
-        "Demonstrated precision and persistence in legal navigation"
+        "Investigated litigation fraud, authored formal reports, and collaborated with regulatory agencies."
       ]
     },
     {
       "category": "Self-Taught Technologist",
       "items": [
-        "Completed advanced coursework in ASP.NET, React, Node.js, Blender, Unity, and Android",
-        "Applied skills to real-world projects including ChatterboxSM and Operation Montserrat"
+        "Completed advanced coursework and applied skills to real-world builds like ChatterboxSM and Operation Montserrat."
       ]
     }
   ],
@@ -97,11 +92,11 @@
       "company": "Self-Directed Projects",
       "dates": "Mar 2022 – Present",
       "details": [
-        "Navigated a health-related hiatus while continuing to build expressive, contributor-friendly infrastructure",
-        "Published a thematic book series exploring transformation through adversity, including cover design and poetic blurbs",
-        "Architected and deployed the LinearDescent portfolio site as a creative showcase and technical playground",
-        "Engineered Business As Usual, a multi-tenant ASP.NET Core suite with CI/CD orchestration, Smart Commit tagging, and AWS provisioning",
-        "Developed NEXTRiff, a tab-parsing and music metadata platform with modular FastAPI backend and React frontend"
+        "Built contributor-friendly infrastructure during a health-related hiatus",
+        "Published a thematic book series with original design and poetic blurbs",
+        "Deployed LinearDescent portfolio as a creative and technical showcase",
+        "Engineered Business As Usual: multi-tenant ASP.NET suite with CI/CD and AWS provisioning",
+        "Developed NEXTRiff: tab-parsing music platform with FastAPI backend and React frontend"
       ]
     },
     {
