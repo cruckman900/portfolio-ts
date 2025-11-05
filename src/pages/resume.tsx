@@ -71,7 +71,7 @@ export default function ResumePage() {
                     )}
                 </div>
             </Section>
-            <Section className={styles.pagebreakBefore} title="Professional Experience" icon="fas fa-briefcase">
+            <Section title="Professional Experience" icon="fas fa-briefcase">
                 <div className={styles.section}>
                     {resumeData.experience.map((exp, i) =>
                     (
