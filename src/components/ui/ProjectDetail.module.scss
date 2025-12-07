@@ -4,6 +4,10 @@
         align-items: center;
         justify-content: flex-start; // or 'flex-start' if you want image + text tight together
 
+        img {
+            background-color: var(--mute);
+        }
+
         span {
             margin-left: 1rem;
         }
