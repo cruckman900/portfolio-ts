@@ -4,13 +4,17 @@
         "title": "Portfolio Site",
         "icon": "fa-solid fa-fire",
         "image": "/images/LinearDescent_Badge.png",
-        "description": "Your personal showcase built with Next.js and SCSS modules, featuring breadcrumb-aware routing and modular layout.",
+        "description": "My personal showcase built with Next.js and SCSS modules, featuring breadcrumb-aware routing and modular layout.",
         "url": "https://lineardescent.netlify.app",
         "github": "https://github.com/cruckman900/portfolio-ts",
         "tech": [
             "Next.js",
             "TypeScript",
-            "SCSS",
+            "SASS",
+            "SCSS Modules",
+            "Markdown",
+            "Framer Motion",
+            "FontAwesome",
             "Netlify"
         ]
     },
@@ -19,15 +23,18 @@
         "title": "Business As Usual",
         "icon": "fa-solid fa-globe",
         "image": "/images/BusinessAsUsual_Badge.png",
-        "description": "A modular provisioning platform with EC2, RDS, Route 53, and Dockerized backend. Built for onboarding clarity and legacy-grade documentation.",
+        "description": "Multi-tenant ASP.NET Core business suite with contributor-proof onboarding, Smart Commit synergy, and CI/CD orchestration. Features include AWS EC2/RDS provisioning, changelog automation, badge injection, and modular admin dashboards.",
         "url": "https://businessasusual.work",
         "github": "https://github.com/cruckman900/BusinessAsUsual",
         "tech": [
-            "ASP.NET",
+            "ASP.NET Core",
+            "MVC",
+            "Blazor Server",
+            "Entity Framework Core",
             "SQL Server",
             "Docker",
-            "AWS EC2/RDS",
-            "Route 53"
+            "GitHub Actions",
+            "AWS EC2/RDS -> LightSail"
         ]
     },
     {
@@ -35,17 +42,19 @@
         "title": "NEXTRiff",
         "icon": "fa-solid fa-globe",
         "image": "/images/NEXTRiff_Badge.png",
-        "description": "A thematic series launcher built with Next.js and Markdown support. Designed for expressive publishing and future mobile expansion.",
+        "description": "A tab-parsing and music metadata platform—backend nearly complete, frontend in progress. Soon, musicians everywhere will have a backstage pass to crank out lively jams.",
         "url": "https://nextriff.netlify.app",
         "github": {
             "GitHub - frontend": "https://github.com/cruckman900/next.riffdaddy",
             "GitHub - backend": "https://github.com/cruckman900/baselinepy.ro"
         },
         "tech": [
-            "Next.js",
-            "TypeScript",
-            "Markdown",
-            "Netlify"
+            "React",
+            "Python",
+            "FastAPI",
+            "Netlify",
+            "Render",
+            "Cloudinary"
         ]
     },
     {
@@ -61,7 +70,9 @@
             "Fiber",
             "Docker",
             "JSON-driven UI",
-            "Netlify"
+            "Microservices",
+            "Netlify",
+            "Firebase"
         ]
     },
     {
@@ -75,8 +86,7 @@
         "tech": [
             "React",
             "TypeScript",
-            "CSS Modules",
-            "Netlify"
+            "CSS Modules"
         ]
     },
     {
