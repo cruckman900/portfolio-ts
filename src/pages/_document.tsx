@@ -68,6 +68,13 @@ export default function Document() {
                 <link rel="preload" as="image" href="/images/blbf-front.jpg" />
                 <link rel="preload" as="image" href="/images/blbf-back.jpg" />
 
+                <link rel="preload" as="image" href="/images/LinearDescent_Badge.png" />
+                <link rel="preload" as="image" href="/images/BusinessAsUsual_Badge.png" />
+                <link rel="preload" as="image" href="/images/NEXTRiff_Badge.png" />
+                <link rel="preload" as="image" href="/images/ServicesByFriends_Badge.png" />
+                <link rel="preload" as="image" href="/images/ThemeSwitcher_Badge.png" />
+                <link rel="preload" as="image" href="/images/BetterBlog_Badge.png" />
+
                 {/* Structured Data */}
                 <script
                     type="application/ld+json"

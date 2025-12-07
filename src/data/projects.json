@@ -1,0 +1,97 @@
+[
+    {
+        "slug": "portfolio-site",
+        "title": "Portfolio Site",
+        "icon": "fa-solid fa-fire",
+        "image": "/images/LinearDescent_Badge.png",
+        "description": "Your personal showcase built with Next.js and SCSS modules, featuring breadcrumb-aware routing and modular layout.",
+        "url": "https://lineardescent.netlify.app",
+        "github": "https://github.com/cruckman900/portfolio-ts",
+        "tech": [
+            "Next.js",
+            "TypeScript",
+            "SCSS",
+            "Netlify"
+        ]
+    },
+    {
+        "slug": "business-as-usual",
+        "title": "Business As Usual",
+        "icon": "fa-solid fa-globe",
+        "image": "/images/BusinessAsUsual_Badge.png",
+        "description": "A modular provisioning platform with EC2, RDS, Route 53, and Dockerized backend. Built for onboarding clarity and legacy-grade documentation.",
+        "url": "https://businessasusual.work",
+        "github": "https://github.com/cruckman900/BusinessAsUsual",
+        "tech": [
+            "ASP.NET",
+            "SQL Server",
+            "Docker",
+            "AWS EC2/RDS",
+            "Route 53"
+        ]
+    },
+    {
+        "slug": "nextriff",
+        "title": "NEXTRiff",
+        "icon": "fa-solid fa-globe",
+        "image": "/images/NEXTRiff_Badge.png",
+        "description": "A thematic series launcher built with Next.js and Markdown support. Designed for expressive publishing and future mobile expansion.",
+        "url": "https://nextriff.netlify.app",
+        "github": {
+            "GitHub - frontend": "https://github.com/cruckman900/next.riffdaddy",
+            "GitHub - backend": "https://github.com/cruckman900/baselinepy.ro"
+        },
+        "tech": [
+            "Next.js",
+            "TypeScript",
+            "Markdown",
+            "Netlify"
+        ]
+    },
+    {
+        "slug": "services-by-friends",
+        "title": "Services By Friends",
+        "icon": "fa-solid fa-globe",
+        "image": "/images/ServicesByFriends_Badge.png",
+        "description": "A contributor-friendly service directory with dynamic sidebar, partial views, and off-canvas navigation. Built for onboarding clarity.",
+        "url": "https://services-by-friends.onrender.com",
+        "github": "https://github.com/cruckman900/service-by-friends",
+        "tech": [
+            "Go",
+            "Fiber",
+            "Docker",
+            "JSON-driven UI",
+            "Netlify"
+        ]
+    },
+    {
+        "slug": "themeswitcher",
+        "title": "ThemeSwitcher",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "image": "/images/ThemeSwitcher_Badge.png",
+        "description": "A lightweight theme toggler with animated transitions and contributor-mode clarity. Designed for plug-and-play integration.",
+        "url": "coming soon",
+        "github": "coming soon",
+        "tech": [
+            "React",
+            "TypeScript",
+            "CSS Modules",
+            "Netlify"
+        ]
+    },
+    {
+        "slug": "betterblog",
+        "title": "BetterBlog",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "image": "/images/BetterBlog_Badge.png",
+        "description": "A Markdown-powered blog engine with breadcrumb-aware routing and modular layout. Designed for expressive writing and future series support.",
+        "url": "coming soon",
+        "github": "coming soon",
+        "tech": [
+            "Next.js",
+            "TypeScript",
+            "Markdown",
+            "SCSS"
+        ]
+    }
+]

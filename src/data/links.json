@@ -10,6 +10,11 @@
         "icon": "fas fa-book-open"
     },
     {
+        "url": "/project",
+        "label": "projects",
+        "icon": "fas fa-code"
+    },
+    {
         "url": "/blog",
         "label": "blogs",
         "icon": "fas fa-blog"

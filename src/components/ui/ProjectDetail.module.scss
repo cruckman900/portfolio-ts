@@ -1,0 +1,26 @@
+.detail {
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; // or 'flex-start' if you want image + text tight together
+
+        span {
+            margin-left: 1rem;
+        }
+    }
+
+    p {
+        margin-bottom: 1 rem;
+        line-height: 1.6;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 1rem;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

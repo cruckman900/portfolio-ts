@@ -12,12 +12,14 @@ export default function Index() {
             </section>
 
             <section className={styles.homepageModules}>
-                <div className={styles.module}>
-                    <h2>📚 Books</h2>
-                    <p>
-                        Raw, unflinching memoirs and poetic manifestos. My writing explores schizophrenia, addiction, and resilience—turning personal wreckage into public signal. <span className="tagline">Failure at Fifty</span> is just the beginning.
-                    </p>
-                </div>
+                <a href="/books" className={styles.cardLink}>
+                    <div className={styles.module}>
+                        <h2>📚 Books</h2>
+                        <p>
+                            Raw, unflinching memoirs and poetic manifestos. My writing explores schizophrenia, addiction, and resilience—turning personal wreckage into public signal. <span className="tagline">Failure at Fifty</span> is just the beginning.
+                        </p>
+                    </div>
+                </a>
 
                 <div className={styles.module}>
                     <h2>🎸 Guitar Music</h2>
@@ -33,12 +35,14 @@ export default function Index() {
                     </p>
                 </div>
 
-                <div className={styles.module}>
-                    <h2>💻 Code & Platforms</h2>
-                    <p>
-                        Full-stack engineering meets poetic architecture. I build modular, scalable systems with React, Next.js, Node, and .NET—designed to feel alive, responsive, and expressive.
-                    </p>
-                </div>
+                <a href="/project" className={styles.cardLink}>
+                    <div className={styles.module}>
+                        <h2>💻 Code & Platforms</h2>
+                        <p>
+                            Full-stack engineering meets poetic architecture. I build modular, scalable systems with React, Next.js, Node, and .NET—designed to feel alive, responsive, and expressive.
+                        </p>
+                    </div>
+                </a>
             </section>
         </div>
     )
