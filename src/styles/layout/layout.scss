@@ -20,6 +20,14 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .footer {
     background-color: var(--surface);
     color: var(--text);
