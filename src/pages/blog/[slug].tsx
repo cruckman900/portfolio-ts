@@ -4,28 +4,17 @@ import { useState, useEffect } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { BlogPost } from '@/types/blog'
-import Layout from '@/components/layout/Layout'
-import { toast } from 'react-hot-toast'
-import Head from 'next/head'
+import TwoPanelLayout from "@/components/layout/TwoPanelLayout"
+import BlogMenu from "@/components/ui/BlogMenu"
 import BlogMeta from '@/components/ui/BlogMeta'
 import styles from './BlogDetail.module.scss'
+import Head from 'next/head'
+import { toast } from 'react-hot-toast'
 
 export default function BlogPostPage() {
     const { query } = useRouter()
     const [post, setPost] = useState<BlogPost | null>(null)
-
     const [error, setError] = useState<string | null>(null)
-
-    // TODO: need these icons!
-
-    // const categoryIcons: Record<string, string> = {
-    //     tech: '💻',
-    //     design: '🎨',
-    //     legal: '⚖️',
-    //     music: '🎵',
-    //     personal: '🧠',
-    //     general: '🗂️',
-    // }
 
     useEffect(() => {
         if (error) {
@@ -45,35 +34,32 @@ export default function BlogPostPage() {
         }
     }, [query.slug])
 
-    if (!post) return <p>Loading...</p>
+    const rightPanel = !post ? (
+        <p>Loading...</p>
+    ) : (
+        <section className={styles.container}>
+            <article className={styles.article}>
+                <Head>
+                    <title>{post.marketing?.metaTitle || post.title}</title>
+                    <meta name="description" content={post.marketing?.metaDescription || post.excerpt} />
+                    <meta property="og:image" content={post.marketing?.openGraphImage} />
+                </Head>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {post.content}
+                </ReactMarkdown>
+                <BlogMeta
+                    author={post.author}
+                    published_at={post.published_at}
+                    tags={post.tags}
+                />
+            </article>
+        </section>
+    )
 
     return (
-        <>
-            <Head>
-                <title>{post.marketing?.metaTitle || post.title}</title>
-                <meta name="description" content={post.marketing?.metaDescription || post.excerpt} />
-                <meta property="og:image" content={post.marketing?.openGraphImage} />
-            </Head>
-            <section className={styles.container}>
-                <article className={styles.article}>
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {post.content}
-                    </ReactMarkdown>
-                    <BlogMeta
-                        author={post.author}
-                        published_at={post.published_at}
-                        tags={post.tags}
-                    />
-                    <a href={'/blog'} className={styles.link}>
-                        ← Go Back
-                    </a>
-                </article>
-            </section>
-        </>
+        <TwoPanelLayout
+            left={<BlogMenu />}
+            right={rightPanel}
+        />
     )
-}
-
-// Define a custom layout for this page
-BlogPostPage.getLayout = function getLayout(page: React.ReactElement) {
-    return <Layout>{page}</Layout>
 }

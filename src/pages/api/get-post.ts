@@ -1,7 +1,8 @@
 // pages/api/get-post.ts
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { neon } from '@netlify/neon'
-const sql = neon()
+import { neon } from "@neondatabase/serverless"
+
+const sql = neon(process.env.DATABASE_URL!)
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const { slug } = req.query

@@ -16,6 +16,7 @@
     "@apollo/client": "^4.0.5",
     "@lexical/markdown": "^0.36.1",
     "@lexical/react": "^0.36.1",
+    "@neondatabase/serverless": "^1.0.2",
     "@netlify/neon": "^0.1.0",
     "@next/third-parties": "^15.5.4",
     "@tiptap/extension-emoji": "^3.6.1",
