@@ -1,5 +1,5 @@
 // pages/books.tsx
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import booksData from '@/data/books.json'
@@ -10,6 +10,7 @@ import { motion } from 'framer-motion'
 import styles from './books.module.scss'
 
 export default function BooksPage() {
+    const detailRef = useRef<HTMLDivElement | null>(null)
     const [selectedBook, setSelectedBook] = useState<Book | null>(null)
     const [activeTag, setActiveTag] = useState<string | null>(null)
 
@@ -51,6 +52,10 @@ export default function BooksPage() {
                         onClick={() => {
                             setSelectedBook(book)
                             setActiveTag(null)
+                            // scroll after React updates
+                            setTimeout(() => {
+                                detailRef.current?.scrollIntoView({ behavior: 'smooth' })
+                            }, 0)
                         }}
                     >
                         <Image
@@ -68,6 +73,7 @@ export default function BooksPage() {
 
             {selectedBook && (
                 <motion.div
+                    ref={detailRef}
                     className={styles.bookDetail}
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -97,7 +103,7 @@ export default function BooksPage() {
                             <p key={idx}>{para}</p>
                         ))}
                         <a className={styles.link} href={selectedBook.siteStripeLink} target="_blank" rel="noopener noreferrer">
-                            📖 Buy on Amazon
+                            <i className="fa-brands fa-amazon"></i>Buy on Amazon
                         </a>
                     </div>
                     <div className={styles.tagPanel}>
