@@ -5,6 +5,8 @@
     max-width: 1600px;
     width: 100%;
     gap: 2rm;
+    margin: 0;
+    padding: 0;
 
     aside {
         display: flex;
@@ -14,6 +16,8 @@
         min-height: calc(var(--vh, 1vh) * 100);
         width: 30%;
         padding: 2rem;
+        margin: 0;
+        padding-bottom: 0;
         flex-shrink: 0;
 
         @media print {
@@ -24,6 +28,8 @@
     main {
         flex: 1;
         padding: 2rem;
+        margin: 0;
+        padding-bottom: 0;
         min-height: calc(var(--vh, 1vh) * 100);
 
         @media print {

@@ -10,7 +10,7 @@ export default function ResumePage() {
         <>
             <Section>
                 <div className={styles.resumeHeader}>
-                    <h1>{resumeData.name}</h1>
+                    <h1 style={{ margin: 0, padding: 0 }}>{resumeData.name}</h1>
                     <p className={styles.tagline}>{resumeData.tagline}</p>
                     <ul>
                         <li><i className="fas fa-map-marker-alt"></i>{resumeData.contact.location}</li>
@@ -34,7 +34,7 @@ export default function ResumePage() {
                 </div>
             </Section>
 
-            <Section title="Education" icon="fas fa-graduation-cap">
+            <Section className={styles.pagebreakBefore} title="Education" icon="fas fa-graduation-cap">
                 <div className={styles.section}>
                     {resumeData.education.map((edu, i) =>
                     (
@@ -88,7 +88,16 @@ export default function ResumePage() {
                     )}
                 </div>
             </Section>
-            <Section className={styles.pagebreakBefore} title="Personal Projects" icon="fas fa-code">
+        </>
+    )
+
+    return (
+        <div className={styles.container}>
+            <Head>
+                <meta name="robots" content="noindex" />
+            </Head>
+            <TwoPanelLayout left={leftPanel} right={rightPanel} />
+            <Section title="Personal Projects" className={styles.projects} icon="fas fa-code">
                 <div className={styles.section}>
                     {resumeData.projects.map((list, i) =>
                     (
@@ -114,16 +123,7 @@ export default function ResumePage() {
                     )}
                 </div>
             </Section>
-        </>
-    )
-
-    return (
-        <>
-            <Head>
-                <meta name="robots" content="noindex" />
-            </Head>
-            <TwoPanelLayout left={leftPanel} right={rightPanel} />
-        </>
+        </div>
     )
 }
 

@@ -67,7 +67,7 @@ const Layout: React.FC<Props> = ({ children }) => {
                     <div className={styles.heroImage}>
                         <div className={styles.leftSpacer}></div>
                         <div className={styles.heroText}>
-                            <p>{heroText}</p>
+                            <span>{heroText}</span>
                         </div>
                     </div>
                     <main className='content'>{children}</main>

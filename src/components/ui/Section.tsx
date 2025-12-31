@@ -8,9 +8,9 @@ interface Props {
     children: ReactElement;
 }
 
-const Section: React.FC<Props> = ({ className, title, icon, children}) => (
-    <section className={className}>
-        <h2><i className={icon}></i>{title}</h2>
+const Section: React.FC<Props> = ({ className, title, icon, children }) => (
+    <section className={className} style={{ paddingBottom: "1rem" }}>
+        {title && <h2 style={{ margin: 0, paddingBottom: "0.5rem" }}><i className={icon}></i>{title}</h2>}
         {children}
     </section>
 )

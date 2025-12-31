@@ -16,11 +16,34 @@ body,
     width: 100%;
 }
 
+* *:not(ul) {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding-bottom: 1rem;
+}
+
 @media print {
 
     html,
     body,
     #__next {
         font-size: 0.92rem;
+    }
+
+    * {
+        color: #0f0f0f !important;
+    }
+
+    * *:not(h1, h2, h3, h4, h5, h6) {
+        color: #2e2e2e !important;
     }
 }

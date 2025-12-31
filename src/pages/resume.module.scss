@@ -1,4 +1,7 @@
 .resumeHeader {
+    margin: 0;
+    padding: 0;
+
     h1 {
         padding: 0;
         margin: 0;
@@ -16,14 +19,24 @@
 
 .tagline {
     font-style: italic;
+    padding-bottom: 1rem;
 }
 
 .section {
+    padding-top: 1rem;
+    margin: 0;
+
     h3 {
         margin: 0;
         padding: 0;
         font-size: 1rem;
     }
+}
+
+.projects {
+    margin: 0;
+    padding: 0 1rem;
+    background-color: var(--surface);
 }
 
 .loopContainer {

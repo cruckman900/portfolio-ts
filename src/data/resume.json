@@ -1,7 +1,7 @@
 {
   "icon": "fa-solid fa-dragon",
   "name": "Christopher Ruckman",
-  "tagline": "Engineering resilience through code, strategy, and creative insight",
+  "tagline": "Software engineer with 15+ years of professional experience across .NET web applications and Android features and recent hands-on work building React/Next.js frontends backed by APIs. Seeking .NET backend or full-stack roles (full-time or contract-to-hire)",
   "contact": {
     "location": "Rayland, OH",
     "email": "cruckman900@gmail.com",
@@ -12,43 +12,31 @@
   "skills": [
     {
       "section": "Web & App Development",
-      "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms, Razor Pages, Blazor (Server & WASM)), RESTful APIs, React, Next.js, Node.js, Python"
+      "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms, Razor Pages, Blazor (Server & WASM)), RESTful APIs, React, Next.js, Node.js, Kotlin, JavaScript/TypeScript"
     },
     {
       "section": "Frameworks & Libraries",
-      "content": "Entity Framework Core, Serilog, Moq, XUnit, SQLModel, TailwindCSS, Bootstrap, SignalR, react-three/fiber, WaveSurfer"
+      "content": "Entity Framework Core, SQLModel, TailwindCSS, Bootstrap, MudBlazor, mui/material, SignalR, react-three/fiber, WaveSurfer"
+    },
+    {
+      "section": "Test",
+      "content": "Serilog, Moq, XUnit, peer code reviews"
     },
     {
       "section": "Cloud & Infrastructure",
-      "content": "AWS EC2/RDS provisioning, Docker orchestration, GitHub Actions, CI/CD pipelines, .env integration, hybrid onboarding workflows"
-    },
-    {
-      "section": "Game Development",
-      "content": "Unity (C#), Unreal Engine (C++, Blueprints)"
+      "content": "AWS EC2/RDS provisioning, Docker orchestration, GitHub Actions, CI/CD pipelines, .env integration"
     },
     {
       "section": "Database",
-      "content": "Microsoft SQL Server, MySQL, MongoDB, SQLModel"
+      "content": "Microsoft SQL Server, MySQL, Postgresql, MongoDB, SQLModel"
     },
     {
       "section": "Creative Design",
-      "content": "Adobe Photoshop, Blender, thematic branding, cover design"
-    },
-    {
-      "section": "Technical Strategy",
-      "content": "Smart Commit tagging, changelog automation, contributor badge injection, shell environment tuning (Windows, WSL, Git Bash)"
+      "content": "Adobe Photoshop, Blender"
     },
     {
       "section": "Backend Engineering",
-      "content": "FastAPI, Python, modular route architecture, environment variable security, tab parsing and metadata extraction"
-    },
-    {
-      "section": "Legal Research & Advocacy",
-      "content": "Investigative documentation, fraud analysis, regulatory outreach"
-    },
-    {
-      "section": "Publishing & Writing",
-      "content": "Poetic changelogs, expressive markdown, thematic series development, narrative clarity"
+      "content": "FastAPI, Python, Web API, Express"
     }
   ],
   "education": [
@@ -65,7 +53,7 @@
       "dates": "2003 – 2005"
     }
   ],
-  "summary": "Multidisciplinary developer and strategist blending technical depth with creative clarity. I specialize in building scalable systems, expressive interfaces, and resilient workflows—often under high-stakes constraints. With 20+ years of experience across software engineering, legal advocacy, and independent publishing, I deliver solutions that inform, empower, and endure. Recent work includes AWS infrastructure orchestration, multi-tenant backend provisioning, and poetic onboarding workflows for Business As Usual and NEXTRiff.",
+  "summary": "Multidisciplinary developer and strategist blending technical depth with creative clarity. I specialize in building scalable systems, expressive interfaces, and resilient workflows—often under high-stakes constraints. With 20+ years of experience across software engineering, legal advocacy, and independent publishing, I deliver solutions that inform, empower, and endure. Recent work includes AWS infrastructure orchestration and multi-tenant backend provisioning.",
   "achievements": [
     {
       "category": "Published Author",
@@ -82,21 +70,20 @@
     {
       "category": "Self-Taught Technologist",
       "items": [
-        "Completed advanced coursework and applied skills to real-world builds like ChatterboxSM and Operation Montserrat."
+        "Completed advanced coursework and applied skills to real-world builds like NEXTRiff and Business As Usual."
       ]
     }
   ],
   "experience": [
     {
-      "title": "Independent Creator & Technologist",
+      "title": "Independent Full-Stack Developer",
       "company": "Self-Directed Projects",
       "dates": "Mar 2022 – Present",
       "details": [
-        "Built contributor-friendly infrastructure during a health-related hiatus",
-        "Published a thematic book series with original design and poetic blurbs",
-        "Deployed LinearDescent portfolio as a creative and technical showcase",
-        "Engineered Business As Usual: multi-tenant ASP.NET suite with CI/CD and AWS provisioning",
-        "Developed NEXTRiff: tab-parsing music platform with FastAPI backend and React frontend"
+        "Built and shipped portfolio applications to stay current in .NET, React/TyepScript, Android, API development, and cloud deployment during a health-related hiatus",
+        "Engineered Business As Usual: multi-tenant end-to-end business suite on ASP.NET Core; automated build/deploy workflows, and repeatable environments",
+        "Building Business As Usual Mobile: a full-featured suite mirroring the web application for Native Android and iOS devices",
+        "Developed NEXTRiff: a React frontend for tab creation, parsing, metadata, and playback functionality; integrated with a Python API service and structured features for iterative delivery"
       ]
     },
     {
@@ -104,9 +91,9 @@
       "company": "Walmart, Google, Wayfair (via Enhance IT)",
       "dates": "Sept 2020 – Feb 2022",
       "details": [
-        "Built Android apps using Java/Kotlin and Chromecast SDK",
-        "Implemented MVVM architecture for scalable e-commerce features",
-        "Led unit testing and peer code reviews"
+        "Delivered Android features using Java/Kotlin, including Chromecast SDK integrations",
+        "Implemented MVVM patterns to support testable, scalable e-commerce functionality",
+        "Contributed unit tests and code reviews in a team workflow"
       ]
     },
     {
@@ -114,9 +101,8 @@
       "company": "Murray Energy Corporation",
       "dates": "Apr 2018 – Feb 2020 & Nov 2016 – Aug 2017",
       "details": [
-        "Developed ERP modules and asset tracking systems in ASP.NET MVC/Web Forms",
-        "Built Web API 2 endpoints and automated SQL migrations",
-        "Created internal testing tools and configuration interfaces"
+        "Built ASP.NET MVC and Web Forms modules and internal tools supporting operations and reporting",
+        "Implemented and consumed REST APIs and SQL Server-backed services"
       ]
     },
     {
@@ -124,9 +110,9 @@
       "company": "Challenger Learning Center",
       "dates": "Jan 2018 – May 2019 & Nov 2013 – Jan 2017",
       "details": [
-        "Engineered real-time communication tools using ASP.NET Core and SignalR",
-        "Built interactive maps and admin dashboards",
-        "Developed RESTful APIs and Flash-based interfaces"
+        "Built web dashboards and interactive UI components; delivered backend endpoints to support internal applications",
+        "Engineered real-time communication features with ASP.NET Core and SignalR",
+        "Maintained and incrementally modernized legacy interfaces"
       ]
     }
   ],
@@ -135,34 +121,30 @@
       "genre": "Portfolio Projects",
       "projects": [
         {
-          "name": "portfolio-ts",
-          "description": "The new LinearDescent portfolio site—more than a résumé, it's a creative showcase and technical playground",
-          "url": "https://lineardescent.netlify.app",
-          "tech": "Next.js, TypeScript, SASS, SCSS Modules, Markdown, Framer Motion, Font Awesome, Netlify, Google Analytics 4, Open Graph, Responsive Layouts, Print Optimization",
-          "repos": [
-            {
-              "label": "source code",
-              "url": "https://github.com/cruckman900/portfolio-ts"
-            }
-          ]
-        },
-        {
           "name": "Business As Usual",
           "description": "Multi-tenant ASP.NET Core business suite with contributor-proof onboarding, Smart Commit synergy, and CI/CD orchestration. Features include AWS EC2/RDS provisioning, changelog automation, badge injection, and modular admin dashboards.",
           "url": "",
-          "tech": "ASP.NET Core, MVC, Entity Framework Core, SQL Server, Docker, GitHub Actions, AWS EC2/RDS, Serilog, Smart Commits, Jira API",
+          "tech": "ASP.NET Core, MVC, Blazor Server, Entity Framework Core, T-Sql, SQL Server -> PostgreSql, Docker, GitHub Actions, AWS EC2/RDS -> LightSail, Serilog, Smart Commits. Have begun Native Android and iOS mobile development.",
           "repos": [
             {
-              "label": "source code",
+              "label": "web and api source code",
               "url": "https://github.com/cruckman900/BusinessAsUsual"
+            },
+            {
+              "label": "android source code",
+              "url": "https://github.com/cruckman900/BusinessAsUsual-Android"
+            },
+            {
+              "label": "iOS source code",
+              "url": "https://github.com/cruckman900/BusinessAsUsual-iOS"
             }
           ]
         },
         {
           "name": "NEXTRiff",
-          "description": "A tab-parsing and music metadata platform—backend nearly complete, frontend in progress. Soon, musicians everywhere will have a backstage pass to crank out lively jams",
+          "description": "A tab creation/parsing and music metadata platform—backend nearly complete, frontend in progress. Soon, musicians everywhere will have a backstage pass to crank out lively jams.",
           "url": "https://nextriff.netlify.app",
-          "tech": "FastAPI, Python, SQLModel, Cloudinary, React",
+          "tech": "FastAPI, Python, SQLModel, Cloudinary, React/TypeScript",
           "repos": [
             {
               "label": "front-end source code",
