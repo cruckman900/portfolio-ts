@@ -9,9 +9,9 @@
         "order": 1,
         "asin": "1806236915",
         "siteStripeLink": "https://amzn.to/46H2JWo",
-        "coverImage3D": "/images/failure-at-fifty-3d.png",
-        "coverFront": "/images/faf-front.jpg",
-        "coverBack": "/images/faf-back.jpg",
+        "coverImage3D": "/images/Book Covers/failure-at-fifty-3d.png",
+        "coverFront": "/images/Book Covers/faf-front.jpg",
+        "coverBack": "/images/Book Covers/faf-back.jpg",
         "seriesTag": "Milestone Memoir",
         "shortDescription": "A raw, introspective account of addiction, mental illness, and the unraveling of a life once thought stable. This memoir explores the depths of despair and the slow climb toward clarity.",
         "description": [
@@ -61,7 +61,7 @@
             "badge": "🔥 Trending in Mental Health Memoirs",
             "metaTitle": "Failure at Fifty | Memoir of Addiction, Mental Illness, and Redemption",
             "metaDescription": "A brutally honest memoir about surviving schizophrenia, addiction, and personal collapse. Failure at Fifty is a wake-up call for anyone close to the edge.",
-            "openGraphImage": "/images/failure-at-fifty-3d.png"
+            "openGraphImage": "/images/Book Covers/failure-at-fifty-3d.png"
         }
     },
     {
@@ -74,9 +74,9 @@
         "order": 2,
         "asin": "1806238187",
         "siteStripeLink": "https://amzn.to/4pEnWZX",
-        "coverImage3D": "/images/fiftyone-ways-to-lie-3d.png",
-        "coverFront": "/images/fowtl-front.jpg",
-        "coverBack": "/images/fowtl-back.jpg",
+        "coverImage3D": "/images/Book Covers/fiftyone-ways-to-lie-3d.png",
+        "coverFront": "/images/Book Covers/fowtl-front.jpg",
+        "coverBack": "/images/Book Covers/fowtl-back.jpg",
         "seriesTag": "Darkest Chapter",
         "shortDescription": "A chilling dive into secrecy, manipulation, and the underworld of international crime. This book reveals how one man became entangled in a syndicate that nearly consumed him.",
         "description": [
@@ -120,7 +120,7 @@
             "badge": "🕵️‍♂️ Exposing Corporate Crime",
             "metaTitle": "Fifty-One Ways to Lie | Memoir of Crime, Betrayal, and Survival",
             "metaDescription": "A gripping true story of how one man was lured into an international crime syndicate. Fifty-One Ways to Lie is a cautionary tale for anyone chasing opportunity in a world built on deception.",
-            "openGraphImage": "/images/fiftyone-ways-to-lie-3d.png"
+            "openGraphImage": "/images/Book Covers/fiftyone-ways-to-lie-3d.png"
         }
     },
     {
@@ -133,9 +133,9 @@
         "order": 3,
         "asin": "1806238217",
         "siteStripeLink": "https://amzn.to/42QT4LI",
-        "coverImage3D": "/images/better-life-beyond-fifty-3d.png",
-        "coverFront": "/images/blbf-front.jpg",
-        "coverBack": "/images/blbf-back.jpg",
+        "coverImage3D": "/images/Book Covers/better-life-beyond-fifty-3d.png",
+        "coverFront": "/images/Book Covers/blbf-front.jpg",
+        "coverBack": "/images/Book Covers/blbf-back.jpg",
         "seriesTag": "Turning Point",
         "shortDescription": "A hopeful reflection on healing, legacy, and the power of choosing a better path. This book marks the turning point from pain to purpose, and the journey toward a life worth living.",
         "description": [
@@ -179,7 +179,7 @@
             "badge": "🌅 Uplifting and Honest",
             "metaTitle": "Better Life Beyond Fifty | Memoir of Healing, Music, and Moving Forward",
             "metaDescription": "A powerful memoir about reclaiming purpose after addiction and mental illness. Better Life Beyond Fifty is a story of resilience, music, and the journey toward a life worth living.",
-            "openGraphImage": "/images/better-life-beyond-fifty-3d.png"
+            "openGraphImage": "/images/Book Covers/better-life-beyond-fifty-3d.png"
         }
     }
 ]

@@ -6,19 +6,31 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 1rem;
-    background-image: string.unquote(var(--hero, none)), url('/og-image.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-color: var(--muted) !important;
+
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 32px;
+
+    background-image:
+        var(--hero),
+        linear-gradient(to right, var(--muted), var(--surface));
+
+    background-size:
+        contain,
+        cover;
+
+    background-repeat:
+        no-repeat,
+        no-repeat;
+
+    background-position:
+        left,
+        center;
+
     height: auto;
     width: 100%;
     max-height: 200px;
-    max-height: 200px;
     aspect-ratio: 3 / 2;
 
-    //Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
-    //Use string.unquote instead.
     p {
         font-size: 2rem !important;
         font-weight: 500;
@@ -42,6 +54,13 @@
 
 .leftSpacer {
     flex: 1;
+    height: auto;
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background-color: var(--surface);
 }
 
 .themeText {

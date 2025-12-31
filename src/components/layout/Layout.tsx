@@ -65,8 +65,8 @@ const Layout: React.FC<Props> = ({ children }) => {
                 <header className='header'><Navbar className="navbar" /></header>
                 <section data-theme={theme} className={styles.content}>
                     <div className={styles.heroImage}>
-                        <div className='leftSpacer'></div>
-                        <div className='heroText'>
+                        <div className={styles.leftSpacer}></div>
+                        <div className={styles.heroText}>
                             <p>{heroText}</p>
                         </div>
                     </div>

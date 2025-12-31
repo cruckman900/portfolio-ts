@@ -1,30 +1,11 @@
 [
     {
-        "slug": "portfolio-site",
-        "title": "Portfolio Site",
-        "icon": "fa-solid fa-fire",
-        "image": "/images/LinearDescent_Badge.png",
-        "description": "My personal showcase built with Next.js and SCSS modules, featuring breadcrumb-aware routing and modular layout.",
-        "url": "https://lineardescent.netlify.app",
-        "github": "https://github.com/cruckman900/portfolio-ts",
-        "tech": [
-            "Next.js",
-            "TypeScript",
-            "SASS",
-            "SCSS Modules",
-            "Markdown",
-            "Framer Motion",
-            "FontAwesome",
-            "Netlify"
-        ]
-    },
-    {
         "slug": "business-as-usual",
         "title": "Business As Usual",
         "icon": "fa-solid fa-globe",
-        "image": "/images/BusinessAsUsual_Badge.png",
+        "image": "/images/Project Badges/BusinessAsUsual_Badge.png",
         "description": "Multi-tenant ASP.NET Core business suite with contributor-proof onboarding, Smart Commit synergy, and CI/CD orchestration. Features include AWS EC2/RDS provisioning, changelog automation, badge injection, and modular admin dashboards.",
-        "url": "https://businessasusual.work",
+        "url": "",
         "github": "https://github.com/cruckman900/BusinessAsUsual",
         "tech": [
             "ASP.NET Core",
@@ -35,13 +16,137 @@
             "Docker",
             "GitHub Actions",
             "AWS EC2/RDS -> LightSail"
+        ],
+        "screenshots": [
+            {
+                "admin (web)": [
+                    {
+                        "title": "Dashboard",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/Dashboard.gif",
+                        "desc": "This is the landing page after login. It displays system vitals (web server, database, etc.)."
+                    },
+                    {
+                        "title": "Collapsed Sidebar",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/CollapsedSidebar.gif",
+                        "desc": "Sidebar can be expanded and collapsed to extend the work area view. Collapsed sidebar shows action icons."
+                    },
+                    {
+                        "title": "Expanded Sidebar",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/ExpandedSidebar.gif",
+                        "desc": "Sidebar can be expanded and collapsed to extend the work area view. Expanded sidebar shows action icons and labels."
+                    },
+                    {
+                        "title": "Provision Company",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/ProvisionCompany.gif",
+                        "desc": "This screen is used to initiate the database generation for a tenant company (client)."
+                    },
+                    {
+                        "title": "View Companies",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/ViewCompanies.gif",
+                        "desc": "Lists all provisioned companies with action links to modify setups."
+                    },
+                    {
+                        "title": "Retro Theme",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/RetroTheme.gif",
+                        "desc": "One of a few themes available (based on colors chosen in another project (NEXTRiff)."
+                    },
+                    {
+                        "title": "Contributor Mode Theme",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/ContributorModeTheme.gif",
+                        "desc": "One of a few themes available (based on colors chosen in another project (portfolio-ts)."
+                    }
+                ]
+            },
+            {
+                "client (web)": [
+                    {
+                        "title": "Login",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Client/Login.gif",
+                        "desc": "Simple login page."
+                    },
+                    {
+                        "title": "Dashboard",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Client/Dashboard.gif",
+                        "desc": "Landing page after login. Displays all (allowed) modules, based on roles."
+                    },
+                    {
+                        "title": "HR Dashboard",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Client/HRLanding.gif",
+                        "desc": "List of HR-related modules."
+                    },
+                    {
+                        "title": "New Hire Onboarding",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Client/NewHireOnboarding.gif",
+                        "desc": "Multi-part information entry screen for gathering new employee details."
+                    },
+                    {
+                        "title": "Employee Directory",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Client/EmployeeDirectory.gif",
+                        "desc": "List of employees with contact information."
+                    },
+                    {
+                        "title": "Benefits Management",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Client/BenefitsManagement.gif",
+                        "desc": "Toggle benefits offered by the company. May also be used to toggle benefits for a particular employee."
+                    },
+                    {
+                        "title": "Hazard Dark Theme",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Client/HazardDarkTheme.gif",
+                        "desc": "One of many themes offered. All themes have light and dark variants."
+                    },
+                    {
+                        "title": "Emerald Light Theme",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Client/EmeraldLightTheme.gif",
+                        "desc": "One of many themes offered. All themes have light and dark variants."
+                    },
+                    {
+                        "title": "Responsive Layout",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Client/Responsive.gif",
+                        "desc": "The application is fully responsive, but there are going to be complete, native (Android/iOS) mobile versions of the software."
+                    }
+                ]
+            },
+            {
+                "client (android)": [
+                    {
+                        "title": "Dashboard",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Android/Dashboard.gif",
+                        "desc": "Landing page after login. Displays all (allowed) modules, based on roles."
+                    },
+                    {
+                        "title": "Navigation Drawer",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Android/NavigationDrawer.gif",
+                        "desc": "Alternative module navigation menu."
+                    },
+                    {
+                        "title": "HR Dashboard",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Android/HRLanding.gif",
+                        "desc": "List of HR-related modules."
+                    },
+                    {
+                        "title": "Theme Drawer",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Android/ThemeDrawer.gif",
+                        "desc": "Theme chooser menu."
+                    },
+                    {
+                        "title": "Hazard Theme",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Android/HazardTheme.gif",
+                        "desc": "One of many themes offered. All themes have light and dark variants."
+                    },
+                    {
+                        "title": "Steel Theme",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Android/SteelTheme.gif",
+                        "desc": "One of many themes offered. All themes have light and dark variants."
+                    }
+                ]
+            }
         ]
     },
     {
         "slug": "nextriff",
         "title": "NEXTRiff",
         "icon": "fa-solid fa-globe",
-        "image": "/images/NEXTRiff_Badge.png",
+        "image": "/images/Project Badges/NEXTRiff_Badge.png",
         "description": "A tab-parsing and music metadata platform—backend nearly complete, frontend in progress. Soon, musicians everywhere will have a backstage pass to crank out lively jams.",
         "url": "https://nextriff.netlify.app",
         "github": {
@@ -55,15 +160,142 @@
             "Netlify",
             "Render",
             "Cloudinary"
+        ],
+        "screenshots": [
+            {
+                "web client": [
+                    {
+                        "title": "Splash Screen",
+                        "src": "/images/Project Screenshots/NextRiff/Splash.gif",
+                        "desc": "Intro graphic and sound prior to viewing the home page."
+                    },
+                    {
+                        "title": "Home",
+                        "src": "/images/Project Screenshots/NextRiff/Home.gif",
+                        "desc": "Home / Landing Page"
+                    },
+                    {
+                        "title": "Help",
+                        "src": "/images/Project Screenshots/NextRiff/Help.gif",
+                        "desc": "Help page. Layout is ready, no content as of yet."
+                    },
+                    {
+                        "title": "About",
+                        "src": "/images/Project Screenshots/NextRiff/About.gif",
+                        "desc": "Page explaining the purpose of the site."
+                    },
+                    {
+                        "title": "Workspace (Empty)",
+                        "src": "/images/Project Screenshots/NextRiff/WorkspaceEmpty.gif",
+                        "desc": "Workspace is the primary section of the site. It is where files and settings are accessed."
+                    },
+                    {
+                        "title": "Left Menu",
+                        "src": "/images/Project Screenshots/NextRiff/LeftMenu.gif",
+                        "desc": "Acts as a file menu. You can start a new file, open an existing file, save, view and change settings, etc."
+                    },
+                    {
+                        "title": "Settings",
+                        "src": "/images/Project Screenshots/NextRiff/Settings.gif",
+                        "desc": "There are only a small handful of settings, but they are useful."
+                    },
+                    {
+                        "title": "Instruments and Tuning",
+                        "src": "/images/Project Screenshots/NextRiff/InstrumentAndTuning.gif",
+                        "desc": "This is where you set up the instrument that you want to encode music for. Currently, it is limited to stringed instruments. "
+                    },
+                    {
+                        "title": "Score and Measure",
+                        "src": "/images/Project Screenshots/NextRiff/ScoreAndMeasure.gif",
+                        "desc": "These allow for manipulation to the overall score (Clef, Time Signature, Key Signature, etc.)."
+                    },
+                    {
+                        "title": "Fretboard Input Tool",
+                        "src": "/images/Project Screenshots/NextRiff/FretboardInput.gif",
+                        "desc": "Button representation of a stringed instrument's strings and frets. Pressing a button selects it to be used in the note or chord entry process."
+                    },
+                    {
+                        "title": "Keyboard Input tool",
+                        "src": "/images/Project Screenshots/NextRiff/KeyboardInput.gif",
+                        "desc": "Button representation of a piano keyboard. Pressing a button selects it to be used in the note or chord entry process."
+                    },
+                    {
+                        "title": "Playback Controls",
+                        "src": "/images/Project Screenshots/NextRiff/PlaybackControls.gif",
+                        "desc": "Not yet implemented, but eventually, the score will be playable through midi output."
+                    },
+                    {
+                        "title": "Adding Chords with Fretboard",
+                        "src": "/images/Project Screenshots/NextRiff/FretboardAddingChords.gif",
+                        "desc": "Simply click a button to toggle a note on a specific string and fret. You can submit a single note, or keep adding notes to submit a chord."
+                    },
+                    {
+                        "title": "Adding Notes with Keyboard",
+                        "src": "/images/Project Screenshots/NextRiff/KeyboardAddingNotes.gif",
+                        "desc": "Simply click a button to toggle a note. Tab representation on note placement is calculated. You can submit a single note, or keep adding notes to submit a chord."
+                    },
+                    {
+                        "title": "File Rename",
+                        "src": "/images/Project Screenshots/NextRiff/FileRename.gif",
+                        "desc": "When you create or open a file, the title is displayed in the tab panel. double clicking, or right-mouse-menu will allow you to change the filename."
+                    },
+                    {
+                        "title": "Staff Representation",
+                        "src": "/images/Project Screenshots/NextRiff/StaffRepresentation.gif",
+                        "desc": "The software defaults to Tab Notation, but you can toggle between Tab, Staff, or Combination that shows both."
+                    },
+                    {
+                        "title": "Combined Notation",
+                        "src": "/images/Project Screenshots/NextRiff/CombinedNotation.gif",
+                        "desc": "The software defaults to Tab Notation, but you can toggle between Tab, Staff, or Combination that shows both."
+                    },
+                    {
+                        "title": "Slate Theme",
+                        "src": "/images/Project Screenshots/NextRiff/SlateTheme.gif",
+                        "desc": "One of many themes offered. All themes have light and dark variants."
+                    },
+                    {
+                        "title": "Red Theme",
+                        "src": "/images/Project Screenshots/NextRiff/RedTheme.gif",
+                        "desc": "One of many themes offered. All themes have light and dark variants."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "portfolio-site",
+        "title": "Portfolio Site",
+        "icon": "fa-solid fa-fire",
+        "image": "/images/Project Badges/LinearDescent_Badge.png",
+        "description": "A handcrafted personal showcase built with Next.js, TypeScript, and SCSS Modules. Features breadcrumb-aware routing, modular layouts, animated transitions, dynamic project pages, screenshot galleries, and a theme-aware UI system.",
+        "url": "https://lineardescent.netlify.app",
+        "github": "https://github.com/cruckman900/portfolio-ts",
+        "tech": [
+            "Next.js",
+            "React 18",
+            "TypeScript",
+            "SASS",
+            "SCSS Modules",
+            "CSS Variables (Theme System)",
+            "Markdown Rendering",
+            "Framer Motion (Animations)",
+            "FontAwesome",
+            "Netlify Deployment",
+            "Dynamic Routing",
+            "JSON-driven Content",
+            "Responsive Layouts",
+            "Custom Modal System",
+            "Custom Screenshot Gallery"
         ]
     },
     {
         "slug": "services-by-friends",
         "title": "Services By Friends",
         "icon": "fa-solid fa-globe",
-        "image": "/images/ServicesByFriends_Badge.png",
+        "image": "/images/Project Badges/ServicesByFriends_Badge.png",
         "description": "A contributor-friendly service directory with dynamic sidebar, partial views, and off-canvas navigation. Built for onboarding clarity.",
-        "url": "https://services-by-friends.onrender.com",
+        "url": "",
         "github": "https://github.com/cruckman900/service-by-friends",
         "tech": [
             "Go",
@@ -79,10 +311,10 @@
         "slug": "themeswitcher",
         "title": "ThemeSwitcher",
         "icon": "fa-solid fa-screwdriver-wrench",
-        "image": "/images/ThemeSwitcher_Badge.png",
+        "image": "/images/Project Badges/ThemeSwitcher_Badge.png",
         "description": "A lightweight theme toggler with animated transitions and contributor-mode clarity. Designed for plug-and-play integration.",
-        "url": "coming soon",
-        "github": "coming soon",
+        "url": "",
+        "github": "",
         "tech": [
             "React",
             "TypeScript",
@@ -93,10 +325,10 @@
         "slug": "betterblog",
         "title": "BetterBlog",
         "icon": "fa-solid fa-screwdriver-wrench",
-        "image": "/images/BetterBlog_Badge.png",
+        "image": "/images/Project Badges/BetterBlog_Badge.png",
         "description": "A Markdown-powered blog engine with breadcrumb-aware routing and modular layout. Designed for expressive writing and future series support.",
-        "url": "coming soon",
-        "github": "coming soon",
+        "url": "",
+        "github": "",
         "tech": [
             "Next.js",
             "TypeScript",
