@@ -108,7 +108,7 @@ export default function ResumePage() {
                                 <div key={j} className={styles.noBreakInside}>
                                     <i>{project.name}</i>
                                     <ul>
-                                        {project.url && <li><a href={project.url} target="_blank">{project.url.substring(8)}</a></li>}
+                                        {project.url && <li><strong>Live:</strong> <a href={project.url} target="_blank">{project.url.substring(8)}</a></li>}
                                         <li>{project.description}</li>
                                         <li><strong>Tech: </strong>{project.tech}</li>
                                         {project.repos.map((repo) => (

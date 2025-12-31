@@ -1,7 +1,7 @@
 {
   "icon": "fa-solid fa-dragon",
   "name": "Christopher Ruckman",
-  "tagline": "Software engineer with 15+ years of professional experience across .NET web applications and Android features and recent hands-on work building React/Next.js frontends backed by APIs. Seeking .NET backend or full-stack roles (full-time or contract-to-hire)",
+  "tagline": "Software engineer with 15+ years of professional experience across .NET web applications and Android features and recent hands-on work building React/Next.js frontends backed by APIs. Seeking .NET frontend, backend, full-stack roles, or mobile (full-time or contract-to-hire)",
   "contact": {
     "location": "Rayland, OH",
     "email": "cruckman900@gmail.com",
@@ -80,7 +80,7 @@
       "company": "Self-Directed Projects",
       "dates": "Mar 2022 – Present",
       "details": [
-        "Built and shipped portfolio applications to stay current in .NET, React/TyepScript, Android, API development, and cloud deployment during a health-related hiatus",
+        "Built and shipped portfolio applications to stay current in .NET, React/TypeScript, Android, API development, and cloud deployment during a health-related hiatus",
         "Engineered Business As Usual: multi-tenant end-to-end business suite on ASP.NET Core; automated build/deploy workflows, and repeatable environments",
         "Building Business As Usual Mobile: a full-featured suite mirroring the web application for Native Android and iOS devices",
         "Developed NEXTRiff: a React frontend for tab creation, parsing, metadata, and playback functionality; integrated with a Python API service and structured features for iterative delivery"

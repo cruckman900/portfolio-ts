@@ -19,25 +19,25 @@ const Layout: React.FC<Props> = ({ children }) => {
     function getHeroText(theme: string): string {
         switch (theme) {
             case 'light':
-                return 'Illuminate the path. Code with clarity.'
+                return 'Life is a melody. Alone, you are a single chord. Surrounded by others, you become orchestrated.'
             case 'dark':
-                return 'In shadows we forge resilience.'
+                return 'Only when faced with shadow, do you find light.'
             case 'hazard':
-                return 'Warning is not weakness-it\'s wisdom wrapped in urgency.'
+                return 'Tread with caution, this life you live. It holds grudges.'
             case 'brownstone':
                 return 'Let the thoughts that betray you feel the sting of swift justice.'
             case 'midnight':
-                return 'Even in silence, the stars whisper resilience.'
+                return 'Even in silence, whispers are screams.'
             case 'red':
-                return 'Warning is a gift. Speak boldly.'
+                return 'Dare not to dare. Life is fast, it\'s unforgiving, and it\'s over as fast as it began.'
             case 'slate':
-                return 'Stone still speaks. Build with grit.'
+                return 'Built with a spine as unforgiving as granite, all movement, should be a movement forward.'
             case 'purple':
                 return 'Embers glow with memory and fire.'
             case 'pink':
                 return 'Softness is strength. Kindness is rebellion.'
             case 'green':
-                return 'Growth begins underground-quiet, patient, unstobbable.'
+                return 'When even your own thoughts seem alien, understand that all truth comes with question.'
             default:
                 return 'Transform adversity into code, verse, and advocacy.'
         }

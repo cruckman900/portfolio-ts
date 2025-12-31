@@ -7,8 +7,10 @@
     align-items: center;
     padding-right: 1rem;
 
-    border-top-left-radius: 12px;
+    border-top-left-radius: 16px;
     border-bottom-left-radius: 32px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 128px;
 
     background-image:
         var(--hero),

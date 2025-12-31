@@ -35,8 +35,12 @@
 
 .projects {
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 2rem;
     background-color: var(--surface);
+
+    @media print {
+        padding: 0;
+    }
 }
 
 .loopContainer {
