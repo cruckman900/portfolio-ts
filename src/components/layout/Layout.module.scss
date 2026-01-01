@@ -47,16 +47,16 @@
     }
 }
 
-.leftSpacer {
-    flex: 1;
-    height: auto;
-    height: 200px;
-    width: 100px;
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    background-color: var(--surface);
-}
+// .leftSpacer {
+//     flex: 1;
+//     height: auto;
+//     height: 200px;
+//     width: 100px;
+//     position: absolute;
+//     left: 0;
+//     z-index: -1;
+//     background-color: var(--surface);
+// }
 
 .themeText {
     flex: 1;
@@ -85,6 +85,6 @@
         text-align: center;
         top: 4.5rem;
         max-width: 100%;
-        font-size: 1.5rem !important;
+        font-size: .75rem !important;
     }
 }
