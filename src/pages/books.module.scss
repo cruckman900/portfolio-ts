@@ -30,7 +30,7 @@
     flex: 0 0 auto;
     width: 250px;
     padding: 1rem;
-    background: var(--surface);
+    background: var(--muted);
     border-radius: 8px;
     scroll-snap-align: start;
     cursor: pointer;
@@ -86,8 +86,8 @@
 }
 
 .tag {
-    background-color: var(--surface);
-    color: var(--accent);
+    background-color: var(--muted);
+    color: var(--text);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -96,7 +96,7 @@
 }
 
 .tag:hover {
-    background-color: var(--mute);
+    background-color: var(--accent);
 }
 
 .tagCTAWrapper {

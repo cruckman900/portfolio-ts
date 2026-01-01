@@ -1,0 +1,14 @@
+.footer {
+    background-color: var(--muted);
+
+    color: var(--text);
+    padding: .5rem;
+    text-align: center;
+    border-top-left-radius: 256px;
+    border-top-right-radius: 128px;
+    background: linear-gradient(to right, var(--surface), var(--muted));
+
+    @media print {
+        display: none;
+    }
+}

@@ -19,14 +19,14 @@
 }
 
 .module {
-    background-color: var(--surface);
+    background-color: var(--muted);
     border-left: 4px solid var(--text);
     padding: 1.5rem;
     border-radius: 6px;
     transition: border-color 0.3s ease;
 
     &:hover {
-        border-color: var(--muted);
+        border-color: var(--accent);
     }
 
     h2 {

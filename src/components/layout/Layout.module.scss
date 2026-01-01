@@ -1,5 +1,9 @@
 @use "sass:string";
 
+.content {
+    background-color: var(--surface);
+}
+
 .heroImage {
     display: flex;
     flex-direction: row;

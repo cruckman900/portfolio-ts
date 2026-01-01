@@ -13,6 +13,7 @@
 html,
 body {
     overflow-x: hidden;
+    background-color: var(--surface);
 
     @media print {
         background-color: white;
@@ -25,15 +26,6 @@ a {
 
     &:hover {
         text-decoration: underline;
-    }
-}
-
-.footer {
-    background-color: var(--surface);
-    color: var(--text);
-
-    @media print {
-        display: none;
     }
 }
 
@@ -58,12 +50,6 @@ a {
     .content {
         overflow-x: hidden;
         overflow-y: auto;
-    }
-
-    /* Footer */
-    .footer {
-        padding: .25rem;
-        text-align: center;
     }
 
     /* For WebKit browsers (Chrome, Safari, Edge) */

@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
+import styles from './Footer.module.scss'
 
 const Footer: React.FC = () => {
     return (
-        <footer className='footer'>
+        <footer className={styles.footer}>
             <div className="main">
                 <div className="social-links">
                     <Link href="https://github.com/cruckman">GitHub</Link>
