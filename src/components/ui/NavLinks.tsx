@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import navlinks from '@/data/links.json'
 import { useRouter } from 'next/router'
-import styles from './Navlinks.module.scss'
+import styles from './NavLinks.module.scss'
 
 export default function NavLinks({ onClick }: { onClick?: () => void }) {
     const router = useRouter()
