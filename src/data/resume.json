@@ -124,7 +124,7 @@
           "name": "Business As Usual",
           "description": "Multi-tenant ASP.NET Core business suite with contributor-proof onboarding, Smart Commit synergy, and CI/CD orchestration. Features include AWS EC2/RDS provisioning, changelog automation, badge injection, and modular admin dashboards.",
           "url": "",
-          "tech": "ASP.NET Core, MVC, Blazor Server, Entity Framework Core, T-Sql, SQL Server -> PostgreSql, Docker, GitHub Actions, AWS EC2/RDS -> LightSail, Serilog, Smart Commits. Have begun Native Android and iOS mobile development.",
+          "tech": "ASP.NET Core, MVC, Blazor Server, Entity Framework Core, T-Sql, SQL Server -> PostgreSql, Docker, GitHub Actions, AWS EC2 (deployed)/RDS ready, Serilog, Smart Commits. Have begun Native Android and iOS mobile development.",
           "repos": [
             {
               "label": "web and api source code",
