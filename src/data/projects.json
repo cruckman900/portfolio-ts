@@ -4,18 +4,92 @@
         "title": "Business As Usual",
         "icon": "fa-solid fa-globe",
         "image": "/images/Project Badges/BusinessAsUsual_Badge.png",
-        "description": "Multi-tenant ASP.NET Core business suite with contributor-proof onboarding, Smart Commit synergy, and CI/CD orchestration. Features include AWS EC2/RDS provisioning, changelog automation, badge injection, and modular admin dashboards.",
-        "url": "",
-        "github": "https://github.com/cruckman900/BusinessAsUsual",
-        "tech": [
-            "ASP.NET Core",
-            "MVC",
-            "Blazor Server",
-            "Entity Framework Core",
-            "SQL Server",
-            "Docker",
-            "GitHub Actions",
-            "AWS EC2/RDS"
+        "description": "A multi-tenant business suite built with production-grade architecture, cloud deployment, and contributor-proof onboarding. Business As Usual is designed as a real SaaS product, not a demo — complete with modular dashboards, automated infrastructure, and a fully documented deployment pipeline.",
+        "whatIBuilt": "I designed and implemented a full-stack SaaS platform with a modular architecture, multi-service Docker orchestration, and a production-ready AWS deployment. The system includes a public-facing site, an admin portal, a backend API, a runtime service, and a SQL Server database — all wired together with secrets-driven configuration, HTTPS, and automated provisioning.",
+        "highlights": [
+            "Multi-tenant architecture with modular feature expansion",
+            "Full AWS deployment: EC2, Secrets Manager, Route 53, ACM, Nginx",
+            "Zero-downtime Docker rebuilds with multi-service orchestration",
+            "Contributor-proof onboarding with Smart Commits and automated changelogs",
+            "Admin dashboard with system health, logs, and environment insights"
+        ],
+        "challengesAndSolutions": [
+            {
+                "challenge": "Creating a production-ready cloud deployment from scratch.",
+                "solution": "Designed a clean AWS architecture using EC2, Nginx, Secrets Manager, and Docker Compose, then documented every step into a repeatable deployment playbook."
+            },
+            {
+                "challenge": "Ensuring contributors could onboard without breaking the system.",
+                "solution": "Built a ConfigLoader that unifies .env, CI variables, and AWS secrets into a single source of truth, eliminating environment drift."
+            },
+            {
+                "challenge": "Managing multiple services without configuration chaos.",
+                "solution": "Refactored the solution into modular projects with shared infrastructure, strongly typed configuration, and secrets-driven runtime behavior."
+            }
+        ],
+        "whatILearned": [
+            "How to design a real-world cloud deployment pipeline from zero",
+            "How to unify local, CI, and production configuration using AWS Secrets Manager",
+            "How to build modular, multi-tenant architectures that scale cleanly",
+            "How to create contributor-friendly documentation that reduces onboarding friction",
+            "How to debug complex Docker, networking, and cloud interactions with precision"
+        ],
+        "tech": {
+            "backend": [
+                "ASP.NET Core",
+                "Entity Framework Core",
+                "Clean Architecture",
+                "Dependency Injection",
+                "Multi-Tenant Architecture"
+            ],
+            "frontend": [
+                "MVC",
+                "Blazor Server",
+                "Dynamic Theming",
+                "Modular Admin Dashboard"
+            ],
+            "cloud": [
+                "AWS EC2",
+                "AWS Secrets Manager",
+                "AWS IAM",
+                "AWS Route 53",
+                "AWS Certificate Manager"
+            ],
+            "devops": [
+                "Docker",
+                "Docker Compose",
+                "Nginx Reverse Proxy",
+                "Certbot (Let's Encrypt)",
+                "GitHub Actions"
+            ],
+            "tooling": [
+                "Serilog",
+                "Smart Commits",
+                "Automated Changelog",
+                "Contributor-Proof Onboarding"
+            ]
+        },
+        "github": [
+            {
+                "label": "repository",
+                "href": "https://github.com/cruckman900/BusinessAsUsual"
+            }
+        ],
+        "url": [
+            {
+                "label": "admin",
+                "href": "https://admin.businessasusual.work",
+                "username": null,
+                "password": null,
+                "notes": "Admin dashboard with system health, logs, and environment insights"
+            },
+            {
+                "label": "client",
+                "href": "https://businessasusual.work",
+                "username": "admin",
+                "password": "password",
+                "notes": "Public-facing site"
+            }
         ],
         "screenshots": [
             {
@@ -105,7 +179,90 @@
                         "desc": "The application is fully responsive, but there are going to be complete, native (Android/iOS) mobile versions of the software."
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "slug": "business-as-usual-mobile-android",
+        "title": "Business As Usual Mobile (Android)",
+        "icon": "fa-solid fa-mobile-screen",
+        "image": "/images/Project Badges/BusinessAsUsual_Badge.png",
+        "description": "The Android companion app for Business As Usual — built with Jetpack Compose, MVVM, and a fully modular, dependency‑inverted architecture. Designed as a true sibling to the BAU web platform, the app features dynamic theming, a branded UI shell, Koin-powered dependency injection, and a future-ready foundation for multi-tenant mobile experiences.",
+        "whatIBuilt": "I architected a modern Android application using Jetpack Compose, MVVM, and Koin DI. The app includes a dynamic theme engine, a branded top bar and navigation system, modular feature screens, and a clean separation between UI, domain, and data layers. The architecture mirrors the BAU web platform, ensuring consistency across platforms and enabling future backend integration.",
+        "highlights": [
+            "Jetpack Compose UI with dynamic theme switching",
+            "MVVM architecture with clean separation of concerns",
+            "Koin dependency injection with interface-driven modules",
+            "Branded top bar, navigation shell, and modular screen system",
+            "Future-ready for API integration, offline caching, and multi-tenant logic"
+        ],
+        "challengesAndSolutions": [
+            {
+                "challenge": "Migrating from Hilt to Koin while keeping the architecture clean and testable.",
+                "solution": "Refactored the DI graph to use interfaces and dependency inversion, allowing modules to be swapped or mocked without touching UI code."
             },
+            {
+                "challenge": "Designing a theme engine that supports runtime switching and matches the BAU brand.",
+                "solution": "Built a Compose-driven theme system using state holders, color palettes, and typography tokens that update instantly across the app."
+            },
+            {
+                "challenge": "Creating a unified navigation shell that mirrors the BAU web experience.",
+                "solution": "Implemented a branded top bar, drawer layout, and modular navigation graph that keeps screens isolated and contributor-friendly."
+            }
+        ],
+        "whatILearned": [
+            "How to architect a scalable Android app using Compose and MVVM",
+            "How to implement dependency inversion using Koin modules",
+            "How to design a runtime theme engine with Compose state",
+            "How to build modular navigation systems with clean screen boundaries",
+            "How to align mobile architecture with an existing web platform"
+        ],
+        "tech": {
+            "backend": [
+                "Planned: Retrofit",
+                "Planned: Offline Caching",
+                "Planned: Multi-Tenant API Integration"
+            ],
+            "frontend": [
+                "Jetpack Compose",
+                "Material 3",
+                "Dynamic Theming",
+                "Custom Top Bar & Drawer",
+                "Modular Screen Architecture"
+            ],
+            "cloud": [
+                "Planned: BAU API Integration",
+                "Planned: AWS-backed Services"
+            ],
+            "devops": [
+                "Gradle Version Catalogs",
+                "Modular Build Setup",
+                "Android Studio Otter Workflow"
+            ],
+            "tooling": [
+                "Koin DI",
+                "MVVM",
+                "StateFlow",
+                "Smart Commits",
+                "Automated Changelog"
+            ]
+        },
+        "github": [
+            {
+                "label": "repository",
+                "href": "https://github.com/cruckman900/business-as-usual-mobile-android"
+            }
+        ],
+        "url": [
+            {
+                "label": "demo",
+                "href": "",
+                "username": null,
+                "password": null,
+                "notes": "App distribution via Appsonair (planned)"
+            }
+        ],
+        "screenshots": [
             {
                 "client (android)": [
                     {
@@ -143,23 +300,178 @@
         ]
     },
     {
+        "slug": "business-as-usual-mobile-ios",
+        "title": "Business As Usual Mobile (iOS)",
+        "icon": "fa-brands fa-apple",
+        "image": "/images/Project Badges/BusinessAsUsual_Badge.png",
+        "description": "The iOS companion app for Business As Usual — built with SwiftUI, MVVM, and a modular, dependency‑inverted architecture. Designed as a true sibling to the BAU web and Android platforms, the app features a dynamic theme engine, branded navigation shell, and a scalable foundation ready for multi-tenant mobile experiences.",
+        "whatIBuilt": "I built a modern iOS application using SwiftUI and MVVM, with a clean architecture that mirrors the Android and Web versions of Business As Usual. The app includes a runtime theme engine, a branded navigation stack, modular feature screens, and a dependency-inverted service layer designed for future backend integration and offline caching.",
+        "highlights": [
+            "SwiftUI interface with dynamic theme switching",
+            "MVVM architecture with clean separation of UI, domain, and data layers",
+            "Dependency inversion using protocol-driven services",
+            "Branded navigation shell aligned with BAU’s cross-platform design",
+            "Future-ready for API integration, offline caching, and multi-tenant logic"
+        ],
+        "challengesAndSolutions": [
+            {
+                "challenge": "Designing a SwiftUI architecture that mirrors the Android version for cross-platform consistency.",
+                "solution": "Created a protocol-driven service layer and MVVM structure that matches the Android app’s dependency inversion, ensuring both platforms share the same conceptual architecture."
+            },
+            {
+                "challenge": "Implementing a dynamic theme engine that updates the UI instantly.",
+                "solution": "Built a SwiftUI ObservableObject-based theme manager that updates colors, typography, and layout tokens in real time across the entire app."
+            },
+            {
+                "challenge": "Creating a branded navigation experience that feels native to iOS but consistent with BAU’s identity.",
+                "solution": "Designed a custom navigation stack with branded headers, iconography, and layout patterns that echo the BAU design language while embracing SwiftUI conventions."
+            }
+        ],
+        "whatILearned": [
+            "How to architect scalable SwiftUI apps using MVVM and protocol-driven services",
+            "How to design a runtime theme engine using ObservableObject and environment values",
+            "How to align iOS architecture with Android and Web platforms",
+            "How to build modular navigation systems in SwiftUI",
+            "How to prepare a mobile app for future API integration and offline caching"
+        ],
+        "tech": {
+            "backend": [
+                "Planned: URLSession API Layer",
+                "Planned: Offline Caching",
+                "Planned: Multi-Tenant API Integration"
+            ],
+            "frontend": [
+                "SwiftUI",
+                "MVVM",
+                "Dynamic Theming",
+                "Custom Navigation Shell",
+                "Modular Screen Architecture"
+            ],
+            "cloud": [
+                "Planned: BAU API Integration",
+                "Planned: AWS-backed Services"
+            ],
+            "devops": [
+                "Xcode Build System",
+                "Swift Package Manager",
+                "Version Cataloging (planned)"
+            ],
+            "tooling": [
+                "Protocol-Driven DI",
+                "ObservableObject",
+                "Environment Values",
+                "Smart Commits",
+                "Automated Changelog"
+            ]
+        },
+        "github": [
+            {
+                "label": "repository",
+                "href": "https://github.com/cruckman900/business-as-usual-mobile-ios"
+            }
+        ],
+        "url": [
+            {
+                "label": "demo",
+                "href": "",
+                "username": null,
+                "password": null,
+                "notes": "App distribution via Appsonair (planned)"
+            }
+        ],
+        "screenshots": []
+    },
+    {
         "slug": "nextriff",
         "title": "NEXTRiff",
-        "icon": "fa-solid fa-globe",
+        "icon": "fa-solid fa-guitar",
         "image": "/images/Project Badges/NEXTRiff_Badge.png",
-        "description": "A tab-parsing and music metadata platform—backend nearly complete, frontend in progress. Soon, musicians everywhere will have a backstage pass to crank out lively jams.",
-        "url": "https://nextriff.netlify.app",
-        "github": {
-            "GitHub - frontend": "https://github.com/cruckman900/next.riffdaddy",
-            "GitHub - backend": "https://github.com/cruckman900/baselinepy.ro"
+        "description": "A modern guitar‑tab parsing and music‑metadata platform built with a Python/FastAPI backend and a React-powered frontend. NEXTRiff transforms raw text tabs into structured, playable, and searchable musical data — giving musicians a backstage pass to cleaner practice sessions and smarter songwriting.",
+        "whatIBuilt": "I architected a dual‑service platform with a FastAPI backend for tab parsing, metadata extraction, and Cloudinary asset handling, paired with a React frontend designed for interactive playback and tab visualization. The system is modular, API‑driven, and built for future expansion into tunings, instrument profiles, and multi-track playback.",
+        "highlights": [
+            "Custom tab‑parsing engine written in Python",
+            "FastAPI backend with clean routing and modular services",
+            "React frontend with dynamic rendering and playback controls",
+            "Cloudinary integration for media storage and optimization",
+            "Deployed across Netlify (frontend) and Render (backend)"
+        ],
+        "challengesAndSolutions": [
+            {
+                "challenge": "Parsing inconsistent, user-generated guitar tabs into structured data.",
+                "solution": "Designed a Python parsing engine that tokenizes lines, detects string patterns, and normalizes timing, producing a clean JSON structure for the frontend."
+            },
+            {
+                "challenge": "Synchronizing backend parsing logic with frontend rendering.",
+                "solution": "Created a shared contract between FastAPI and React using typed response models, ensuring predictable rendering and reducing UI edge cases."
+            },
+            {
+                "challenge": "Managing media uploads and optimizing assets for performance.",
+                "solution": "Integrated Cloudinary for automatic compression, caching, and CDN delivery, dramatically improving load times for audio and tab previews."
+            }
+        ],
+        "whatILearned": [
+            "How to design a parsing engine that handles messy, real-world input",
+            "How to structure a clean API contract between Python and React",
+            "How to deploy multi-service apps across Netlify and Render",
+            "How to integrate Cloudinary for media optimization and delivery",
+            "How to build a scalable foundation for future music features"
+        ],
+        "tech": {
+            "backend": [
+                "Python",
+                "FastAPI",
+                "Pydantic Models",
+                "Async Routing",
+                "Cloudinary SDK"
+            ],
+            "frontend": [
+                "React",
+                "TypeScript (planned)",
+                "Dynamic Rendering",
+                "Interactive Tab Components"
+            ],
+            "cloud": [
+                "Render (Backend Hosting)",
+                "Netlify (Frontend Hosting)",
+                "Cloudinary (Media Storage)"
+            ],
+            "devops": [
+                "CI/CD (Netlify + Render)",
+                "Environment Variables",
+                "API Versioning"
+            ],
+            "tooling": [
+                "ESLint",
+                "Prettier",
+                "Smart Commits",
+                "Automated Changelog"
+            ]
         },
-        "tech": [
-            "React",
-            "Python",
-            "FastAPI",
-            "Netlify",
-            "Render",
-            "Cloudinary"
+        "github": [
+            {
+                "label": "frontend",
+                "href": "https://github.com/cruckman900/next.riffdaddy"
+            },
+            {
+                "label": "backend",
+                "href": "https://github.com/cruckman900/baselinepy.ro"
+            }
+        ],
+        "url": [
+            {
+                "label": "frontend",
+                "href": "https://nextriff.netlify.app",
+                "username": null,
+                "password": null,
+                "notes": "React frontend deployed on Netlify"
+            },
+            {
+                "label": "backend",
+                "href": "https://baselinepy-ro.onrender.com",
+                "username": null,
+                "password": null,
+                "notes": "FastAPI backend deployed on Render"
+            }
         ],
         "screenshots": [
             {
@@ -268,72 +580,239 @@
         "title": "Portfolio Site",
         "icon": "fa-solid fa-fire",
         "image": "/images/Project Badges/LinearDescent_Badge.png",
-        "description": "A handcrafted personal showcase built with Next.js, TypeScript, and SCSS Modules. Features breadcrumb-aware routing, modular layouts, animated transitions, dynamic project pages, screenshot galleries, and a theme-aware UI system.",
-        "url": "https://lineardescent.netlify.app",
-        "github": "https://github.com/cruckman900/portfolio-ts",
-        "tech": [
-            "Next.js",
-            "React 18",
-            "TypeScript",
-            "SASS",
-            "SCSS Modules",
-            "CSS Variables (Theme System)",
-            "Markdown Rendering",
-            "Framer Motion (Animations)",
-            "FontAwesome",
-            "Netlify Deployment",
-            "Dynamic Routing",
-            "JSON-driven Content",
-            "Responsive Layouts",
-            "Custom Modal System",
-            "Custom Screenshot Gallery"
-        ]
+        "description": "A handcrafted personal showcase built with Next.js, TypeScript, and SCSS Modules. The site features breadcrumb-aware routing, modular layouts, animated transitions, dynamic project pages, screenshot galleries, and a theme-aware UI system — all designed to feel like a polished product rather than a simple portfolio.",
+        "whatIBuilt": "I built a fully modular, JSON-driven portfolio platform using Next.js and TypeScript. The site includes dynamic routing for project pages, a custom screenshot gallery, a theme engine powered by CSS variables, and a breadcrumb-aware navigation system. Every component is designed to be expressive, reusable, and contributor-friendly.",
+        "highlights": [
+            "Dynamic project pages powered by JSON-driven content",
+            "Breadcrumb-aware routing with automatic path generation",
+            "Custom screenshot gallery with modal viewer",
+            "Theme-aware UI system using CSS variables",
+            "Framer Motion animations for smooth transitions",
+            "Responsive layouts with handcrafted SCSS modules"
+        ],
+        "challengesAndSolutions": [
+            {
+                "challenge": "Designing a flexible content system without a CMS.",
+                "solution": "Created a JSON-driven architecture where each project defines its own metadata, tech stack, challenges, and screenshots — enabling rapid iteration and clean separation of content from layout."
+            },
+            {
+                "challenge": "Ensuring consistent styling across dynamic pages.",
+                "solution": "Built a modular SCSS system with component-scoped styles, shared variables, and a theme engine powered by CSS custom properties."
+            },
+            {
+                "challenge": "Creating smooth, expressive transitions without hurting performance.",
+                "solution": "Integrated Framer Motion with lightweight animation primitives, ensuring transitions feel cinematic while maintaining excellent performance."
+            }
+        ],
+        "whatILearned": [
+            "How to architect a modular, JSON-driven content system in Next.js",
+            "How to build a theme engine using CSS variables and SCSS modules",
+            "How to design reusable UI components with expressive animations",
+            "How to structure a portfolio as a real product, not a static site",
+            "How to optimize Next.js routing and layout composition"
+        ],
+        "tech": {
+            "backend": [
+                "Next.js (Server Components)",
+                "API Routes (planned)",
+                "Static Generation"
+            ],
+            "frontend": [
+                "React 18",
+                "TypeScript",
+                "SCSS Modules",
+                "CSS Variables (Theme System)",
+                "Framer Motion",
+                "Custom Modal System",
+                "Custom Screenshot Gallery"
+            ],
+            "cloud": [
+                "Netlify Deployment"
+            ],
+            "devops": [
+                "Netlify CI/CD",
+                "Environment Variables",
+                "Automated Builds"
+            ],
+            "tooling": [
+                "Markdown Rendering",
+                "JSON-driven Content",
+                "FontAwesome Icons",
+                "ESLint",
+                "Prettier"
+            ]
+        },
+        "github": [
+            {
+                "label": "repository",
+                "href": "https://github.com/cruckman900/portfolio-ts"
+            }
+        ],
+        "url": [
+            {
+                "label": "live",
+                "href": "https://lineardescent.netlify.app",
+                "username": null,
+                "password": null,
+                "notes": "Live portfolio site deployed on Netlify"
+            }
+        ],
+        "screenshots": []
     },
     {
         "slug": "services-by-friends",
         "title": "Services By Friends",
         "icon": "fa-solid fa-globe",
         "image": "/images/Project Badges/ServicesByFriends_Badge.png",
-        "description": "A contributor-friendly service directory with dynamic sidebar, partial views, and off-canvas navigation. Built for onboarding clarity.",
-        "url": "",
-        "github": "https://github.com/cruckman900/service-by-friends",
-        "tech": [
-            "Go",
-            "Fiber",
-            "Docker",
-            "JSON-driven UI",
-            "Microservices",
-            "Netlify",
-            "Firebase"
-        ]
+        "description": "A contributor-friendly service directory built with Go and Fiber, featuring dynamic sidebar navigation, partial views, and an off‑canvas layout system. Designed as a lightweight, modular platform that makes it easy for collaborators to add new services without touching core infrastructure.",
+        "whatIBuilt": "I created a clean, modular Go application using the Fiber web framework, with a JSON-driven UI that allows contributors to add new services simply by updating structured metadata. The system includes dynamic sidebar generation, reusable partial views, and an off‑canvas navigation pattern optimized for mobile and desktop. The project emphasizes clarity, simplicity, and onboarding ease.",
+        "highlights": [
+            "Go + Fiber backend with fast, lightweight routing",
+            "JSON-driven UI for contributor-friendly service definitions",
+            "Dynamic sidebar and off-canvas navigation system",
+            "Modular partial views for clean, reusable layouts",
+            "Deployed using Netlify and Firebase for rapid iteration"
+        ],
+        "challengesAndSolutions": [
+            {
+                "challenge": "Designing a system where contributors could add services without modifying backend code.",
+                "solution": "Built a JSON-driven architecture where each service is defined in metadata, allowing the UI and navigation to update automatically."
+            },
+            {
+                "challenge": "Keeping the UI modular while supporting multiple layout patterns.",
+                "solution": "Implemented partial views and reusable components that render consistently across pages, reducing duplication and onboarding friction."
+            },
+            {
+                "challenge": "Ensuring fast load times despite dynamic content generation.",
+                "solution": "Used Go Fiber’s high-performance routing and lightweight templating to keep response times extremely low."
+            }
+        ],
+        "whatILearned": [
+            "How to build contributor-friendly systems using JSON-driven metadata",
+            "How to structure modular UI layouts with partial views",
+            "How to design off-canvas navigation patterns for responsive apps",
+            "How to deploy lightweight Go services using Netlify and Firebase",
+            "How to simplify onboarding through clean architecture and documentation"
+        ],
+        "tech": {
+            "backend": [
+                "Go",
+                "Fiber",
+                "Templating Engine",
+                "JSON Metadata"
+            ],
+            "frontend": [
+                "Dynamic Sidebar",
+                "Off-Canvas Navigation",
+                "Partial Views",
+                "Responsive Layouts"
+            ],
+            "cloud": [
+                "Netlify",
+                "Firebase Hosting"
+            ],
+            "devops": [
+                "Docker",
+                "Environment Variables",
+                "Automated Deployments"
+            ],
+            "tooling": [
+                "JSON-driven UI",
+                "Smart Commits",
+                "Contributor-Friendly Structure"
+            ]
+        },
+        "github": [
+            {
+                "label": "repository",
+                "href": "https://github.com/cruckman900/service-by-friends"
+            }
+        ],
+        "url": [
+            {
+                "label": "live",
+                "href": "",
+                "username": null,
+                "password": null,
+                "notes": "Live deployment (if applicable)"
+            }
+        ],
+        "screenshots": []
     },
     {
         "slug": "themeswitcher",
         "title": "ThemeSwitcher",
         "icon": "fa-solid fa-screwdriver-wrench",
         "image": "/images/Project Badges/ThemeSwitcher_Badge.png",
-        "description": "A lightweight theme toggler with animated transitions and contributor-mode clarity. Designed for plug-and-play integration.",
-        "url": "",
-        "github": "",
-        "tech": [
-            "React",
-            "TypeScript",
-            "CSS Modules"
-        ]
-    },
-    {
-        "slug": "betterblog",
-        "title": "BetterBlog",
-        "icon": "fa-solid fa-screwdriver-wrench",
-        "image": "/images/Project Badges/BetterBlog_Badge.png",
-        "description": "A Markdown-powered blog engine with breadcrumb-aware routing and modular layout. Designed for expressive writing and future series support.",
-        "url": "",
-        "github": "",
-        "tech": [
-            "Next.js",
-            "TypeScript",
-            "Markdown",
-            "SCSS"
-        ]
+        "description": "A lightweight, plug‑and‑play theme toggler built with React and TypeScript. ThemeSwitcher provides animated transitions, CSS‑variable‑driven theming, and a contributor‑friendly API designed for seamless integration into any frontend project.",
+        "whatIBuilt": "I built a reusable theme switching component that supports animated transitions, CSS variable updates, and a clean, declarative API. The system is designed to drop into any React project with minimal setup, offering instant light/dark mode support and a foundation for more advanced theme systems.",
+        "highlights": [
+            "Plug‑and‑play theme toggler for React projects",
+            "CSS variable system for instant theme updates",
+            "Smooth animated transitions between themes",
+            "TypeScript‑powered API for contributor clarity",
+            "Lightweight footprint with zero external dependencies"
+        ],
+        "challengesAndSolutions": [
+            {
+                "challenge": "Ensuring theme transitions felt smooth without adding heavy animation libraries.",
+                "solution": "Used CSS transitions and variable updates to create lightweight, GPU‑friendly animations that work across browsers."
+            },
+            {
+                "challenge": "Designing a theme system that contributors could extend without breaking existing themes.",
+                "solution": "Created a structured CSS variable map and a TypeScript interface that enforces consistency across all theme definitions."
+            },
+            {
+                "challenge": "Making the component portable across multiple projects.",
+                "solution": "Abstracted the logic into a standalone module with clear props, internal state management, and zero project‑specific assumptions."
+            }
+        ],
+        "whatILearned": [
+            "How to design reusable UI components with clean APIs",
+            "How to build theme engines using CSS variables",
+            "How to create smooth transitions without heavy libraries",
+            "How to structure portable React utilities for multiple projects",
+            "How to document components for contributor‑friendly onboarding"
+        ],
+        "tech": {
+            "backend": [
+                "N/A (Frontend Utility Component)"
+            ],
+            "frontend": [
+                "React",
+                "TypeScript",
+                "CSS Modules",
+                "CSS Variables",
+                "Animated Transitions"
+            ],
+            "cloud": [
+                "N/A"
+            ],
+            "devops": [
+                "N/A"
+            ],
+            "tooling": [
+                "ESLint",
+                "Prettier",
+                "Smart Commits",
+                "Automated Changelog (optional)"
+            ]
+        },
+        "github": [
+            {
+                "label": "repository",
+                "href": ""
+            }
+        ],
+        "url": [
+            {
+                "label": "demo",
+                "href": "",
+                "username": null,
+                "password": null,
+                "notes": "Demo or documentation site (optional)"
+            }
+        ],
+        "screenshots": []
     }
 ]
