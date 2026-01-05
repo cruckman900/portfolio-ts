@@ -39,7 +39,7 @@ export default function Index() {
                     <div className={styles.module}>
                         <h2>💻 Code & Platforms</h2>
                         <p>
-                            Full-stack engineering meets poetic architecture. I build modular, scalable systems with React, Next.js, Node, and .NET—designed to feel alive, responsive, and expressive.
+                            Full-stack engineering meets poetic architecture. I build modular, scalable systems with React, Next.js, Node, .NET, and Native Mobile apps—designed to feel alive, responsive, and expressive.
                         </p>
                     </div>
                 </a>
