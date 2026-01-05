@@ -5,13 +5,13 @@ import styles from './Footer.module.scss'
 const Footer: React.FC = () => {
     return (
         <footer className={styles.footer}>
-            <div className="main">
-                <div className="social-links">
-                    <Link href="https://github.com/cruckman">GitHub</Link>
+            <div>
+                <div className={styles.socialLinks}>
+                    <Link className={styles.link} href="https://github.com/cruckman"><i className="fa-brands fa-github"></i>GitHub</Link>
                     &nbsp; | &nbsp;
-                    <Link href="/contact">Contact</Link>
+                    <Link className={styles.link} href="/contact"><i className="fa-solid fa-envelope"></i>Contact</Link>
                 </div>
-                <p>&copy; {new Date().getFullYear()} LinearDescent&mdash;What Rights?</p>
+                <div className={styles.footerText}><i className="fa-solid fa-copyright"></i>{new Date().getFullYear()} LinearDescent</div>
             </div>
         </footer>
     )

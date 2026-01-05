@@ -3,7 +3,7 @@
     display: flex;
     // justify-content: space-between;
     gap: 2rem;
-    align-items:last baseline;
+    align-items: last baseline;
     background-color: var(--surface);
     font-family: 'Open Sans', sans-serif;
     height: 4rem;
@@ -15,17 +15,22 @@
         height: 3rem;
     }
 
-    .link {
-        font-size: 1.2rem;
-        
-        a {
-            text-decoration: none;
-        }
+    // .link {
+    //     font-size: 1.2rem;
 
-        @media screen and (max-width: 600px) {
-            display: none;
-        }
-    }
+    //     a {
+    //         text-decoration: none;
+
+    //         &-text:hover {
+    //             color: var(--accent) !important;
+    //             text-decoration: underline;
+    //         }
+    //     }
+
+    //     @media screen and (max-width: 600px) {
+    //         display: none;
+    //     }
+    // }
 
     @media print {
         display: none;

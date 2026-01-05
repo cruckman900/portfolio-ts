@@ -19,6 +19,10 @@
 
         a {
             color: var(--text);
+
+            &:hover {
+                color: var(--accent);
+            }
         }
 
         .editIcon {

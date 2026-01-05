@@ -7,7 +7,7 @@ import styles from './resume.module.scss'
 
 export default function ResumePage() {
     const leftPanel = (
-        <>
+        <div className={styles.resume}>
             <Section>
                 <div className={styles.resumeHeader}>
                     <h1 style={{ margin: 0, padding: 0 }}>{resumeData.name}</h1>
@@ -47,11 +47,11 @@ export default function ResumePage() {
                     )}
                 </div>
             </Section>
-        </>
+        </div>
     )
 
     const rightPanel = (
-        <>
+        <div className={styles.resume}>
             <Section title="Professional Summary" icon="fas fa-user">
                 <p>{resumeData.summary}</p>
             </Section>
@@ -88,11 +88,11 @@ export default function ResumePage() {
                     )}
                 </div>
             </Section>
-        </>
+        </div>
     )
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles.resume}`}>
             <Head>
                 <meta name="robots" content="noindex" />
             </Head>

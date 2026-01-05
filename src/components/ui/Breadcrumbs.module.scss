@@ -12,6 +12,10 @@
         margin: 0;
     }
 
+    a:hover {
+        color: var(--muted);
+    }
+
     @media print {
         display: none;
     }

@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import navlinks from '@/data/links.json'
 import { useRouter } from 'next/router'
+import styles from './Navlinks.module.scss'
 
 export default function NavLinks({ onClick }: { onClick?: () => void }) {
     const router = useRouter()
@@ -20,7 +21,7 @@ export default function NavLinks({ onClick }: { onClick?: () => void }) {
     return (
         <>
             {navlinks.map((nav, i) => (
-                <div className="link" key={i}>
+                <div className={styles.link} key={i}>
                     {isActive(nav.url) ? (
                         <span className="link-text-active">
                             <i className={nav.icon}></i>{nav.label}

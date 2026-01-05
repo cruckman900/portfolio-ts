@@ -17,6 +17,12 @@
     }
 }
 
+.resume {
+    a:hover {
+        color: var(--muted);
+    }
+}
+
 .tagline {
     font-style: italic;
     padding-bottom: 1rem;
