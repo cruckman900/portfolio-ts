@@ -15,23 +15,6 @@
         height: 3rem;
     }
 
-    // .link {
-    //     font-size: 1.2rem;
-
-    //     a {
-    //         text-decoration: none;
-
-    //         &-text:hover {
-    //             color: var(--accent) !important;
-    //             text-decoration: underline;
-    //         }
-    //     }
-
-    //     @media screen and (max-width: 600px) {
-    //         display: none;
-    //     }
-    // }
-
     @media print {
         display: none;
     }

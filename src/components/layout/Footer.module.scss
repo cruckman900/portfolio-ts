@@ -1,6 +1,10 @@
-.footer {
-    background-color: var(--muted);
+.container {
+    margin: 0;
+    padding: 0;
+    background-color: var(--surface);
+}
 
+.footer {
     color: var(--text);
     text-align: center;
     border-top-left-radius: 256px;
