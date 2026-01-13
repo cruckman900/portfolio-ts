@@ -95,39 +95,39 @@
             {
                 "admin (web)": [
                     {
+                        "title": "Home",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/Home.gif",
+                        "desc": "Landing page for the admin portal with quick links."
+                    },
+                    {
                         "title": "Dashboard",
                         "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/Dashboard.gif",
                         "desc": "This is the landing page after login. It displays system vitals (web server, database, etc.)."
                     },
                     {
-                        "title": "Collapsed Sidebar",
-                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/CollapsedSidebar.gif",
+                        "title": "Sidebar Collapsed",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/SidebarCollapsed.gif",
                         "desc": "Sidebar can be expanded and collapsed to extend the work area view. Collapsed sidebar shows action icons."
                     },
                     {
-                        "title": "Expanded Sidebar",
-                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/ExpandedSidebar.gif",
-                        "desc": "Sidebar can be expanded and collapsed to extend the work area view. Expanded sidebar shows action icons and labels."
+                        "title": "Logs Collapsed",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/LogsCollapsed.gif",
+                        "desc": "System logs can be viewed in a collapsible panel at the bottom of the screen."
                     },
                     {
-                        "title": "Provision Company",
-                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/ProvisionCompany.gif",
-                        "desc": "This screen is used to initiate the database generation for a tenant company (client)."
+                        "title": "Logs Showing Errors",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/LogsShowError.gif",
+                        "desc": "Error messages can be expanded to show stack traces."
                     },
                     {
-                        "title": "View Companies",
-                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/ViewCompanies.gif",
-                        "desc": "Lists all provisioned companies with action links to modify setups."
+                        "title": "Metrics View",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/Metrics.gif",
+                        "desc": "System metrics view showing CPU, memory, disk usage, and other vitals over time."
                     },
                     {
-                        "title": "Retro Theme",
-                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/RetroTheme.gif",
-                        "desc": "One of a few themes available (based on colors chosen in another project (NEXTRiff)."
-                    },
-                    {
-                        "title": "Contributor Mode Theme",
-                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/ContributorModeTheme.gif",
-                        "desc": "One of a few themes available (based on colors chosen in another project (portfolio-ts)."
+                        "title": "Settings View",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/Settings.gif",
+                        "desc": "View of the current environment settings loaded."
                     }
                 ]
             },
