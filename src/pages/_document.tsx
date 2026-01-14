@@ -83,13 +83,15 @@ export default function Document() {
 
                 {/* project screenshots */}
                 {/* bau admin (web) */}
-                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/CollapsedSidebar.gif" />
-                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ContributorModeTheme.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Dashboard.gif" />
-                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ExpandedSidebar.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Home.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/LogsCollapsed.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/LogsShowError.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Metrics.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ProvisionCompany.gif" />
-                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/RetroTheme.gif" />
-                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ViewCompanies.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Settings.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Settings.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/SidebarCollapsed.gif" />
 
                 {/* bau client (web) */}
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Client/BenefitsManagement.gif" />
