@@ -82,17 +82,21 @@ export default function Document() {
                 <link rel="preload" as="image" href="/images/Project Badges/BetterBlog_Badge.png" />
 
                 {/* project screenshots */}
-                {/* bau admin (web) */}
+                {/* bau admin (admin) */}
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Dashboard.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Home.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/LogsCollapsed.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/LogsShowError.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Metrics.gif" />
-                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ProvisionCompany.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ProvisionCompany(1).gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ProvisionCompany(2).gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Settings.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Settings.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/SidebarCollapsed.gif" />
-
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ContributorGold.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/LightModern.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ObsidianDark.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/RetroNeon.gif" />
                 {/* bau client (web) */}
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Client/BenefitsManagement.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Client/Dashboard.gif" />
