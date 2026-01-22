@@ -92,7 +92,6 @@ export default function Document() {
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ProvisionCompany(2).gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Settings.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Settings.gif" />
-                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/SidebarCollapsed.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ContributorGold.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/LightModern.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ObsidianDark.gif" />
