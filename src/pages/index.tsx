@@ -12,14 +12,14 @@ export default function Index() {
             </section>
 
             <section className={styles.homepageModules}>
-                <a href="/books" className={styles.cardLink}>
-                    <div className={styles.module}>
-                        <h2>📚 Books</h2>
-                        <p>
-                            Raw, unflinching memoirs and poetic manifestos. My writing explores schizophrenia, addiction, and resilience—turning personal wreckage into public signal. <span className="tagline">Failure at Fifty</span> is just the beginning.
-                        </p>
-                    </div>
-                </a>
+                {/* <a href="/books" className={styles.cardLink}> */}
+                <div className={styles.module}>
+                    <h2>📚 Books</h2>
+                    <p>
+                        Raw, unflinching memoirs and poetic manifestos. My writing explores schizophrenia, addiction, and resilience—turning personal wreckage into public signal. <span className="tagline">Failure at Fifty</span> is just the beginning.
+                    </p>
+                </div>
+                {/* </a> */}
 
                 <div className={styles.module}>
                     <h2>🎸 Guitar Music</h2>

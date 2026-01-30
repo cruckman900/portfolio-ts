@@ -36,3 +36,13 @@ export default function NavLinks({ onClick }: { onClick?: () => void }) {
         </>
     )
 }
+// {
+//     "url": "/books",
+//         "label": "books",
+//             "icon": "fas fa-book-open"
+// },
+// {
+//     "url": "/blog",
+//         "label": "blogs",
+//             "icon": "fas fa-blog"
+// },

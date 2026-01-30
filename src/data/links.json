@@ -5,16 +5,6 @@
         "icon": "fas fa-house"
     },
     {
-        "url": "/books",
-        "label": "books",
-        "icon": "fas fa-book-open"
-    },
-    {
-        "url": "/blog",
-        "label": "blogs",
-        "icon": "fas fa-blog"
-    },
-    {
         "url": "/project",
         "label": "projects",
         "icon": "fas fa-code"
