@@ -1,7 +1,7 @@
 // themeOptions.ts
 export const themeOptions = [
-    { value: 'light', icon: '☀️', name: 'Light' },
     { value: 'dark', icon: '🌑', name: 'Dark' },
+    { value: 'light', icon: '☀️', name: 'Light' },
     { value: 'hazard', icon: '⚠️', name: 'Hazard' },
     { value: 'brownstone', icon: '🟤', name: 'Brownstone' },
     { value: 'midnight', icon: '🌌', name: 'Midnight Blue' },

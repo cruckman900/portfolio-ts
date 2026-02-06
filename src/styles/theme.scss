@@ -4,17 +4,6 @@
 // - Text: $theme-brown-text works beautifully for headings and body copy.
 // - Muted: Use $theme-brown-muted for secondary labels or breadcrumbs.
 // - Border: $theme-brown-border keeps things clean and structured.
-$light-theme: (
-    icon: ☀️,
-    bg: #ffffff,
-    hero: url("/images/light_hero.png"),
-    surface: #f4f4f4,
-    accent: #0077cc,
-    text: #1a1a1a,
-    muted: #888888,
-    border: #dddddd
-);
-
 $dark-theme: (
     icon: 🌑,
     bg: #121212,
@@ -24,6 +13,17 @@ $dark-theme: (
     text: #e0e0e0,
     muted: #999999,
     border: #2a2a2a
+);
+
+$light-theme: (
+    icon: ☀️,
+    bg: #ffffff,
+    hero: url("/images/light_hero.png"),
+    surface: #f4f4f4,
+    accent: #0077cc,
+    text: #1a1a1a,
+    muted: #888888,
+    border: #dddddd
 );
 
 $hazard-theme: (
@@ -122,8 +122,8 @@ $red-theme: (
 }
 
 $themes: (
-    light: $light-theme,
     dark: $dark-theme,
+    light: $light-theme,
     hazard: $hazard-theme,
     brownstone: $brownstone-theme,
     midnight: $midnight-theme,
