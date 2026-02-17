@@ -100,9 +100,14 @@
                         "desc": "Landing page for the admin portal with quick links."
                     },
                     {
-                        "title": "Dashboard",
-                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/Dashboard.gif",
+                        "title": "Health",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/Health.gif",
                         "desc": "This is the landing page after login. It displays system vitals (web server, database, etc.)."
+                    },
+                    {
+                        "title": "HealthDrawer",
+                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/HealthDrawer.gif",
+                        "desc": "This drawer provides a detailed view of system vitals."
                     },
                     {
                         "title": "Logs Collapsed",
