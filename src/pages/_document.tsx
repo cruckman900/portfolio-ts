@@ -83,14 +83,13 @@ export default function Document() {
 
                 {/* project screenshots */}
                 {/* bau admin (admin) */}
-                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Dashboard.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Home.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Health.gif" />
+                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/HealthDrawer.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/LogsCollapsed.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/LogsShowError.gif" />
-                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Metrics.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ProvisionCompany(1).gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ProvisionCompany(2).gif" />
-                <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Settings.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/Settings.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/ContributorGold.gif" />
                 <link rel="preload" as="image" href="/images/Project Screenshots/BusinessAsUsual/Web/Admin/LightModern.gif" />

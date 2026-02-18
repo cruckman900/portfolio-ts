@@ -102,27 +102,22 @@
                     {
                         "title": "Health",
                         "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/Health.gif",
-                        "desc": "This is the landing page after login. It displays system vitals (web server, database, etc.)."
+                        "desc": "Quick glance at server statistics. It displays system vitals (web server, database, etc.)."
                     },
                     {
-                        "title": "HealthDrawer",
+                        "title": "Health",
                         "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/HealthDrawer.gif",
                         "desc": "This drawer provides a detailed view of system vitals."
                     },
                     {
-                        "title": "Logs Collapsed",
+                        "title": "Logs",
                         "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/LogsCollapsed.gif",
                         "desc": "System logs can be viewed in a collapsible panel at the bottom of the screen."
                     },
                     {
-                        "title": "Logs Showing Errors",
+                        "title": "Logs",
                         "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/LogsShowError.gif",
                         "desc": "Error messages can be expanded to show stack traces."
-                    },
-                    {
-                        "title": "Metrics View",
-                        "src": "/images/Project Screenshots/BusinessAsUsual/Web/Admin/Metrics.gif",
-                        "desc": "System metrics view showing CPU, memory, disk usage, and other vitals over time."
                     },
                     {
                         "title": "Settings View",
