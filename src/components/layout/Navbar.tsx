@@ -4,31 +4,41 @@ import Hamburger from '../ui/Hamburger'
 import NavLinks from '@/components/ui/NavLinks'
 
 export default function Navbar({ className }: { className?: string }) {
-    const [toggleHamburger, setToggleHamburger] = useState(false)
-    const handleToggle = () => setToggleHamburger(prev => !prev)
+    const [open, setOpen] = useState(false)
+    const toggle = () => setOpen(prev => !prev)
 
     return (
         <>
-            <nav className={className}>
+            {/* DESKTOP NAV */}
+            <nav className={`desktop-nav ${className ?? ''}`}>
                 <div className="brand">
                     <i className="fas fa-biohazard"></i>
                     <span>LinearDescent</span>
                 </div>
 
-                <div className="hamburger" onClick={handleToggle}>
-                    <Hamburger isOpen={toggleHamburger} onClick={handleToggle} />
-                </div>
-
                 <NavLinks />
             </nav>
 
-            <SubNav />
+            {/* MOBILE NAV HEADER */}
+            <nav className="mobile-nav">
+                <div className="brand">
+                    <i className="fas fa-biohazard"></i>
+                    <span>LinearDescent</span>
+                </div>
 
-            {toggleHamburger && (
+                <div className="hamburger" onClick={toggle}>
+                    <Hamburger isOpen={open} onClick={toggle} />
+                </div>
+            </nav>
+
+            {/* MOBILE DRAWER */}
+            {open && (
                 <div className="mobile-menu">
-                    <NavLinks onClick={handleToggle} />
+                    <NavLinks onClick={toggle} />
                 </div>
             )}
+
+            <SubNav />
         </>
     )
 }
