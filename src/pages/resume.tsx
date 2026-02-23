@@ -51,7 +51,7 @@ export default function ResumePage() {
     )
 
     const rightPanel = (
-        <div className={styles.resume}>
+        <div className={styles.resume} style={{ paddingTop: ".25rem" }}>
             <Section title="Professional Summary" icon="fas fa-user">
                 <p>{resumeData.summary}</p>
             </Section>
@@ -71,6 +71,9 @@ export default function ResumePage() {
                     )}
                 </div>
             </Section>
+
+            <div className={styles.pagebreakBefore} />
+
             <Section title="Professional Experience" icon="fas fa-briefcase">
                 <div className={styles.section}>
                     {resumeData.experience.map((exp, i) =>
@@ -97,30 +100,74 @@ export default function ResumePage() {
                 <meta name="robots" content="noindex" />
             </Head>
             <TwoPanelLayout left={leftPanel} right={rightPanel} />
+
+            <div className={styles.pagebreakBefore} />
+
             <Section title="Personal Projects" className={styles.projects} icon="fas fa-code">
                 <div className={styles.section}>
-                    {resumeData.projects.map((list, i) =>
-                    (
+                    {resumeData.projects.map((list, i) => (
                         <article key={i}>
                             <h3>{list.genre}</h3>
-                            {list.projects.map((project, j) =>
-                            (
+
+                            {list.projects.map((project, j) => (
                                 <div key={j} className={styles.noBreakInside}>
                                     <i>{project.name}</i>
                                     <ul>
-                                        {project.url && <li><strong>Live:</strong> <a href={project.url} target="_blank">{project.url.substring(8)}</a></li>}
+
+                                        {/* Multiple URLs */}
+                                        {project.urls && project.urls.length > 0 && (
+                                            <li>
+                                                <strong>Links:</strong>
+                                                <ul>
+                                                    {project.urls.map((link, k) => (
+                                                        <li key={k}>
+                                                            <a href={link.url} target="_blank">
+                                                                {link.label}: {link.url.replace(/^https?:\/\//, "")}
+                                                            </a>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </li>
+                                        )}
+
+                                        {/* Description */}
                                         <li>{project.description}</li>
-                                        <li><strong>Tech: </strong>{project.tech}</li>
+
+                                        {/* Tech */}
+                                        <li><strong>Tech:</strong> {project.tech}</li>
+
+                                        {/* Optional Credentials */}
+                                        {(project.username || project.password) && (
+                                            <li>
+                                                <strong>Demo Credentials:</strong>
+                                                <ul>
+                                                    {project.username && <li>Username: {project.username}</li>}
+                                                    {project.password && <li>Password: {project.password}</li>}
+                                                </ul>
+                                            </li>
+                                        )}
+
+                                        {/* Optional Notes */}
+                                        {project.notes && (
+                                            <li>
+                                                <strong>Notes:</strong> {project.notes}
+                                            </li>
+                                        )}
+
+                                        {/* Repos */}
                                         {project.repos.map((repo) => (
-                                            <li key={repo.label}><strong>{repo.label}</strong> <a href={repo.url} target="_blank">{repo.url.substring(8)}</a></li>
+                                            <li key={repo.label}>
+                                                <strong>{repo.label}</strong>{" "}
+                                                <a href={repo.url} target="_blank">
+                                                    {repo.url.replace(/^https?:\/\//, "")}
+                                                </a>
+                                            </li>
                                         ))}
                                     </ul>
                                 </div>
-                            )
-                            )}
+                            ))}
                         </article>
-                    )
-                    )}
+                    ))}
                 </div>
             </Section>
         </div>

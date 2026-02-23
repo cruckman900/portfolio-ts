@@ -1,7 +1,7 @@
 {
   "icon": "fa-solid fa-dragon",
   "name": "Christopher Ruckman",
-  "tagline": "Software engineer with 15+ years of professional experience across .NET web applications and Android features and recent hands-on work building React/Next.js frontends backed by APIs. Seeking .NET frontend, backend, full-stack roles, or mobile (full-time or contract-to-hire)",
+  "tagline": "Senior Software Engineer & Systems Architect specializing in multi-tenant SaaS platforms, microservice ecosystems, and cloud-native ERP development.",
   "contact": {
     "location": "Greater Pittsburgh Region",
     "email": "cruckman900@gmail.com",
@@ -11,32 +11,32 @@
   },
   "skills": [
     {
-      "section": "Web & App Development",
-      "content": "ASP.NET (VB.NET, C#, MVC, Core, Web Forms, Razor Pages, Blazor (Server & WASM)), RESTful APIs, React, Next.js, Node.js, Kotlin, JavaScript/TypeScript"
+      "section": "Architecture & Platform Engineering",
+      "content": "Microservices, multi-tenant SaaS design, event-driven systems, API gateway routing, domain-driven design, modular UI composition, cloud cost optimization."
     },
     {
-      "section": "Frameworks & Libraries",
-      "content": "Entity Framework Core, SQLModel, TailwindCSS, Bootstrap, MudBlazor, mui/material, SignalR, react-three/fiber, WaveSurfer"
-    },
-    {
-      "section": "Test",
-      "content": "Serilog, Moq, XUnit, peer code reviews"
+      "section": "Web & Application Development",
+      "content": "ASP, ASP.NET (VB.NET, WebForms), ASP.NET Core (C#, MVC, Razor, Blazor), RESTful APIs, React, Next.js, Node.js, Kotlin, TypeScript/JavaScript."
     },
     {
       "section": "Cloud & Infrastructure",
-      "content": "AWS EC2/RDS provisioning, Docker orchestration, GitHub Actions, CI/CD pipelines, .env integration"
-    },
-    {
-      "section": "Database",
-      "content": "Microsoft SQL Server, MySQL, Postgresql, MongoDB, SQLModel"
-    },
-    {
-      "section": "Creative Design",
-      "content": "Adobe Photoshop, Blender"
+      "content": "AWS EC2/RDS/S3/CloudFront/EventBridge, Docker, GitHub Actions CI/CD, Nginx reverse proxy, environment-based configuration, observability pipelines."
     },
     {
       "section": "Backend Engineering",
-      "content": "FastAPI, Python, Web API, Express"
+      "content": "Entity Framework Core, SQL Server, PostgreSQL, FastAPI, Python, Express, distributed logging, background workers, event publishing/consumption."
+    },
+    {
+      "section": "Frontend Engineering",
+      "content": "Blazor Server/WASM, React, responsive UI systems, component-driven design, dynamic module loading, theme engines."
+    },
+    {
+      "section": "Testing & Quality",
+      "content": "XUnit, Moq, integration testing, structured logging (Serilog), peer code reviews, CI-based validation."
+    },
+    {
+      "section": "Creative & UX",
+      "content": "UI/UX prototyping, Adobe Photoshop, Blender, branding systems, documentation design."
     }
   ],
   "education": [
@@ -53,37 +53,40 @@
       "dates": "2003 – 2005"
     }
   ],
-  "summary": "Multidisciplinary developer and strategist blending technical depth with creative clarity. I specialize in building scalable systems, expressive interfaces, and resilient workflows—often under high-stakes constraints. With 20+ years of experience across software engineering, legal advocacy, and independent publishing, I deliver solutions that inform, empower, and endure. Recent work includes AWS infrastructure orchestration and multi-tenant backend provisioning.",
+  "summary": "Senior software engineer and systems architect specializing in multi-tenant SaaS platforms, microservice ecosystems, and cloud-native ERP design. I build scalable architectures, resilient backend services, and expressive interfaces that support real-world business operations across multiple industries. Recent work includes architecting Business As Usual (BAU), a full-service ERP platform with 40+ domain modules, event-driven workflows, tenant-per-database isolation, and a cost-optimized AWS deployment model running under $100/month.",
   "achievements": [
     {
       "category": "Published Author",
       "items": [
-        "Crafted a thematic book series on resilience, with original covers, poetic blurbs, and grassroots marketing."
+        "Authored a three‑book series exploring resilience and personal transformation, including original cover design, thematic branding, and grassroots marketing."
       ]
     },
     {
       "category": "Legal Advocate",
       "items": [
-        "Investigated litigation fraud, authored formal reports, and collaborated with regulatory agencies."
+        "Investigated litigation and consumer-targeted fraud, authored formal reports, and collaborated with regulatory agencies to support case integrity and public accountability."
       ]
     },
     {
-      "category": "Self-Taught Technologist",
+      "category": "Continuous Professional Development",
       "items": [
-        "Completed advanced coursework and applied skills to real-world builds like NEXTRiff and Business As Usual."
+        "Reinforced decades of engineering experience with modern, self‑directed mastery across cloud architecture, microservices, mobile development, and UI frameworks to remain current, relevant, and highly effective in today’s software landscape."
       ]
     }
   ],
   "experience": [
     {
-      "title": "Independent Full-Stack Developer",
+      "title": "Senior Software Engineer & Systems Architect",
       "company": "Self-Directed Projects",
       "dates": "Mar 2022 – Present",
       "details": [
-        "Built and shipped portfolio applications to stay current in .NET, React/TypeScript, Android, API development, and cloud deployment during a health-related hiatus",
-        "Engineered Business As Usual: multi-tenant end-to-end business suite on ASP.NET Core; automated build/deploy workflows, and repeatable environments",
-        "Building Business As Usual Mobile: a full-featured suite mirroring the web application for Native Android and iOS devices",
-        "Developed NEXTRiff: a React frontend for tab creation, parsing, metadata, and playback functionality; integrated with a Python API service and structured features for iterative delivery"
+        "Architecting Business As Usual (BAU), a full-scale multi-tenant SaaS ERP platform with 40+ domain modules spanning Financials, HR, Operations, CRM, Inventory, Logistics, and industry-specific verticals.",
+        "Designed a microservice ecosystem with tenant-per-database isolation, event-driven communication, dynamic module discovery, and a unified API gateway.",
+        "Built a cost-optimized AWS deployment model (EC2, RDS, S3, CloudFront, EventBridge) running under $100/month while supporting dozens of independently deployable services.",
+        "Developed Admin/Main applications using Blazor and MVC with dynamic micro-frontend loading, theme engines, and runtime module composition.",
+        "Implemented CI/CD pipelines using GitHub Actions → S3 → CodeDeploy, enabling zero-downtime deployments and contributor-friendly workflows.",
+        "Building BAU Mobile: native Android and iOS applications consuming the same gateway-driven microservice architecture.",
+        "Developed NEXTRiff, a React/TypeScript + FastAPI platform for music tab creation, parsing, and playback with a modular backend and cloud asset pipeline."
       ]
     },
     {
@@ -91,9 +94,9 @@
       "company": "Walmart, Google, Wayfair (via Enhance IT)",
       "dates": "Sept 2020 – Feb 2022",
       "details": [
-        "Delivered Android features using Java/Kotlin, including Chromecast SDK integrations",
-        "Implemented MVVM patterns to support testable, scalable e-commerce functionality",
-        "Contributed unit tests and code reviews in a team workflow"
+        "Delivered production Android features using Kotlin/Java, including Chromecast SDK integrations and scalable MVVM-based components.",
+        "Collaborated in enterprise engineering workflows with code reviews, unit testing, and iterative feature delivery.",
+        "Improved app stability and performance through lifecycle-aware components and modular architecture patterns."
       ]
     },
     {
@@ -101,8 +104,9 @@
       "company": "Murray Energy Corporation",
       "dates": "Apr 2018 – Feb 2020 & Nov 2016 – Aug 2017",
       "details": [
-        "Built ASP.NET MVC and Web Forms modules and internal tools supporting operations and reporting",
-        "Implemented and consumed REST APIs and SQL Server-backed services"
+        "Built and maintained ASP.NET MVC and WebForms applications supporting operational workflows, reporting, and internal business processes.",
+        "Implemented and consumed REST APIs backed by SQL Server, improving data accessibility and system reliability.",
+        "Modernized legacy modules and improved maintainability through incremental refactoring and UI updates."
       ]
     },
     {
@@ -110,9 +114,9 @@
       "company": "Challenger Learning Center",
       "dates": "Jan 2018 – May 2019 & Nov 2013 – Jan 2017",
       "details": [
-        "Built web dashboards and interactive UI components; delivered backend endpoints to support internal applications",
-        "Engineered real-time communication features with ASP.NET Core and SignalR",
-        "Maintained and incrementally modernized legacy interfaces"
+        "Developed interactive dashboards and backend services using ASP.NET Core, enhancing mission control simulations and educational programs.",
+        "Implemented real-time communication features with SignalR to support multi-user collaboration.",
+        "Maintained and modernized legacy interfaces, improving usability and system performance."
       ]
     }
   ],
@@ -121,10 +125,22 @@
       "genre": "Portfolio Projects",
       "projects": [
         {
-          "name": "Business As Usual",
-          "description": "Multi-tenant ASP.NET Core business suite with contributor-proof onboarding, Smart Commit synergy, and CI/CD orchestration. Features include AWS EC2/RDS provisioning, changelog automation, badge injection, and modular admin dashboards.",
-          "url": "",
-          "tech": "ASP.NET Core, MVC, Blazor Server, Entity Framework Core, T-Sql, SQL Server -> PostgreSql, Docker, GitHub Actions, AWS EC2 (deployed)/RDS ready, Serilog, Smart Commits. Have begun Native Android and iOS mobile development.",
+          "name": "Business As Usual (BAU)",
+          "description": "A full-scale, multi-tenant SaaS ERP platform architected with modular microservices, tenant-per-database isolation, event-driven communication, and dynamic UI composition. BAU spans 40+ business domains across Financials, HR, Operations, CRM, Inventory, Logistics, and industry-specific verticals. Features include a Module Registry Service (MRS), unified API Gateway, micro-frontend loading, and a cost-optimized AWS deployment model running under $100/month.",
+          "urls": [
+            {
+              "label": "Client App",
+              "url": "https://businessasusual.work"
+            },
+            {
+              "label": "Admin App",
+              "url": "https://admin.businessasusual.work"
+            }
+          ],
+          "username": "admin",
+          "password": "password",
+          "notes": "",
+          "tech": "ASP.NET Core, C#, MVC, Blazor Server, Entity Framework Core, SQL Server, Docker, AWS EC2/RDS/S3/CloudFront/EventBridge, GitHub Actions CI/CD, Serilog, Nginx, Native Android & iOS clients.",
           "repos": [
             {
               "label": "web and api source code",
@@ -142,9 +158,17 @@
         },
         {
           "name": "NEXTRiff",
-          "description": "A tab creation/parsing and music metadata platform—backend nearly complete, frontend in progress. Soon, musicians everywhere will have a backstage pass to crank out lively jams.",
-          "url": "https://nextriff.netlify.app",
-          "tech": "FastAPI, Python, SQLModel, Cloudinary, React/TypeScript",
+          "description": "A modular music tab creation and playback platform featuring real-time waveform visualization, tab parsing, metadata extraction, and cloud asset management. Designed with a React/TypeScript frontend and a FastAPI backend structured for iterative delivery and future extensibility.",
+          "urls": [
+            {
+              "label": "Live Demo",
+              "url": "https://nextriff.netlify.app"
+            }
+          ],
+          "username": "",
+          "password": "",
+          "notes": "",
+          "tech": "FastAPI, Python, SQLModel, React/TypeScript, Cloudinary, modular API design, component-driven UI.",
           "repos": [
             {
               "label": "front-end source code",

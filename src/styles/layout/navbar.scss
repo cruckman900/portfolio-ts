@@ -16,6 +16,10 @@
     @media (max-width: 600px) {
         display: none;
     }
+
+    @media print {
+        display: none;
+    }
 }
 
 /* ============================
@@ -46,6 +50,10 @@
 
     @media (max-width: 600px) {
         display: flex;
+    }
+
+    @media print {
+        display: none;
     }
 }
 
