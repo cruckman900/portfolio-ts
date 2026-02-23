@@ -1,7 +1,7 @@
 {
   "icon": "fa-solid fa-dragon",
   "name": "Christopher Ruckman",
-  "tagline": "Senior Software Engineer & Systems Architect specializing in multi-tenant SaaS platforms, microservice ecosystems, and cloud-native ERP development.",
+  "tagline": "Architecting scalable SaaS platforms, modular microservices, and cloud-native ERP systems that perform.",
   "contact": {
     "location": "Greater Pittsburgh Region",
     "email": "cruckman900@gmail.com",
@@ -53,7 +53,7 @@
       "dates": "2003 – 2005"
     }
   ],
-  "summary": "Senior software engineer and systems architect specializing in multi-tenant SaaS platforms, microservice ecosystems, and cloud-native ERP design. I build scalable architectures, resilient backend services, and expressive interfaces that support real-world business operations across multiple industries. Recent work includes architecting Business As Usual (BAU), a full-service ERP platform with 40+ domain modules, event-driven workflows, tenant-per-database isolation, and a cost-optimized AWS deployment model running under $100/month.",
+  "summary": "Senior software engineer and systems architect with 20+ years of experience designing resilient, scalable platforms for real-world business operations. I specialize in multi-tenant SaaS ecosystems, modular microservices, and cloud-native ERP architecture. My recent work includes Business As Usual (BAU), a full-service ERP platform with 40+ domain modules, event-driven workflows, tenant-per-database isolation, and a cost-optimized AWS deployment model running under $100/month. I build systems that scale, interfaces that empower, and workflows that endure",
   "achievements": [
     {
       "category": "Published Author",

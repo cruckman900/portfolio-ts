@@ -7,7 +7,7 @@ export default function Index() {
         <div className={styles.index}>
             <section className={styles.homepageIntro}>
                 <p className={styles.blurb}>
-                    From the edge of Rayland, Ohio, I build warning systems in human form—writing, coding, composing, and designing to keep others from falling. My work spans biohazard-themed books, glitch-infused web platforms, guitar compositions, and digital artwork that pulses with survival and signal.
+                    From the edge of Rayland, Ohio, I build systems that scale, communicate, and endure. My work spans enterprise software, published books, mobile architecture, and digital platforms designed to empower contributors and clarify complexity. Whether I’m writing code, composing music, or designing interfaces, I treat every layer as an opportunity to teach, connect, and build something that lasts.
                 </p>
             </section>
 
@@ -24,14 +24,14 @@ export default function Index() {
                 <div className={styles.module}>
                     <h2>🎸 Guitar Music</h2>
                     <p>
-                        Original compositions and ambient sketches. My guitar work blends distortion, melancholy, and clarity—like a siren in fog. Coming soon: audio samples, tablature, and live recordings.
+                        Original compositions and ambient guitar sketches built around tone, texture, and restraint. Audio samples, tablature, and live recordings coming soon.
                     </p>
                 </div>
 
                 <div className={styles.module}>
                     <h2>🎨 Artwork</h2>
                     <p>
-                        Digital pieces, cover designs, and hazard-coded visuals. I use Blender, Photoshop, and glitch overlays to create expressive warnings and thematic illustrations.
+                        Digital artwork, cover designs, and system‑driven visuals. I work in Blender and Photoshop to produce precise, expressive graphics that complement my software and writing projects.
                     </p>
                 </div>
 
