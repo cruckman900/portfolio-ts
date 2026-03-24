@@ -1,0 +1,182 @@
+{
+  "icon": "fa-solid fa-dragon",
+  "name": "Christopher Linn Ruckman",
+  "tagline": "Pursuing opportunities to architect and build robust, high‑performance systems that support real‑world operations and long‑term organizational growth.",
+  "contact": {
+    "location": "Greater Pittsburgh Region",
+    "email": "cruckman900@gmail.com",
+    "phone": "(740) 827-2743",
+    "website": "https://lineardescent.netlify.app",
+    "github": "https://github.com/cruckman900"
+  },
+  "skills": [
+    {
+      "section": "Architecture & Platform Engineering",
+      "content": "Microservices, multi-tenant SaaS design, event-driven systems, API gateway routing, domain-driven design, modular UI composition, cloud cost optimization."
+    },
+    {
+      "section": "Web & Application Development",
+      "content": "ASP, ASP.NET (VB.NET, WebForms), ASP.NET Core (C#, MVC, Razor, Blazor), RESTful APIs, React, Next.js, Node.js, Kotlin, TypeScript/JavaScript."
+    },
+    {
+      "section": "Cloud & Infrastructure",
+      "content": "AWS EC2/RDS/S3/CloudFront/EventBridge, Docker, GitHub Actions CI/CD, Nginx reverse proxy, environment-based configuration, observability pipelines."
+    },
+    {
+      "section": "Backend Engineering",
+      "content": "Entity Framework Core, SQL Server, PostgreSQL, FastAPI, Python, Express, distributed logging, background workers, event publishing/consumption."
+    },
+    {
+      "section": "Frontend Engineering",
+      "content": "Blazor Server/WASM, React, responsive UI systems, component-driven design, dynamic module loading, theme engines."
+    },
+    {
+      "section": "Testing & Quality",
+      "content": "XUnit, Moq, integration testing, structured logging (Serilog), peer code reviews, CI-based validation."
+    },
+    {
+      "section": "Creative & UX",
+      "content": "UI/UX prototyping, Adobe Photoshop, Blender, branding systems, documentation design."
+    }
+  ],
+  "education": [
+    {
+      "school": "Wheeling Jesuit University",
+      "url": "https://wheeling.edu",
+      "degree": "BS – Computer Science",
+      "dates": "2005 – 2008"
+    },
+    {
+      "school": "WV Northern Community College",
+      "url": "https://www.wvncc.edu",
+      "degree": "AAS – Computer Programming & System Development",
+      "dates": "2003 – 2005"
+    }
+  ],
+  "summary": "Senior software engineer and systems architect with 20+ years of experience designing resilient, scalable platforms for real-world business operations. I specialize in multi-tenant SaaS ecosystems, modular microservices, and cloud-native ERP architecture. My recent work includes Business As Usual (BAU), a full-service ERP platform with 40+ domain modules, event-driven workflows, tenant-per-database isolation, and a cost-optimized AWS deployment model running under $100/month. I build systems that scale, interfaces that empower, and workflows that endure.",
+  "achievements": [
+    {
+      "category": "Published Author",
+      "items": [
+        "Authored a three‑book series exploring resilience and personal transformation, including original cover design, thematic branding, and grassroots marketing."
+      ]
+    },
+    {
+      "category": "Legal Advocate",
+      "items": [
+        "Investigated litigation and consumer-targeted fraud, authored formal reports, and collaborated with regulatory agencies to support case integrity and public accountability."
+      ]
+    },
+    {
+      "category": "Continuous Professional Development",
+      "items": [
+        "Reinforced decades of engineering experience with modern, self‑directed mastery across cloud architecture, microservices, mobile development, and UI frameworks to remain current, relevant, and highly effective in today’s software landscape."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Android Developer",
+      "company": "Enhance IT",
+      "dates": "Sept 2020 – Feb 2022",
+      "details": [
+        "Delivered production Android features using Kotlin/Java, including Chromecast SDK integrations and scalable MVVM-based components.",
+        "Collaborated in enterprise engineering workflows with code reviews, unit testing, and iterative feature delivery.",
+        "Improved app stability and performance through lifecycle-aware components and modular architecture patterns."
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "company": "Murray Energy Corporation",
+      "dates": "Apr 2018 – Feb 2020 & Nov 2016 – Aug 2017",
+      "details": [
+        "Built and maintained ASP.NET MVC and WebForms applications supporting operational workflows, reporting, and internal business processes.",
+        "Implemented and consumed REST APIs backed by SQL Server, improving data accessibility and system reliability.",
+        "Modernized legacy modules and improved maintainability through incremental refactoring and UI updates."
+      ]
+    },
+    {
+      "title": "Photo Lab Associate",
+      "company": "Walmart",
+      "dates": "Aug 2017 – Apr 2018",
+      "details": [
+        "Assisted customers with photo printing and digital services, ensuring high-quality output and customer satisfaction.",
+        "Maintained and operated photo lab equipment, troubleshooting technical issues as needed.",
+        "Managed inventory and organized workspaces to optimize efficiency and workflow."
+      ]
+    },
+    {
+      "title": "Full-Stack Developer",
+      "company": "Challenger Learning Center",
+      "dates": "Nov 2013 – Jan 2017",
+      "details": [
+        "Developed interactive dashboards and backend services using ASP.NET Core, enhancing mission control simulations and educational programs.",
+        "Implemented real-time communication features with SignalR to support multi-user collaboration.",
+        "Maintained and modernized legacy interfaces, improving usability and system performance."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "genre": "Portfolio Projects",
+      "projects": [
+        {
+          "name": "Business As Usual (BAU)",
+          "description": "A full-scale, multi-tenant SaaS ERP platform architected with modular microservices, tenant-per-database isolation, event-driven communication, and dynamic UI composition. BAU spans 40+ business domains across Financials, HR, Operations, CRM, Inventory, Logistics, and industry-specific verticals. Features include a Module Registry Service (MRS), unified API Gateway, micro-frontend loading, and a cost-optimized AWS deployment model running under $100/month.",
+          "urls": [
+            {
+              "label": "Client App",
+              "url": "https://businessasusual.work"
+            },
+            {
+              "label": "Admin App",
+              "url": "https://admin.businessasusual.work"
+            }
+          ],
+          "username": "admin",
+          "password": "password",
+          "notes": "",
+          "tech": "ASP.NET Core, C#, MVC, Blazor Server, Entity Framework Core, SQL Server, Docker, AWS EC2/RDS/S3/CloudFront/EventBridge, GitHub Actions CI/CD, Serilog, Nginx, Native Android & iOS clients.",
+          "repos": [
+            {
+              "label": "web and api source code",
+              "url": "https://github.com/cruckman900/BusinessAsUsual"
+            },
+            {
+              "label": "android source code",
+              "url": "https://github.com/cruckman900/BusinessAsUsual-Android"
+            },
+            {
+              "label": "iOS source code",
+              "url": "https://github.com/cruckman900/BusinessAsUsual-iOS"
+            }
+          ]
+        },
+        {
+          "name": "NEXTRiff",
+          "description": "A modular music tab creation and playback platform featuring real-time waveform visualization, tab parsing, metadata extraction, and cloud asset management. Designed with a React/TypeScript frontend and a FastAPI backend structured for iterative delivery and future extensibility.",
+          "urls": [
+            {
+              "label": "Live Demo",
+              "url": "https://nextriff.netlify.app"
+            }
+          ],
+          "username": "",
+          "password": "",
+          "notes": "",
+          "tech": "FastAPI, Python, SQLModel, React/TypeScript, Cloudinary, modular API design, component-driven UI.",
+          "repos": [
+            {
+              "label": "front-end source code",
+              "url": "https://github.com/cruckman900/next.riffdaddy"
+            },
+            {
+              "label": "back-end source code",
+              "url": "https://github.com/cruckman900/baselinepy.ro"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

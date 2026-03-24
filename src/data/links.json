@@ -13,5 +13,15 @@
         "url": "/resume",
         "label": "resume",
         "icon": "fas fa-file"
+    },
+    {
+        "url": "/books",
+        "label": "books",
+        "icon": "fas fa-book"
+    },
+    {
+        "url": "/contact",
+        "label": "contact",
+        "icon": "fas fa-envelope"
     }
 ]
