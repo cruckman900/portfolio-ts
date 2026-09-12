@@ -1,6 +1,7 @@
 import React, { ReactNode, useState, useEffect } from 'react'
 import { useTheme } from '@/context/ThemeContext'
 import Head from 'next/head'
+import { motion, AnimatePresence } from 'framer-motion'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import styles from './Layout.module.scss'
@@ -65,9 +66,18 @@ const Layout: React.FC<Props> = ({ children }) => {
                 <header className='header'><Navbar className="navbar" /></header>
                 <section data-theme={theme} className={styles.content}>
                     <div className={styles.heroImage}>
-                        <div className={styles.leftSpacer}></div>
                         <div className={styles.heroText}>
-                            <span>{heroText}</span>
+                            <AnimatePresence mode="wait">
+                                <motion.span
+                                    key={heroText}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -10 }}
+                                    transition={{ duration: 0.45, ease: 'easeOut' }}
+                                >
+                                    {heroText}
+                                </motion.span>
+                            </AnimatePresence>
                         </div>
                     </div>
                     <main className='content'>{children}</main>

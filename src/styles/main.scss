@@ -16,3 +16,55 @@
         }
     }
 }
+
+// 🎛️ Design tokens — shared across every theme. These are declared once and
+// lean on var(--accent)/var(--surface)/etc so they re-resolve automatically
+// whenever a [data-theme] ancestor swaps the underlying palette values above.
+:root {
+    // Spacing scale
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4.5rem;
+
+    // Radius scale
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 32px;
+    --radius-pill: 999px;
+
+    // Motion
+    --ease: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: 0.18s var(--ease);
+    --transition: 0.32s var(--ease);
+    --transition-slow: 0.5s var(--ease);
+
+    // Layout
+    --container-max: 1200px;
+
+    // Derived, theme-aware accent tones
+    --accent-soft: color-mix(in srgb, var(--accent) 14%, transparent);
+    --accent-light: color-mix(in srgb, var(--accent) 25%, var(--surface));
+    --accent-dark: color-mix(in srgb, var(--accent) 72%, black);
+    --accent-glow: color-mix(in srgb, var(--accent) 45%, transparent);
+    --surface-raised: color-mix(in srgb, var(--surface) 92%, white 8%);
+    --border-soft: color-mix(in srgb, var(--border) 70%, transparent);
+    --code-bg: color-mix(in srgb, var(--surface) 80%, black 20%);
+
+    // Elevation
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.16);
+    --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.22);
+    --shadow-lg: 0 24px 55px rgba(0, 0, 0, 0.32);
+    --shadow-accent: 0 10px 28px var(--accent-soft);
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}

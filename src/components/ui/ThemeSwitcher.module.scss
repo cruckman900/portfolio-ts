@@ -10,19 +10,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 10rem;
+    width: 10.5rem;
     gap: 0.5rem;
-    background: var(--surface);
+    background: var(--surface-raised);
     color: var(--text);
-    border: 1px solid var(--accent);
-    padding: 0.25rem 1rem;
-    border-radius: 6px;
+    border: 1px solid var(--border);
+    padding: 0.45rem 1rem;
+    border-radius: var(--radius-sm);
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+
+    &:hover {
+        border-color: var(--accent);
+        box-shadow: var(--shadow-sm);
+    }
 }
 
 .arrow {
     font-size: 0.75rem;
+    color: var(--accent);
 }
 
 .dropdown {
@@ -31,24 +38,27 @@
     right: 0;
     z-index: 10;
     margin-top: 0.5rem;
-    background: var(--surface);
-    border: 1px solid var(--accent);
-    border-radius: 6px;
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
     list-style: none;
-    padding: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.35rem;
+    min-width: 12rem;
+    box-shadow: var(--shadow-lg);
 }
 
 .item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-sm);
     cursor: pointer;
-    transition: background 0.2s ease;
+    transition: background var(--transition-fast), color var(--transition-fast);
 
     &:hover {
-        background: var(--accent-light);
+        background: var(--accent-soft);
+        color: var(--accent);
     }
 }
 

@@ -1,24 +1,28 @@
 .preview {
-    // display: flex;
-    // gap: 1rem;
-    // justify-content: center;
-    // margin: 2rem 0;
-
     button,
     .download {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
         background-color: var(--accent);
-        color: white;
+        color: var(--surface);
         border: none;
-        padding: 0.6rem 1rem;
-        font-size: 0.95rem;
-        border-radius: 4px;
+        padding: 0.6rem 1.1rem;
+        font-family: var(--font-heading), sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        font-size: 0.85rem;
+        border-radius: var(--radius-sm);
+        box-shadow: var(--shadow-accent);
         cursor: pointer;
         text-decoration: none;
-        transition: background-color 0.2s ease;
+        transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
     }
 
     button:hover,
     .download:hover {
-        background-color: var(--text);
+        background-color: var(--accent-dark);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
     }
 }

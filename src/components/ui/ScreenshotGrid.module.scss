@@ -1,21 +1,24 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
 }
 
 .card {
-  background: var(--muted);
-  border: 2px solid transparent;
-  border-radius: 8px;
-  padding: 0.5rem;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
   cursor: pointer;
   text-align: center;
-  transition: transform 0.15s ease, border-color 0.2s ease;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
 
   &:hover {
-    transform: scale(1.03);
+    transform: translateY(-3px) scale(1.02);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
   }
 
   img {
@@ -25,16 +28,18 @@
     width: auto;
     object-fit: contain;
     margin-bottom: 0.5rem;
+    border-radius: var(--radius-sm);
   }
 
   p {
     font-size: 0.8rem;
-    color: var(--text-muted);
+    color: var(--muted);
   }
 }
 
 .active {
   border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft);
 }
 
 .modalOverlay {
@@ -49,12 +54,14 @@
 }
 
 .modal {
-  background: var(--muted);
+  background: var(--surface-raised);
   color: var(--text);
   display: flex;
   flex-direction: row;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
 
   @media screen and (min-width: 700px) {
     width: 80%;
@@ -66,7 +73,7 @@
   @media screen and (min-width: 700px) {
     background-color: var(--surface);
     width: 70%;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +85,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--muted);
+    background-color: var(--surface-raised);
     width: 30%;
   }
 }
@@ -88,7 +95,7 @@
   height: auto;
   max-width: 90%;
   width: auto;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
 }
 
 .theModalText {
@@ -99,7 +106,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--muted);
+  background: var(--surface-raised);
   word-wrap: normal;
   width: 100%;
   padding: 1rem;
@@ -126,7 +133,7 @@
 
     &:hover {
       background: var(--accent);
-      color: var(--background);
+      color: var(--surface);
     }
   }
 }

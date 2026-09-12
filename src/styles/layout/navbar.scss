@@ -2,15 +2,20 @@
    DESKTOP NAV
 ============================ */
 .desktop-nav {
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
-    gap: 2rem;
+    gap: var(--space-6);
     align-items: center;
-    background-color: var(--surface);
-    font-family: 'Open Sans', sans-serif;
-    height: 4rem;
+    background-color: color-mix(in srgb, var(--surface) 92%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    font-family: var(--font-body), sans-serif;
+    height: 4.25rem;
     width: 100vw;
-    padding: 0 2rem;
+    padding: 0 var(--space-6);
     z-index: 100;
 
     @media (max-width: 600px) {
@@ -28,11 +33,73 @@
 .brand {
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    gap: var(--space-3);
+    font-family: var(--font-heading), sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
     color: var(--accent);
+    white-space: nowrap;
 
     i {
-        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.25rem;
+        height: 2.25rem;
+        min-width: 2.25rem;
+        border-radius: var(--radius-pill);
+        background: var(--accent-soft);
+        font-size: 1.1rem;
+    }
+}
+
+/* ============================
+   NAV LINKS (active/hover states)
+============================ */
+.link-text,
+.link-text-active {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -0.3rem;
+        width: 100%;
+        height: 2px;
+        background: var(--accent);
+        border-radius: var(--radius-pill);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform var(--transition-fast);
+    }
+
+    &:hover {
+        color: var(--accent);
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+    }
+}
+
+.link-text-active {
+    color: var(--accent);
+    font-weight: 600;
+    cursor: default;
+
+    &::after {
+        transform: scaleX(1);
     }
 }
 
@@ -41,11 +108,16 @@
 ============================ */
 .mobile-nav {
     display: none;
-    height: 3rem;
-    background: var(--surface);
-    padding: 0 1rem;
+    height: 3.5rem;
+    background: color-mix(in srgb, var(--surface) 94%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 var(--space-4);
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
     z-index: 100;
 
     @media (max-width: 600px) {
@@ -74,16 +146,22 @@
 .mobile-menu {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    gap: 2rem;
+    padding: var(--space-6);
+    gap: var(--space-6);
     position: fixed;
-    top: 3rem;
+    top: 3.5rem;
     left: 0;
     width: 100%;
-    height: calc(100vh - 3rem);
+    height: calc(100vh - 3.5rem);
     background: var(--surface);
-    border-top: 1px solid var(--accent);
+    border-top: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
     z-index: 999;
+
+    .link-text,
+    .link-text-active {
+        font-size: 1.25rem;
+    }
 
     @media (min-width: 601px) {
         display: none;

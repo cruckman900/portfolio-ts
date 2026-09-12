@@ -15,7 +15,7 @@
 }
 
 .link:hover {
-    color: var(--accent-hover);
+    color: var(--accent-dark);
 }
 
 .article {
@@ -40,7 +40,7 @@
         border-left: 4px solid var(--accent);
         padding-left: 1rem;
         font-style: italic;
-        color: var(--text-muted);
+        color: var(--muted);
     }
 
     img {

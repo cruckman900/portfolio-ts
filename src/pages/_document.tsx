@@ -1,8 +1,9 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import { fontVariables } from '@/lib/fonts'
 
 export default function Document() {
     return (
-        <Html>
+        <Html className={fontVariables}>
             <Head>
                 {/* Google Analytics */}
                 <script

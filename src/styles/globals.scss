@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
 /*
     any use of 100vh should use
     
@@ -9,11 +7,80 @@
 html,
 body,
 #__next {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-body), 'Inter', sans-serif;
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
+}
+
+// 📐 Shared page container — centers content and keeps very wide viewports
+// from stretching text/cards edge-to-edge.
+.page-container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+
+    @media (max-width: 600px) {
+        padding: 0 var(--space-4);
+    }
+}
+
+// 🔘 Shared button system, reused by CTAs across the site (contact form,
+// resume print, tag callouts, etc.) so every button shares the same
+// elevation/motion language while still tracking the active theme's accent.
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-heading), sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        transform: none;
+    }
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: var(--surface);
+    box-shadow: var(--shadow-accent);
+
+    &:hover:not(:disabled) {
+        box-shadow: var(--shadow-md);
+        background-color: var(--accent-dark);
+    }
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--accent);
+    border-color: var(--accent);
+
+    &:hover:not(:disabled) {
+        background-color: var(--accent-soft);
+    }
 }
 
 @media print {

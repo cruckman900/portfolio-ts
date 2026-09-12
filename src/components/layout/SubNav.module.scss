@@ -4,14 +4,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    padding: 0.5rem 2rem; // 2rem left and right
+    padding: var(--space-3) var(--space-6);
     background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
     z-index: 5;
 
     @media (max-width: 600px) {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
+        gap: var(--space-3);
     }
 
     @media print {
@@ -23,11 +24,20 @@
     button {
         background-color: var(--accent);
         color: var(--surface);
-        font-weight: bold;
+        font-family: var(--font-heading), sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.02em;
         border: none;
-        border-radius: 0.25rem;
-        padding: 0.5rem;
+        border-radius: var(--radius-sm);
+        padding: 0.5rem 1rem;
+        box-shadow: var(--shadow-accent);
         cursor: pointer;
+        transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
     }
 
     @media screen and (max-width: 500px) {

@@ -44,9 +44,11 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
                                 position='top-right'
                                 toastOptions={{
                                     style: {
-                                        background: 'var{--surface)',
+                                        background: 'var(--surface-raised)',
                                         color: 'var(--text)',
-                                        border: 'solid 1px var{--border)'
+                                        border: '1px solid var(--border)',
+                                        borderRadius: 'var(--radius-md)',
+                                        boxShadow: 'var(--shadow-md)',
                                     }
                                 }}
                             />

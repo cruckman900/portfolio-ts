@@ -2,13 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding: 2rem;
     background-color: var(--bg);
     color: var(--text);
 
     h1 {
         font-size: 2rem;
-        font-weight: bold;
+        font-weight: 600;
         margin-bottom: 1rem;
         color: var(--accent);
     }
@@ -19,10 +18,11 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        background-color: var(--muted);
+        background-color: var(--surface-raised);
+        border: 1px solid var(--border);
         padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(var(--muted), 0.2);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-md);
     }
 }
 
@@ -35,16 +35,22 @@
 
     input,
     textarea {
-        padding: 0.75rem;
+        padding: 0.75rem 1rem;
         border: 1px solid var(--border);
-        border-radius: 4px;
+        border-radius: var(--radius-sm);
         background-color: var(--surface);
         color: var(--text);
+        font-family: var(--font-body), sans-serif;
         font-size: 1rem;
-        transition: border-color 0.3s ease;
+        transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+
+        &::placeholder {
+            color: var(--muted);
+        }
 
         &:focus {
-            background-color: var(--bg);
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-soft);
             outline: none;
         }
     }
@@ -58,6 +64,7 @@
 .fields {
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
 
     &--error {
         border-color: var(--accent);
@@ -73,21 +80,30 @@
 
 .submit {
     align-self: flex-end;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--bg);
-    color: var(--text);
+    padding: 0.75rem 1.75rem;
+    background-color: var(--accent);
+    color: var(--surface);
     border: none;
-    border-radius: 4px;
-    font-weight: bold;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-heading), sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: var(--shadow-accent);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
 
-    &:hover {
-        background-color: var(--surface);
+    &:hover:not(:disabled) {
+        background-color: var(--accent-dark);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
     }
 
     &:disabled {
-        background-color: #cccccc;
+        background-color: var(--muted);
+        color: var(--surface);
         cursor: not-allowed;
+        box-shadow: none;
     }
 }
